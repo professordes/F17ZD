@@ -1,0 +1,66 @@
+%%%%%%%%%%% NOTATION SHORTCUTS %%%%%%%%%%%%%%%%%%%
+%
+%  Consistent set of notation shortcuts usable in all directories.
+%  
+
+
+% Tikz shortcuts
+\usepackage{pgf}
+\usepackage{tikz} 
+\usetikzlibrary{arrows,decorations.markings}
+\tikzstyle{arrowmid}[0.65]=[decoration={markings,mark=at position #1 with {\arrow{>}}}, postaction={decorate}] 
+ \tikzstyle{dot}[1.5]=[circle,fill,draw,minimum size=#1mm,inner sep=0pt]  
+
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+\newcommand{\ddx}[1][]{\frac{{\rm d} {#1}}{{\rm d}x}}
+\newcommand{\dd}[1][]{\frac{{\rm d}}{{\rm d} #1}}
+\newcommand{\dydx}[2][x]{\frac{{\rm d} #2}{{\rm d} #1}}
+\newcommand{\ddt}[1][]{\frac{{\rm d} {#1}}{{\rm d}t}}
+\newcommand{\pve}{{\rm +ve}}
+\newcommand{\nve}{{\rm -ve}}
+
+
+% Blackboard bold shortcuts
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+
+% Operators
+\newcommand{\arccosec}{\operatorname{arccosec}}
+\newcommand{\cosec}{\operatorname{cosec}}
+\newcommand{\range}{\operatorname{range}}
+\newcommand{\dom}{\operatorname{dom}}
+\newcommand{\codom}{\operatorname{codom}}
+\newcommand{\var}{\operatorname{Var}}
+
+% Calculus shortcuts
+%\newcommand{\dydx}{\dfrac{dy}{dx}}
+\newcommand{\dydt}{\dfrac{dy}{dt}}
+\newcommand{\dxdt}{\dfrac{dx}{dt}}
+\newcommand{\dudx}{\dfrac{du}{dx}}
+\newcommand{\dudy}{\dfrac{du}{dy}}
+\newcommand{\dvdx}{\dfrac{dv}{dx}}
+\newcommand{\ddydx}{\dfrac{d^{2}y}{dx^{2}}}
+\newcommand{\ddydt}{\dfrac{d^{2}y}{dt^{2}}}
+\newcommand{\dddydx}{\dfrac{d^{3}y}{dx^{3}}}
+\newcommand{\ddy}{\dfrac{d}{dy}}
+\newcommand{\dx}{\,\mathrm{d}x}
+\newcommand{\dy}{\,\mathrm{d}y}
+\newcommand{\du}{\,\mathrm{d}u}
+\newcommand{\dv}{\,\mathrm{d}v}
+
+%Complex numbers
+%\newcommand{\degs}{^\circ}
+\newcommand{\RE}[1]{\mathrm{Re}\left( #1 \right)}
+\newcommand{\IM}[1]{\mathrm{Im}\left( #1 \right)}
+\newcommand{\conj}[1]{\overline{#1}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\Arg}[1]{\text{Arg}\left( #1 \right)}
+\newcommand{\Log}{\text{Log}}
+
+\newcommand{\dist}{\operatorname{dist}}

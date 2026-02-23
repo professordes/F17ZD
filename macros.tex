@@ -1,0 +1,321 @@
+%%% The macro file where all style boxes are defined. 
+%%% We should make sure we get this right before we distribute more widely.
+%%% We should also clean this up a little. It's a working mess that I threw together as I needed
+%%% Compiled by Thomas Wong, 2020
+
+\usepackage{amsmath,amssymb,amsthm}%,import,dashrule}
+
+\usepackage{graphicx}
+
+\usepackage{multicol}
+\usepackage{pifont}
+\usepackage{amsfonts}
+\usepackage{aliascnt}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\usepackage{enumitem}
+\usepackage{lmodern,textcomp}%fonts
+
+%\usepackage{gensymb} %for degree symbol
+
+\usepackage{tikz}
+\usetikzlibrary{fit,shapes}
+\usetikzlibrary{plotmarks}
+\usepackage{pgfplots}
+
+\usepackage[RPvoltages]{circuitikz} %drawing circuits
+\usepackage[hypcap=false]{caption} %captioning figures
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+\usepackage[titles]{tocloft}
+\usepackage[paper=letterpaper,left=25mm,right=25mm,top=3cm,bottom=25mm]{geometry}
+\usepackage{parskip}
+
+\newcommand{\diag}{\operatorname{diag}}
+
+\usepackage{colortbl}
+\usepackage{color}   %May be necessary if you want to color links
+
+\newcommand{\blue}{blue}
+\newcommand{\red}{red}
+\newcommand{\brown}{brown}
+\newcommand{\green}{green}
+\newcommand{\yellow}{yellow}
+\newcommand{\gray}{gray!30}
+\newcommand{\darkgray}{gray!60}
+\newcommand{\black}{black}
+\newcommand{\white}{white}
+\newcommand{\graphcolour}{red}
+
+\colorlet{lblue}{\blue!45!white}
+\colorlet{lred}{\red!50!white}
+\colorlet{lblue1}{\blue!10!white}
+\colorlet{lred1}{\red!10!white}
+\colorlet{lblue2}{\blue!45!white!50!\black}
+
+\newcommand{\vv}[1]{\underline{#1}}
+\newcommand{\vi}{\underline{i}}
+\newcommand{\vj}{\underline{j}}
+\newcommand{\vk}{\underline{k}}
+
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=lblue!50!black,  %choose some color if you want links to stand out
+		filecolor=lblue!50!black,
+		urlcolor=lblue!50!black,
+		pdfnewwindow=true,
+		hypertexnames=false,
+}
+
+\usepackage{polynom}
+\usepackage[]{geometry}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{rotating}
+
+\usepackage{tcolorbox}
+\usepackage{varwidth}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\usepackage{chngcntr}%changes counter
+\counterwithin*{figure}{section}
+
+%creating QR codes
+\usepackage{marginnote}
+\usepackage{qrcode}
+
+%writing code
+\usepackage{verbatim}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setcounter{section}{-1}
+%\setlength{\cftbeforechapskip}{2ex}
+\setlength{\cftbeforesecskip}{0.1ex}
+\setcounter{tocdepth}{2}
+\pagestyle{fancyplain}
+\numberwithin{equation}{section}
+ 
+\theoremstyle{definition}
+\newtheorem{cou}{counting}[section]
+
+\newaliascnt{df}{cou}
+\newaliascnt{thm}{cou}
+\newaliascnt{example}{cou}
+\newaliascnt{exercise}{cou}
+
+%\newtheorem{df}[df]{Definition}
+%\newtheorem{thm}[thm]{Theorem}
+%\newtheorem{example}[example]{Example}
+%\newtheorem{exercise}[exercise]{Exercise}
+
+%\newtcolorbox[use counter=thm,number within=section]{thm}[2][]{%
+%fonttitle=\bfseries,
+%title= Theorem \thethm\; #2,#1}
+
+\newtcolorbox[use counter=exercise,number within=section]{exercise}[2][]{%
+fonttitle=\bfseries,
+colbacktitle=lblue!60!black,
+title= Exercise \theexercise\; #2,#1}
+
+\newtcolorbox[use counter=df,number within=section]{df}[2][]{enhanced,
+colbacktitle=\blue,
+boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=tcbcolback!30!black]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,middle color=tcbcolback!60!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+}
+,interior engine=empty,
+},
+fonttitle=\bfseries,
+title=Definition \thedf\; {#2},#1}
+
+\newtcolorbox[use counter=thm,number within=section]{thm}[2][]{
+enhanced,
+%skin=enhancedlast jigsaw,
+attach boxed title to top left={xshift=-4mm,yshift=-0.5mm},
+fonttitle=\bfseries\sffamily,varwidth boxed title=0.7\linewidth,
+colbacktitle=lblue!60!black,colframe=lblue!60!black,
+%interior style={top color=lblue1,bottom color=lred1},
+boxed title style={empty,arc=0pt,outer arc=0pt,boxrule=0pt},
+underlay boxed title={
+\fill[lblue!80!black] (title.north west) -- (title.north east)
+-- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)
+-- ([xshift=4mm,yshift=0.5mm]frame.north east) -- +(0mm,-1mm)
+-- (title.south west) -- cycle;
+\fill[lblue2] ([yshift=-0.5mm]frame.north west)
+-- +(-0.4,0) -- +(0,-0.3) -- cycle;
+\fill[lblue2] ([yshift=-0.5mm]frame.north east)
+-- +(0,-0.3) -- +(0.4,0) -- cycle; 
+},
+title= Theorem \thethm\; {#2},#1}
+
+%\thetcbcounter
+
+\newtcolorbox[use counter=example,number within=section]{example}[1][]{%
+empty,title={Example \theexample},attach boxed title to top left,
+boxed title style={empty,size=minimal,toprule=2pt,top=4pt,
+overlay={\draw[lblue!60!black,line width=2pt]
+([yshift=-1pt]frame.north west)--([yshift=-1pt]frame.north east);}},
+coltitle=lblue!60!black,fonttitle=\bfseries,
+before=\par\medskip\noindent,parbox=false,boxsep=0pt,left=0pt,right=3mm,top=4pt,
+breakable,pad at break*=0mm,vfill before first,
+overlay unbroken={\draw[lblue,line width=1pt]
+([yshift=-1pt]title.north east)--([xshift=-0.5pt,yshift=-1pt]title.north-|frame.east)
+--([xshift=-0.5pt]frame.south east)--(frame.south west); },
+overlay first={\draw[lblue,line width=1pt]
+([yshift=-1pt]title.north east)--([xshift=-0.5pt,yshift=-1pt]title.north-|frame.east)
+--([xshift=-0.5pt]frame.south east); },
+overlay middle={\draw[lblue,line width=1pt] ([xshift=-0.5pt]frame.north east)
+--([xshift=-0.5pt]frame.south east); },
+overlay last={\draw[lblue,line width=1pt] ([xshift=-0.5pt]frame.north east)
+--([xshift=-0.5pt]frame.south east)--(frame.south west);},#1%
+}
+
+
+
+
+\aliascntresetthe{df}
+\aliascntresetthe{thm}
+\aliascntresetthe{example}
+\aliascntresetthe{exercise}
+
+\newcommand*{\dfautorefname}{Definition}
+\newcommand*{\thmautorefname}{Theorem}
+\newcommand*{\exampleautorefname}{Example}
+\newcommand*{\exerciseautorefname}{Exercise}
+\renewcommand*{\sectionautorefname}{Section}
+\renewcommand*{\subsectionautorefname}{Section}
+
+\newtcolorbox{solution}{
+empty,
+breakable,left=5mm,right=5mm,
+borderline west={1mm}{0pt}{\blue!60!black},
+borderline east={1mm}{0pt}{\blue!60!black},
+title= {Solution:\:\:},
+attach title to upper,
+fonttitle=\bfseries,
+coltitle = black,
+}
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+
+\renewcommand*\contentsname{Contents}
+
+\newcommand{\sitem}[1]{\begin{itemize}[noitemsep,nolistsep] #1 \end{itemize}}
+\newcommand{\senum}[1]{\begin{enumerate}[noitemsep,nolistsep] #1 \end{enumerate}}
+\newcommand{\tom}[1]{({\bf Tom:} \emph{#1})}
+\newcommand{\defn}[1]{\begin{center} \emph{#1} \end{center}}
+\newcommand{\pic}[2][0.7]{
+\begin{center}
+	\includegraphics[width=#1\textwidth]{images/#2}
+\end{center}
+}
+
+%setting QR links
+\newcommand{\qrlink}[2][]{\marginnote{\qrcode[height=0.9\marginparwidth,#1]{#2}}}%[-0.5cm]}
+
+
+%Create option arguments for pmatrix - to form augmented matrices
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+
+
+
+
+%\AtBeginDocument{%
+% \abovedisplayshortskip=0pt
+% \belowdisplayskip=0pt
+% \belowdisplayshortskip=0pt
+%}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\newcommand{\caution}{\begin{tikzpicture}[scale=1,baseline=0cm] %\scriptsize
+	\path[rounded corners,draw=\yellow!50!\red,fill=none,thick]  (-0.25,0) -- (0.25,0) -- (0,0.433) -- cycle;
+	\path[rounded corners=0.5mm,draw=none,fill=\yellow!60,thick]  (-0.19,0.04) -- (0.19,0.04) -- (0,0.37) -- cycle;
+	\draw[draw=\yellow!20!\red,fill=none,thick]  (0,0.07) -- (0,0.1)  (0,0.12) -- (0,0.28);
+\end{tikzpicture}}
+
+\newcommand{\question}{
+\tikz[baseline=(wi.base)]{
+\node[fill=black,rotate=45,inner sep=.1ex,text height=1.8ex,text width=1.8ex] {};
+\node[font=\color{white}] (wi) {?};
+}	
+}
+
+\usepackage{xcolor}
+
+\newcommand{\hl}[2][\gray]{%
+  \colorbox{#1}{#2}}
+
+%%
+\usepackage{pgfplots,mathtools}
+\pgfplotsset{compat=1.7}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+%%Importing tutorial questions
+\usepackage{catchfilebetweentags}
+\newtoks\temptoken
+
+\usepackage[lastexercise,answerdelayed]{exercise}  
+\renewcommand{\QuestionNB}{(\alph{Question})\ }
+%\renewcommand{\subQuestionNB}{\roman{subQuestion})}
+\renewcommand{\ExerciseHeader}{\textbf{\theExercise.} \hspace{-4mm} \textbf{\ExerciseHeaderTitle}}
+\renewcommand{\AnswerHeader}{\textbf{\theExercise.}  \hspace{-4mm} \textbf{\ExerciseHeaderTitle}}
+\setlength{\ExerciseSkipBefore}{-0.8ex}
+\setlength{\AnswerSkipBefore}{-3ex}
+\setlength{\QuestionBefore}{-1ex}
+
+\renewcounter{Exercise}[subsection]% Reset counter.
+\renewcommand{\theExercise}{\thesubsection.\arabic{Exercise}}%
+
+\newcommand{\multicolq}[2][3]{
+\begin{multicols*}{#1}
+#2
+\EndCurrentQuestion
+\end{multicols*}
+}
+
+\newcommand{\multicolqq}[2][3]{
+\begin{multicols*}{#1}
+#2
+\EndCurrentsubQuestion
+\end{multicols*}
+}
+
+\newcommand{\tutorial}[1]{
+\subsubsection*{Tutorial Exercises for \thesubsection} 
+
+\medskip 
+
+\ExecuteMetaData[\tutorialsheetlocation]{#1}
+
+\vspace*{-1ex} \hspace*{\fill} \hyperref[A:answers]{(Answers)}
+}

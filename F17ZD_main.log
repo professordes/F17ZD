@@ -1,0 +1,3357 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2026.2.2)  23 FEB 2026 15:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\AddToHook{class/before}{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documents
+tyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\e
+ndcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\
+documentstyle[tex4ht]}}}\makeatother\HCode xhtml,svg,charset=utf-8,html5.a.b.c.
+\input "\detokenize{F17ZD_main.tex}"
+(./F17ZD_main.tex (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2021-09-14-14:11
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks16
+) (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+version 2022-01-11-14:12
+) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (./macros-lehel.tex (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.
+sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen139
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks18
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks28
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics-hooks.4ht
+version 2020-10-17-13:53
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 107.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count271
+\mult@box=\box52
+\multicol@leftmargin=\dimen150
+\c@unbalance=\count272
+\c@collectmore=\count273
+\doublecol@number=\count274
+\multicoltolerance=\count275
+\multicolpretolerance=\count276
+\full@width=\dimen151
+\page@free=\dimen152
+\premulticols=\dimen153
+\postmulticols=\dimen154
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box53
+\last@line=\box54
+\maxbalancingoverflow=\dimen155
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count277
+\c@columnbadness=\count278
+\c@finalcolumnbadness=\count279
+\last@try=\dimen156
+\multicolovershoot=\dimen157
+\multicolundershoot=\dimen158
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count280
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/fancyhdr-hooks.4ht
+version 2020-10-17-13:53
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip66
+\enit@outerparindent=\dimen159
+\enit@toks=\toks29
+\enit@inbox=\box97
+\enit@count@id=\count281
+\enitdp@description=\count282
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tikz-hooks.4ht
+version 2021-10-21-13:56
+*****************************
+TeX4ht info: Using dvisvgm4ht TikZ driver. Put \def \pgfsysdriver {driver-name}
+ to your document before use of TikZ if you want to another driver. Use tikz+ o
+ption if your TikZ pictures use patterns.
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/sha
+re/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texm
+f-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/ge
+neric/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen160
+\pgfutil@tempdimb=\dimen161
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box98
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/us
+r/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share
+/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/te
+xmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen162
+\pgf@y=\dimen163
+\pgf@xa=\dimen164
+\pgf@ya=\dimen165
+\pgf@xb=\dimen166
+\pgf@yb=\dimen167
+\pgf@xc=\dimen168
+\pgf@yc=\dimen169
+\pgf@xd=\dimen170
+\pgf@yd=\dimen171
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count287
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-dvisvgm4ht.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvisvgm4ht.de
+f
+File: pgfsys-dvisvgm4ht.def 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
+File: pgfsys-dvips.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postsc
+ript.def
+File: pgfsys-common-postscript.def 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@objectcount=\count288
+))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count289
+\pgfsyssoftpath@bigbuffer@items=\count290
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
+version 2020-10-17-13:53
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2021/10/31 v2.13 Predefined colors according to SVG 1.1 (UK)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/shar
+e/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texl
+ive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/t
+exmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count291
+\pgfmath@box=\box99
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmat
+hfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count292
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box100
+\pgf@hbox=\box101
+\pgf@layerbox@main=\box102
+\pgf@picture@serial@count=\count293
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen191
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen196
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box103
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box104
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen197
+\pgf@nodesepend=\dimen198
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/shar
+e/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/te
+xmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf
+-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic
+/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/uti
+lities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count296
+\pgfplotmarksize=\dimen257
+)
+\tikz@lastx=\dimen258
+\tikz@lasty=\dimen259
+\tikz@lastxsaved=\dimen260
+\tikz@lastysaved=\dimen261
+\tikz@lastmovetox=\dimen262
+\tikz@lastmovetoy=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
+\tikz@figbox=\box105
+\tikz@figbox@bg=\box106
+\tikz@tempbox=\box107
+\tikz@tempbox@bg=\box108
+\tikztreelevel=\count297
+\tikznumberofchildren=\count298
+\tikznumberofcurrentchild=\count299
+\tikz@fig@count=\count300
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count301
+\pgfmatrixcurrentcolumn=\count302
+\pgf@matrix@numberofcolumns=\count303
+)
+\tikz@expandcount=\count304
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box109
+\pgfnodeparttwobox=\box110
+\pgfnodepartthreebox=\box111
+\pgfnodepartfourbox=\box112
+\pgfnodeparttwentybox=\box113
+\pgfnodepartnineteenbox=\box114
+\pgfnodeparteighteenbox=\box115
+\pgfnodepartseventeenbox=\box116
+\pgfnodepartsixteenbox=\box117
+\pgfnodepartfifteenbox=\box118
+\pgfnodepartfourteenbox=\box119
+\pgfnodepartthirteenbox=\box120
+\pgfnodeparttwelvebox=\box121
+\pgfnodepartelevenbox=\box122
+\pgfnodeparttenbox=\box123
+\pgfnodepartninebox=\box124
+\pgfnodeparteightbox=\box125
+\pgfnodepartsevenbox=\box126
+\pgfnodepartsixbox=\box127
+\pgfnodepartfivebox=\box128
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen266
+\pgfdecoratedremainingdistance=\dimen267
+\pgfdecoratedinputsegmentcompleteddistance=\dimen268
+\pgfdecoratedinputsegmentremainingdistance=\dimen269
+\pgf@decorate@distancetomove=\dimen270
+\pgf@decorate@repeatstate=\count305
+\pgfdecorationsegmentamplitude=\dimen271
+\pgfdecorationsegmentlength=\dimen272
+)
+\tikz@lib@dec@box=\box129
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/te
+xlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tikz-hooks.4ht
+version 2021-10-21-13:56
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/s
+hare/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen273
+\c@pgfplots@coordindex=\count306
+\c@pgfplots@scanlineindex=\count307
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count308
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count309
+\t@pgfplotstable@a=\toks45
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count310
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (
+/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex)
+\pgfplots@numplots=\count311
+\pgfplots@xmin@reg=\dimen274
+\pgfplots@xmax@reg=\dimen275
+\pgfplots@ymin@reg=\dimen276
+\pgfplots@ymax@reg=\dimen277
+\pgfplots@zmin@reg=\dimen278
+\pgfplots@zmax@reg=\dimen279
+)) (/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2021/12/06{} The CircuiTikz circuit drawing package version
+ 1.4.5
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tikz-hooks.4ht
+version 2021-10-21-13:56
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen280
+\pgfarrowlength=\dimen281
+\pgfarrowwidth=\dimen282
+\pgfarrowlinewidth=\dimen283
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.te
+x
+File: pgfmodulebending.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransf
+ormations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgftransformnonlinearflatness=\dimen284
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.
+code.tex
+File: pgflibrarycurvilinear.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@curvilinear@time@a=\dimen285
+\pgf@curvilinear@length@a=\dimen286
+\pgf@curvilinear@length@b=\dimen287
+\pgf@curvilinear@length@c=\dimen288
+\pgf@curvilinear@length@d=\dimen289
+)
+\pgf@arrows@the@rigidity=\dimen290
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfpu.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgf
+circ.defines.tex
+\pgf@circ@count@a=\count312
+\pgf@circ@count@b=\count313
+\pgf@circ@count@c=\count314
+\pgf@circ@res@up=\dimen291
+\pgf@circ@res@down=\dimen292
+\pgf@circ@res@zero=\dimen293
+\pgf@circ@res@left=\dimen294
+\pgf@circ@res@right=\dimen295
+\pgf@circ@res@other=\dimen296
+\pgf@circ@res@step=\dimen297
+\pgf@circ@res@temp=\dimen298
+\pgf@circ@Rlen=\dimen299
+\pgf@circ@scaled@Rlen=\dimen300
+\pgfstartlinewidth=\dimen301
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
+\ctikz@scratchbox=\box130
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex) (/usr/
+share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/share/
+texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/tex
+live/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texlive/
+texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count315
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (
+/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/u
+sr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/shar
+e/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen302
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/u
+sr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)) (/usr/shar
+e/texlive/texmf-dist/tex/generic/tex4ht/caption-hooks.4ht
+version 2021-05-16-09:21
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen303
+\captionmargin@=\dimen304
+\captionwidth=\dimen305
+\caption@tempdima=\dimen306
+\caption@indent=\dimen307
+\caption@parindent=\dimen308
+\caption@hangindent=\dimen309
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count316
+\c@continuedfloat=\count317
+) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip67
+\cftbeforetoctitleskip=\skip68
+\cftaftertoctitleskip=\skip69
+\cftbeforepartskip=\skip70
+\cftpartnumwidth=\skip71
+\cftpartindent=\skip72
+\cftbeforesecskip=\skip73
+\cftsecindent=\skip74
+\cftsecnumwidth=\skip75
+\cftbeforesubsecskip=\skip76
+\cftsubsecindent=\skip77
+\cftsubsecnumwidth=\skip78
+\cftbeforesubsubsecskip=\skip79
+\cftsubsubsecindent=\skip80
+\cftsubsubsecnumwidth=\skip81
+\cftbeforeparaskip=\skip82
+\cftparaindent=\skip83
+\cftparanumwidth=\skip84
+\cftbeforesubparaskip=\skip85
+\cftsubparaindent=\skip86
+\cftsubparanumwidth=\skip87
+\cftbeforeloftitleskip=\skip88
+\cftafterloftitleskip=\skip89
+\cftbeforefigskip=\skip90
+\cftfigindent=\skip91
+\cftfignumwidth=\skip92
+\c@lofdepth=\count318
+\c@lotdepth=\count319
+\cftbeforelottitleskip=\skip93
+\cftafterlottitleskip=\skip94
+\cftbeforetabskip=\skip95
+\cfttabindent=\skip96
+\cfttabnumwidth=\skip97
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count320
+\Gm@cntv=\count321
+\c@Gm@tempcnt=\count322
+\Gm@bindingoffset=\dimen310
+\Gm@wd@mp=\dimen311
+\Gm@odd@mp=\dimen312
+\Gm@even@mp=\dimen313
+\Gm@layoutwidth=\dimen314
+\Gm@layoutheight=\dimen315
+\Gm@layouthoffset=\dimen316
+\Gm@layoutvoffset=\dimen317
+\Gm@dimlist=\toks46
+) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count323
+)) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen318
+\ar@mcellbox=\box131
+\extrarowheight=\dimen319
+\NC@list=\toks47
+\extratabsurround=\skip98
+\backup@length=\skip99
+\ar@cellbox=\box132
+)
+\everycr=\toks48
+\minrowclearance=\skip100
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/hyperref-hooks.4ht
+version 2021-12-11-13:37
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+)
+\@linkdim=\dimen320
+\Hy@linkcounter=\count324
+\Hy@pagecounter=\count325
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count326
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count327
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen321
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count328
+\Field@Width=\dimen322
+\Fld@charsize=\dimen323
+\Field@toks=\toks49
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count329
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver: htex4ht.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2021-06-07 v7.00m Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count330
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 81.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 81.
+(/usr/share/texlive/texmf-dist/tex/latex/polynom/polynom.sty
+Package: polynom 2017/07/17 0.19 (CH,HA)
+\pld@currstage=\count331
+) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics-hooks.4ht
+version 2020-10-17-13:53
+))
+Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count332
+\rotFPtop=\skip101
+\rotFPbot=\skip102
+\rot@float@box=\box133
+\rot@mess@toks=\toks50
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks51
+\verbatim@line=\toks52
+\verbatim@in@stream=\read3
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box134
+\tcb@upperbox=\box135
+\tcb@lowerbox=\box136
+\tcb@phantombox=\box137
+\c@tcbbreakpart=\count333
+\c@tcblayer=\count334
+\c@tcolorbox@number=\count335
+\tcb@temp=\box138
+\tcb@temp=\box139
+\tcb@temp=\box140
+\tcb@temp=\box141
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box142
+\sift@deathcycles=\count336
+\@vwid@loff=\dimen324
+\@vwid@roff=\dimen325
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '5.0.2'
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tikz-hooks.4ht
+version 2021-10-21-13:56
+)
+\tcb@waterbox=\box143
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box144
+\tcb@totalupperbox=\box145
+\tcb@totallowerbox=\box146
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadings.code.tex
+File: tikzlibraryshadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryshadings.cod
+e.tex
+File: pgflibraryshadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+) (/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count337
+) (/usr/share/texlive/texmf-dist/tex/latex/qrcode/qrcode.sty
+Package: qrcode 2015/01/08 v1.51 QR code generation
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
+version 2020-10-17-13:53
+) (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
+ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks53
+\XKV@tempa@toks=\toks54
+)
+\XKV@depth=\count338
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@qr@i=\count339
+\c@qr@j=\count340
+\qr@a=\count341
+\qr@b=\count342
+\qr@c=\count343
+\qr@for@depth=\count344
+\qr@for@maxdepth=\count345
+\qr@for@start=\count346
+\qr@for@end=\count347
+\qr@for@step=\count348
+\qr@newforcount=\count349
+\qr@newforcount=\count350
+\qr@desiredheight=\skip103
+\qr@modulesize=\skip104
+\qr@minipagewidth=\skip105
+\c@maski=\count351
+\c@maskj=\count352
+\c@totalones=\count353
+\c@penaltyi=\count354
+\c@penaltyii=\count355
+\c@penaltyiii=\count356
+\c@penaltyiv=\count357
+\c@qr@hexchars=\count358
+\qr@newforcount=\count359
+\c@qr@divisionsremaining=\count360
+)
+\c@cou=\count361
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
+version 2020-10-17-13:53
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count362
+\calc@Bcount=\count363
+\calc@Adimen=\dimen326
+\calc@Bdimen=\dimen327
+\calc@Askip=\skip106
+\calc@Bskip=\skip107
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count364
+\calc@Cskip=\skip108
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count365
+\l_MT_multwidth_dim=\dimen328
+\origjot=\skip109
+\l_MT_shortvdotswithinadjustabove_dim=\dimen329
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen330
+\l_MT_above_intertext_sep=\dimen331
+\l_MT_below_intertext_sep=\dimen332
+\l_MT_above_shortintertext_sep=\dimen333
+\l_MT_below_shortintertext_sep=\dimen334
+\xmathstrut@box=\box147
+\xmathstrut@dim=\dimen335
+)
+(/usr/share/texlive/texmf-dist/tex/latex/catchfilebetweentags/catchfilebetweent
+ags.sty
+Package: catchfilebetweentags 2011/02/19 v1.1 - Catch file between tags (FC)
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
+
+Package etex Warning: Extended allocation already in use.
+(etex)                etex.sty code will not be used.
+(etex)                To force etex package to load, add
+(etex)                \RequirePackage{etex}
+(etex)                at the start of the document.
+
+) (/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+\CatchFBT@tok=\toks55
+)
+\temptoken=\toks56
+(/usr/share/texlive/texmf-dist/tex/latex/exercise/exercise.sty
+Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
+\ExerciseSkipBefore=\skip110
+\ExerciseSkipAfter=\skip111
+\AnswerSkipBefore=\skip112
+\AnswerSkipAfter=\skip113
+\Exesep=\skip114
+\Exetopsep=\skip115
+\Exeparsep=\skip116
+\Exepartopsep=\skip117
+\Exeleftmargin=\skip118
+\Exerightmargin=\skip119
+\Exelabelwidth=\skip120
+\Exelabelsep=\skip121
+\ExerciseBefore=\skip122
+\QuestionBefore=\skip123
+\subQuestionBefore=\skip124
+\subsubQuestionBefore=\skip125
+\QuestionIndent=\skip126
+\subQuestionIndent=\skip127
+\subsubQuestionIndent=\skip128
+\c@Exercise=\count366
+\c@Answer=\count367
+\c@ExePart=\count368
+\c@Question=\count369
+\c@subQuestion=\count370
+\c@subsubQuestion=\count371
+\c@savedQuestion=\count372
+\c@savedsubQuestion=\count373
+\c@savedsubsubQuestion=\count374
+\@QuestionLevel=\count375
+\@Exercisebox=\box148
+\all@Exercisebox=\box149
+\temp@Exercisebox=\box150
+\all@Answerbox=\box151
+\temp@Answerbox=\box152
+\ExerciseDifficulty=\count376
+\QuestionDifficulty=\count377
+\subQuestionDifficulty=\count378
+\subsubQuestionDifficulty=\count379
+\ExePartDifficulty=\count380
+\@Answerbox=\box153
+\colonnesLevel=\count381
+\tempskipa=\skip129
+\tempskipb=\skip130
+\@savedmathindent=\skip131
+) (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)) (./notations.tex (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tikz-hook
+s.4ht
+version 2021-10-21-13:56
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen336
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/comme
+nt/comment.sty
+\CommentStream=\write4
+Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/
+tex4ht.4ht
+version 2021-06-20-15:33
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2021-09-14-14:11
+l.855 --- TeX4ht warning --- nonprimitive \everypar ---
+--- needs --- tex4ht F17ZD_main ---
+\tmp:cnt=\count382
+\openout15 = `F17ZD_main.tmp'.
+
+(./F17ZD_main.tmp)
+\tmp:dim=\skip132
+(./F17ZD_main.xref)
+\:refout=\write5
+\openout5 = `F17ZD_main.xref'.
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: xhtml,svg,charset=utf-8,html5,html
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+--------------------------------------
+--- Note --- for external SVG files try the command line options `svg-obj' and 
+'svg-'
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+)
+\:tokwrite=\toks57
+\:tokpage=\toks58
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `F17ZD_main.4ct'.
+
+\:tocout=\write6
+\openout6 = `F17ZD_main.4tc'.
+
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2022-02-01-14:27
+LaTeX Info: Redefining \_ on input line 173.
+LaTeX Info: Redefining \, on input line 792.
+LaTeX Info: Redefining \; on input line 793.
+LaTeX Info: Redefining \! on input line 794.
+LaTeX Info: Redefining \: on input line 795.
+LaTeX Info: Redefining \> on input line 796.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2018-11-06-15:55
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/array.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2022-02-01-14:27
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/colortbl.4ht
+version 2021-05-06-14:12
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
+version 2020-10-17-13:53
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/article.4ht
+version 2021-05-16-09:21
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2019-12-29-14:17
+\tmp:muskip=\muskip18
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+LaTeX Info: Redefining \[ on input line 504.
+LaTeX Info: Redefining \] on input line 504.
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsthm.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2022-01-12-13:53
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics.4ht
+version 2021-08-12-13:49
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/multicol.4ht
+version 2021-06-20-09:36
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pifont.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/enumitem.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pgf.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor.4ht
+version 2019-04-09-10:06
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/color.4ht
+version 2022-02-01-14:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svgnam.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def) (/usr/share/texlive
+/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/caption.4ht
+version 2021-10-19-14:11
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tocloft.4ht
+version 2014-07-13-16:08
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/geometry.4ht
+version 2016-07-01-08:55
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+version 2021-05-16-13:57
+LaTeX Info: Redefining \autoref on input line 88.
+\Hy@SectionHShift=\skip133
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/url.4ht
+version 2022-01-02-14:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/ifthen.4ht
+version 2022-01-02-14:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2021-02-03-14:57
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/rotating.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tcolorbox.4ht
+version 2022-01-28-15:00
+\c@:tcbcolcount=\count383
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/verbatim.4ht
+version 2021-07-04-09:13
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathtools.4ht
+version 2021-06-20-09:36
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dsfont.4ht
+version 2009-05-21-09:32
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2022-02-03-14:35
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2021-06-19-14:11
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+version 2022-01-23-07:51
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+26.
+(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
+\l__pdf_internal_box=\box154
+\g__pdf_backend_object_int=\count384
+\l__pdf_backend_content_box=\box155
+\l__pdf_backend_model_box=\box156
+\g__pdf_backend_annotation_int=\count385
+\g__pdf_backend_link_int=\count386
+\g__pdf_backend_link_sf_int=\count387
+) (./F17ZD_main.aux (./T04-complex-iterates.aux) (./T04b-quaternions.aux) (./T0
+5-vectors2.aux
+
+LaTeX Warning: Label `rem' multiply defined.
+
+
+LaTeX Warning: Label `rem' multiply defined.
+
+) (./T06-vector-spaces.aux
+
+LaTeX Warning: Label `ex:2.2.2' multiply defined.
+
+) (./T07-homogeneous.aux) (./T08-matrix-rank.aux) (./T09-matrix-eigenvalue.aux)
+(./T10-matrix-stochastic.aux))
+\openout1 = `F17ZD_main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.18} (current compat level: 1.7).
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 638.47984pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=638.47984pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-26.91173pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Couldn't patch \deferred@thm@head!
+Package hyperref Info: Link coloring ON on input line 26.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
+--- file F17ZD_main.css ---
+(./cover-content.tex
+l. 10 Writing F17ZD_main.idv[1] (F17ZD_main0x.svg)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+1.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+1.
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+11.
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+11.
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
+.
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 35.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 35.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 35.
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
+53.
+(/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) [0
+
+]
+Package marginnote Info: Using workaround for absolute page number on input lin
+e 30.
+[1]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+32.
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (./F17ZD_main.4ct
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
+4.
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [2]) [3] [4] [5]
+\openout2 = `T04-complex-iterates.aux'.
+
+(./T04-complex-iterates.tex
+l. 18 Writing F17ZD_main.idv[2] (F17ZD_main1x.svg)
+[6
+
+]
+l. 22 Writing F17ZD_main.idv[3] (F17ZD_main2x.svg)
+l. 26 Writing F17ZD_main.idv[4] (F17ZD_main3x.svg)
+[7]
+l. 32 Writing F17ZD_main.idv[5] (F17ZD_main4x.svg)
+l. 32 Writing F17ZD_main.idv[6] (F17ZD_main5x.svg)
+l. 40 Writing F17ZD_main.idv[7] (F17ZD_main6x.svg)
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 40.
+l. 43 Writing F17ZD_main.idv[8] (F17ZD_main7x.svg)
+l. 43 Writing F17ZD_main.idv[9] (F17ZD_main8x.svg)
+l. 45 Writing F17ZD_main.idv[10] (F17ZD_main9x.svg)
+[8]
+l. 47 Writing F17ZD_main.idv[11] (F17ZD_main10x.svg)
+l. 47 Writing F17ZD_main.idv[12] (F17ZD_main11x.svg)
+l. 60 Writing F17ZD_main.idv[13] (F17ZD_main12x.svg)
+l. 62 Writing F17ZD_main.idv[14] (F17ZD_main13x.svg)
+[9] [10] [11] [12]
+l. 134 Writing F17ZD_main.idv[15] (F17ZD_main14x.svg)
+[13] [14]
+--- file F17ZD_main2.html ---
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 137.
+l. 137 Writing F17ZD_main.idv[16] (F17ZD_main15x.svg)
+l. 137 Writing F17ZD_main.idv[17] (F17ZD_main16x.svg)
+l. 137 Writing F17ZD_main.idv[18] (F17ZD_main17x.svg)
+l. 137 Writing F17ZD_main.idv[19] (F17ZD_main18x.svg)
+l. 143 Writing F17ZD_main.idv[20] (F17ZD_main19x.svg)
+l. 146 Writing F17ZD_main.idv[21] (F17ZD_main20x.svg)
+l. 146 Writing F17ZD_main.idv[22] (F17ZD_main21x.svg)
+l. 146 Writing F17ZD_main.idv[23] (F17ZD_main22x.svg)
+l. 146 Writing F17ZD_main.idv[24] (F17ZD_main23x.svg)
+l. 148 Writing F17ZD_main.idv[25] (F17ZD_main24x.svg)
+l. 156 Writing F17ZD_main.idv[26] (F17ZD_main25x.svg)
+[15
+
+]
+l. 162 Writing F17ZD_main.idv[27] (F17ZD_main26x.svg)
+l. 169 Writing F17ZD_main.idv[28] (F17ZD_main27x.svg)
+l. 169 Writing F17ZD_main.idv[29] (F17ZD_main28x.svg)
+l. 169 Writing F17ZD_main.idv[30] (F17ZD_main29x.svg)
+l. 169 Writing F17ZD_main.idv[31] (F17ZD_main30x.svg)
+l. 169 Writing F17ZD_main.idv[32] (F17ZD_main31x.svg)
+l. 169 Writing F17ZD_main.idv[33] (F17ZD_main32x.svg)
+l. 169 Writing F17ZD_main.idv[34] (F17ZD_main33x.svg)
+l. 169 Writing F17ZD_main.idv[35] (F17ZD_main34x.svg)
+l. 170 Writing F17ZD_main.idv[36] (F17ZD_main35x.svg)
+l. 173 Writing F17ZD_main.idv[37] (F17ZD_main36x.svg)
+l. 173 Writing F17ZD_main.idv[38] (F17ZD_main37x.svg)
+[16] [17]
+l. 180 Writing F17ZD_main.idv[39] (F17ZD_main38x.svg)
+l. 188 Writing F17ZD_main.idv[40] (F17ZD_main39x.svg)
+l. 188 Writing F17ZD_main.idv[41] (F17ZD_main40x.svg)
+l. 188 Writing F17ZD_main.idv[42] (F17ZD_main41x.svg)
+l. 188 Writing F17ZD_main.idv[43] (F17ZD_main42x.svg)
+l. 188 Writing F17ZD_main.idv[44] (F17ZD_main43x.svg)
+l. 188 Writing F17ZD_main.idv[45] (F17ZD_main44x.svg)
+[18]
+l. 193 Writing F17ZD_main.idv[46] (F17ZD_main45x.svg)
+l. 201 Writing F17ZD_main.idv[47] (F17ZD_main46x.svg)
+l. 201 Writing F17ZD_main.idv[48] (F17ZD_main47x.svg)
+l. 201 Writing F17ZD_main.idv[49] (F17ZD_main48x.svg)
+l. 201 Writing F17ZD_main.idv[50] (F17ZD_main49x.svg)
+l. 201 Writing F17ZD_main.idv[51] (F17ZD_main50x.svg)
+l. 201 Writing F17ZD_main.idv[52] (F17ZD_main51x.svg)
+[19]
+l. 205 Writing F17ZD_main.idv[53] (F17ZD_main52x.svg)
+l. 208 Writing F17ZD_main.idv[54] (F17ZD_main53x.svg)
+l. 212 Writing F17ZD_main.idv[55] (F17ZD_main54x.svg)
+[20]
+l. 225 Writing F17ZD_main.idv[56] (F17ZD_main55x.svg)
+l. 225 Writing F17ZD_main.idv[57] (F17ZD_main56x.svg)
+l. 225 Writing F17ZD_main.idv[58] (F17ZD_main57x.svg)
+l. 225 Writing F17ZD_main.idv[59] (F17ZD_main58x.svg)
+l. 225 Writing F17ZD_main.idv[60] (F17ZD_main59x.svg)
+l. 225 Writing F17ZD_main.idv[61] (F17ZD_main60x.svg)
+l. 225 Writing F17ZD_main.idv[62] (F17ZD_main61x.svg)
+l. 225 Writing F17ZD_main.idv[63] (F17ZD_main62x.svg)
+l. 225 Writing F17ZD_main.idv[64] (F17ZD_main63x.svg)
+l. 234 Writing F17ZD_main.idv[65] (F17ZD_main64x.svg)
+[21] [22] [23]
+l. 245 Writing F17ZD_main.idv[66] (F17ZD_main65x.svg)
+l. 262 Writing F17ZD_main.idv[67] (F17ZD_main66x.svg)
+l. 262 Writing F17ZD_main.idv[68] (F17ZD_main67x.svg)
+l. 262 Writing F17ZD_main.idv[69] (F17ZD_main68x.svg)
+l. 262 Writing F17ZD_main.idv[70] (F17ZD_main69x.svg)
+[24]
+l. 269 Writing F17ZD_main.idv[71] (F17ZD_main70x.svg)
+[25]
+l. 292 Writing F17ZD_main.idv[72] (F17ZD_main71x.svg)
+l. 292 Writing F17ZD_main.idv[73] (F17ZD_main72x.svg)
+l. 292 Writing F17ZD_main.idv[74] (F17ZD_main73x.svg)
+l. 292 Writing F17ZD_main.idv[75] (F17ZD_main74x.svg)
+[26]
+l. 306 Writing F17ZD_main.idv[76] (F17ZD_main75x.svg)
+l. 306 Writing F17ZD_main.idv[77] (F17ZD_main76x.svg)
+l. 306 Writing F17ZD_main.idv[78] (F17ZD_main77x.svg)
+[27] [28] [29]
+l. 319 Writing F17ZD_main.idv[79] (F17ZD_main78x.svg)
+l. 355 Writing F17ZD_main.idv[80] (F17ZD_main79x.svg)
+l. 355 Writing F17ZD_main.idv[81] (F17ZD_main80x.svg)
+[30] [31]
+l. 362 Writing F17ZD_main.idv[82] (F17ZD_main81x.svg)
+l. 381 Writing F17ZD_main.idv[83] (F17ZD_main82x.svg)
+[32] [33]
+l. 404 Writing F17ZD_main.idv[84] (F17ZD_main83x.svg)
+[34]
+l. 426 Writing F17ZD_main.idv[85] (F17ZD_main84x.svg)
+[35]
+l. 449 Writing F17ZD_main.idv[86] (F17ZD_main85x.svg)
+[36] [37]
+--- file F17ZD_main3.html ---
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 467.
+
+l. 469 Writing F17ZD_main.idv[87] (F17ZD_main86x.svg)
+l. 479 Writing F17ZD_main.idv[88] (F17ZD_main87x.svg)
+[38
+
+]
+l. 482 Writing F17ZD_main.idv[89] (F17ZD_main88x.svg)
+l. 482 Writing F17ZD_main.idv[90] (F17ZD_main89x.svg)
+l. 485 Writing F17ZD_main.idv[91] (F17ZD_main90x.svg)
+l. 485 Writing F17ZD_main.idv[92] (F17ZD_main91x.svg)
+l. 485 Writing F17ZD_main.idv[93] (F17ZD_main92x.svg)
+l. 489 Writing F17ZD_main.idv[94] (F17ZD_main93x.svg)
+l. 495 Writing F17ZD_main.idv[95] (F17ZD_main94x.svg)
+l. 495 Writing F17ZD_main.idv[96] (F17ZD_main95x.svg)
+l. 495 Writing F17ZD_main.idv[97] (F17ZD_main96x.svg)
+[39] [40]
+l. 505 Writing F17ZD_main.idv[98] (F17ZD_main97x.svg)
+l. 513 Writing F17ZD_main.idv[99] (F17ZD_main98x.svg)
+l. 513 Writing F17ZD_main.idv[100] (F17ZD_main99x.svg)
+l. 513 Writing F17ZD_main.idv[101] (F17ZD_main100x.svg)
+l. 513 Writing F17ZD_main.idv[102] (F17ZD_main101x.svg)
+l. 513 Writing F17ZD_main.idv[103] (F17ZD_main102x.svg)
+l. 513 Writing F17ZD_main.idv[104] (F17ZD_main103x.svg)
+l. 517 Writing F17ZD_main.idv[105] (F17ZD_main104x.svg)
+l. 517 Writing F17ZD_main.idv[106] (F17ZD_main105x.svg)
+l. 520 Writing F17ZD_main.idv[107] (F17ZD_main106x.svg)
+l. 520 Writing F17ZD_main.idv[108] (F17ZD_main107x.svg)
+l. 520 Writing F17ZD_main.idv[109] (F17ZD_main108x.svg)
+l. 520 Writing F17ZD_main.idv[110] (F17ZD_main109x.svg)
+[41]
+l. 524 Writing F17ZD_main.idv[111] (F17ZD_main110x.svg)
+l. 524 Writing F17ZD_main.idv[112] (F17ZD_main111x.svg)
+l. 535 Writing F17ZD_main.idv[113] (F17ZD_main112x.svg)
+l. 547 Writing F17ZD_main.idv[114] (F17ZD_main113x.svg)
+--- file F17ZD_main4.html ---
+[42]
+l. 552 Writing F17ZD_main.idv[115] (F17ZD_main114x.svg)
+l. 559 Writing F17ZD_main.idv[116] (F17ZD_main115x.svg)
+l. 580 Writing F17ZD_main.idv[117] (F17ZD_main116x.svg)
+l. 588 Writing F17ZD_main.idv[118] (F17ZD_main117x.svg)
+l. 600 Writing F17ZD_main.idv[119] (F17ZD_main118x.svg)
+l. 609 Writing F17ZD_main.idv[120] (F17ZD_main119x.svg)
+l. 623 Writing F17ZD_main.idv[121] (F17ZD_main120x.svg)
+l. 623 Writing F17ZD_main.idv[122] (F17ZD_main121x.svg)
+l. 623 Writing F17ZD_main.idv[123] (F17ZD_main122x.svg)
+l. 623 Writing F17ZD_main.idv[124] (F17ZD_main123x.svg)
+l. 623 Writing F17ZD_main.idv[125] (F17ZD_main124x.svg)
+l. 623 Writing F17ZD_main.idv[126] (F17ZD_main125x.svg)
+l. 631 Writing F17ZD_main.idv[127] (F17ZD_main126x.svg)
+l. 631 Writing F17ZD_main.idv[128] (F17ZD_main127x.svg)
+l. 631 Writing F17ZD_main.idv[129] (F17ZD_main128x.svg)
+l. 631 Writing F17ZD_main.idv[130] (F17ZD_main129x.svg)
+l. 631 Writing F17ZD_main.idv[131] (F17ZD_main130x.svg)
+l. 631 Writing F17ZD_main.idv[132] (F17ZD_main131x.svg)
+l. 631 Writing F17ZD_main.idv[133] (F17ZD_main132x.svg)
+l. 631 Writing F17ZD_main.idv[134] (F17ZD_main133x.svg)
+[43
+
+] [44] [45] [46]
+l. 643 Writing F17ZD_main.idv[135] (F17ZD_main134x.svg)
+l. 643 Writing F17ZD_main.idv[136] (F17ZD_main135x.svg)
+l. 643 Writing F17ZD_main.idv[137] (F17ZD_main136x.svg)
+l. 643 Writing F17ZD_main.idv[138] (F17ZD_main137x.svg)
+l. 643 Writing F17ZD_main.idv[139] (F17ZD_main138x.svg)
+l. 643 Writing F17ZD_main.idv[140] (F17ZD_main139x.svg)
+l. 648 Writing F17ZD_main.idv[141] (F17ZD_main140x.svg)
+l. 648 Writing F17ZD_main.idv[142] (F17ZD_main141x.svg)
+l. 648 Writing F17ZD_main.idv[143] (F17ZD_main142x.svg)
+l. 648 Writing F17ZD_main.idv[144] (F17ZD_main143x.svg)
+[47]
+l. 657 Writing F17ZD_main.idv[145] (F17ZD_main144x.svg)
+l. 673 Writing F17ZD_main.idv[146] (F17ZD_main145x.svg)
+[48] [49]
+l. 679 Writing F17ZD_main.idv[147] (F17ZD_main146x.svg)
+l. 682 Writing F17ZD_main.idv[148] (F17ZD_main147x.svg)
+l. 689 Writing F17ZD_main.idv[149] (F17ZD_main148x.svg)
+l. 703 Writing F17ZD_main.idv[150] (F17ZD_main149x.svg)
+l. 704 Writing F17ZD_main.idv[151] (F17ZD_main150x.svg)
+[50]
+l. 710 Writing F17ZD_main.idv[152] (F17ZD_main151x.svg)
+l. 710 Writing F17ZD_main.idv[153] (F17ZD_main152x.svg)
+l. 710 Writing F17ZD_main.idv[154] (F17ZD_main153x.svg)
+l. 714 Writing F17ZD_main.idv[155] (F17ZD_main154x.svg)
+l. 714 Writing F17ZD_main.idv[156] (F17ZD_main155x.svg)
+l. 714 Writing F17ZD_main.idv[157] (F17ZD_main156x.svg)
+[51]
+l. 718 Writing F17ZD_main.idv[158] (F17ZD_main157x.svg)
+l. 718 Writing F17ZD_main.idv[159] (F17ZD_main158x.svg)
+l. 721 Writing F17ZD_main.idv[160] (F17ZD_main159x.svg)
+l. 721 Writing F17ZD_main.idv[161] (F17ZD_main160x.svg)
+l. 721 Writing F17ZD_main.idv[162] (F17ZD_main161x.svg)
+l. 721 Writing F17ZD_main.idv[163] (F17ZD_main162x.svg)
+l. 721 Writing F17ZD_main.idv[164] (F17ZD_main163x.svg)
+l. 721 Writing F17ZD_main.idv[165] (F17ZD_main164x.svg)
+l. 724 Writing F17ZD_main.idv[166] (F17ZD_main165x.svg)
+l. 745 Writing F17ZD_main.idv[167] (F17ZD_main166x.svg)
+l. 751 Writing F17ZD_main.idv[168] (F17ZD_main167x.svg)
+l. 770 Writing F17ZD_main.idv[169] (F17ZD_main168x.svg)
+[52] [53] [54]
+l. 810 Writing F17ZD_main.idv[170] (F17ZD_main169x.svg)
+l. 817 Writing F17ZD_main.idv[171] (F17ZD_main170x.svg)
+l. 826 Writing F17ZD_main.idv[172] (F17ZD_main171x.svg)
+l. 826 Writing F17ZD_main.idv[173] (F17ZD_main172x.svg)
+l. 827 Writing F17ZD_main.idv[174] (F17ZD_main173x.svg)
+l. 831 Writing F17ZD_main.idv[175] (F17ZD_main174x.svg)
+[55] [56]
+l. 840 Writing F17ZD_main.idv[176] (F17ZD_main175x.svg)
+l. 843 Writing F17ZD_main.idv[177] (F17ZD_main176x.svg)
+l. 843 Writing F17ZD_main.idv[178] (F17ZD_main177x.svg)
+l. 844 Writing F17ZD_main.idv[179] (F17ZD_main178x.svg)
+[57] [58]
+l. 856 Writing F17ZD_main.idv[180] (F17ZD_main179x.svg)
+l. 861 Writing F17ZD_main.idv[181] (F17ZD_main180x.svg)
+[59]
+l. 876 Writing F17ZD_main.idv[182] (F17ZD_main181x.svg)
+l. 881 Writing F17ZD_main.idv[183] (F17ZD_main182x.svg)
+l. 881 Writing F17ZD_main.idv[184] (F17ZD_main183x.svg)
+l. 881 Writing F17ZD_main.idv[185] (F17ZD_main184x.svg)
+l. 884 Writing F17ZD_main.idv[186] (F17ZD_main185x.svg)
+l. 884 Writing F17ZD_main.idv[187] (F17ZD_main186x.svg)
+l. 884 Writing F17ZD_main.idv[188] (F17ZD_main187x.svg)
+l. 888 Writing F17ZD_main.idv[189] (F17ZD_main188x.svg)
+l. 888 Writing F17ZD_main.idv[190] (F17ZD_main189x.svg)
+[60] [61]
+l. 895 Writing F17ZD_main.idv[191] (F17ZD_main190x.svg)
+l. 895 Writing F17ZD_main.idv[192] (F17ZD_main191x.svg)
+l. 895 Writing F17ZD_main.idv[193] (F17ZD_main192x.svg)
+l. 899 Writing F17ZD_main.idv[194] (F17ZD_main193x.svg)
+l. 900 Writing F17ZD_main.idv[195] (F17ZD_main194x.svg)
+[62]
+l. 902 Writing F17ZD_main.idv[196] (F17ZD_main195x.svg)
+l. 917 Writing F17ZD_main.idv[197] (F17ZD_main196x.svg)
+l. 917 Writing F17ZD_main.idv[198] (F17ZD_main197x.svg)
+l. 917 Writing F17ZD_main.idv[199] (F17ZD_main198x.svg)
+l. 917 Writing F17ZD_main.idv[200] (F17ZD_main199x.svg)
+l. 917 Writing F17ZD_main.idv[201] (F17ZD_main200x.svg)
+l. 917 Writing F17ZD_main.idv[202] (F17ZD_main201x.svg)
+l. 919 Writing F17ZD_main.idv[203] (F17ZD_main202x.svg)
+[63]
+l. 932 Writing F17ZD_main.idv[204] (F17ZD_main203x.svg)
+l. 932 Writing F17ZD_main.idv[205] (F17ZD_main204x.svg)
+l. 932 Writing F17ZD_main.idv[206] (F17ZD_main205x.svg)
+l. 932 Writing F17ZD_main.idv[207] (F17ZD_main206x.svg)
+l. 932 Writing F17ZD_main.idv[208] (F17ZD_main207x.svg)
+l. 932 Writing F17ZD_main.idv[209] (F17ZD_main208x.svg)
+l. 934 Writing F17ZD_main.idv[210] (F17ZD_main209x.svg)
+[64] [65] [66]
+l. 944 Writing F17ZD_main.idv[211] (F17ZD_main210x.svg)
+l. 952 Writing F17ZD_main.idv[212] (F17ZD_main211x.svg)
+[67]
+l. 962 Writing F17ZD_main.idv[213] (F17ZD_main212x.svg)
+l. 962 Writing F17ZD_main.idv[214] (F17ZD_main213x.svg)
+l. 962 Writing F17ZD_main.idv[215] (F17ZD_main214x.svg)
+l. 962 Writing F17ZD_main.idv[216] (F17ZD_main215x.svg)
+l. 962 Writing F17ZD_main.idv[217] (F17ZD_main216x.svg)
+l. 968 Writing F17ZD_main.idv[218] (F17ZD_main217x.svg)
+l. 968 Writing F17ZD_main.idv[219] (F17ZD_main218x.svg)
+l. 968 Writing F17ZD_main.idv[220] (F17ZD_main219x.svg)
+l. 968 Writing F17ZD_main.idv[221] (F17ZD_main220x.svg)
+l. 968 Writing F17ZD_main.idv[222] (F17ZD_main221x.svg)
+l. 968 Writing F17ZD_main.idv[223] (F17ZD_main222x.svg)
+l. 968 Writing F17ZD_main.idv[224] (F17ZD_main223x.svg)
+l. 968 Writing F17ZD_main.idv[225] (F17ZD_main224x.svg)
+l. 968 Writing F17ZD_main.idv[226] (F17ZD_main225x.svg)
+l. 968 Writing F17ZD_main.idv[227] (F17ZD_main226x.svg)
+l. 968 Writing F17ZD_main.idv[228] (F17ZD_main227x.svg)
+l. 968 Writing F17ZD_main.idv[229] (F17ZD_main228x.svg)
+l. 968 Writing F17ZD_main.idv[230] (F17ZD_main229x.svg)
+[68]
+l. 978 Writing F17ZD_main.idv[231] (F17ZD_main230x.svg)
+[69]
+--- file F17ZD_main5.html ---
+l. 984 Writing F17ZD_main.idv[232] (F17ZD_main231x.svg)
+l. 993 Writing F17ZD_main.idv[233] (F17ZD_main232x.svg)
+l. 993 Writing F17ZD_main.idv[234] (F17ZD_main233x.svg)
+l. 993 Writing F17ZD_main.idv[235] (F17ZD_main234x.svg)
+[70
+
+]
+l. 1000 Writing F17ZD_main.idv[236] (F17ZD_main235x.svg)
+[71]
+l. 1006 Writing F17ZD_main.idv[237] (F17ZD_main236x.svg)
+l. 1012 Writing F17ZD_main.idv[238] (F17ZD_main237x.svg)
+l. 1013 Writing F17ZD_main.idv[239] (F17ZD_main238x.svg)
+[72]
+l. 1022 Writing F17ZD_main.idv[240] (F17ZD_main239x.svg)
+l. 1022 Writing F17ZD_main.idv[241] (F17ZD_main240x.svg)
+l. 1022 Writing F17ZD_main.idv[242] (F17ZD_main241x.svg)
+l. 1022 Writing F17ZD_main.idv[243] (F17ZD_main242x.svg)
+l. 1024 Writing F17ZD_main.idv[244] (F17ZD_main243x.svg)
+l. 1036 Writing F17ZD_main.idv[245] (F17ZD_main244x.svg)
+l. 1046 Writing F17ZD_main.idv[246] (F17ZD_main245x.svg)
+l. 1046 Writing F17ZD_main.idv[247] (F17ZD_main246x.svg)
+l. 1046 Writing F17ZD_main.idv[248] (F17ZD_main247x.svg)
+l. 1046 Writing F17ZD_main.idv[249] (F17ZD_main248x.svg)
+l. 1046 Writing F17ZD_main.idv[250] (F17ZD_main249x.svg)
+[73]
+l. 1060 Writing F17ZD_main.idv[251] (F17ZD_main250x.svg)
+[74]
+l. 1068 Writing F17ZD_main.idv[252] (F17ZD_main251x.svg)
+l. 1076 Writing F17ZD_main.idv[253] (F17ZD_main252x.svg)
+l. 1076 Writing F17ZD_main.idv[254] (F17ZD_main253x.svg)
+l. 1081 Writing F17ZD_main.idv[255] (F17ZD_main254x.svg)
+l. 1081 Writing F17ZD_main.idv[256] (F17ZD_main255x.svg)
+l. 1081 Writing F17ZD_main.idv[257] (F17ZD_main256x.svg)
+l. 1081 Writing F17ZD_main.idv[258] (F17ZD_main257x.svg)
+[75]
+l. 1085 Writing F17ZD_main.idv[259] (F17ZD_main258x.svg)
+l. 1085 Writing F17ZD_main.idv[260] (F17ZD_main259x.svg)
+l. 1085 Writing F17ZD_main.idv[261] (F17ZD_main260x.svg)
+l. 1088 Writing F17ZD_main.idv[262] (F17ZD_main261x.svg)
+l. 1088 Writing F17ZD_main.idv[263] (F17ZD_main262x.svg)
+l. 1094 Writing F17ZD_main.idv[264] (F17ZD_main263x.svg)
+l. 1094 Writing F17ZD_main.idv[265] (F17ZD_main264x.svg)
+l. 1094 Writing F17ZD_main.idv[266] (F17ZD_main265x.svg)
+l. 1094 Writing F17ZD_main.idv[267] (F17ZD_main266x.svg)
+l. 1094 Writing F17ZD_main.idv[268] (F17ZD_main267x.svg)
+l. 1094 Writing F17ZD_main.idv[269] (F17ZD_main268x.svg)
+l. 1094 Writing F17ZD_main.idv[270] (F17ZD_main269x.svg)
+[76]
+--- file F17ZD_main6.html ---
+[77
+
+]
+l. 1105 Writing F17ZD_main.idv[271] (F17ZD_main270x.svg)
+l. 1105 Writing F17ZD_main.idv[272] (F17ZD_main271x.svg)
+l. 1105 Writing F17ZD_main.idv[273] (F17ZD_main272x.svg)
+l. 1113 Writing F17ZD_main.idv[274] (F17ZD_main273x.svg)
+l. 1113 Writing F17ZD_main.idv[275] (F17ZD_main274x.svg)
+l. 1113 Writing F17ZD_main.idv[276] (F17ZD_main275x.svg)
+l. 1113 Writing F17ZD_main.idv[277] (F17ZD_main276x.svg)
+[78]
+--- file F17ZD_main7.html ---
+[79]
+l. 1131 Writing F17ZD_main.idv[278] (F17ZD_main277x.svg)
+l. 1131 Writing F17ZD_main.idv[279] (F17ZD_main278x.svg)
+l. 1135 Writing F17ZD_main.idv[280] (F17ZD_main279x.svg)
+[80
+
+]
+l. 1144 Writing F17ZD_main.idv[281] (F17ZD_main280x.svg)
+l. 1155 Writing F17ZD_main.idv[282] (F17ZD_main281x.svg)
+l. 1155 Writing F17ZD_main.idv[283] (F17ZD_main282x.svg)
+l. 1155 Writing F17ZD_main.idv[284] (F17ZD_main283x.svg)
+l. 1155 Writing F17ZD_main.idv[285] (F17ZD_main284x.svg)
+l. 1155 Writing F17ZD_main.idv[286] (F17ZD_main285x.svg)
+l. 1155 Writing F17ZD_main.idv[287] (F17ZD_main286x.svg)
+[81]
+l. 1159 Writing F17ZD_main.idv[288] (F17ZD_main287x.svg)
+l. 1162 Writing F17ZD_main.idv[289] (F17ZD_main288x.svg)
+l. 1162 Writing F17ZD_main.idv[290] (F17ZD_main289x.svg)
+l. 1162 Writing F17ZD_main.idv[291] (F17ZD_main290x.svg)
+l. 1165 Writing F17ZD_main.idv[292] (F17ZD_main291x.svg)
+--- file F17ZD_main8.html ---
+l. 1165 Writing F17ZD_main.idv[293] (F17ZD_main292x.svg)
+l. 1165 Writing F17ZD_main.idv[294] (F17ZD_main293x.svg)
+[82
+
+]
+l. 1172 Writing F17ZD_main.idv[295] (F17ZD_main294x.svg)
+l. 1176 Writing F17ZD_main.idv[296] (F17ZD_main295x.svg)
+l. 1184 Writing F17ZD_main.idv[297] (F17ZD_main296x.svg)
+l. 1191 Writing F17ZD_main.idv[298] (F17ZD_main297x.svg)
+l. 1191 Writing F17ZD_main.idv[299] (F17ZD_main298x.svg)
+l. 1191 Writing F17ZD_main.idv[300] (F17ZD_main299x.svg)
+[83]
+l. 1202 Writing F17ZD_main.idv[301] (F17ZD_main300x.svg)
+l. 1211 Writing F17ZD_main.idv[302] (F17ZD_main301x.svg)
+l. 1211 Writing F17ZD_main.idv[303] (F17ZD_main302x.svg)
+l. 1211 Writing F17ZD_main.idv[304] (F17ZD_main303x.svg)
+[84] [85]
+l. 1221 Writing F17ZD_main.idv[305] (F17ZD_main304x.svg)
+l. 1225 Writing F17ZD_main.idv[306] (F17ZD_main305x.svg)
+[86]
+l. 1236 Writing F17ZD_main.idv[307] (F17ZD_main306x.svg)
+l. 1236 Writing F17ZD_main.idv[308] (F17ZD_main307x.svg)
+l. 1236 Writing F17ZD_main.idv[309] (F17ZD_main308x.svg)
+l. 1237 Writing F17ZD_main.idv[310] (F17ZD_main309x.svg)
+l. 1245 Writing F17ZD_main.idv[311] (F17ZD_main310x.svg)
+l. 1245 Writing F17ZD_main.idv[312] (F17ZD_main311x.svg)
+l. 1245 Writing F17ZD_main.idv[313] (F17ZD_main312x.svg)
+l. 1245 Writing F17ZD_main.idv[314] (F17ZD_main313x.svg)
+l. 1245 Writing F17ZD_main.idv[315] (F17ZD_main314x.svg)
+l. 1245 Writing F17ZD_main.idv[316] (F17ZD_main315x.svg)
+l. 1245 Writing F17ZD_main.idv[317] (F17ZD_main316x.svg)
+l. 1245 Writing F17ZD_main.idv[318] (F17ZD_main317x.svg)
+l. 1246 Writing F17ZD_main.idv[319] (F17ZD_main318x.svg)
+l. 1253 Writing F17ZD_main.idv[320] (F17ZD_main319x.svg)
+l. 1253 Writing F17ZD_main.idv[321] (F17ZD_main320x.svg)
+l. 1253 Writing F17ZD_main.idv[322] (F17ZD_main321x.svg)
+l. 1253 Writing F17ZD_main.idv[323] (F17ZD_main322x.svg)
+l. 1253 Writing F17ZD_main.idv[324] (F17ZD_main323x.svg)
+l. 1253 Writing F17ZD_main.idv[325] (F17ZD_main324x.svg)
+l. 1253 Writing F17ZD_main.idv[326] (F17ZD_main325x.svg)
+l. 1253 Writing F17ZD_main.idv[327] (F17ZD_main326x.svg)
+l. 1253 Writing F17ZD_main.idv[328] (F17ZD_main327x.svg)
+l. 1253 Writing F17ZD_main.idv[329] (F17ZD_main328x.svg)
+l. 1253 Writing F17ZD_main.idv[330] (F17ZD_main329x.svg)
+l. 1253 Writing F17ZD_main.idv[331] (F17ZD_main330x.svg)
+l. 1254 Writing F17ZD_main.idv[332] (F17ZD_main331x.svg)
+[87] [88]
+l. 1259 Writing F17ZD_main.idv[333] (F17ZD_main332x.svg)
+l. 1259 Writing F17ZD_main.idv[334] (F17ZD_main333x.svg)
+l. 1262 Writing F17ZD_main.idv[335] (F17ZD_main334x.svg)
+l. 1268 Writing F17ZD_main.idv[336] (F17ZD_main335x.svg)
+l. 1268 Writing F17ZD_main.idv[337] (F17ZD_main336x.svg)
+l. 1268 Writing F17ZD_main.idv[338] (F17ZD_main337x.svg)
+l. 1268 Writing F17ZD_main.idv[339] (F17ZD_main338x.svg)
+l. 1268 Writing F17ZD_main.idv[340] (F17ZD_main339x.svg)
+l. 1268 Writing F17ZD_main.idv[341] (F17ZD_main340x.svg)
+l. 1280 Writing F17ZD_main.idv[342] (F17ZD_main341x.svg)
+l. 1280 Writing F17ZD_main.idv[343] (F17ZD_main342x.svg)
+l. 1280 Writing F17ZD_main.idv[344] (F17ZD_main343x.svg)
+l. 1280 Writing F17ZD_main.idv[345] (F17ZD_main344x.svg)
+l. 1280 Writing F17ZD_main.idv[346] (F17ZD_main345x.svg)
+l. 1280 Writing F17ZD_main.idv[347] (F17ZD_main346x.svg)
+l. 1280 Writing F17ZD_main.idv[348] (F17ZD_main347x.svg)
+[89] [90] [91]
+l. 1295 Writing F17ZD_main.idv[349] (F17ZD_main348x.svg)
+l. 1311 Writing F17ZD_main.idv[350] (F17ZD_main349x.svg)
+l. 1311 Writing F17ZD_main.idv[351] (F17ZD_main350x.svg)
+l. 1315 Writing F17ZD_main.idv[352] (F17ZD_main351x.svg)
+l. 1331 Writing F17ZD_main.idv[353] (F17ZD_main352x.svg)
+l. 1331 Writing F17ZD_main.idv[354] (F17ZD_main353x.svg)
+l. 1335 Writing F17ZD_main.idv[355] (F17ZD_main354x.svg)
+l. 1355 Writing F17ZD_main.idv[356] (F17ZD_main355x.svg)
+l. 1374 Writing F17ZD_main.idv[357] (F17ZD_main356x.svg)
+l. 1374 Writing F17ZD_main.idv[358] (F17ZD_main357x.svg)
+[92] [93] [94] [95] [96]
+l. 1404 Writing F17ZD_main.idv[359] (F17ZD_main358x.svg)
+l. 1407 Writing F17ZD_main.idv[360] (F17ZD_main359x.svg)
+l. 1412 Writing F17ZD_main.idv[361] (F17ZD_main360x.svg)
+l. 1412 Writing F17ZD_main.idv[362] (F17ZD_main361x.svg)
+l. 1412 Writing F17ZD_main.idv[363] (F17ZD_main362x.svg)
+l. 1412 Writing F17ZD_main.idv[364] (F17ZD_main363x.svg)
+[97]
+l. 1417 Writing F17ZD_main.idv[365] (F17ZD_main364x.svg)
+l. 1417 Writing F17ZD_main.idv[366] (F17ZD_main365x.svg)
+l. 1417 Writing F17ZD_main.idv[367] (F17ZD_main366x.svg)
+l. 1417 Writing F17ZD_main.idv[368] (F17ZD_main367x.svg)
+l. 1421 Writing F17ZD_main.idv[369] (F17ZD_main368x.svg)
+l. 1425 Writing F17ZD_main.idv[370] (F17ZD_main369x.svg)
+[98]
+l. 1434 Writing F17ZD_main.idv[371] (F17ZD_main370x.svg)
+l. 1434 Writing F17ZD_main.idv[372] (F17ZD_main371x.svg)
+l. 1434 Writing F17ZD_main.idv[373] (F17ZD_main372x.svg)
+l. 1434 Writing F17ZD_main.idv[374] (F17ZD_main373x.svg)
+l. 1438 Writing F17ZD_main.idv[375] (F17ZD_main374x.svg)
+l. 1438 Writing F17ZD_main.idv[376] (F17ZD_main375x.svg)
+l. 1447 Writing F17ZD_main.idv[377] (F17ZD_main376x.svg)
+l. 1447 Writing F17ZD_main.idv[378] (F17ZD_main377x.svg)
+l. 1447 Writing F17ZD_main.idv[379] (F17ZD_main378x.svg)
+l. 1447 Writing F17ZD_main.idv[380] (F17ZD_main379x.svg)
+l. 1447 Writing F17ZD_main.idv[381] (F17ZD_main380x.svg)
+l. 1447 Writing F17ZD_main.idv[382] (F17ZD_main381x.svg)
+l. 1447 Writing F17ZD_main.idv[383] (F17ZD_main382x.svg)
+l. 1447 Writing F17ZD_main.idv[384] (F17ZD_main383x.svg)
+[99]
+l. 1453 Writing F17ZD_main.idv[385] (F17ZD_main384x.svg)
+l. 1457 Writing F17ZD_main.idv[386] (F17ZD_main385x.svg)
+[100]
+l. 1461 Writing F17ZD_main.idv[387] (F17ZD_main386x.svg)
+l. 1465 Writing F17ZD_main.idv[388] (F17ZD_main387x.svg)
+l. 1469 Writing F17ZD_main.idv[389] (F17ZD_main388x.svg)
+[101]
+l. 1482 Writing F17ZD_main.idv[390] (F17ZD_main389x.svg)
+l. 1487 Writing F17ZD_main.idv[391] (F17ZD_main390x.svg)
+[102]
+l. 1585 Writing F17ZD_main.idv[392] (F17ZD_main391x.svg)
+l. 1681 Writing F17ZD_main.idv[393] (F17ZD_main392x.svg)
+l. 1690 Writing F17ZD_main.idv[394] (F17ZD_main393x.svg)
+l. 1726 Writing F17ZD_main.idv[395] (F17ZD_main394x.svg)
+l. 1766 Writing F17ZD_main.idv[396] (F17ZD_main395x.svg)
+l. 1766 Writing F17ZD_main.idv[397] (F17ZD_main396x.svg)
+l. 1766 Writing F17ZD_main.idv[398] (F17ZD_main397x.svg)
+l. 1771 Writing F17ZD_main.idv[399] (F17ZD_main398x.svg)
+l. 1776 Writing F17ZD_main.idv[400] (F17ZD_main399x.svg)
+l. 1776 Writing F17ZD_main.idv[401] (F17ZD_main400x.svg)
+l. 1776 Writing F17ZD_main.idv[402] (F17ZD_main401x.svg)
+l. 1776 Writing F17ZD_main.idv[403] (F17ZD_main402x.svg)
+l. 1776 Writing F17ZD_main.idv[404] (F17ZD_main403x.svg)
+l. 1776 Writing F17ZD_main.idv[405] (F17ZD_main404x.svg)
+l. 1776 Writing F17ZD_main.idv[406] (F17ZD_main405x.svg)
+l. 1776 Writing F17ZD_main.idv[407] (F17ZD_main406x.svg)
+l. 1778 Writing F17ZD_main.idv[408] (F17ZD_main407x.svg)
+l. 1778 Writing F17ZD_main.idv[409] (F17ZD_main408x.svg)
+l. 1779 Writing F17ZD_main.idv[410] (F17ZD_main409x.svg)
+l. 1783 Writing F17ZD_main.idv[411] (F17ZD_main410x.svg)
+[103] [104] [105] [106]
+l. 1790 Writing F17ZD_main.idv[412] (F17ZD_main411x.svg)
+l. 1790 Writing F17ZD_main.idv[413] (F17ZD_main412x.svg)
+l. 1791 Writing F17ZD_main.idv[414] (F17ZD_main413x.svg)
+l. 1794 Writing F17ZD_main.idv[415] (F17ZD_main414x.svg)
+l. 1803 Writing F17ZD_main.idv[416] (F17ZD_main415x.svg)
+l. 1803 Writing F17ZD_main.idv[417] (F17ZD_main416x.svg)
+l. 1803 Writing F17ZD_main.idv[418] (F17ZD_main417x.svg)
+l. 1803 Writing F17ZD_main.idv[419] (F17ZD_main418x.svg)
+l. 1803 Writing F17ZD_main.idv[420] (F17ZD_main419x.svg)
+l. 1803 Writing F17ZD_main.idv[421] (F17ZD_main420x.svg)
+l. 1803 Writing F17ZD_main.idv[422] (F17ZD_main421x.svg)
+l. 1803 Writing F17ZD_main.idv[423] (F17ZD_main422x.svg)
+l. 1803 Writing F17ZD_main.idv[424] (F17ZD_main423x.svg)
+l. 1804 Writing F17ZD_main.idv[425] (F17ZD_main424x.svg)
+l. 1805 Writing F17ZD_main.idv[426] (F17ZD_main425x.svg)
+l. 1810 Writing F17ZD_main.idv[427] (F17ZD_main426x.svg)
+l. 1811 Writing F17ZD_main.idv[428] (F17ZD_main427x.svg)
+l. 1817 Writing F17ZD_main.idv[429] (F17ZD_main428x.svg)
+l. 1817 Writing F17ZD_main.idv[430] (F17ZD_main429x.svg)
+l. 1819 Writing F17ZD_main.idv[431] (F17ZD_main430x.svg)
+l. 1823 Writing F17ZD_main.idv[432] (F17ZD_main431x.svg)
+l. 1824 Writing F17ZD_main.idv[433] (F17ZD_main432x.svg)
+l. 1834 Writing F17ZD_main.idv[434] (F17ZD_main433x.svg)
+l. 1865 Writing F17ZD_main.idv[435] (F17ZD_main434x.svg)
+[107] [108] [109]
+l. 1914 Writing F17ZD_main.idv[436] (F17ZD_main435x.svg)
+[110] [111]
+l. 1925 Writing F17ZD_main.idv[437] (F17ZD_main436x.svg)
+l. 1928 Writing F17ZD_main.idv[438] (F17ZD_main437x.svg)
+l. 1928 Writing F17ZD_main.idv[439] (F17ZD_main438x.svg)
+l. 1928 Writing F17ZD_main.idv[440] (F17ZD_main439x.svg)
+l. 1929 Writing F17ZD_main.idv[441] (F17ZD_main440x.svg)
+l. 1934 Writing F17ZD_main.idv[442] (F17ZD_main441x.svg)
+[112]
+l. 1937 Writing F17ZD_main.idv[443] (F17ZD_main442x.svg)
+l. 1938 Writing F17ZD_main.idv[444] (F17ZD_main443x.svg)
+l. 1938 Writing F17ZD_main.idv[445] (F17ZD_main444x.svg)
+l. 1941 Writing F17ZD_main.idv[446] (F17ZD_main445x.svg)
+l. 1941 Writing F17ZD_main.idv[447] (F17ZD_main446x.svg)
+l. 1942 Writing F17ZD_main.idv[448] (F17ZD_main447x.svg)
+l. 1947 Writing F17ZD_main.idv[449] (F17ZD_main448x.svg)
+l. 1947 Writing F17ZD_main.idv[450] (F17ZD_main449x.svg)
+l. 1953 Writing F17ZD_main.idv[451] (F17ZD_main450x.svg)
+l. 1953 Writing F17ZD_main.idv[452] (F17ZD_main451x.svg)
+l. 1954 Writing F17ZD_main.idv[453] (F17ZD_main452x.svg)
+l. 1955 Writing F17ZD_main.idv[454] (F17ZD_main453x.svg)
+l. 1955 Writing F17ZD_main.idv[455] (F17ZD_main454x.svg)
+l. 1955 Writing F17ZD_main.idv[456] (F17ZD_main455x.svg)
+l. 1956 Writing F17ZD_main.idv[457] (F17ZD_main456x.svg)
+l. 1956 Writing F17ZD_main.idv[458] (F17ZD_main457x.svg)
+l.1960 --- TeX4ht warning --- File `"julia_c_minus1.xbb"' not found ---
+l.1960 --- TeX4ht warning --- Cannot determine size of graphic in "julia_c_minu
+s1.xbb" (no BoundingBox) ---
+l. 1960 --- needs --- julia_c_minus1.png ---
+l. 1968 Writing F17ZD_main.idv[459] (F17ZD_main458x.svg)
+l. 1968 Writing F17ZD_main.idv[460] (F17ZD_main459x.svg)
+l. 1968 Writing F17ZD_main.idv[461] (F17ZD_main460x.svg)
+l. 1968 Writing F17ZD_main.idv[462] (F17ZD_main461x.svg)
+l. 1969 Writing F17ZD_main.idv[463] (F17ZD_main462x.svg)
+l. 1969 Writing F17ZD_main.idv[464] (F17ZD_main463x.svg)
+l. 1969 Writing F17ZD_main.idv[465] (F17ZD_main464x.svg)
+l. 1969 Writing F17ZD_main.idv[466] (F17ZD_main465x.svg)
+l. 1970 Writing F17ZD_main.idv[467] (F17ZD_main466x.svg)
+l.1973 --- TeX4ht warning --- File `"mandelbrot.xbb"' not found ---
+l.1973 --- TeX4ht warning --- Cannot determine size of graphic in "mandelbrot.x
+bb" (no BoundingBox) ---
+l. 1973 --- needs --- mandelbrot.png ---
+[113]) [114] [115
+
+] [116
+
+]
+\openout2 = `T04b-quaternions.aux'.
+
+(./T04b-quaternions.tex
+l. 6 Writing F17ZD_main.idv[468] (F17ZD_main467x.svg)
+l.11 --- TeX4ht warning --- File `"Broom_Bridge.xbb"' not found ---
+l.11 --- TeX4ht warning --- Cannot determine size of graphic in "Broom_Bridge.x
+bb" (no BoundingBox) ---
+l. 11 --- needs --- Broom_Bridge.jpg ---
+[117
+
+]
+l. 20 Writing F17ZD_main.idv[469] (F17ZD_main468x.svg)
+l. 24 Writing F17ZD_main.idv[470] (F17ZD_main469x.svg)
+[118]
+l. 42 Writing F17ZD_main.idv[471] (F17ZD_main470x.svg)
+l. 43 Writing F17ZD_main.idv[472] (F17ZD_main471x.svg)
+l. 49 Writing F17ZD_main.idv[473] (F17ZD_main472x.svg)
+[119]
+l. 56 Writing F17ZD_main.idv[474] (F17ZD_main473x.svg)
+[120] [121]
+l. 81 Writing F17ZD_main.idv[475] (F17ZD_main474x.svg)
+[122]
+l. 88 Writing F17ZD_main.idv[476] (F17ZD_main475x.svg)
+l. 98 Writing F17ZD_main.idv[477] (F17ZD_main476x.svg)
+l. 98 Writing F17ZD_main.idv[478] (F17ZD_main477x.svg)
+[123] [124]
+l. 105 Writing F17ZD_main.idv[479] (F17ZD_main478x.svg)
+l. 116 Writing F17ZD_main.idv[480] (F17ZD_main479x.svg)
+[125] [126]
+l. 119 Writing F17ZD_main.idv[481] (F17ZD_main480x.svg)
+l. 127 Writing F17ZD_main.idv[482] (F17ZD_main481x.svg)
+[127]
+l. 138 Writing F17ZD_main.idv[483] (F17ZD_main482x.svg)
+[128]
+l. 142 Writing F17ZD_main.idv[484] (F17ZD_main483x.svg)
+l. 150 Writing F17ZD_main.idv[485] (F17ZD_main484x.svg)
+l. 160 Writing F17ZD_main.idv[486] (F17ZD_main485x.svg)
+l. 160 Writing F17ZD_main.idv[487] (F17ZD_main486x.svg)
+l. 160 Writing F17ZD_main.idv[488] (F17ZD_main487x.svg)
+l. 160 Writing F17ZD_main.idv[489] (F17ZD_main488x.svg)
+l. 160 Writing F17ZD_main.idv[490] (F17ZD_main489x.svg)
+l. 160 Writing F17ZD_main.idv[491] (F17ZD_main490x.svg)
+[129] [130]
+l. 178 Writing F17ZD_main.idv[492] (F17ZD_main491x.svg)
+l. 182 Writing F17ZD_main.idv[493] (F17ZD_main492x.svg)
+[131]
+l. 193 Writing F17ZD_main.idv[494] (F17ZD_main493x.svg)
+) [132] [133
+
+] [134
+
+]
+\openout2 = `T05-vectors2.aux'.
+
+(./T05-vectors2.tex
+l. 6 Writing F17ZD_main.idv[495] (F17ZD_main494x.svg)
+l. 27 Writing F17ZD_main.idv[496] (F17ZD_main495x.svg)
+l. 32 Writing F17ZD_main.idv[497] (F17ZD_main496x.svg)
+[135
+
+] [136]
+l. 52 Writing F17ZD_main.idv[498] (F17ZD_main497x.svg)
+l. 55 Writing F17ZD_main.idv[499] (F17ZD_main498x.svg)
+[137]
+l. 165 Writing F17ZD_main.idv[500] (F17ZD_main499x.svg)
+l. 171 Writing F17ZD_main.idv[501] (F17ZD_main500x.svg)
+[138]
+l. 190 Writing F17ZD_main.idv[502] (F17ZD_main501x.svg)
+l. 199 Writing F17ZD_main.idv[503] (F17ZD_main502x.svg)
+l. 199 Writing F17ZD_main.idv[504] (F17ZD_main503x.svg)
+l. 199 Writing F17ZD_main.idv[505] (F17ZD_main504x.svg)
+l. 200 Writing F17ZD_main.idv[506] (F17ZD_main505x.svg)
+l. 200 Writing F17ZD_main.idv[507] (F17ZD_main506x.svg)
+[139]
+l. 208 Writing F17ZD_main.idv[508] (F17ZD_main507x.svg)
+l. 212 Writing F17ZD_main.idv[509] (F17ZD_main508x.svg)
+l. 212 Writing F17ZD_main.idv[510] (F17ZD_main509x.svg)
+l. 212 Writing F17ZD_main.idv[511] (F17ZD_main510x.svg)
+l. 213 Writing F17ZD_main.idv[512] (F17ZD_main511x.svg)
+[140] [141]
+l. 218 Writing F17ZD_main.idv[513] (F17ZD_main512x.svg)
+l. 233 Writing F17ZD_main.idv[514] (F17ZD_main513x.svg)
+l. 238 Writing F17ZD_main.idv[515] (F17ZD_main514x.svg)
+l. 245 Writing F17ZD_main.idv[516] (F17ZD_main515x.svg)
+l. 254 Writing F17ZD_main.idv[517] (F17ZD_main516x.svg)
+l. 256 Writing F17ZD_main.idv[518] (F17ZD_main517x.svg)
+[142] [143]
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 271.
+l. 277 Writing F17ZD_main.idv[519] (F17ZD_main518x.svg)
+l. 287 Writing F17ZD_main.idv[520] (F17ZD_main519x.svg)
+[144]
+l. 291 Writing F17ZD_main.idv[521] (F17ZD_main520x.svg)
+l. 292 Writing F17ZD_main.idv[522] (F17ZD_main521x.svg)
+l. 299 Writing F17ZD_main.idv[523] (F17ZD_main522x.svg)
+l. 301 Writing F17ZD_main.idv[524] (F17ZD_main523x.svg)
+l. 305 Writing F17ZD_main.idv[525] (F17ZD_main524x.svg)
+[145]
+l. 311 Writing F17ZD_main.idv[526] (F17ZD_main525x.svg)
+l. 311 Writing F17ZD_main.idv[527] (F17ZD_main526x.svg)
+l. 311 Writing F17ZD_main.idv[528] (F17ZD_main527x.svg)
+[146]
+l. 326 Writing F17ZD_main.idv[529] (F17ZD_main528x.svg)
+l. 333 Writing F17ZD_main.idv[530] (F17ZD_main529x.svg)
+l. 334 Writing F17ZD_main.idv[531] (F17ZD_main530x.svg)
+[147]
+l. 342 Writing F17ZD_main.idv[532] (F17ZD_main531x.svg)
+l. 367 Writing F17ZD_main.idv[533] (F17ZD_main532x.svg)
+l. 367 Writing F17ZD_main.idv[534] (F17ZD_main533x.svg)
+l. 369 Writing F17ZD_main.idv[535] (F17ZD_main534x.svg)
+[148]
+l. 384 Writing F17ZD_main.idv[536] (F17ZD_main535x.svg)
+l. 392 Writing F17ZD_main.idv[537] (F17ZD_main536x.svg)
+l. 396 Writing F17ZD_main.idv[538] (F17ZD_main537x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 40
+3.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 40
+9.
+
+l. 422 Writing F17ZD_main.idv[539] (F17ZD_main538x.svg)
+[149] [150] [151] [152]
+l. 428 Writing F17ZD_main.idv[540] (F17ZD_main539x.svg)
+l. 429 Writing F17ZD_main.idv[541] (F17ZD_main540x.svg)
+l. 429 Writing F17ZD_main.idv[542] (F17ZD_main541x.svg)
+l. 431 Writing F17ZD_main.idv[543] (F17ZD_main542x.svg)
+l. 438 Writing F17ZD_main.idv[544] (F17ZD_main543x.svg)
+l. 442 Writing F17ZD_main.idv[545] (F17ZD_main544x.svg)
+l. 452 Writing F17ZD_main.idv[546] (F17ZD_main545x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 45
+9.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 46
+5.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 47
+1.
+
+l. 480 Writing F17ZD_main.idv[547] (F17ZD_main546x.svg)
+l. 481 Writing F17ZD_main.idv[548] (F17ZD_main547x.svg)
+l. 481 Writing F17ZD_main.idv[549] (F17ZD_main548x.svg)
+[153] [154] [155]
+l. 527 Writing F17ZD_main.idv[550] (F17ZD_main549x.svg)
+[156]
+l. 535 Writing F17ZD_main.idv[551] (F17ZD_main550x.svg)
+[157]
+l. 562 Writing F17ZD_main.idv[552] (F17ZD_main551x.svg)
+l. 568 Writing F17ZD_main.idv[553] (F17ZD_main552x.svg)
+[158]
+l. 597 Writing F17ZD_main.idv[554] (F17ZD_main553x.svg)
+[159]
+l. 630 Writing F17ZD_main.idv[555] (F17ZD_main554x.svg)
+l. 633 Writing F17ZD_main.idv[556] (F17ZD_main555x.svg)
+l. 679 Writing F17ZD_main.idv[557] (F17ZD_main556x.svg)
+[160]
+l. 691 Writing F17ZD_main.idv[558] (F17ZD_main557x.svg)
+l. 695 Writing F17ZD_main.idv[559] (F17ZD_main558x.svg)
+l. 703 Writing F17ZD_main.idv[560] (F17ZD_main559x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 71
+0.
+
+l. 718 Writing F17ZD_main.idv[561] (F17ZD_main560x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 72
+6.
+
+[161] [162] [163]
+l. 745 Writing F17ZD_main.idv[562] (F17ZD_main561x.svg)
+l. 760 Writing F17ZD_main.idv[563] (F17ZD_main562x.svg)
+l. 769 Writing F17ZD_main.idv[564] (F17ZD_main563x.svg)
+l. 776 Writing F17ZD_main.idv[565] (F17ZD_main564x.svg)
+l. 787 Writing F17ZD_main.idv[566] (F17ZD_main565x.svg)
+[164] [165] [166] [167] [168]
+l. 808 Writing F17ZD_main.idv[567] (F17ZD_main566x.svg)
+[169]
+l. 843 Writing F17ZD_main.idv[568] (F17ZD_main567x.svg)
+[170]
+l. 859 Writing F17ZD_main.idv[569] (F17ZD_main568x.svg)
+l. 863 Writing F17ZD_main.idv[570] (F17ZD_main569x.svg)
+[171]
+l. 870 Writing F17ZD_main.idv[571] (F17ZD_main570x.svg)
+l. 885 Writing F17ZD_main.idv[572] (F17ZD_main571x.svg)
+l. 914 Writing F17ZD_main.idv[573] (F17ZD_main572x.svg)
+l. 920 Writing F17ZD_main.idv[574] (F17ZD_main573x.svg)
+l. 932 Writing F17ZD_main.idv[575] (F17ZD_main574x.svg)
+l. 942 Writing F17ZD_main.idv[576] (F17ZD_main575x.svg)
+l. 955 Writing F17ZD_main.idv[577] (F17ZD_main576x.svg)
+[172] [173] [174] [175]
+l. 966 Writing F17ZD_main.idv[578] (F17ZD_main577x.svg)
+l. 971 Writing F17ZD_main.idv[579] (F17ZD_main578x.svg)
+l. 974 Writing F17ZD_main.idv[580] (F17ZD_main579x.svg)
+l. 986 Writing F17ZD_main.idv[581] (F17ZD_main580x.svg)
+l. 996 Writing F17ZD_main.idv[582] (F17ZD_main581x.svg)
+l. 1007 Writing F17ZD_main.idv[583] (F17ZD_main582x.svg)
+l. 1010 Writing F17ZD_main.idv[584] (F17ZD_main583x.svg)
+[176] [177] [178] [179]) [180] [181
+
+] [182
+
+]
+\openout2 = `T06-vector-spaces.aux'.
+
+(./T06-vector-spaces.tex [183
+
+] [184]
+l. 45 Writing F17ZD_main.idv[585] (F17ZD_main584x.svg)
+l. 46 Writing F17ZD_main.idv[586] (F17ZD_main585x.svg)
+[185]
+l. 47 Writing F17ZD_main.idv[587] (F17ZD_main586x.svg)
+[186]
+l. 72 Writing F17ZD_main.idv[588] (F17ZD_main587x.svg)
+l. 78 Writing F17ZD_main.idv[589] (F17ZD_main588x.svg)
+[187] [188]
+l. 85 Writing F17ZD_main.idv[590] (F17ZD_main589x.svg)
+[189] [190]
+l. 105 Writing F17ZD_main.idv[591] (F17ZD_main590x.svg)
+l. 201 Writing F17ZD_main.idv[592] (F17ZD_main591x.svg)
+l. 202 Writing F17ZD_main.idv[593] (F17ZD_main592x.svg)
+[191] [192] [193] [194]
+l. 343 Writing F17ZD_main.idv[594] (F17ZD_main593x.svg)
+l. 347 Writing F17ZD_main.idv[595] (F17ZD_main594x.svg)
+[195]
+l. 356 Writing F17ZD_main.idv[596] (F17ZD_main595x.svg)
+l. 360 Writing F17ZD_main.idv[597] (F17ZD_main596x.svg)
+l.372 --- TeX4ht warning --- \Link{x1-35001r4.4}? ---
+[196]
+l. 389 Writing F17ZD_main.idv[598] (F17ZD_main597x.svg)
+l. 403 Writing F17ZD_main.idv[599] (F17ZD_main598x.svg)
+[197] [198]
+l. 443 Writing F17ZD_main.idv[600] (F17ZD_main599x.svg)
+l. 447 Writing F17ZD_main.idv[601] (F17ZD_main600x.svg)
+[199] [200]
+l. 478 Writing F17ZD_main.idv[602] (F17ZD_main601x.svg)
+l. 480 Writing F17ZD_main.idv[603] (F17ZD_main602x.svg)
+l.486 --- TeX4ht warning --- \Link{x1-37001r4.5}? ---
+[201] [202] [203]
+l. 508 Writing F17ZD_main.idv[604] (F17ZD_main603x.svg)
+l. 514 Writing F17ZD_main.idv[605] (F17ZD_main604x.svg)
+[204]
+l. 616 Writing F17ZD_main.idv[606] (F17ZD_main605x.svg)
+l. 617 Writing F17ZD_main.idv[607] (F17ZD_main606x.svg)
+[205]) [206] [207
+
+] [208
+
+]
+\openout2 = `T07-homogeneous.aux'.
+
+(./T07-homogeneous.tex
+l. 5 Writing F17ZD_main.idv[608] (F17ZD_main607x.svg)
+l. 19 Writing F17ZD_main.idv[609] (F17ZD_main608x.svg)
+[209
+
+] [210]
+l. 44 Writing F17ZD_main.idv[610] (F17ZD_main609x.svg)
+l. 53 Writing F17ZD_main.idv[611] (F17ZD_main610x.svg)
+l. 82 Writing F17ZD_main.idv[612] (F17ZD_main611x.svg)
+l. 86 Writing F17ZD_main.idv[613] (F17ZD_main612x.svg)
+l. 89 Writing F17ZD_main.idv[614] (F17ZD_main613x.svg)
+l. 89 Writing F17ZD_main.idv[615] (F17ZD_main614x.svg)
+[211] [212]
+l. 105 Writing F17ZD_main.idv[616] (F17ZD_main615x.svg)
+[213]
+l. 106 Writing F17ZD_main.idv[617] (F17ZD_main616x.svg)
+l. 112 Writing F17ZD_main.idv[618] (F17ZD_main617x.svg)
+l. 112 Writing F17ZD_main.idv[619] (F17ZD_main618x.svg)
+l. 116 Writing F17ZD_main.idv[620] (F17ZD_main619x.svg)
+l. 116 Writing F17ZD_main.idv[621] (F17ZD_main620x.svg)
+l. 116 Writing F17ZD_main.idv[622] (F17ZD_main621x.svg)
+l. 116 Writing F17ZD_main.idv[623] (F17ZD_main622x.svg)
+[214]
+l. 117 Writing F17ZD_main.idv[624] (F17ZD_main623x.svg)
+l. 164 Writing F17ZD_main.idv[625] (F17ZD_main624x.svg)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 171.
+l. 171 Writing F17ZD_main.idv[626] (F17ZD_main625x.svg)
+l. 195 Writing F17ZD_main.idv[627] (F17ZD_main626x.svg)
+[215] [216] [217]
+l. 207 Writing F17ZD_main.idv[628] (F17ZD_main627x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 22
+7.
+
+) [218] [219
+
+] [220
+
+]
+\openout2 = `T08-matrix-rank.aux'.
+
+(./T08-matrix-rank.tex
+l. 9 Writing F17ZD_main.idv[629] (F17ZD_main628x.svg)
+l. 24 Writing F17ZD_main.idv[630] (F17ZD_main629x.svg)
+[221
+
+]
+l. 45 Writing F17ZD_main.idv[631] (F17ZD_main630x.svg)
+[222]
+l. 80 Writing F17ZD_main.idv[632] (F17ZD_main631x.svg)
+l. 84 Writing F17ZD_main.idv[633] (F17ZD_main632x.svg)
+[223] [224] [225]
+l. 99 Writing F17ZD_main.idv[634] (F17ZD_main633x.svg)
+l. 103 Writing F17ZD_main.idv[635] (F17ZD_main634x.svg)
+l. 103 Writing F17ZD_main.idv[636] (F17ZD_main635x.svg)
+l. 110 Writing F17ZD_main.idv[637] (F17ZD_main636x.svg)
+[226]
+l. 114 Writing F17ZD_main.idv[638] (F17ZD_main637x.svg)
+[227]
+l. 129 Writing F17ZD_main.idv[639] (F17ZD_main638x.svg)
+[228]
+l. 145 Writing F17ZD_main.idv[640] (F17ZD_main639x.svg)
+[229] [230]
+l. 173 Writing F17ZD_main.idv[641] (F17ZD_main640x.svg)
+l. 180 Writing F17ZD_main.idv[642] (F17ZD_main641x.svg)
+[231]
+l. 190 Writing F17ZD_main.idv[643] (F17ZD_main642x.svg)
+l. 194 Writing F17ZD_main.idv[644] (F17ZD_main643x.svg)
+[232]
+l. 205 Writing F17ZD_main.idv[645] (F17ZD_main644x.svg)
+l. 215 Writing F17ZD_main.idv[646] (F17ZD_main645x.svg)
+[233] [234]
+l. 234 Writing F17ZD_main.idv[647] (F17ZD_main646x.svg)
+l. 244 Writing F17ZD_main.idv[648] (F17ZD_main647x.svg)
+l. 270 Writing F17ZD_main.idv[649] (F17ZD_main648x.svg)
+l. 275 Writing F17ZD_main.idv[650] (F17ZD_main649x.svg)
+l. 283 Writing F17ZD_main.idv[651] (F17ZD_main650x.svg)
+[235] [236] [237]
+l. 294 Writing F17ZD_main.idv[652] (F17ZD_main651x.svg)
+l. 305 Writing F17ZD_main.idv[653] (F17ZD_main652x.svg)
+l. 311 Writing F17ZD_main.idv[654] (F17ZD_main653x.svg)
+l. 318 Writing F17ZD_main.idv[655] (F17ZD_main654x.svg)
+l. 326 Writing F17ZD_main.idv[656] (F17ZD_main655x.svg)
+l. 337 Writing F17ZD_main.idv[657] (F17ZD_main656x.svg)
+l. 343 Writing F17ZD_main.idv[658] (F17ZD_main657x.svg)
+[238] [239] [240] [241] [242]
+l. 350 Writing F17ZD_main.idv[659] (F17ZD_main658x.svg)
+l. 358 Writing F17ZD_main.idv[660] (F17ZD_main659x.svg)
+l. 374 Writing F17ZD_main.idv[661] (F17ZD_main660x.svg)
+l. 375 Writing F17ZD_main.idv[662] (F17ZD_main661x.svg)
+l. 388 Writing F17ZD_main.idv[663] (F17ZD_main662x.svg)
+l. 388 Writing F17ZD_main.idv[664] (F17ZD_main663x.svg)
+l. 389 Writing F17ZD_main.idv[665] (F17ZD_main664x.svg)
+l. 390 Writing F17ZD_main.idv[666] (F17ZD_main665x.svg)
+l. 398 Writing F17ZD_main.idv[667] (F17ZD_main666x.svg)
+l. 404 Writing F17ZD_main.idv[668] (F17ZD_main667x.svg)
+l. 404 Writing F17ZD_main.idv[669] (F17ZD_main668x.svg)
+l. 405 Writing F17ZD_main.idv[670] (F17ZD_main669x.svg)
+l. 410 Writing F17ZD_main.idv[671] (F17ZD_main670x.svg)
+l. 410 Writing F17ZD_main.idv[672] (F17ZD_main671x.svg)
+l. 413 Writing F17ZD_main.idv[673] (F17ZD_main672x.svg)
+l. 428 Writing F17ZD_main.idv[674] (F17ZD_main673x.svg)
+l. 429 Writing F17ZD_main.idv[675] (F17ZD_main674x.svg)
+l. 434 Writing F17ZD_main.idv[676] (F17ZD_main675x.svg)
+l. 434 Writing F17ZD_main.idv[677] (F17ZD_main676x.svg)
+l. 435 Writing F17ZD_main.idv[678] (F17ZD_main677x.svg)
+l. 441 Writing F17ZD_main.idv[679] (F17ZD_main678x.svg)
+l. 444 Writing F17ZD_main.idv[680] (F17ZD_main679x.svg)
+l. 444 Writing F17ZD_main.idv[681] (F17ZD_main680x.svg)
+l. 444 Writing F17ZD_main.idv[682] (F17ZD_main681x.svg)
+l. 445 Writing F17ZD_main.idv[683] (F17ZD_main682x.svg)
+l. 445 Writing F17ZD_main.idv[684] (F17ZD_main683x.svg)
+l. 446 Writing F17ZD_main.idv[685] (F17ZD_main684x.svg)
+l. 447 Writing F17ZD_main.idv[686] (F17ZD_main685x.svg)
+[243] [244] [245] [246] [247]) [248] [249] [250
+
+] [251
+
+]
+\openout2 = `T09-matrix-eigenvalue.aux'.
+
+(./T09-matrix-eigenvalue.tex
+l. 9 Writing F17ZD_main.idv[687] (F17ZD_main686x.svg)
+l. 16 Writing F17ZD_main.idv[688] (F17ZD_main687x.svg)
+[252
+
+]
+l. 20 Writing F17ZD_main.idv[689] (F17ZD_main688x.svg)
+[253]
+l. 27 Writing F17ZD_main.idv[690] (F17ZD_main689x.svg)
+l. 43 Writing F17ZD_main.idv[691] (F17ZD_main690x.svg)
+[254]
+l. 46 Writing F17ZD_main.idv[692] (F17ZD_main691x.svg)
+l. 57 Writing F17ZD_main.idv[693] (F17ZD_main692x.svg)
+[255] [256]
+l. 73 Writing F17ZD_main.idv[694] (F17ZD_main693x.svg)
+[257]
+l. 82 Writing F17ZD_main.idv[695] (F17ZD_main694x.svg)
+l. 86 Writing F17ZD_main.idv[696] (F17ZD_main695x.svg)
+l. 87 Writing F17ZD_main.idv[697] (F17ZD_main696x.svg)
+[258] [259]
+l. 97 Writing F17ZD_main.idv[698] (F17ZD_main697x.svg)
+[260] [261]
+l. 144 Writing F17ZD_main.idv[699] (F17ZD_main698x.svg)
+[262]
+l.157 --- TeX4ht warning --- \Link{x1-55002r7.3}? ---
+l. 165 Writing F17ZD_main.idv[700] (F17ZD_main699x.svg)
+[263]
+l. 182 Writing F17ZD_main.idv[701] (F17ZD_main700x.svg)
+[264]
+l. 199 Writing F17ZD_main.idv[702] (F17ZD_main701x.svg)
+[265]
+l. 203 Writing F17ZD_main.idv[703] (F17ZD_main702x.svg)
+
+Package amsthm Warning: The \qedhere command may not work correctly here on inp
+ut line 209.
+
+[266]
+l. 216 Writing F17ZD_main.idv[704] (F17ZD_main703x.svg)
+l. 220 Writing F17ZD_main.idv[705] (F17ZD_main704x.svg)
+[267] [268]
+l. 227 Writing F17ZD_main.idv[706] (F17ZD_main705x.svg)
+l. 232 Writing F17ZD_main.idv[707] (F17ZD_main706x.svg)
+[269]
+l. 241 Writing F17ZD_main.idv[708] (F17ZD_main707x.svg)
+l. 248 Writing F17ZD_main.idv[709] (F17ZD_main708x.svg)
+l.248 --- TeX4ht warning --- \Link{x1-59001r7.5}? ---
+[270]
+l. 265 Writing F17ZD_main.idv[710] (F17ZD_main709x.svg)
+l. 274 Writing F17ZD_main.idv[711] (F17ZD_main710x.svg)
+l. 275 Writing F17ZD_main.idv[712] (F17ZD_main711x.svg)
+[271]
+l. 282 Writing F17ZD_main.idv[713] (F17ZD_main712x.svg)
+[272] [273]
+l. 324 Writing F17ZD_main.idv[714] (F17ZD_main713x.svg)
+l. 328 Writing F17ZD_main.idv[715] (F17ZD_main714x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 33
+0.
+
+l. 334 Writing F17ZD_main.idv[716] (F17ZD_main715x.svg)
+l. 344 Writing F17ZD_main.idv[717] (F17ZD_main716x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 34
+4.
+
+[274] [275] [276] [277]
+l. 359 Writing F17ZD_main.idv[718] (F17ZD_main717x.svg)
+l. 365 Writing F17ZD_main.idv[719] (F17ZD_main718x.svg)
+[278] [279]
+l. 390 Writing F17ZD_main.idv[720] (F17ZD_main719x.svg)
+[280] [281]
+l. 405 Writing F17ZD_main.idv[721] (F17ZD_main720x.svg)
+[282]
+l. 454 Writing F17ZD_main.idv[722] (F17ZD_main721x.svg)
+l. 457 Writing F17ZD_main.idv[723] (F17ZD_main722x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 45
+9.
+
+l. 463 Writing F17ZD_main.idv[724] (F17ZD_main723x.svg)
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 464.
+
+l. 471 Writing F17ZD_main.idv[725] (F17ZD_main724x.svg)
+l. 471 Writing F17ZD_main.idv[726] (F17ZD_main725x.svg)
+l. 475 Writing F17ZD_main.idv[727] (F17ZD_main726x.svg)
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 47
+5.
+
+l. 482 Writing F17ZD_main.idv[728] (F17ZD_main727x.svg)
+l. 482 Writing F17ZD_main.idv[729] (F17ZD_main728x.svg)
+l. 484 Writing F17ZD_main.idv[730] (F17ZD_main729x.svg)
+l. 484 Writing F17ZD_main.idv[731] (F17ZD_main730x.svg)
+l. 487 Writing F17ZD_main.idv[732] (F17ZD_main731x.svg)
+l. 489 Writing F17ZD_main.idv[733] (F17ZD_main732x.svg)
+[283] [284] [285] [286]
+l. 539 Writing F17ZD_main.idv[734] (F17ZD_main733x.svg)
+l. 541 Writing F17ZD_main.idv[735] (F17ZD_main734x.svg)
+[287]
+l. 546 Writing F17ZD_main.idv[736] (F17ZD_main735x.svg)
+l. 548 Writing F17ZD_main.idv[737] (F17ZD_main736x.svg)
+[288] [289]
+l. 555 Writing F17ZD_main.idv[738] (F17ZD_main737x.svg)
+l. 556 Writing F17ZD_main.idv[739] (F17ZD_main738x.svg)
+l. 564 Writing F17ZD_main.idv[740] (F17ZD_main739x.svg)
+[290]
+l. 574 Writing F17ZD_main.idv[741] (F17ZD_main740x.svg)
+l. 574 Writing F17ZD_main.idv[742] (F17ZD_main741x.svg)
+l. 575 Writing F17ZD_main.idv[743] (F17ZD_main742x.svg)
+l. 577 Writing F17ZD_main.idv[744] (F17ZD_main743x.svg)
+l. 577 Writing F17ZD_main.idv[745] (F17ZD_main744x.svg)
+l. 577 Writing F17ZD_main.idv[746] (F17ZD_main745x.svg)
+l. 577 Writing F17ZD_main.idv[747] (F17ZD_main746x.svg)
+l. 577 Writing F17ZD_main.idv[748] (F17ZD_main747x.svg)
+l. 577 Writing F17ZD_main.idv[749] (F17ZD_main748x.svg)
+l.577 --- TeX4ht warning --- \Link{x1-55003r7.3}? ---
+l. 578 Writing F17ZD_main.idv[750] (F17ZD_main749x.svg)
+[291]
+l. 578 Writing F17ZD_main.idv[751] (F17ZD_main750x.svg)
+l. 581 Writing F17ZD_main.idv[752] (F17ZD_main751x.svg)
+l. 583 Writing F17ZD_main.idv[753] (F17ZD_main752x.svg)
+l. 584 Writing F17ZD_main.idv[754] (F17ZD_main753x.svg)
+l. 585 Writing F17ZD_main.idv[755] (F17ZD_main754x.svg)
+[292]
+l. 587 Writing F17ZD_main.idv[756] (F17ZD_main755x.svg)
+l. 600 Writing F17ZD_main.idv[757] (F17ZD_main756x.svg)
+l. 601 Writing F17ZD_main.idv[758] (F17ZD_main757x.svg)
+[293]
+l. 603 Writing F17ZD_main.idv[759] (F17ZD_main758x.svg)
+l. 607 Writing F17ZD_main.idv[760] (F17ZD_main759x.svg)
+[294]
+l. 611 Writing F17ZD_main.idv[761] (F17ZD_main760x.svg)
+l. 612 Writing F17ZD_main.idv[762] (F17ZD_main761x.svg)
+l. 612 Writing F17ZD_main.idv[763] (F17ZD_main762x.svg)
+l.612 --- TeX4ht warning --- \Link{x1-55003r7.3}? ---
+l. 612 Writing F17ZD_main.idv[764] (F17ZD_main763x.svg)
+l. 612 Writing F17ZD_main.idv[765] (F17ZD_main764x.svg)
+l. 612 Writing F17ZD_main.idv[766] (F17ZD_main765x.svg)
+l. 612 Writing F17ZD_main.idv[767] (F17ZD_main766x.svg)
+l. 612 Writing F17ZD_main.idv[768] (F17ZD_main767x.svg)
+l. 614 Writing F17ZD_main.idv[769] (F17ZD_main768x.svg)
+[295]
+l. 619 Writing F17ZD_main.idv[770] (F17ZD_main769x.svg)
+l. 622 Writing F17ZD_main.idv[771] (F17ZD_main770x.svg)
+l. 638 Writing F17ZD_main.idv[772] (F17ZD_main771x.svg)
+[296]
+l. 640 Writing F17ZD_main.idv[773] (F17ZD_main772x.svg)
+l. 642 Writing F17ZD_main.idv[774] (F17ZD_main773x.svg)
+l. 643 Writing F17ZD_main.idv[775] (F17ZD_main774x.svg)
+[297]
+l. 647 Writing F17ZD_main.idv[776] (F17ZD_main775x.svg)
+l. 648 Writing F17ZD_main.idv[777] (F17ZD_main776x.svg)
+[298]
+l. 648 Writing F17ZD_main.idv[778] (F17ZD_main777x.svg)
+l. 657 Writing F17ZD_main.idv[779] (F17ZD_main778x.svg)
+[299]
+l. 661 Writing F17ZD_main.idv[780] (F17ZD_main779x.svg)
+l. 663 Writing F17ZD_main.idv[781] (F17ZD_main780x.svg)
+l. 667 Writing F17ZD_main.idv[782] (F17ZD_main781x.svg)
+[300]
+l. 682 Writing F17ZD_main.idv[783] (F17ZD_main782x.svg)
+l. 691 Writing F17ZD_main.idv[784] (F17ZD_main783x.svg)
+l. 696 Writing F17ZD_main.idv[785] (F17ZD_main784x.svg)
+l. 701 Writing F17ZD_main.idv[786] (F17ZD_main785x.svg)
+l. 718 Writing F17ZD_main.idv[787] (F17ZD_main786x.svg)
+[301] [302] [303] [304]) [305] [306
+
+] [307
+
+]
+\openout2 = `T10-matrix-stochastic.aux'.
+
+(./T10-matrix-stochastic.tex [308
+
+]
+l. 23 Writing F17ZD_main.idv[788] (F17ZD_main787x.svg)
+l. 34 Writing F17ZD_main.idv[789] (F17ZD_main788x.svg)
+[309]
+l. 39 Writing F17ZD_main.idv[790] (F17ZD_main789x.svg)
+[310]
+l. 67 Writing F17ZD_main.idv[791] (F17ZD_main790x.svg)
+l. 72 Writing F17ZD_main.idv[792] (F17ZD_main791x.svg)
+[311] [312]
+l. 83 Writing F17ZD_main.idv[793] (F17ZD_main792x.svg)
+[313]
+l. 117 Writing F17ZD_main.idv[794] (F17ZD_main793x.svg)
+l. 125 Writing F17ZD_main.idv[795] (F17ZD_main794x.svg)
+l. 144 Writing F17ZD_main.idv[796] (F17ZD_main795x.svg)
+l. 167 Writing F17ZD_main.idv[797] (F17ZD_main796x.svg)
+[314]
+l. 175 Writing F17ZD_main.idv[798] (F17ZD_main797x.svg)
+l. 177 Writing F17ZD_main.idv[799] (F17ZD_main798x.svg)
+l. 179 Writing F17ZD_main.idv[800] (F17ZD_main799x.svg)
+[315] [316] [317]
+l. 204 Writing F17ZD_main.idv[801] (F17ZD_main800x.svg)
+l. 206 Writing F17ZD_main.idv[802] (F17ZD_main801x.svg)
+[318] [319]
+l. 244 Writing F17ZD_main.idv[803] (F17ZD_main802x.svg)
+l. 245 Writing F17ZD_main.idv[804] (F17ZD_main803x.svg)
+l. 250 Writing F17ZD_main.idv[805] (F17ZD_main804x.svg)
+[320] [321]
+l. 256 Writing F17ZD_main.idv[806] (F17ZD_main805x.svg)
+l. 258 Writing F17ZD_main.idv[807] (F17ZD_main806x.svg)
+l. 263 Writing F17ZD_main.idv[808] (F17ZD_main807x.svg)
+[322] [323] [324]
+l. 313 Writing F17ZD_main.idv[809] (F17ZD_main808x.svg)
+[325]
+l. 319 Writing F17ZD_main.idv[810] (F17ZD_main809x.svg)
+l. 321 Writing F17ZD_main.idv[811] (F17ZD_main810x.svg)
+[326]
+l. 326 Writing F17ZD_main.idv[812] (F17ZD_main811x.svg)
+l. 334 Writing F17ZD_main.idv[813] (F17ZD_main812x.svg)
+[327]
+l. 354 Writing F17ZD_main.idv[814] (F17ZD_main813x.svg)
+l. 356 Writing F17ZD_main.idv[815] (F17ZD_main814x.svg)
+[328]
+l. 358 Writing F17ZD_main.idv[816] (F17ZD_main815x.svg)
+l. 360 Writing F17ZD_main.idv[817] (F17ZD_main816x.svg)
+l. 362 Writing F17ZD_main.idv[818] (F17ZD_main817x.svg)
+[329]
+l. 376 Writing F17ZD_main.idv[819] (F17ZD_main818x.svg)
+l. 389 Writing F17ZD_main.idv[820] (F17ZD_main819x.svg)
+[330]
+l. 398 Writing F17ZD_main.idv[821] (F17ZD_main820x.svg)
+l. 401 Writing F17ZD_main.idv[822] (F17ZD_main821x.svg)
+[331]
+l. 411 Writing F17ZD_main.idv[823] (F17ZD_main822x.svg)
+[332]
+l. 425 Writing F17ZD_main.idv[824] (F17ZD_main823x.svg)
+l. 430 Writing F17ZD_main.idv[825] (F17ZD_main824x.svg)
+[333]
+l. 432 Writing F17ZD_main.idv[826] (F17ZD_main825x.svg)
+l. 436 Writing F17ZD_main.idv[827] (F17ZD_main826x.svg)
+[334]
+l. 441 Writing F17ZD_main.idv[828] (F17ZD_main827x.svg)
+l. 445 Writing F17ZD_main.idv[829] (F17ZD_main828x.svg)
+l. 446 Writing F17ZD_main.idv[830] (F17ZD_main829x.svg)
+[335]
+l. 448 Writing F17ZD_main.idv[831] (F17ZD_main830x.svg)
+l. 450 Writing F17ZD_main.idv[832] (F17ZD_main831x.svg)
+) [336] [337
+
+] [338
+
+] [339
+
+] (./F17ZD_main.aux (./T04-complex-iterates.aux) (./T04b-quaternions.aux) (./T0
+5-vectors2.aux) (./T06-vector-spaces.aux) (./T07-homogeneous.aux) (./T08-matrix
+-rank.aux) (./T09-matrix-eigenvalue.aux) (./T10-matrix-stochastic.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 65669 strings out of 478288
+ 1568367 string characters out of 5849316
+ 2380421 words of memory out of 5000000
+ 82407 multiletter control sequences out of 15000+600000
+ 556536 words of font info for 109 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,18n,129p,1777b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on F17ZD_main.dvi (340 pages, 1564700 bytes).

@@ -1,0 +1,636 @@
+	\section{Vector Spaces in General}
+    \label{sec:VectorSpace}
+	
+	 In the previous chapter, we introduced the space $\FR^n$ of \textit{vectors}. The key operations for vectors in $\FR^n$ are {\it adding} two vectors and {\it multiplying} a vector by a scalar.  In this section, we will develop the general abstract framework allowing us to treat various examples of vector spaces in a uniform way.
+	
+	
+	\subsection{Examples and definition}
+    \label{ssec:VSDefinition}
+	
+
+%	Here are some examples that will be used throughout the course: 
+	
+	
+	To be able to treat  various cases with a single mathematical framework, we now introduce the notion of an \textit{abstract vector space}.  This is the notion that makes rigorous this idea of `spaces of objects where one can add vectors and multiply them by a scalar'.
+	
+	
+	
+	\begin{df}{}
+    \index{vector space}\index{vector space axioms}\label{def:vectorspace}
+		A \textit{real vector space}  is a set $V$ (whose elements are called \textit{vectors}) endowed with two operations:
+		\begin{itemize}
+			\item[(i)] an \textit{addition} denoted  $+$ that associates to two vectors $\uv,\vv\in V$ a vector $\uv + \vv\in V$,
+			\item[(ii)] a \textit{multiplication by a scalar} denoted $\cdot$ that associates to a vector $\vv \in V$ and a scalar $\lambda \in \FR$ a vector $\lambda \cdot \vv \in V$ (or simply $\lambda \vv$).
+		\end{itemize} 
+	We further require that the following \textit{vector space axioms} are satisfied:
+		\begin{itemize}
+			\item[(1)] \textit{null vector:} There is an element $\nv=\nv_V\in V$, the \textit{zero} or \textit{null vector}, such that $\vv+\nv=\vv$ for all $\vv\in V$.
+			\item[(2)] \textit{opposite:} For all $\vv\in V$, there is an element $-\vv\in V$ such that $\vv+(-\vv)=\nv$.
+			\item[(3)] \textit{commutativity of the addition:}  $\vv+\wv=\wv+\vv$ for all $\vv,\wv\in V$,
+			\item[(4)] \textit{associativity of the addition:}  $(\vv+\wv)+\uv=\vv+(\wv+\uv)$ for all $\vv,\wv,\uv\in V$.
+			\item[(5)] \textit{distribituvity of the scalar multiplication:}  $a(\vv+\wv)=a\vv+a\wv$ and $(a+b)\vv=a\vv+b\vv$, $a,b\in \FR$, $\vv,\wv\in V$,
+			\item[(6)] \textit{associativity of the scalar multiplication:} $a(b\vv)=(ab)\vv$, $a,b\in\FR$, $\vv\in V$,
+			\item[(7)] \textit{compatibility:} $1\cdot\vv=\vv$.
+		\end{itemize}
+	\end{df}
+	
+	This list of axioms (1)-(7) may seem long and technical. However, you should convince yourself that they encode the usual properties that one expects from addition and multiplication by a number for vectors, functions, etc. Moreover, the strength of this abstract framework is that, once we know that something is a vector space, we can treat objects of that space (functions, sequences, or more exotic objects) as if they were vectors, and use our geometric intuition to solve problems. 
+%	This is similar to the process where one ends up doing additions or multiplications with complex numbers,  as if they were real numbers, once we have realised that they satisfy the same `rules of arithmetic'.
+	
+	\begin{itemize}
+		\item[(i)] The space $\FR^n$ is a  vector space for the addition and multiplication by a scalar introduced in the previous chapter. The null vector $(0, \ldots, 0)^T$ satisfies axiom (1). The opposite of a vector $(v_1, \ldots, v_n)^T$ is defined as $(-v_1, \ldots, -v_n)^T$ to satisfy axiom (2). One then checks that axioms (3)-(7) hold. Indeed, one has to check the equations coordinate by coordinate, and each of these equations then boils down to a standard rule about addition and multiplication of real numbers (commutativity of addition, distributivity of the multiplication, etc.)
+		
+		
+		\item[(iii)] The space $\FR^\FN$ is a vector space for the addition and multiplication by a scalar defined above. Here, a vector is a sequence 
+		$$\vecttt{u_0}{u_1}{\vdots},$$ the zero vector is the \textit{zero sequence} 
+		$$\vecttt{0}{0}{\vdots},$$ and the opposite of a vector is given by 
+		$$-\vecttt{u_0}{u_1}{\vdots}\coloneqq=  \vecttt{-u_0}{-u_1}{\vdots}.$$ Here again, one then checks that axioms (3)-(7) hold, by checking each equation pointwise. 
+		
+%		\item[(iv)] The space $\FC$ of complex numbers can be seen as a real vector space: vectors are complex numbers, the null vector is $0 \in \FC$, the opposite of a complex number $z$ is $-z$, etc. 
+	\end{itemize}
+
+\paragraph{Complex vector spaces.} We have just defined \textit{real} vector spaces, that is, vector spaces where the set of scalars is $\FR$. These will be the almost sole focus of this course. However, one can analogously define \textit{complex vectors spaces} by setting the set of scalars to be $\FC$ and having the same list of axioms. Examples of complex vectors spaces are: 
+\begin{itemize}
+	\item The space $\FC^n$ of vectors of the form $(z_1, \ldots, z_n)^T$ with $z_i \in \FC$ for every $i$.
+	\item  The space $\CF(\FC)$ of functions from $\FC$ to $\FC$.
+	\item  The space $\CP(\FC)$ of polynomial functions with complex coefficients.
+	\item The space $\FC^\FN$ of complex sequences $(z_0, z_1, \ldots)$ with $z_i \in \FC$ for every $i \geq 0$.
+\end{itemize}
+
+	
+
+	
+	
+	
+	\subsection{Linear combinations  in abstract vector spaces}\label{ssec:2.3.Span}
+	
+	We now generalise to abstract vector spaces the notions we introduced in $\FR^n$.
+	
+	\begin{df}{}
+    \index{linear combination}
+		A vector $\vv\in V$ is called a \textit{linear combination} of the vectors $\uv_1,\ldots,\uv_k\in V$, if it can be written as
+		\begin{equation*}
+		\vv=a_1\uv_1+a_2\uv_2+\ldots+a_k\uv_k~,~~~a_1,\ldots,a_k\in\FR~.
+		\end{equation*}
+		This is an extension of our definition of linear combination of vectors in $\FR^n$.
+	\end{df}
+	
+	\begin{example} Consider the vector space  $\CP_2(\FR)$ of polynomials of degree at most 2. Linear combinations of the two functions (=vectors) defined $P_1(x) = x$ and $P_2(x)= x^2$ are polynomial functions of the form $$a_1x+a_2 x^2, ~~\mbox{ for } a_1, a_2 \in \FR.$$
+		For instance, the polynomial function defined $P(x) = 5x^2 - 2x$ is a linear combination of $x$ and $x^2$, since we have $P= 5P_2 - 2P_1$.
+		\end{example}
+	
+	\begin{df}{}
+    \index{span}
+		The \textit{span} of a family of vectors $\uv_1,\ldots,\uv_k$, usually denoted by $span(\uv_1,$ $\ldots,\uv_k)$, is the set of all possible linear combinations of $\uv_1,\ldots,\uv_k$:
+		\begin{equation*}
+		span(\uv_1,\ldots,\uv_k) :=\{a_1\uv_1+\ldots+a_k\uv_k|a_1,\ldots,a_k\in\FR\}~.
+		\end{equation*}
+		We also say that $span(\uv_1,\ldots,\uv_k)$ is spanned by $\uv_1,\ldots,\uv_k$ or that these vectors span $span(\uv_1,\ldots,\uv_k)$.
+	\end{df}
+	
+	\begin{example}
+    \begin{itemize}
+			\item[(i)] The vectors $(1,0,0)^T$, $(0,1,0)^T$, $(0,0,1)^T$ span $\FR^3$.
+		\item[(ii)] The vector space of polynomials up to degree $n$, $\CP_n(\FR)$, is spanned by the polynomials $1,x,x^2,$ $\ldots,x^n$, as every polynomial function in $\CP_n(\FR)$ can be written as $a_0 \times 1 + \ldots + a_nx^n$.
+		\item[(iii)] The polynomial function $2x^2 +x -1$ belongs to span$(x^2+x, x+1)$ since $2x^2+x-1 = 2(x^2 +x) - (x+1)$.
+%		In the real vector space $\FC$,  every complex number can be written as $a+bi$ with $a, b \in \FR$. It follows that $\FC$ is spanned by $1$ and $i$.
+\end{itemize}
+		\end{example}
+	
+	%\eolec{3.2}{3.3}
+
+		
+			\begin{df}{}
+            \index{linearly dependent}\index{linearly independent} We say that  vectors $\vv_1,\ldots,\vv_k$ are \textit{linearly independent} if 
+			$$c_1\vv_1+\ldots+c_k\vv_k=\nv ~~\Longrightarrow ~~ c_1 = \ldots = c_k =0.$$
+			Otherwise, we say that the vectors are \textit{linearly dependent}. This is an extension of our definition of linear independence for $\FR^n$. 
+			%		there exist $c_1,\ldots,c_k\in\FR$ not all equal to zero such that $c_1\vv_1+\ldots+c_k\vv_k=\nv$. If the only solution to the system of linear equations $c_1\vv_1+\ldots+c_k\vv_k=\nv$ is the trivial solution $c_1=\ldots=c_k=0$, then the vectors are \textit{linearly independent}. We say that a set of vectors is linearly independent, if the vectors in the set are linearly independent. This is an extension of our definition of linear dependence for $\FR^n$.
+		\end{df}
+		
+		As in the case of $\FR^n$, linear dependence as a simple interpretation: a family of vectors $\uv_1,\ldots,\uv_k$ is linearly dependent, if and only if one (i.e.\ at least one) of the $\uv_i$s can be expressed as a linear combination of the others.
+	
+
+		%\item The vector space of $2\times2$-dimensional matrices $\sMat_2$ is spanned by
+		%\begin{equation*}
+		% \left(\begin{array}{cc}1 & 0 \\ 0 & 0
+		%       \end{array}\right)~,~~~
+		%\left(\begin{array}{cc}0 & 1 \\ 0 & 0
+		%       \end{array}\right)~,~~~
+		%\left(\begin{array}{cc}0 & 0 \\ 1 & 0
+		%       \end{array}\right)~,~~~
+		%\left(\begin{array}{cc}0 & 0 \\ 0 & 1
+		%       \end{array}\right)~.
+		%\end{equation*}
+
+	
+%	
+%	\begin{prop}\label{th:2.3.6} Suppose $\vv_1,\ldots \vv_k$ span $V$ and $\vv_1$ is a linear combination of $\vv_2,\ldots,\vv_k$. Then $\vv_2,\ldots,\vv_k$ span $V$.
+%	\end{prop}
+%	
+%	
+%	
+%	\begin{proof}
+%		Let $\vv\in V$. Since $\span\{\vv_1,\ldots,\vv_k\}=V$, there are constants $c_1,\ldots,c_k\in\FR$ such that $\vv=c_1\vv_1+c_2\vv_2+\ldots+c_k\vv_k$. Since $\vv_1$ is a linear combination of $\vv_2,\ldots,\vv_k$, there are constants $d_2,\ldots,d_k\in\FR$ such that $\vv_1=d_2\vv_2+\ldots+d_k\vv_k$. Hence:
+%		\begin{equation*}
+%		\vv=c_1(d_2\vv_2+\ldots+d_k\vv_k)+c_2\vv_2+\ldots+c_k\vv_k=(c_1d_2+c_2)\vv_2+\ldots+(c_1d_k+c_k)\vv_k~.
+%		\end{equation*}
+%		Thus, every vector $\vv\in V$ can be expressed as a linear combination of $\vv_2,\ldots,\vv_k$ and so $\vv_2,\ldots,\vv_k$ span $V$.
+%	\end{proof}
+%	
+	
+%	\paragraph{Spans and subspaces.}
+%	
+%	\begin{thm}
+%		Let $U$ be a vector space, let $V$ be a vector subspace, and let $\vv_1, \ldots, \vv_k$ be vectors of $U$. Then we have:
+%		$$\vv_1, \ldots, \vv_k \in V ~~ \Longrightarrow ~~ \mathrm{span}(\vv_1, \ldots, \vv_k) \subset V.$$
+%		\end{thm}
+	
+%	\paragraph{A criterion for linear independence in abstract vector spaces.}\label{ssec:LinearDependence} Unlike in the case of $\FR^n$, there is no automatic recipe to show that a family of vectors is linearly independent. However, we present here a useful criterion that works in many situations. Such a criterion relies on a notion that will become crucial in the next chapter.
+%	
+%	
+%	\begin{definition}
+%		Let $U$ be a vector space and let $n \geq 1$. A \textit{linear map} from $U$ to $\FR^n$ is map 
+%		$$T: U \rightarrow \FR^n$$
+%		that is compatible with the vector space operations, that is:
+%			\begin{itemize}
+%			\item[(1)] $T(\uv+\vv)=T(\uv)+T(\vv)$ for all $\uv,\vv\in U$.
+%			\item[(2)] $T(\lambda\uv)=\lambda T(\uv)$ for all $\lambda\in\FR$ and $\uv\in U$.
+%		\end{itemize}
+%		\end{definition}
+%	
+%	In a sense, a linear map is a map that is `compatible' with the structure of vector spaces. Indeed, each of the vector spaces $U$ and $\FR^n$ come with an addition and a scalar multiplication, and we want to focus on those maps that respect these operations: they send a sum to a sum and a scalar multiple to a scalar multiple. This is exactly what the definition of a linear map requires.
+%	
+%	\begin{example}
+%		TBC??? Evaluation, differentiation, etc.
+%		\end{example}
+%	
+%
+%	
+%	\begin{thm}
+%		Let $U$ be a vector space, and let $n \geq 1$. Let $T: U \rightarrow \FR^n$ be a linear map. Let $\uv_1, \ldots, \uv_k$ be a family of vectors of $U$.
+%		
+%		If  $T(\uv_1), \ldots, T(\uv_k)$ is a linearly independent family of vectors of $\FR^n$, then $\uv_1, \ldots, \uv_k$ is a linearly independent family of vectors of $U$.
+%		\end{thm}
+%	
+%	A particularly useful case is to consider a map from $U$ to $\FR^k$. Indeed, the family $T(\uv_1), \ldots, T(\uv_k)$  is linearly independent if and only if their determinant is non-zero, which is something relatively easy to check. Of course, the hard part is finding the right map $T$ in the first place...
+%	
+%
+%	\begin{proof}
+%		If the set is linearly dependent, then there are constants $c_1,\ldots,c_k$ not all vanishing such that $c_1\uv_1+\ldots+c_k\uv_k=\nv$. Assume that $c_i\neq 0$. We can then solve the equation for $\uv_i$:
+%		\begin{equation*}
+%		\uv_i=\frac{1}{c_i}(c_1\uv_1+\ldots+c_{i-1}\uv_{i-1}+c_{i+1}\uv_{i+1}+\ldots+c_k\uv_k)~.
+%		\end{equation*}
+%		Inversely, if $\uv_i$ can be expressed as a linear combination of the others, we can transform this equation into that demonstrating linear dependence.
+%	\end{proof}
+	
+%	\begin{example}
+%		\item[(i)] Recall that the vectors $(1,0)^T,(0,1)^T$ are linearly independent in $\FR^2$, as
+%		\begin{equation*}
+%		c_1\vectt{1}{0}+c_2\vectt{0}{1}=\nv~~\Rightarrow~~\vectt{c_1}{c_2}=\vectt{0}{0}
+%		\end{equation*}
+%		which implies $c_1=c_2=0$. Analogously, the vectors $(1,0,0)^T,(0,1,0)^T,(0,0,1)^T$ are linearly independent in $\FR^3$ and the generalisation to $\FR^n$ is clear.\\
+%		\item[(ii)] The vectors of  $(1,2)^T,(2,4)^T \in \FR^2$ are linearly dependent, as $2(1,2)^T-(2,4)^T=\nv$.\\
+%		\item[(iii)] Let $\uv_1=(1,-1,2)^T$, $\uv_2=(3,2,1)^T$, $\uv_3=(4,1,3)^T$. Then $\uv_1,\uv_2,\uv_3$ are linearly dependent as $\uv_3 = \uv_1+\uv_2$.
+%	\end{example}
+
+\begin{example}
+	Let us show that the functions $f_1(x):=\cos(x), f_2(x):=\cos(2x), f_3(x):=\cos(3x)$ are linearly independent vectors of $\CF(\FR)$.
+	
+	
+	Let $a, b, c\in \FR$ be scalars such that $af_1 + bf_2 + cf_3$ is the zero vector of $\CF(\FR)$, that is, the zero function. This is equivalent to: 
+	$$ a\cos(x)+b \cos(2x) +c\cos(3x)=0 ~~~\mbox{ for every }~x\in \FR.$$
+	By evaluating at $x= \pi/2$, we get $b=0$, hence $ a\cos(x) +c\cos(3x)=0 $ for every $x \in \FR$. By evaluating this equation at $x = \pi/6$, we get $a\times \sqrt{3}/2 = 0$, hence $a=0$. Finally, we have $c\cos(3x)=0$ for every $x \in \FR$, and evaluating at $x=0$ yields $c=0$. 
+	
+	We thus have $a=b=c=0$, and it follows that $f_1, f_2, f_3$ are linearly independent.
+	
+	\end{example}
+
+%	\paragraph{Remark.} Unlike the case of vectors in $\FR^n$ where checking linear independence amounted to solving a system of linear equations, there is no automatic way to check that a family of functions is linearly independent. The previous example illustrates a powerful method: evaluating at different points to obtain several linear equations. You will see other manipulations in tutorials that allow you to check the linear independence of certain families of functions.
+%	
+%	\begin{method}{Determining whether vectors are linearly independent} To determine whether vectors $\{\uv_1,\ldots,\uv_k\}$ are linearly independent, one uses Gaussian elimination to find all solutions to the system
+%	\begin{equation*}
+%	c_1\uv_1+c_2\uv_2+\ldots+c_k\uv_k=\nv~.
+%	\end{equation*}
+%	If all variables $c_1,\ldots, c_k$ are pivot variables, this homogeneous system of linear equations has only the trivial solution $c_1=c_2=\ldots=c_k=0$. In this case, the set $\{\uv_1,\ldots\uv_k\}$ is linearly independent. Otherwise, nontrivial solutions exist and the vectors are linearly dependent.
+%	\end{method}
+%	
+%	\begin{example} Let us determine whether the vectors $(1,2,3,-1)^T$, $(2,1,3,1)^T$ and $(4,5,9,-1)^T$ are linearly dependent. We must find all solutions $(c_1,c_2,c_3)$ of the homogeneous SLE
+%	\begin{equation*}
+%	c_1\left(\begin{array}{c}
+%	1 \\ 2 \\ 3 \\ -1
+%	\end{array}\right)+
+%	c_2\left(\begin{array}{c}
+%	2 \\ 1 \\ 3 \\ 1
+%	\end{array}\right)+
+%	c_3\left(\begin{array}{c}
+%	4 \\ 5 \\ 9 \\ -1
+%	\end{array}\right)=
+%	\left(\begin{array}{c}
+%	0 \\ 0 \\ 0 \\ 0
+%	\end{array}\right)~.
+%	\end{equation*}
+%	That is, we have to analyse
+%	\begin{equation*}
+%	\begin{array}{ccccl}
+%	c_1&+2c_2&+4c_3&=&0\\
+%	2c_1&+c_2&+5c_3&=&0\\
+%	3c_1&+3c_2&+9c_3&=&0\\
+%	-c_1&+c_2&-c_3&=&0\\
+%	\end{array}~~\rightsquigarrow~~
+%	\left(\begin{array}{ccc|c}1 & 2 & 4 & 0 \\ 2 & 1 & 5 & 0 \\ 3 & 3 & 9 & 0 \\ -1 & 1 & -1 & 0\end{array}\right)
+%	\end{equation*}
+%	\begin{equation*}
+%	\melt{R_2\rightarrow R_2-2R_1\\R_3\rightarrow R_3-3R_1\\R_4\rightarrow R_4+R_1}
+%	\left(\begin{array}{ccc|c}1 & 2 & 4 & 0 \\ 0 & -3 & -3 & 0 \\ 0 & -3 & -3 & 0 \\ 0 & 3 & 3 & 0\end{array}\right)
+%	\melt{R_3\rightarrow R_3-R_2\\R_4\rightarrow R_4+R_3\\R_2\rightarrow -\frac{1}{3}R_2}
+%	\left(\begin{array}{ccc|c}1 & 2 & 4 & 0 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{array}\right)~.
+%	\end{equation*}
+%	Not all the variables are pivot variables ($c_3$ is a free variable) and therefore the system has infinitely many solutions, which implies that the vectors are linearly dependent. More precisely, if we rewrite it as a system of linear equations, we get
+%	\begin{equation*}
+%	\begin{array}{rcl}
+%	c_1+2c_2+4c_3&=&0\\
+%	c_2+c_3&=&0\\
+%	\end{array}~~~
+%	\begin{array}{l}
+%	\rightarrow c_1=-2c_2-4c_3=-2\alpha\\
+%	\rightarrow c_3=\alpha\Rightarrow c_2=-\alpha\\
+%	\end{array}~~~.
+%	\end{equation*}
+%	Putting $\alpha=1$, for example, we obtain
+%	\begin{equation*}
+%	-2\left(\begin{array}{c}
+%	1 \\ 2 \\ 3 \\ -1
+%	\end{array}\right)-
+%	\left(\begin{array}{c}
+%	2 \\ 1 \\ 3 \\ 1
+%	\end{array}\right)+
+%	\left(\begin{array}{c}
+%	4 \\ 5 \\ 9 \\ -1
+%	\end{array}\right)=
+%	\left(\begin{array}{c}
+%	0 \\ 0 \\ 0 \\ 0
+%	\end{array}\right)~.
+%	\end{equation*}
+%	\end{example}
+	
+%	\begin{remark}\label{rem:2.4.5} 
+%		\item[(i)] Two vectors $\uv_1,\uv_2$ are linearly dependent if and only if $\uv_2=\nv$ or $\uv_1$ is a multiple of $\uv_2$. The first case is clear, as $c_1\uv_1+c_2\nv=\nv$ has nontrivial solutions such as $c_1=0$, $c_2=1$. In the second case, assume that $\uv_1=\lambda \uv_2$, then $c_1\uv_1+c_2\uv_2=\nv$ has the nontrivial solutions $c_1=\alpha$, $c_2=-\lambda\alpha$, $\alpha\in\FR$.\\
+%		\item Let $\{\vv_1,\ldots,\vv_k\}$ be a set of vectors in $\FR^n$ with $k>n$. Then $c_1\vv_1+\ldots+c_k\vv_k=\nv$ gives rise to a homogeneous system of linear equations with $n$ equations in $k$ unknowns. As $k>n$, this system must have a non-zero solution (Theorem  \ref{th:1.4.3}) and therefore $\vv_1,\ldots,\vv_k$ are linearly dependent.
+%	\end{remark}
+%	
+%	
+%	
+%	
+%	\paragraph{Theorem.}\label{th:2.4.6} Suppose $\{\vv_1,\ldots,\vv_k\}$ is linearly independent and $\vv_0\notin\span\{\vv_1,\ldots,\vv_k\}$. Then $\{\vv_0,\vv_1,\ldots,\vv_k\}$ is linearly independent.
+%	\begin{proof}
+%		Suppose $c_0\vv_0+c_1\vv_1+\ldots+c_k\vv_k=\nv$. If $c_0\neq 0$, $\vv_0=-\frac{1}{c_0}(c_1\vv_1+\ldots+c_k\vv_k)$ and so $v_0\in\span\{\vv_1,\ldots,\vv_k\}$, which we know is not the case. Thus, $c_0=0$. But we know that $\{\vv_1,\ldots,\vv_k\}$ are linearly independent, and so the only solution to the SLE $c_0\vv_0+c_1\vv_1+\ldots+c_k\vv_k=c_1\vv_1+\ldots+c_k\vv_k=\nv$ is $c_0=c_1=\ldots=c_k=0$. Therefore, $\{\vv_0,\vv_1,\ldots,\vv_k\}$ is linearly independent.
+%	\end{proof}
+%	
+%	%\tut{4}
+	%\end{tutsectionthree}
+	%\begin{tutsectionfour}
+	
+	\subsection{Basis and dimension}\label{ssec:BasisDimension}
+	
+	%\paragraph{Basis of a vector space.}
+	
+	\begin{df}{}
+  %  \index{basis}
+	A family of vectors
+%		\footnote{The round brackets $(\ldots)$ denote a tuple which is an ordered list of elements. A set, denoted by curly brackets $\{\ldots\}$, is a list of elements without any order. In particular $\{a,b\}=\{b,a\}$, while $(a,b)\neq(b,a)$ if $b\neq a$.} 
+		$\uv_1,\ldots,\uv_n$ is called a \textit{basis} of $V$, if it  is a linearly independent set of vectors that span $V$.
+		
+%		A vector space if \textit{finite dimensional} if it has a basis consisting of finitely many vectors, and \textit{infinite dimensional} otherwise.
+	\end{df}
+	
+	%\eolec{3.3}{4.1}
+	
+	\begin{example}
+    \label{ex:2.5.2}
+	We have already seen the standard basis $\ev_1 = (1, 0, \ldots, 0)^T$, $\ldots$ ,$ \ev_n = (0, \ldots, 0, 1)^T$ of $\FR^n$. 
+
+		Note that a real vector space has infinitely many bases. For instance, $(1, 1)^T$ and $(1, -1)^T$ is also a basis of $\FR^2$ {Why?}. 
+
+	\end{example}
+
+ Here is an important example:
+\begin{thm}{}
+\label{thm:basis_pol}
+A basis for the vector space of polynomials of degree at most $n$ is $1,x,x^2,\ldots,x^n$.
+	\end{thm}
+
+\begin{proof}
+	The family clearly spans $\CP_n(\FR)$, as every polynomial function of $\CP_n(\FR)$ can be written as a linear combination $a_0 + a_1x + \ldots + a_n x^n$ for some scalars $a_0, \ldots, a_n \in \FR$.
+	Let us show that this family is free. Suppose that we have a linear combination $a_0 + a_1x + \ldots + a_n x^n$ that is the zero vector, that is, $a_0 + a_1x + \ldots + a_n x^n= 0$ for every $x\in \FR$. By evaluating at $x=0$, we get $a_0 = 0$. Now since the polynomial function $a_0 + a_1x + \ldots + a_n x^n$ is the zero function, so its derivative, so we get $a_1 + 2a_2x + \ldots + na_nx^{n-1} = 0$ for every $x \in \FR$. Evaluating again at $x=0$, we get $a_1 = 0$. By repeating the same procedure (differentiating and evaluating at $x=0$), we prove successively that $a_0 = a_1 = \ldots = a_n = 0$. Thus, the family of polynomial functions $1, x, \ldots, x^n$ is linearly independent, so it is a basis of  $\CP_n(\FR)$.
+\end{proof}
+
+
+
+	\subsection{Dimension of a vector space.} 
+    In order to define the dimension of a vector space, we need the following important result: 
+	
+		\begin{thm}{}
+        \label{th:2.5.4} Any two bases for a vector space $V$ contain the same number of vectors.
+	\end{thm}
+
+Before proving it, we need the following result:
+	
+	\begin{thm}{}
+    \label{lem:2.5.3} If a family of vectors $\vv_1,\vv_2,\ldots,\vv_n$ is a basis of a vector space $V$, then every family of vectors of $V$ containing more than $n$ vectors is linearly dependent.
+		\end{thm}
+	\begin{proof}
+		Let $\wv_1,\wv_2,\ldots,\wv_m$ be a family of $m>n$ vectors of $V$. We will show that there exist $c_1,c_2,\ldots,c_m$ not all zero such that
+		\begin{equation}\label{eq:SLE1}
+		c_1\wv_1+c_2\wv_2+\ldots+c_m\wv_m=\nv~.
+		\end{equation}
+		Since $\vv_1,\vv_2,\ldots,\vv_n$ spans $V$, each $\wv_i$ can be expressed as a linear combination of the $\vv_i$'s:
+		\begin{equation*}
+		\begin{aligned}
+		\wv_1&=a_{11}\vv_1+a_{12}\vv_2+\ldots+a_{1n}\vv_n~,\\
+		\wv_2&=a_{21}\vv_1+a_{22}\vv_2+\ldots+a_{2n}\vv_n~,\\
+		\vdots & \hspace{2cm}\vdots\\
+		\wv_m&=a_{m1}\vv_1+a_{m2}\vv_2+\ldots+a_{mn}\vv_n~.
+		\end{aligned}
+		\end{equation*}
+		Plugging this into \eqref{eq:SLE1}, we have
+		\begin{equation*}
+		c_1(a_{11}\vv_1+\ldots+a_{1n}\vv_n)+\ldots+c_m(a_{m1}\vv_1+\ldots+a_{mn}\vv_n)=\nv~.
+		\end{equation*}
+		To have all the coefficients of the $\vv_1,\ldots,\vv_n$ vanish, note that it is sufficient to find $c_1,\ldots,c_m$ such that
+		\begin{equation*}
+		\begin{aligned}
+		a_{11}c_1+a_{21}c_2+\ldots+a_{m1}c_m &=0~,\\
+		a_{12}c_1+a_{22}c_2+\ldots+a_{m2}c_m &=0~,\\
+		\vdots\hspace{2cm}&\vdots\\
+		a_{1n}c_1+a_{2n}c_2+\ldots+a_{mn}c_m &=0~.
+		\end{aligned}
+		\end{equation*}
+		This is a homogeneous system of linear equations with more unknowns ($m$) than equations ($n$) and thus there is a solution with not all of the $c_i$ being zero. It follows that \eqref{eq:SLE1} has a solution besides the trivial solution and so $S'$ is linearly dependent.
+	\end{proof}
+	
+
+	\begin{proof}[Proof of Proposition \ref{th:2.5.4}]
+		Let $B=(\vv_1,\vv_2,\ldots,\vv_n)$ and $B'=(\vv'_1,\vv'_2,\ldots,\vv'_m)$ be bases for $V$. From the above lemma, we conclude that since $B$ is a basis and $B'$ is linearly independent, $m\leq n$. Equally, since $B'$ is a basis and $B$ is linearly independent, $n\leq m$. Altogether, we have $m=n$.
+	\end{proof}
+%	
+%	\paragraph{Remark.} From lemma \ref{lem:2.5.3} and theorem \ref{th:2.5.4}, it follows that a basis for $V$ contains a minimal number of vectors that span $V$, but a maximal number of vectors that are still linearly independent.
+	
+	We are now able to define properly the dimension of a vector space: 
+	
+	\begin{thm}{}
+    \index{dimension}
+		Let $V$ be a vector space. We say that $V$ is \textit{finite-dimensional} if it has a finite basis, and \textit{infinite-dimensional} otherwise. We define the \textit{dimension} of $V$ to be the number of vectors in any basis of $V$.
+	\end{thm}
+
+
+	
+	\begin{example}
+	We have constructed bases of several vector spaces. We  have the following dimensions:
+		\begin{equation*}
+		\begin{tabular}{r|c|c|c|c}
+		Space & $\FR^2$  & $\FR^3$ & $\FR^n$ & $\CP_n(\FR)$ \\
+		\hline
+		Dimension & 2 & 3 & $n$ & $n+1$ 
+		\end{tabular}
+		\end{equation*}
+%		\item[(ii)] Consider the straight line $L=\{(x,y,z)^T:\frac{x}{2}=\frac{y}{3}=\frac{z}{5}\}$. If $(x,y,z)^T\in L$, then $\frac{x}{2}=\frac{y}{3}=\frac{z}{5}=\alpha$ for some $\alpha\in\FR$ and therefore $(x,y,z)^T=\alpha(2,3,5)^T$ and $L=\{\alpha(2,3,5)^T:\alpha\in\FR\}=\span\{(2,3,4)^T\}$. Since a single non-zero vector is always linearly independent, $\big((2,3,5)^T\big)$ is a basis for $L$ and we have $\dim L=1$.\\
+%		\item[(iii)] Consider the plane $P=\{(x,y,z)^T\in\FR^3:x+y-z=0\}$. Then $P$ is a subspace of $\FR^3$. Consider the vectors $(1,0,1)^T,(0,1,1)^T$ of $P$. Since $(1,0,1)^T$ and $(0,1,1)^T$ are not multiples of each other, they are  linearly independent. Furthermore, they span $P$, since a vector of $P$ is of the form $(x,y,x+y)^T$ for some $x, y \in \FR$ and we have  $(x,y,x+y)^T=x(1,0,1)^T+y(0,1,1)^T$. We conclude that $(1,0,1)^T,(0,1,1)^T$ form a basis for $P$, and $P$ has dimension 2.\\
+\end{example}
+
+The following result is useful in finding a lower bound for the dimension of a vector space:
+
+\begin{thm}{}
+	Let $V$ be a vector space, and let $\vv_1, \ldots, \vv_k$ be a linearly independent family. Then we have: $$\dim V \geq k.$$
+\end{thm}
+
+
+
+
+
+
+
+
+	
+\subsection{Vector subspaces}\label{ssec:VectorSubspaces}
+
+The previous examples are the main sources of vectors spaces for this course. However, we are often not interested in the space of all vectors, or of all functions. Instead, we are often interested in particular subsets of elements that satisfy some equation: system of linear equations, differential equations, etc. 
+
+In this section, we introduce the notion of \textit{vector subspace} as the natural notion of subset of a vector space that is compatible with the operations of addition and multiplication by a scalar. We will see that the set of solutions of various equations naturally form a vector subspace of the associated vector space.
+
+\begin{df}{}
+Let $V$  be a vector space and let $W$ be a subset of $V$. We say that $W$ is a \textit{vector subspace}  (or simply a subspace) of $V$ if the following holds:
+	
+	\begin{itemize}
+		\item[(i)] $\nv \in W$,
+		\item[(ii)] for all $\wv_1,\wv_2\in W$, we have $\wv_1+\wv_2\in W$ and
+		\item[(iii)] for all $\lambda\in\FR$ and $\wv\in W$, we have $\lambda \wv\in W$.
+	\end{itemize}
+	%		Equivalently, a vector subspace is a non-empty subset that is stable under linear combinations.
+\end{df}
+
+
+
+	A vector subspace $W$ of $V$ is itself a vector space, when endowed with the addition and scalar multiplication coming from $V$. (This is actually an equivalence: a subset $W$ is a subspace if and only if it $W$ is a vector space when endowed with the addition and scalar multiplication from $V$.)
+	
+	As a consequence, we can talk of the dimension or of bases of a  given subspace.
+
+
+\begin{example}
+\label{ex:2.2.2} 
+\begin{itemize}
+	\item[(i)] In a vector space $V$, the whole space $V$  and the trivial subset $\{\nv\}$ are always vector subspaces.
+	\item[(ii)] Consider the subset $W=\{(x,y)^T\in\FR^2:x+y=0\}$ of $\FR^2$. That is, $W$ consists of all the vectors of the form $(x, -x)^T$ for $x \in \FR$. The null vector $(0,0)^T$ is clearly in $W$.  If we add two vectors or multiply a vector by a scalar in $W$, we end up back in $W$:
+	\begin{equation*}
+	\vectt{x_1}{-x_1}+\vectt{x_2}{-x_2}=\vectt{x_1+x_2}{-(x_1+x_2)}~~~\mbox{and}~~~\lambda\vectt{x_1}{-x_1}=\vectt{\lambda x_1}{-\lambda x_1}~.
+	\end{equation*}
+	Thus, $W$ us a subspace of $\FR^2$. Note that every vector of $W$ is of the form 
+	$$\vectt{x}{-x} = x\vectt{1}{-1} ~~ \mbox{ for some } x \in \FR,$$
+	so $W$ has dimension $1$ and a basis of $W$ is given by the vector $(1, -1)^T.$
+    \end{itemize}
+\end{example}
+
+\paragraph{Remark.} 
+%Here are immediate properties of vector subspaces:  \begin{itemize}\item[(i)] If $W$ is a vector subspace of $V$, then $W$ contains the null vector. Indeed, $W$ contains a vector $\wv$ as it is non-empty, and as $W$ is stable under multiplication by a scalar, it also contains $0.\wv = \nv$. \\
+If a subspace $W$ contains a vector $\wv$, it also contains its opposite $-\wv$, as $W$ is stable under multiplication by a scalar and $-\wv = (-1).\wv$.
+%\end{itemize}
+
+
+
+
+\begin{example}\label{ex:2.2.2} 
+	The subset $W'=\{(x,y)^T |  x+y=1\}$ is not a vector subspace of $\FR^2$, as $\nv=(0,0)^T$ is not an element of $W'$. Another reason is that the sum of two elements $w_1,w_2\in W'$ is not always in $W'$. For instance, $(1,0)^T$ and $(0,1)^T$ belong to $W'$, but their sum $(1,1)^T$ does not.
+\end{example}
+
+
+%\begin{thm}\index{vector subspace test} {\em (Vector subspace test)} Let $V$  be a vector space and let $W$ be a non-empty subset of $V$. Then $W$ is a vector subspace of $V$ iff (if and only if)
+%\begin{itemize}
+% \item[(i)] for all $\wv_1,\wv_2\in W$, we have $\wv_1+\wv_2\in W$ and
+% \item[(ii)] for all $\lambda\in\FR$ and $\wv\in W$, we have $\lambda \wv\in W$.
+%\end{itemize}
+%\end{thm}
+%\begin{proof}
+%First, note that due to (i) and (ii), the restrictions of the operations $+$ and $\cdot$ from $V$ to $W$ are indeed well defined on $W$ and do not take us out of this set. It remains to check the vector space axioms. In the tutorials, we will show that $(-1)\vv=-\vv$ for any $\vv\in V$. We have already shown in \ref{ssec:VSDefinition}, \ref{th:vanishing} that $0\wv=\nv$. Take an arbitrary vector $\vv\in W$. Because of (ii), both $0\wv=\nv$ and $(-1)\vv=-\vv$ are also in $W$. Axiom (1) and (2) are therefore satisfied: There is a null vector $\nv$ in $W$, and every vector $\vv$ has an inverse $-\vv$ in $W$. The validity of the remaining axioms (3)-(7) is then inherited from $V$.
+%\end{proof}
+
+\begin{example}
+\begin{itemize}
+	\item[(i)] Let $V=\FR^2$. Then $W=\{(x,y)^T | x=3y\}$ is a vector subspace, since vectors of $W$ are of the form 
+	$$\vectt{3y}{y} = y \vectt{3}{1} ~~ \mbox{ for some } y\in \FR,$$
+	 and we have:
+	\begin{equation*}
+	\vectt{3y_1}{y_1}+\vectt{3y_2}{y_2}=\vectt{3(y_1+y_2)}{y_1+y_2}~~~\mbox{and}~~~\lambda\vectt{3y}{y}=\vectt{3\lambda y}{\lambda y}~,~~~\lambda\in\FR~.
+	\end{equation*}
+	Thus, $W$ is a subspace of $\FR^2$ of dimension $1$, and a basis of it is given by the vector $(3, 1)^T$.
+
+	In general, lines through the origin of $\FR^2$ form vector subspaces of $\FR^2$.\\
+	\item[(ii)] Lines in $\FR^2$ that do not pass through the origin do not contain $\nv$ and thus are not vector subspaces of $\FR^2$, cf.\ example in \ref{ex:2.2.2}.
+    \end{itemize}
+\end{example}
+
+
+
+\paragraph{Subspaces of $\FR^2$.} We have seen already that we can completely describe the subspaces of $\FR^2$: 
+\begin{itemize}
+		\item[(i)] the trivial subspace $\{\nv \}$,
+		\item[(ii)] lines through the origin,
+		\item[(iii)] the whole space $\FR^2$.
+	\end{itemize}
+There is a similar picture in $\FR^3$, where subspaces can be lines through the origin, planes through the origin, etc. Geometrically, being stable under addition and scalar multiplication makes vector subspaces `look flat'.
+
+
+
+
+
+\paragraph{Solutions of systems of linear differential equations as subspaces.}  We saw in a previous example how the set of solutions of certain differential equations may be described as a span, and hence is a subspace of $\CF(\FR)$. Even without an explicit description of the solutions, it is possible to show that the set of solutions forms a subspace. 
+
+
+	Consider the following differential equation (linearised simple pendulum): 
+$$ y'' + \omega^2 y=0.$$
+Then the set $W$ of solutions of this equation is a subspace of $\CF(\FR)$.
+
+
+\begin{proof}
+	Let $y_1, y_2\in W$ and $\lambda\in \FR$. Then:
+	\begin{equation*}
+	\begin{aligned}
+	&(y_1 + y_2)'' + \omega^2 (y_1 + y_2) =(y_1'' + \omega^2 y_1) + (y_2'' + \omega^2 y_2) = 0 + 0 = 0,\mbox{ hence } y_1+y_2\in W\\
+	&(\lambda y_1)'' + \omega^2 (\lambda y_1) = \lambda(y_1'' + \omega^2 y_1) = \lambda 0 = 0,\mbox{ hence } \lambda y_1\in W~.
+	\end{aligned}
+	\end{equation*}
+	We conclude that $W$ is a vector subspace of $\CF(\FR)$.
+\end{proof}
+
+%You have probably seen in a course on linear differential equations that $W$ consists of functions of the form $x \mapsto a \cos(\omega x) + b\sin(\omega x)$ for some constants $a, b \in \FR$. Using this description provides another way to check that $W$ is a vector subspace (Do it!).
+	
+	
+
+	
+%	Former proofs:
+%		
+%	\paragraph{From a spanning family to a basis.} 
+%	
+%	\begin{prop}\label{prop:span_removal}
+%		Let $\uv_1, \ldots, \uv_k$ be a spanning family of $\FR^n$. If $\uv_k$ is a linear combination of $\uv_1, \ldots, \uv_{k-1}$, then $\uv_1, \ldots, \uv_{k-1}$ is also a spanning family.
+%	\end{prop}
+%	
+%	\begin{proof}
+%		Write $\uv_k = a_1 \uv_1 + \ldots + a_{k-1}\uv_{k-1}$ for some $a_1, \ldots, a_{k-1} \in \FR$. Then we have for every $\lambda_1, \ldots, \lambda_k \in \FR$:
+%		\begin{equation*}
+%		\begin{aligned}
+%		\lambda_1 \uv_1 + \ldots + \lambda_k \uv_k &= \lambda_1 \uv_1 + \ldots + \lambda_{k-1} \uv_{k-1} + \lambda_k (a_1 \uv_1 + \ldots + a_{k-1}\uv_{k-1})\\
+%		&= (\lambda_1 + a_1\lambda_k)\uv_1 + \ldots + (\lambda_{k-1}+a_{k-1}\lambda_k)\uv_{k-1}.
+%		\end{aligned}
+%		\end{equation*}
+%		Since every vector of $\FR^n$ is a linear combination of $\uv_1, \ldots, \uv_k$ by assumption, it is also a linear combination of $\uv_1, \ldots, \uv_{k-1}$ by the previous computation.
+%	\end{proof}
+%	
+%	
+%	\begin{prop}
+%		Let $\uv_1, \ldots, \uv_k$ be a spanning family. Then one can extract a subfamily that is a basis of $\FR^n$.
+%	\end{prop}
+%	
+%	\begin{proof}
+%		A minimal subfamily of $\uv_1, \ldots, \uv_k$ that still spans $\FR^n$ is necessarily linearly independent. Indeed, if it were linear dependent, one of its elements could be expressed in terms of the others, and Proposition \ref{prop:span_removal} would imply that we could remove that element and still span $\FR^n$, contradicting minimality.
+%	\end{proof}
+%	
+%	\paragraph{From a linearly independent family to a basis.} 
+%	
+%	\begin{prop}\label{prop:ind_adding} Let $\uv_1, \ldots, \uv_k$ be a linearly independent family. If $\uv$ is a vector of $\FR^n$ that is not a linear combination of $\uv_1, \ldots, \uv_k$, then $\uv_1, \ldots, \uv_k, \uv$ is  also linearly independent.
+%	\end{prop}
+%	
+%	\begin{proof}
+%		Let $\lambda_1, \ldots, \lambda_k, \lambda \in \FR$ such that 	$\lambda_1\uv_1 + \cdots + \lambda_k\uv_k + \lambda \uv = \nv$. Since $\uv$ is  not a linear combination of $\uv_1, \ldots, \uv_k$, we have $\lambda = 0$, hence 	$\lambda_1\uv_1 + \cdots + \lambda_k\uv_k  = \nv$. Since $\uv_1, \ldots, \uv_k$ are linearly independent, it follows that $\lambda = \ldots = \lambda_k = 0$. 
+%	\end{proof}
+%	
+%	\begin{prop}
+%		Let $\uv_1, \ldots, \uv_k$ be a linearly independent family. Then one can extend it to a basis of $\FR^n$.
+%	\end{prop}
+%	
+%	\begin{proof}
+%		If $\uv_1, \ldots, \uv_k$ is already spanning, there is nothing to do. Otherwise, there exists a vector $\uv_{k+1} \notin \mathrm{span}(\uv_1, \ldots, \uv_k)$. By Proposition \ref{prop:ind_adding}, the family $\uv_1, \ldots, \uv_k, \uv_{k+1}$ is also linearly independent. We can repeat the procedure. Since a linearly independent family contains at most $n$ vectors by Proposition \ref{prop:ind_at_most}, this algorithm eventually stops, at which point we have that the resulting family $\uv_1, \ldots, \uv_m$ is still linearly independent and spans $\FR^n$, hence it is a basis.
+%	\end{proof}
+	
+	
+	
+	%\paragraph{Remark.} The original vectors in the above example are linearly dependent. It follows from the matrix after the first set of elementary row operations that
+	%\begin{equation*}
+	% R_2-2R_1=R_3-4R_1~~~\mbox{or}~~~(2,-1,2,1)^T-2(1,2,-1,3)^T=(4,3,0,7)^T-4(1,2,-1,3)^T~.
+	%\end{equation*}
+	%
+	%%\eolec{4.1}{4.2}
+	
+%	\begin{prop}\label{th:2.5.10} Let $V$ be an $n$-dimensional vector space and let $\vv_1,\ldots,\vv_k$ be a linearly independent family of vectors. Then $\vv_1,\ldots,\vv_k$ can be extended to a basis  $\vv_1, \ldots, \vv_n$ of $V$.\qed
+%	\end{prop}
+%%	\begin{proof}
+%%		(by construction) Since $\span\{\vv_1,\ldots,\vv_k\}\neq V$, there is a $\vv_{k+1}\in V$ such that $\vv_{k+1}\notin\span\{\vv_1,\ldots,\vv_k\}$. By theorem \ref{ssec:LinearDependence}, \ref{th:2.4.6}, the set $\{\vv_1,\ldots,\vv_k,\vv_{k+1}\}$ is linearly independent. If $\span\{\vv_1,\ldots,\vv_k,\vv_{k+1}\}=V$, then we found a basis. Otherwise, we repeat this procedure. In each step, the dimension of the span of the vectors increases by one, and after $n-k$ steps, we arrive at the desired basis.
+%%	\end{proof}
+%
+%
+%
+%	
+%	\begin{prop}\label{th:2.5.11} Suppose that a family $\vv_1,\ldots,\vv_k$ of vectors spans a (finite-dimensional) vector space $V$. Then there exists a subfamily that is a basis for $V$.\qed
+%	\end{prop}
+%	\begin{proof}
+%		(by construction) If $S$ is linearly independent, then $S$ is a basis. Otherwise, one of the $\vv_i$ can be written as a linear combination of the others as follows from lemma \ref{ssec:LinearDependence}, \ref{lem:3.4.6}. Therefore $S\backslash\{\vv_i\}$ still spans $V$ by theorem \ref{ssec:2.3.Span}, \ref{th:2.3.6}. We continue with this reduced set from the top as often as possible. The minimal set, which still spans $V$ is the basis of $V$.
+%	\end{proof}
+	
+
+%	\begin{proof}
+%		(i) (by contradiction) Assume that $S$ is not a basis for $V$. Then it can be extended to a basis by theorem \ref{th:2.5.10} with more than $n$ elements. This contradicts the assumption that $\dim V=n$.\\
+%		(ii) Theorem \ref{th:2.5.11} tells us that a subset of $S$ spans $V$. Because $\dim V=n$, this subset has to have $n$ elements. So the subset of $S$ is all of $S$.
+%	\end{proof}
+	
+%	\paragraph{Remark.} Note that we worked above with {\em finite dimensional} vector spaces.  For the complications in the case of infinite dimensional vector spaces and some strange features appearing in set theory, have a look at the \hyperref{http://en.wikipedia.org/wiki/Zorn's_lemma}{}{}{Wikipedia entry} for {\em Zorn's Lemma}.
+%	
+
+
+
+\paragraph{Dimension of subspaces.}
+
+Since a subspace of vector space is itself a vector space, it also has a dimension. It is natural to wonder whether the dimension behaves well with respect to subspaces: For instance, is the dimension of a subspace at most the dimension of the original vector space? While this intuitively obvious, it requires a proof. And indeed, things go extremely well:  
+
+
+\begin{thm}{}
+\label{thm:sub_inclusion_dim}
+	Let $V$ be a finite-dimensional vector space, and let $W$ be a subspace. Then 
+	$$\dim W \leq \dim V.$$ Moreover, we have 
+	$$\dim W = \dim V ~~ \Longleftrightarrow ~~ W = V.$$
+\end{thm}
+	%\tut{5}
+	%\end{tutsectionfour}
+	%\begin{tutsectionfive}
+	
+	This result can provide a simple way to show the equality between two subspaces: Instead of showing both inclusions, it is only necessary to show one inclusion and the equality of dimensions, something that is generally easier to handle. We will see applications in the next chapter.
+	
+	The previous theorem relies on the following results: 
+	
+		Let $V$ be an $n$-dimensional vector space and let $\vv_1,\ldots,\vv_k$ be a linearly independent family of vectors. Then $\vv_1,\ldots,\vv_k$ can be extended to a basis  $\vv_1, \ldots, \vv_n$ of $V$.\qed
+	
+	%	\begin{proof}
+	%		(by construction) Since $\span\{\vv_1,\ldots,\vv_k\}\neq V$, there is a $\vv_{k+1}\in V$ such that $\vv_{k+1}\notin\span\{\vv_1,\ldots,\vv_k\}$. By theorem \ref{ssec:LinearDependence}, \ref{th:2.4.6}, the set $\{\vv_1,\ldots,\vv_k,\vv_{k+1}\}$ is linearly independent. If $\span\{\vv_1,\ldots,\vv_k,\vv_{k+1}\}=V$, then we found a basis. Otherwise, we repeat this procedure. In each step, the dimension of the span of the vectors increases by one, and after $n-k$ steps, we arrive at the desired basis.
+	%	\end{proof}
+
+	
+	Suppose that a family $\vv_1,\ldots,\vv_k$ of vectors spans a (finite-dimensional) vector space $V$. Then there exists a subfamily that is a basis for $V$.\qed
+	
+	

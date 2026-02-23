@@ -1,0 +1,842 @@
+\section{Eigenvalues and diagonalisability}\label{chap:eigen}
+	
+	\subsection{A motivating problem: predicting the dynamics of a population}
+	
+	A simple model to study a  population of animals is the following: the population is divided into two age groups: adults and juveniles. At the start of the observation, the population consists of $a_0$ adults and $j_0$ juveniles. From one year to the next, the adults will each produce on average $\gamma$ juveniles. Adults will survive from one year to the next with probability $\alpha$, while juveniles will survive into the next year and become adults with the probability $\beta$. 
+	
+	We wish to understand the evolution of the population over time: does the population collapse, does it converge to a stable state? And how does this behaviour depend on the fertility rate $\gamma$?
+Notice that we have the following equations between the population in two consecutive years:
+\begin{equation*}
+\begin{aligned}
+a_{n+1}&=\alpha a_n+\beta j_n~\\
+j_{n+1}&=\gamma a_n
+\end{aligned}
+\end{equation*}
+This can be rewritten as
+\begin{equation*}
+\vectt{a_{n+1}}{j_{n+1}}=A\vectt{a_{n}}{j_{n}} ~~~ \mbox{ with } A:= \left(\begin{array}{cc}\alpha & \beta\\\gamma & 0 \end{array}\right).
+\end{equation*}
+In particular, we see by induction that 
+\begin{equation*}
+ \vectt{a_{n}}{j_{n}}=A^n\vectt{a_{0}}{j_{0}}.
+\end{equation*}
+
+To understand the population at a given time, we thus need to compute powers of the matrix $A$. This is a priori a non-trivial problem. There is however one case where computing powers poses no problem: the case of diagonal matrices.  
+
+A natural strategy would be to try to find a `simplest possible basis' where the matrix  $A$ becomes diagonal,   compute the powers of the matrix in that basis, and go back to the original basis. If we restate this problem in terms of matrices, we want to find an invertible matrix $P$ and a diagonal matrix $D$ such that $A= PDP^{-1}$. We have: 
+$$A^n = (PDP^{-1})^n = PD\underbrace{P^{-1}P}_{=I_2}DP^{-1}  \cdots \underbrace{P^{-1}P}_{=I_2}DP^{-1} = PD^nP^{-1}.$$
+Since $D^n$ is very easy to compute, it follows that computing $A^n$ itself becomes much easier to compute, provided we know how to compute $P$. This leads to the following questions: 
+
+\begin{itemize}
+	\item Given a square matrix $A$, does there always exist an invertible matrix $P$ such that $P^{-1}AP$ is diagonal?
+	\item If so, how to compute such a matrix $P$? 
+\end{itemize}
+	
+	The goal of this chapter is to answer these questions and see applications to various problems. 
+	
+	
+	
+\subsection{Eigenvectors and Eigenvalues}
+	
+	\begin{df}{}
+    \index{eigenvalue}\index{eigenvector}
+		Let $V$ be an $n$-dimensional vector space and let $T: V \rightarrow V$ be a linear map. Then $\lambda\in\FR$ is called a (real) \textit{eigenvalue} of $T$, if there is a vector $\xv\in V$, $\xv\neq \nv$, such that $$T(\xv)=\lambda \xv.$$ The vector $\xv$ is called an \textit{eigenvector} of $T$ for the eigenvalue $\lambda$.
+\end{df}
+
+	Recall that an $n \times n$ matrix $A$ can be seen as a linear map $T_A: \FR^n \rightarrow \FR^n, \xv \mapsto A\xv$. In particular, the notions of eigenvalues and eigenvectors are well defined for matrices:  $\lambda\in\FR$ is an \textit{eigenvalue} of $A$, if there is a vector $\xv\in\FR^n$, $\xv\neq \nv$, such that $A\xv=\lambda \xv$, and the vector $\xv$ is called an \textit{eigenvector} of $A$ for the eigenvalue $\lambda$.
+	
+	\begin{example}
+    \begin{itemize}
+		\item[(i)] For $A=I_n$ the identity matrix, every vector $\xv\neq \nv$ is an eigenvector with eigenvalue 1.\\
+		\item[(ii)] The rotation of angle $\pi/2$, $r_{\pi/2}:\FR^2 \rightarrow \FR^2$ does not have any eigenvalue, since $r_{\pi/2}(\xv)$ is never collinear to $\xv$ (but is orthogonal to it and of the same norm).
+    \end{itemize}
+	\end{example}
+
+\begin{example}
+	Consider the following diagonal matrix:
+	\begin{equation*}
+	D=\left(\begin{array}{cccc}
+	d_1 & 0 & \ldots & 0\\ 0 & d_2 & \ldots & 0 \\ \vdots & & \ddots & \vdots \\ 0 & 0 & \ldots & d_n
+	\end{array}\right)~,~~~d_1,\ldots,d_n\in\FR.
+	\end{equation*}
+	Then the eigenvalues of $D$ are  $d_1,\ldots,d_n$. Indeed, for a vector $\xv = (x_1, \ldots, x_n)^T$, we have $D\xv $ $= (d_1x_1, \ldots, d_nx_n)^T$. If $\xv $ is an eigenvector of $D$ for an eigenvalue $\lambda$, then we also have $D\xv = (\lambda x_1, \ldots, \lambda x_n)$. As one of the $x_i$ is non-zero (since $\xv \neq \nv$ ),  it follows that $\lambda = d_i$ for some $i$. 
+	
+	Note that if the $d_1, \ldots, d_n$ are pairwise distinct, then the eigenvectors associated to $d_1, \ldots, d_n$ are of the form $(c_1,0,\ldots,0)^T$, $\ldots,$ $(0,\ldots,0,c_n)^T$ respectively,  where $c_1,\ldots,c_n\in\FR$.
+	\end{example}
+	
+	\subsection{Diagonalisability.}
+	
+	\begin{df}{}
+		A linear map $T: V \rightarrow V$ is called \textit{diagonalisable}  if there exists a basis of eigenvectors. 
+		
+		Equivalently, $T$ is diagonalisable if there exists a basis $\CB$ of $V$ such that  the associated matrix $[T]_\CB$ is of the form:
+		$$[T]_\CB = \left(\begin{array}{cccc}
+		\lambda_1 & 0 & \ldots & 0\\ 0 & \lambda_2 & \ldots & 0 \\ \vdots & & \ddots & \vdots \\ 0 & 0 & \ldots & \lambda_n
+		\end{array}\right).$$ 
+	\end{df}
+	
+	\begin{example}
+    \begin{itemize}
+		\item[(i)] The rotation $r_{\pi/4}: \FR^2 \rightarrow \FR^2$ is not diagonalisable as it has no (real) eigenvalue.
+		\item[(ii)] The orthogonal projection $s_{\pi/4}: \FR^2 \rightarrow \FR^2$   is diagonalisable as the matrix of $s_{\pi/4}$ in the basis $\CB_{\pi/4}$ is 
+		$$[s_{\pi/4}]_{\CB_{\pi/4}}= \left(\begin{array}{cc}
+		1 & 0 \\ 0 & 0 
+		\end{array}\right).$$ 
+		\item[(iii)] The map 
+		$$T: \mathcal{P}_n(\FR) \ra \mathcal{P}_n(\FR), ~~ P(x) \mapsto xP'(x)$$ is diagonalisable. Indeed, in the basis $\CB = (1, x, \ldots, x^n)$, we have
+		$$[T]_{\CB}= \left(\begin{array}{ccccc}
+	0&  & &  & \\  & 1 &  &  &\\  & & 2  & \\  & & & \ddots & \\ & & & & n
+	\end{array}\right).$$ 
+    \end{itemize}
+	\end{example}
+	
+	By seeing an $n \times n$ matrix as a linear map $T_A:\FR^n \ra \FR^n$, we are led to the following definition: 
+	\begin{df}{}
+		An $n \times n$ matrix $A$ is \textit{diagonalisable} (over $\FR$) if there exists a basis of $\FR^n$ made of eigenvectors of $A$. 
+		
+		Equivalently, $A$ is diagonalisable if there exists an invertible $n\times n$ matrix $P$ such that $P^{-1}AP$ is of the form: $$P^{-1}AP = \left(\begin{array}{cccc}
+		\lambda_1 & 0 & \ldots & 0\\ 0 & \lambda_2 & \ldots & 0 \\ \vdots & & \ddots & \vdots \\ 0 & 0 & \ldots & \lambda_n
+		\end{array}\right).$$
+	\end{df}
+	
+	
+	
+	\paragraph{Remark.} The two definitions of diagonalisability for maps and matrices are compatible: a linear map $T$ is diagonalisable if and only if the associated matrix $[T]_\CB$ is diagonalisable for some (hence every)
+	basis $\CB$.
+	
+	\paragraph{Distinct eigenvalues and linear independence.}
+	
+	Here is an useful criterion:
+	
+		\begin{thm}{} An $n \times n$ matrix has at most $n$ eigenvalues.
+	\end{thm}
+	
+
+	This theorem is a direct consequence of the following result, together with the fact that a linearly independent family in an $n$-dimensional vector space contains at most $n$ vectors.
+	
+	\begin{thm}{}
+    \label{prop:distinct_eigen_lin_ind}
+		Let $\xv_1,\ldots,\xv_k$ be eigenvectors of a matrix $A$ corresponding to distinct eigenvalues $\lambda_1,\ldots,\lambda_k$. Then  $\xv_1,\ldots,\xv_k$ are linearly independent.
+	\end{thm}
+	
+	\begin{proof}
+		Assume that we have constants $c_1,\ldots c_k$ such that $c_1\uv_1+c_2\uv_2+\ldots+c_k\uv_k=\nv$. Let us denote this equation $(E_1)$. By applying $A$ on both sides of the equation, we get $c_1\lambda_1\uv_1+c_2\lambda_2\uv_2+\ldots+c_k\lambda_k\uv_k=\nv$. Let us denote this equation $(E_2)$. Now by considering $(E_2) - \lambda_1 (E_1)$, we get the equation $c_2(\lambda_2-\lambda_1)\uv_2+\ldots+c_k(\lambda_k-\lambda_1)\uv_k=\nv$. We are thus back to an other linear combination of fewer eigenvectors, and we can now prove the result by induction. 
+%		Note that $(A-\lambda_i\unit)\uv_i=\nv$. By acting onto both sides of the above equation with $(A-\lambda_1\unit)\ldots(A-\lambda_{k-1}\unit)$, we obtain $c_k(\lambda_k-\lambda_1)(\lambda_k-\lambda_2)\ldots(\lambda_k-\lambda_{k-1})\uv_k=\nv$. Since the eigenvalues are all distinct, it follows that $c_k=0$. We are left with $c_1\uv_1+c_2\uv_2+\ldots+c_{k-1}\uv_{k-1}=\nv$. By applying $(A-\lambda_1\unit)\ldots(A-\lambda_{k-2}\unit)$ to this equation, we conclude that $c_{k-1}=0$. We can continue this to show that all the $c_i$ vanish, and thus that the set $\{\uv_1,\ldots,\uv_n\}$ is linearly independent.
+	\end{proof}
+	
+	Here is a useful corollary: 
+	
+
+	
+	%\paragraph{Corollary.} If the linear map $T$ is diagonalisable and the matrix of $T$ in a basis $\CB$ is $Diag(\lambda_1, \ldots, \lambda_n)$ then the eigenvalues of $T$ are exactly $\lambda_1, \ldots, \lambda_n$.
+	
+	\begin{thm}{}
+    \label{thm:distinct_DZ} Let $V$ be an $n$-dimensional vector space, and let $T: V \ra V$ be a linear map that has exactly $n$ distinct real eigenvalues $\lambda_1,\ldots,\lambda_n$, then $T$ is diagonalisable.
+%		 and the corresponding eigenvectors $\{\uv_1,\ldots,\uv_n\}$ form a basis of $U$.
+		\end{thm}
+	
+	\paragraph{Remark.} The previous result is not an equivalence, there exist diagonalisable maps that have fewer than $n$ eigenvalues. For instance, the identity map is diagonalisable, but its only eigenvalue is $1$.
+	
+	\subsection{Eigenspaces and diagonalisability.}
+	
+	\begin{df}{}
+		Given an eigenvalue $\lambda \in \FR$, the associated \textit{eigenspace} is the following subset:
+		$$E_\lambda(T) := \{\xv \in U ~|~T(\xv)= \lambda \xv\} =  \{\nv\} \cup \{\xv \in U ~|~ \xv \mbox{ is an eigenvector for  } \lambda\}.$$
+	\end{df}
+	
+
+	
+	\begin{thm}{}
+    An eigenspace is a subspace of $V$.  
+		\end{thm}
+	\begin{proof}
+		By definition, we have that $E_\lambda(T) = \ker(T - \lambda Id)$, and we know that kernels of linear maps are vector subspaces. 
+		%	For every vector $\xv \in E_\lambda(T)$, we have $T(\xv)=\lambda \xv.$ Thus, for any family of vectors $\xv_1, \ldots, \xv_k\in E_\lambda(T)$ and scalars $\lambda_1, \ldots, \lambda_k \in \FR$, we have: $T(c_1\xv_1+\ldots+c_k\xv_k)=c_1T(\xv_1)+\ldots+c_kT(\xv_k)=c_1(\lambda\xv_1)+\ldots+c_k(\lambda \xv_k)=\lambda(c_1\xv_1+\ldots+c_k\xv_k)$.
+	\end{proof}
+	
+		The proof of the following result is a slight variation on the proof of Proposition \ref{prop:distinct_eigen_lin_ind}:
+	
+	\begin{thm}{}
+		Let  $\lambda_1,\ldots,\lambda_k$ be distinct eigenvalues of a linear map $T$. Let $\CB_1, \ldots, \CB_k$ be bases of the eigenspaces $E_{\lambda_1}(T), \ldots, E_{\lambda_k}(T)$ respectively. Then  $\CB_1\cup \ldots\cup \CB_k$ is a linearly independent family of vectors.
+		\end{thm}
+	
+	\begin{thm}{}
+		Let $T:V \rightarrow V$ be a linear map and let $\lambda_1, \ldots, \lambda_k$ be the distinct eigenvalues of $T$. Then $T$ is diagonalisable if and only if: 
+		$$\dim E_{\lambda_1}(T) + \ldots + \dim E_{\lambda_k}(T) = n .$$
+	\end{thm}
+	
+	The next natural question to answer is: how do we find the eigenvalues of a given linear map or matrix?
+	
+
+
+	
+	\subsection{Characteristic polynomial}
+    \label{ssec:CharactPoly}
+	
+	Finding an eigenvalue $\lambda$ and an associated eigenvector $\xv$ amounts to finding  solutions to the equation $T(\xv)=\lambda \xv$, or equivalently $(T-\lambda I_n)\xv=\nv$. Up to choosing coordinates, we can assume that $T$ is represented by an $n\times n$ matrix $A$. The problem thus amounts to solving a linear system of equations $A\xv = \lambda \xv$, or equivalently $(A-\lambda I_n)\xv = \nv.$ This is a homogeneous system of $n$ equations in $n$ unknowns. It has a non-trivial solution if and only if $(A-\lambda I_n)$ is not invertible, and this is equivalent to  $\det(A-\lambda I_n)=0$. This motivates the following definition:
+	
+	
+	\begin{df}{}
+    \index{characteristic polynomial}\index{characteristic equation}
+		Given an $n\times n$-matrix $A$, the expression
+		\begin{equation*}
+		\chi_A(\lambda):= \det(A-\lambda I_n)= \det \left(\begin{array}{cccc}
+		a_{11}-\lambda & a_{12} & \ldots & a_{1n}\\ a_{21} & a_{22}-\lambda & \ldots & a_{2n} \\ \vdots & & \ddots & \vdots \\ a_{n1} & a_{n2} & \ldots & a_{nn}-\lambda
+		\end{array}\right)
+		\end{equation*}
+		is a polynomial  of degree $n$ in $\lambda$, called the \textit{characteristic polynomial} of the matrix $A$.
+		%The condition for $\lambda$ being an eigenvalue, i.e.\ the equation $\chi_A(\lambda)=0$, is called the \textit{characteristic equation} of $A$.
+	\end{df}
+
+	\paragraph{Remark.} In this course, we will mostly  compute characteristic polynomials for $2\times 2$ and $3\times 3$ matrices. When computing characteristic polynomials in general, one compute this determinant using the expansion technique.\\
+%	 to avoid considering rational fractions when applying Gaussian elimination (as one would have to divide by terms involving the variable $\lambda$).
+
+The definition of the characteristic polynomial is motivated by the following result: 
+
+\begin{thm}{}
+\label{thm:chi_eigen}
+Given an $n\times n$-matrix $A$, we have:
+		$$ \lambda \mbox{ is an eigenvalue of } A \Leftrightarrow \chi_A(\lambda) = 0.$$ 
+\end{thm}
+	
+\begin{proof} We have:
+	\begin{equation*}
+	\begin{aligned}
+\lambda \mbox{ is an eigenvalue of } A  &\Leftrightarrow \exists \xv \neq \nv \mbox{ such that } A\xv = \lambda \xv. \\
+  &\Leftrightarrow  \exists \xv \neq \nv \mbox{ such that } (A-\lambda I_n)\xv = \nv.  \\
+  &\Leftrightarrow  \ker(A-\lambda I_n) \neq \{\nv\}.   \\
+   &\Leftrightarrow  A-\lambda I_n \mbox{ is not invertible}.   \\
+  &\Leftrightarrow  \det(A-\lambda I_n) = 0 \qedhere \\
+	\end{aligned}
+	\end{equation*}
+	\end{proof}
+	
+	\begin{example}{}
+    Let us find the eigenvalues  of the matrix
+	\begin{equation*}
+	A=\left(\begin{array}{ccc} 3 & 2 & 4\\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{array}\right)~.
+	\end{equation*}
+The characteristic polynomial of $A$ reads as (rule of Sarrus)
+	\begin{equation*}
+	\det \left(\begin{array}{ccc} 3-\lambda & 2 & 4\\ 2 & -\lambda & 2 \\ 4 & 2 & 3-\lambda \end{array}\right)=-(3-\lambda)^2\lambda+16+16+16\lambda-4(3-\lambda)-4(3-\lambda)~,
+	\end{equation*}
+	or $\chi_A(\lambda)=-\lambda^3+6\lambda^2+15\lambda+8$. We see that $\lambda=-1$ is a root of this polynomial and factorise it as $-(\lambda+1)(\lambda+1)(\lambda-8)$. That is, the eigenvalues of $A$ are $-1$ and $8$. 
+	\end{example}
+	
+	\paragraph{The characteristic polynomial seen as a polynomial over $\FC$.} By the fundamental theorem of algebra, the characteristic polynomial of an $n\times n$ matrix $A$ can be factorised into $n$ linear factors:
+	\begin{equation*}
+	\chi_A(\lambda)=\pm(\lambda-\lambda_1)(\lambda-\lambda_2)\ldots(\lambda-\lambda_n)~,
+	\end{equation*}
+	where $\lambda_i$ are (not necessarily distinct) {\em complex}. These $\lambda_i$ are called the \textit{complex eigenvalues} of $A$, and the eigenvalues we defined so far are the complex eigenvalues that are real. Since a polynomial of degree $n \geq 1$ has at most $n$ roots, we recover the fact that $A$ has at most $n$ complex eigenvalues, hence at most $n$ real eigenvalues.
+	\paragraph{Remark.}  A matrix may have no real eigenvalues, e.g.
+	\begin{equation*}
+	A=\left(\begin{array}{cc} 0 & 1 \\ -1 & 0 \end{array}\right)~,~~~\det \left(\begin{array}{cc} -\lambda & 1 \\ -1 & -\lambda \end{array}\right)=\lambda^2+1=(\lambda+\di)(\lambda-\di)=\chi_A(\lambda)
+	\end{equation*}
+	has a characteristic polynomial $\chi_A(\lambda)$ without real roots. However, since a polynomial of degree $\geq 1$ always has at least one root by the fundamental theorem of algebra, $A$ always has at least one complex eigenvalue.\\
+
+There is one simple case where the eigenvalues can be read directly from a matrix:
+
+\begin{thm}
+Let 
+	$$A = \left(\begin{array}{cccc}  d_1 & * & \cdots & * \\ 0 & d_2 & \ddots & \vdots \\ \vdots & \ddots & \ddots & * \\ 0 & \cdots & 0 & d_n \end{array}\right) \in M_n(\FR)$$
+	be an upper-triangular $n \times n$ matrix. Then the eigenvalues of $A$ are $d_1, \ldots, d_n.$
+
+The same result holds for lower-triangular matrices.
+\end{thm}
+
+\begin{proof}
+$\chi_A(x) = (d_1-x)\cdots(d_n-x)$, and the result follows from Theorem \ref{thm:chi_eigen}.
+\end{proof}
+
+
+When computing the row echelon form of a matrix via Gaussian elimination, the diagonal entries in the echelon form are \textbf{not} the eigenvalues of $A$ in general.
+
+
+
+\subsection{Trace, determinants, and consistency check.} 
+
+\begin{df}{}
+	The \textit{trace} of a square matrix $A$, denoted tr$(A)$, is the sum of its diagonal coefficients.
+	\end{df}
+
+
+	We have the following properties:
+	\begin{itemize}
+		\item The trace defines a linear map $tr: M_n(\FR) \ra \FR, A \mapsto \mathrm{tr}(A).$
+		\item We have tr$(AB) =$ tr$(BA)$ for every pair of matrices $A, B \in M_n(\FR)$.
+	\end{itemize}
+
+
+In particular, we get that for every invertible matrix $P$, tr$(PAP^{-1})= $ tr$(AP^{-1}P)=$ tr$(A)$. Similarly, we have $\det(PAP^{-1}) = \det(P)\det(A)\det(P)^{-1} = \det(A).$ In other words, the trace and the determinant remain the same when changing basis. If $A$ is diagonalisable, then these quantities can be computed in terms of the eigenvalues of $A$ in an appropriate basis. This leads to the following useful result. 
+
+\begin{thm}
+	Let $A$ be a diagonalisable  $n \times n$ matrix, and let $\lambda_1, \ldots, \lambda_n$ be its eigenvalues counted with multiplicity, i.e. the roots of $\chi_A$ counted with multiplicity. Then we have 
+	$$\det(A) = \lambda_1 \times \ldots \times \lambda_n.$$
+	$$\mathrm{tr}(A) = \lambda_1 +\ldots + \lambda_n.$$
+	\end{thm}
+
+This result is useful to check your computations, as the trace in particular is very easy to compute. Try to always use this consistency check!
+
+\begin{example}
+	Let us go back to the matrix 
+	$$A=\left(\begin{array}{ccc} 3 & 2 & 4\\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{array}\right)$$
+	whose eigenvalues we computed previously: $-1, -1, 8.$
+	In particular, we get that the sum of the eigenvalues is $6$, which does indeed coincide with tr$(A) = 3+0+3$. Similarly, the product of the eigenvalues is $8$, which we recover from Sarrus' rule. We can thus be reasonably confident that we did not make mistakes in computing the eigenvalues of $A$.
+	\end{example}
+
+	
+
+%\paragraph{The Cayley-Hamilton Theorem.} We have the following result: 
+%
+%\begin{thm}{Cayley-Hamilton}
+%	Let $A$ be an $n\times n$ matrix, and let 
+%	$$\chi_A(x) = a_nx^n + \ldots + a_1x +a_0$$
+%	 be its characteristic polynomial. Then we have 
+%	$$a_nA^n + \ldots + a_1A + a_0I_n = 0_n.$$
+%	\end{thm}
+%
+%This theorem can provide alternative ways to compute the inverse or powers of a matrix.
+%
+%\begin{example} Let us consider again the matrix
+%	\begin{equation*}
+%	A=\left(\begin{array}{ccc} 3 & 2 & 4\\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{array}\right)
+%	\end{equation*}
+%	whose characteristic polynomial  is $\chi_A(\lambda)=-\lambda^3+6\lambda^2+15\lambda+8$. 
+%	By the Cayley-Hamilton Theorem, we have 
+%	$$-A^3 +6A^2 + 15A + 8I_3 = 0_3.$$
+%	By multiplying everything by $A^{-1}$ and rearranging the equation, we get 
+%	$$A^{-1} = \frac{1}{8}(A^2 - 6A - 15I_3),$$
+%	which can be computed using just matrix multiplication.
+%	\end{example}
+
+\subsection{Diagonalisability of a matrix}
+
+\begin{df}{}
+	Let $A \in M_n(\FR)$ and let $\lambda$ be an eigenvalue of $A$. 
+	\begin{itemize}
+		\item the \textit{geometric multiplicity} of $\lambda$ is the dimension of the corresponding eigenspace $E_\lambda(A)$.
+		\item the \textit{algebraic multiplicity} of $\lambda$ is number of factors $(x-\lambda)$ that appear in $\chi_A$.
+	\end{itemize}
+	\end{df}
+
+\begin{example}
+		Let us consider again the matrix 
+	$$A=\left(\begin{array}{ccc} 3 & 2 & 4\\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{array}\right).$$
+	We have $\chi_A(x) = (8-x)(x+1)^2$, so the eigenvalues of $A$ are $-1$ and $8$, and their algebraic multiplicity are $2$ and $1$ respectively. 
+	
+	Let us compute the dimension of the corresponding eigenspaces using Gaussian elimination. For the eigenvalue $8$, we obtain the system:
+$$\left\{\begin{array}{ccc}
+3x+2y+4z&=& 8x~\\  
+2x+2z&=&8y\\4x+2y+3z&=&8z\end{array} \right.~~~~~~\elt{ ~}~~~ \left\{\begin{array}{ccc}2x-8y+2z&=&0\\
+-5x+2y+4z&=&0\\4x+2y-5z&=&0
+\end{array}\right.$$
+We use Gaussian elimination:
+\begin{equation*}
+\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ -5 & 2 & 4 & 0 \\ 4 & 2 & -5 & 0\end{array}\right)~~~
+\rightsquigarrow
+~~~\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ 0 & -18 & 9 & 0 \\ 0 & 0 & 0& 0\end{array}\right)~.
+\end{equation*}
+The row echelon form has exactly one free variable, so the dimension of the corresponding eigenspace is $1$, so the geometric dimension of the eigenvalue $\lambda=8$ is $1$. 
+%The solutions of this homogeneous system are $\xv=(\alpha,\tfrac{1}{2}\alpha,\alpha)^T$. Thus, $E_8(A)$ has dimension $1$ and a basis for it is $\CB_8 = \{(1,\tfrac{1}{2},1)^T\}$. 
+%Eigenvectors with eigenvalue $8$ are therefore multiples of $(1,\tfrac{1}{2},1)^T$.
+
+For the eigenvalue $\lambda=-1$, we get the system of equations
+$$ \left\{\begin{array}{ccc}  3x+2y+4z&=&-x\\2x+2z&=&-y \\4x+2y+3z&=&-z \end{array}\right. \elt{~} ~~~ \left\{\begin{array}{ccc} 4x+2y+4z&=&0\\2x+y+2z&=&0\\4x+2y+4z&=&0 \end{array}\right. $$
+%	\begin{aligned}
+%	3x+2y+4z&=-x~,&4x+2y+4z&=0~,\\
+%	2x+2z&=-y~,~~~~~~\mbox{or}~~~&2x+y+2z&=0~,\\
+%	4x+2y+3z&=-z~,&4x+2y+4z&=0~.
+%	\end{aligned}
+%	\end{equation*}
+All of these equations are multiples of $2x+y+2z=0$, so the system boils down to the equation $2x+y+2z=0$. This system has exactly two free variables ($y$ and $z$), and so the dimension of the corresponding eigenspace is $2$. In other words, the geometric multiplicity of the eigenvalue $\lambda = -1$ is $2$. 
+
+In particular, we see in this particular example that geometric and algebraic multiplicity coincide.
+%Using Gaussian elimination again, we find that the solution to this system of linear equations is of the form$(-\tfrac{1}{2}(2\alpha+\beta),\beta,\alpha)^T$  for $\alpha, \beta \in \FR$. Thus, $E_{-1}(A)$ has dimension $2$ and a basis for it is for instance  $\CB_1 = \{(-1,0,1)^T,(-\tfrac{1}{2},1,0)^T\}$. 
+	\end{example}
+
+\begin{example}
+	Consider the following matrix: 
+	$$A = \left(\begin{array}{ccc}
+  1&1&1\\0&1&1\\0&0&1
+	\end{array}\right).$$
+	Since $A$ is upper-triangular, we have $\chi_A(x)= (1-x)^3.$ Thus, $\lambda=1$ is the unique eigenvalue of $A$ and its algebraic multiplicity is $3$.
+	
+	We find the geometric multiplicity by solving the system $(A-1\times I_3)\xv = \nv,$ which yields the system:
+		$$\left(\begin{array}{ccc|c}
+	0&1&1&0\\0&0&1&0\\0&0&0&0
+	\end{array}\right).$$
+	This system is already in row echelon form and has exactly one free variable. So the geometric multiplicity of $\lambda=1$ is $1$.
+	
+	In this particular example, the algebraic and geometric multiplicity differ. 
+	\end{example}
+
+
+	For every eigenvalue of $A$, the geometric multiplicity is less than or equal to the algebraic multiplicity.
+
+
+%\begin{proof}
+%	TBC...
+%\end{proof}
+
+\begin{thm}{}
+	An $n\times n$ matrix $A$ is diagonalisable (over $\FR$) if and only if:
+	\begin{itemize}
+		\item all the complex roots of $\chi_A$ are real numbers.
+		\item  for every eigenvalue $\lambda$ of $A$, the algebraic multiplicity of $\lambda$ equals the geometric multiplicity of $\lambda$. 
+	\end{itemize} 
+	\end{thm}
+
+	\begin{example} Here are examples of matrices which are not diagonalisable:
+	\begin{equation*}
+	A=\left(\begin{array}{cc}
+	0 & 1 \\ -1 & 0
+	\end{array}
+	\right)~,~~~
+	B=\left(\begin{array}{cc}
+	1 & 1 \\ 0 & 1
+	\end{array}
+	\right)~.
+	\end{equation*}
+	We have $\chi_A(x) = x^2 +1$, so the matrix $A$ has no real eigenvalue (but two complex eigenvalues: $i$ and $-i$), and therefore cannot be diagonalised as a real matrix. 
+	
+	We have $\chi_B(x) = (x-1)^2$, so the only eigenvalue of the matrix $B$  is  $1$ (note that $B$ is upper triangular), which has algebraic multiplicity $2$, but the associated eigenspace has dimension $1$, so in particular the algebraic and geometric multiplicity do not coincide. Thus, $B$ is not diagonalisable over $\FR$.
+\end{example}
+
+	\begin{example} Let us continue the study of the matrix $A=\left(\begin{array}{ccc} 3 & 2 & 4\\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{array}\right).$ We already know that $\chi_A(x) = (8-x)(x+1)^2$, so the eigenvalues of $A$ are $-1$ and $8$, and we showed in previous examples that the algebraic and geometric multiplicity coincide for each eigenvalue. By the previous theorem, $A$ is diagonalisable.  
+%	
+%	Let us compute a basis of eigenvectors. For the eigenvalue $8$, we solve the system:
+%	$$\left\{\begin{array}{ccc}
+%	3x+2y+4z&=& 8x~\\  
+%	2x+2z&=&8y\\4x+2y+3z&=&8z\end{array} \right.~~~~~~\elt{ ~}~~~ \left\{\begin{array}{ccc}2x-8y+2z&=&0\\
+%	-5x+2y+4z&=&0\\4x+2y-5z&=&0
+%	\end{array}\right.$$
+%	We use Gaussian elimination:
+%	\begin{equation*}
+%	\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ -5 & 2 & 4 & 0 \\ 4 & 2 & -5 & 0\end{array}\right)~~~
+%	\melt{R_2\rightarrow R_2+5R_1\\R_3\rightarrow R_3-4 R_1}
+%	~~~\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ 0 & -18 & 9 & 0 \\ 0 & 18 & -9 & 0\end{array}\right)~.
+%	\end{equation*}
+%By substitution, 	the solutions of this homogeneous system are $\xv=(\alpha,\tfrac{1}{2}\alpha,\alpha)^T$, so a basis for $E_8(A)$ is $\CB_8 = \{(1,\tfrac{1}{2},1)^T\}$. 
+%	%Eigenvectors with eigenvalue $8$ are therefore multiples of $(1,\tfrac{1}{2},1)^T$.
+%	
+%	For the eigenvalue $\lambda=-1$, we get the system of equations
+%	$$ \left\{\begin{array}{ccc}  3x+2y+4z&=&-x\\2x+2z&=&-y \\4x+2y+3z&=&-z \end{array}\right. \elt{~} ~~~ \left\{\begin{array}{ccc} 2x+y+2z&=&0 \end{array}\right. $$
+%	%	\begin{aligned}
+%	%	3x+2y+4z&=-x~,&4x+2y+4z&=0~,\\
+%	%	2x+2z&=-y~,~~~~~~\mbox{or}~~~&2x+y+2z&=0~,\\
+%	%	4x+2y+3z&=-z~,&4x+2y+4z&=0~.
+%	%	\end{aligned}
+%	%	\end{equation*}
+%	By substitution, we find that the solution to this system of linear equations is of the form$(-\tfrac{1}{2}(2\alpha+\beta),\beta,\alpha)^T$  for $\alpha, \beta \in \FR$. Thus, a basis of  $E_{-1}(A)$ is given by $\CB_1 = \{(-1,0,1)^T,(-\tfrac{1}{2},1,0)^T\}$. 
+%	%Note that these two vectors are eigenvectors with eigenvalue $-1$ as is every linear combination of them.
+%	
+%	Finally, a basis of eigenvectors is $\{ (1,\tfrac{1}{2},1)^T, (-1,0,1)^T,(-\tfrac{1}{2},1,0)^T\}.$ 
+%%Thus, if we construct the matrix of change of basis 
+%%	$$P:= \left(\begin{array}{ccc} 1 & -1 & -\frac{1}{2} \\ \frac{1}{2} & 0 & 1 \\ 1 & 1 & 0 \end{array}\right),$$
+%%	then $P$ is invertible and 
+%%	$$ P^{-1}AP = \left(\begin{array}{ccc} 8 & 0 & 0\\ 0 & -1 & 0 \\ 0& 0& -1 \end{array}\right).$$
+\end{example}
+
+We have the following method to determine whether a given matrix is diagonalisable (over $\FR$): 
+	\begin{itemize}
+		\item[(1)] Compute the characteristic polynomial $\chi_A$ of $A$ and compute its roots. For $n>3$, you will generally be given some eigenvalues to help you with the computations. 
+		\item[(2)] If $\chi_A$ possesses a non-real complex root, then $A$ is not diagonalisable over $\FR$. 
+		\item[(3)] Otherwise, let $\lambda_1, \ldots, \lambda_k$ be the (real) roots of $\chi_A$. Compute the algebraic multiplicity of each eigenvalue by factorising $\chi_A$. 
+		\item[(4)] For each eigenvalue $\lambda_i$, compute the  geometric multiplicity of $\lambda_i$ by computing the dimension of the solution space of the system  $A\xv - \lambda_i\xv = \nv$ using Gaussian elimination. 
+		\item[(5)] If for some eigenvalue $\lambda$, the geometric and algebraic multiplicities of $\lambda$ differ, then $A$ is not diagonalisable. 
+		\item[(6)] To find a basis of eigenvectors, compute for each eigenvalue $\lambda_i$ a basis $\cB_i$ of the corresponding eigenspace, using Gaussian elimination. A basis of eigenvectors is then given by $\CB_1 \cup \ldots \cup \CB_k$. 
+	\end{itemize}
+
+
+
+	In the previous theorem, it is enough to check that algebraic and geometric multiplicity coincide for eigenvalues of algebraic multiplicity at least $2$, as the algebraic and geometric multiplicity necessarily coincide for eigenvalues of algebraic multiplicity $1$ 
+
+	\begin{example} Let us finish the study of the matrix $A=\left(\begin{array}{ccc} 3 & 2 & 4\\ 2 & 0 & 2 \\ 4 & 2 & 3 \end{array}\right).$ We already know that $\chi_A(x) = (8-x)(x+1)^2$, so the eigenvalues of $A$ are $-1$ and $8$, and we showed in previous examples that the algebraic and geometric multiplicity coincide for each eigenvalue. By the previous theorem, $A$ is diagonalisable.  
+	
+	Let us compute a basis of eigenvectors. For the eigenvalue $8$, we solve the system:
+	$$\left\{\begin{array}{ccc}
+	3x+2y+4z&=& 8x~\\  
+	2x+2z&=&8y\\4x+2y+3z&=&8z\end{array} \right.~~~~~~\elt{ ~}~~~ \left\{\begin{array}{ccc}2x-8y+2z&=&0\\
+	-5x+2y+4z&=&0\\4x+2y-5z&=&0
+	\end{array}\right.$$
+	We use Gaussian elimination:
+	\begin{equation*}
+    {\tiny
+	\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ -5 & 2 & 4 & 0 \\ 4 & 2 & -5 & 0\end{array}\right)~~~
+	\melt{R_2\rightarrow R_2+5R_1\\R_3\rightarrow R_3-4 R_1}
+	~~~\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ 0 & -18 & 9 & 0 \\ 0 & 18 & -9 & 0\end{array}\right)
+    ~~\melt{R_3\rightarrow R_2+R_3\\R_2\rightarrow R_2/9}~~~\left(\begin{array}{ccc|c} 1 & -4 & 1 & 0 \\ 0 & -2 & 1 & 0 \\ 0 & 0 & 0 & 0\end{array}\right)
+    }
+	\end{equation*}
+	By substitution, 	the solutions of this homogeneous system are $\xv=(\alpha,\tfrac{1}{2}\alpha,\alpha)^T$, so a basis for $E_8(A)$ is $\CB_8 = \{(1,\tfrac{1}{2},1)^T\}$. 
+	%Eigenvectors with eigenvalue $8$ are therefore multiples of $(1,\tfrac{1}{2},1)^T$.
+	
+	For the eigenvalue $\lambda=-1$, we get the system of equations
+	$$ \left\{\begin{array}{ccc}  3x+2y+4z&=&-x\\2x+2z&=&-y \\4x+2y+3z&=&-z \end{array}\right. \elt{~} ~~~ \left\{\begin{array}{ccc} 2x+y+2z&=&0 \end{array}\right. $$
+	%	\begin{aligned}
+	%	3x+2y+4z&=-x~,&4x+2y+4z&=0~,\\
+	%	2x+2z&=-y~,~~~~~~\mbox{or}~~~&2x+y+2z&=0~,\\
+	%	4x+2y+3z&=-z~,&4x+2y+4z&=0~.
+	%	\end{aligned}
+	%	\end{equation*}
+	By substitution, we find that the solution to this system of linear equations is of the form$(-\tfrac{1}{2}(2\alpha+\beta),\beta,\alpha)^T$  for $\alpha, \beta \in \FR$. Thus, a basis of  $E_{-1}(A)$ is given by $\CB_{-1} = \{(-1,0,1)^T,(-\tfrac{1}{2},1,0)^T\}$. 
+	%Note that these two vectors are eigenvectors with eigenvalue $-1$ as is every linear combination of them.
+	Finally, a basis of eigenvectors is $\CB = \{ (1,\tfrac{1}{2},1)^T, (-1,0,1)^T,(-\tfrac{1}{2},1,0)^T\}.$ 
+	
+	Seeing $A$ as a linear map $T_A: \FR^3 \ra \FR^3$, let us perform a change of basis. Let  
+	$$ P \coloneqq  \left(\begin{array}{ccc} 1 &-1 & -\frac{1}{2} \\ -\frac{1}{2}& 0 & 1  \\ 1 & 1 & 0  \end{array}\right). $$
+	be the matrix of change of basis from the standard basis to our basis of eigenvectors. In particular, the matrix of $T_A$ in the basis of eigenvectors $\CB$ is: 
+	$$P^{-1}AP = \left(\begin{array}{ccc} 8 & 0 & 0\\ 0& -1 & 0  \\ 0 & 0 & -1  \end{array}\right). $$
+	%Thus, if we construct the matrix of change of basis 
+	%	$$P:= \left(\begin{array}{ccc} 1 & -1 & -\frac{1}{2} \\ \frac{1}{2} & 0 & 1 \\ 1 & 1 & 0 \end{array}\right),$$
+	%	then $P$ is invertible and 
+	%	$$ P^{-1}AP = \left(\begin{array}{ccc} 8 & 0 & 0\\ 0 & -1 & 0 \\ 0& 0& -1 \end{array}\right).$$
+\end{example}
+
+%
+%\begin{thm}
+%	Let $A$ be an $n \times n$ matrix with eigenvalues $\lambda_1, \ldots, \lambda_k$. The following statements are equivalent: 
+%	\begin{itemize}
+%		\item $A$ is diagonalisable with eigenvalues $\lambda_1, \ldots, \lambda_k$,
+%		\item for every eigenvalue $\lambda$ of $A$, the algebraic multiplicity of $\lambda$ equals the geometric multiplicity of $\lambda$. 
+%		\item We have
+%		$$\dim E_{\lambda_1}(A) + \ldots + \dim E_{\lambda_k}(A) =n.$$
+%		\item 
+%		\end{itemize}
+%	\end{thm}
+
+
+%	\begin{method}{Diagonalisability of a matrix} We have the following method to determine whether a given matrix is diagonalisable: 
+%	\begin{itemize}
+%		\item[(1)] Compute the eigenvalues $\lambda_1, \ldots, \lambda_k$ of $A$, by computing the roots of the characteristic polynomial $\chi_A$ for $n =2$ or $3$. For larger values of $n$, you will generally be given some eigenvalues to help you with the computations. 
+%		\item[(2)] For each eigenvalue $\lambda_i$, compute a basis $\CB_{i}$ of the eigenspace $E_{\lambda_i}(A)$. To do that, solve the homogeneous system $A\xv - \lambda_i\xv = \nv$ using Gaussian elimination. 
+%		\item[(3)] If $\dim E_{\lambda_1}(A) + \cdots + \dim E_{\lambda_1}(A)  <  n$, then $A$ is not diagonalisable. 
+%		\item[(4)]If $\dim E_{\lambda_1}(A) + \cdots + \dim E_{\lambda_1}(A)  =  n$, then $A$ is diagonalisable, and a basis of eigenvectors is given by taking the union $\CB_1 \cup \ldots \cup \CB_k$. 
+%	\end{itemize}
+%\end{method}
+
+	\subsection{Application: Dynamical systems} 
+	
+%	
+%	\begin{method}{Diagonalising a matrix / Finding a basis of eigenvectors} We have the following method to determine whether a given matrix is diagonalisable, and if that is the case to diagonalise it: 
+%	\begin{itemize}
+%		\item[(1)] Compute the eigenvalues $\lambda_1, \ldots, \lambda_k$ of $A$, by computing the roots of the characteristic polynomial $\chi_A$ for $n =2$ or $3$. For larger values of $n$, you will generally be given some eigenvalues to help you with the computations. 
+%		\item[(2)] For each eigenvalue $\lambda_i$, compute a basis $\CB_{i}$ of the eigenspace $E_{\lambda_i}(A)$. To do that, solve the homogenous system $A\xv - \lambda_i\xv = \nv$ using Gaussian elimination. 
+%		\item[(3)] If $\dim E_{\lambda_1}(A) + \cdots + \dim E_{\lambda_1}(A)  <  n$, then $A$ is not diagonalisable. 
+%		\item[(4)]If $\dim E_{\lambda_1}(A) + \cdots + \dim E_{\lambda_1}(A)  =  n$, then $A$ is diagonalisable, and a basis of eigenvectors is given by taking the union $\CB_1 \cup \ldots \cup \CB_k$. 
+%	\end{itemize}
+%	\end{method}
+	
+
+
+
+	
+	
+	
+	
+	\begin{df}{}
+		The \textit{dynamical system} associated to an $n \times n$ matrix $A$ and a choice of initial condition $\xv_0 \in \FR^n$ is the sequence $(\xv_k)_{k \geq 0} $ of vectors of $\FR^n$ defined by:
+		$$\xv_{k+1} = A\xv_k.$$
+		In particular, we get by induction that:
+		$$\xv_{k} = A^k\xv_0.$$
+		\end{df}
+	
+	\begin{thm}{}
+		Let $A$ be a diagonalisable $n \times n$ matrix with a chosen basis of eigenvectors $\ev_1, \ldots, \ev_n$ and corresponding eigenvalues $\lambda_1, \ldots, \lambda_n$. Let $(\xv_{k})$ be the dynamical system associated to a given initial condition $\xv_0\in \FR^n$. Let $\alpha_1, \ldots, \alpha_k\in \FR$ such that 
+		$$\xv_0 = \alpha_1 \ev_1 + \ldots + \alpha_n\ev_n.$$
+		Then we have for every $k \geq 0$, 
+		$$\xv_k = A^k\xv_0 = \alpha_1\lambda_1^k \ev_1 + \ldots + \alpha_k\lambda_n^k \ev_n.$$ 
+	\end{thm}
+	
+		To determine the asymptotic behaviour (convergence, divergence, possible limit) of a dynamical system associated to a $n\times n$ diagonalisable matrix $A$:
+		\begin{itemize}
+			\item[(1)] Compute a basis of eigenvectors $\ev_1, \ldots, \ev_n$ of $A$, with corresponding eigenvalues $\lambda_1, \ldots, \lambda_n$, as in the previous method. 
+			\item[(2)] Using Gaussian elimination, find constants $\alpha_1, \ldots, \alpha_n$ such that 
+			$$ \xv_0 = \alpha_1 \ev_1 + \ldots + \alpha_n\ev_n.$$ 
+			\item[(3)] We then have $$\xv_k = A^k\xv_0 = \alpha_1\lambda_1^k \ev_1 + \ldots + \alpha_k\lambda_n^k \ev_n.$$ 
+			This formula can be used to determine the asymptotic behaviour of the dynamical system.  
+		\end{itemize}
+
+	\subsection{Application: Dynamics of populations.} 
+
+Let us go back to the problem of understanding the dynamics of some animal population. We have: 
+% Consider a population of animals consisting of $a_0$ adults and $j_0$ juveniles. From one year to the next, the adults will each produce $\gamma$ juveniles. Adults will survive from one year to the next with probability $\alpha$, while juveniles will survive into the next year and become adults with the probability $\beta$. Altogether, we have
+\begin{equation*}
+\vectt{a_{n+1}}{j_{n+1}}=A\vectt{a_{n}}{j_{n}} ~~~ \mbox{ with } A:= \left(\begin{array}{cc}\alpha & \beta\\\gamma & 0 \end{array}\right).
+\end{equation*}
+%
+%\begin{equation*}
+%\begin{array}{rl}
+%a_{n+1}&=\alpha a_n+\beta j_n~\\
+%j_{n+1}&=\gamma a_n
+%\end{array}~~~\mbox{or}~~~ \vectt{a_{n+1}}{j_{n+1}}=A\vectt{a_{n}}{j_{n}}=\left(\begin{array}{cc}\alpha & \beta\\\gamma & 0 \end{array}\right)\vectt{a_{n}}{j_{n}}~.
+%\end{equation*}
+For simplicity and concreteness, assume that $\alpha=\frac{1}{2}$, $\beta=\frac{3}{10}$. The characteristic polynomial of $A$ is: 
+$$\chi_A(x) = (\frac{1}{2}-x)(-x) - \frac{3}{10}\gamma = x^2 - \frac{1}{2}x - \frac{3}{10}\gamma.$$ 
+
+The eigenvalues of $A$ are $\lambda_1=\frac{1}{20}(5-\sqrt{5}\sqrt{5+24\gamma})$ and $\lambda_2=\frac{1}{20}(5+\sqrt{5}\sqrt{5+24\gamma})$. In particular, $A$ has two distinct eigenvalues $\lambda_1 < \lambda_2$, hence it is diagonalisable by Theorem \ref{thm:distinct_DZ}. We can thus find a basis $\ev_1, \ev_2$ of eigenvectors for $\FR^2$. If we write the initial vector in this basis as: 
+$$ \vectt{a_0}{j_0} = \alpha_1 \ev_1 + \alpha_2 \ev_2,$$ we get $$ \vectt{a_n}{j_n} = A^n \vectt{a_0}{j_0} = \alpha_1 \lambda_1^n \ev_1 + \alpha_2 \lambda_2^n \ev_2.$$
+We thus see that the dynamics of this population depend on the eigenvalues, and hence on the fecundity rate $\gamma$: 
+\begin{itemize}
+	\item[(i)] If $\lambda_1, \lambda_2 < 1$, that is, if $\gamma < \frac{5}{3}$, then $a_n, j_n \ra 0$ and the population collapses.
+	
+	\item[(ii)] If $\lambda_2 >1$, that is, if $\gamma > \frac{5}{3}$, then $a_n, j_n \ra \infty$ and the population explodes.
+	\item[(iii)] Finally, if $\lambda_2 = 1$ and $\lambda_1 <1$, that is, if $\gamma  =\frac{5}{3}$, then 
+	$$\vectt{a_n}{j_n} \ra \alpha_2 \ev_2 = \alpha_2 \vectt{\frac{3}{5}}{1}.$$
+	In particular, the population converges to a stable population where the number $a, j$ of adults and juveniles satisfy: 
+	$$a = \frac{3}{5} j.$$
+\end{itemize}
+%
+%To have a stable population, we need an eigenvector of $A$ with eigenvalue 1. As $\lambda_2>\lambda_1$ we demand that $\lambda_2=1$, and find $\gamma=\frac{5}{3}$. The corresponding eigenvector reads as $(\frac{3}{5},1)^T$. Thus, starting e.g.\ from a population of 3000 adults and 5000 juveniles, this population would be (statistically) stable for $\gamma=\frac{5}{3}$.
+%
+%	
+
+This mathematical model to understand the evolution of a population by dividing it into several age groups is known as the \textit{Leslie model}. 
+%We will see another example in the tutorials. 
+
+	
+		\paragraph{Application: The Fibonacci sequence.} 
+%	\paragraph{Fibonacci numbers.} 
+	Consider the sequence satisfying the following recurrence relation: $$a_{n+1}=a_{n}+a_{n-1}, $$ and with the initial values $a_0=0$ and $a_1=1$.  The numbers $a_i$ are known as the {\em Fibonacci numbers}\index{Fibonacci numbers}: $0,1,1,2,3,5,8,13,\ldots$. Let us introduce the following vector of $\FR^2$: 
+	$$\xv_n := \vectt{a_{n+1}}{a_n} ~~~\mbox{for } n \geq 0.$$
+	The recurrence relation gets encoded into the following matrix equation:
+	\begin{equation*}
+	\xv_{n+1}=A\xv_n
+	\end{equation*}
+	with 
+	\begin{equation*}
+	A:=\left(\begin{array}{cc}1 & 1\\1 & 0 \end{array}\right).
+	\end{equation*}
+	To compute $a_{n+1}$ from given $a_1$ and $a_0$, we just have to apply $A^n$ to the initial vector. The characteristic polynomial $\chi_A$ is 
+	$$\chi_A(x)= (1-x)(-x)-1 = x^2 - x -1,$$
+	and its eigenvalues are $\varphi:= \frac{1 + \sqrt{5}}{2}$  and $\varphi':= \frac{1 - \sqrt{5}}{2}$.  In particular, the $2\times 2$ matrix $A$ has two distinct eigenvalues, hence it is diagonalisable by Theorem \ref{thm:distinct_DZ}. We compute the corresponding eigenvectors $\ev_\varphi=(\frac{1}{2}(1+\sqrt{5}),1)^T$ and $\ev_{\varphi'}=(\frac{1}{2}(1-\sqrt{5}),1)^T$ . One then writes the initial vector $\xv_0$ in this basis of eigenvectors by solving the system of linear equations $$ \xv_0 =  a \ev_\varphi + b \ev_{\varphi'},$$
+	for some $a, b \in \FR$, using Gaussian elimination. One finds:  
+	\begin{equation*}
+	\xv_0 = \vectt{1}{0}=\frac{1}{\sqrt{5}}\ev_\varphi-\frac{1}{\sqrt{5}}\ev_{\varphi'}~.	
+	%\xv_0 = \vectt{1}{0}=\frac{1}{10}(5+\sqrt{5})\ev_1+\frac{1}{10}(5-\sqrt{5})\ev_2~.
+	\end{equation*}
+	If we apply $A^n$ to our initial vector, we obtain
+	\begin{equation*}
+	\xv_n = A^n\vectt{1}{0}=\frac{1}{\sqrt{5}}\varphi^n\ev_\varphi - \frac{1}{\sqrt{5}}(\varphi')^n\ev_{\varphi'}.	
+	%A^n\vectt{1}{1}=\frac{1}{10}(5+\sqrt{5})\varphi^n\ev_1+\frac{1}{10}(5-\sqrt{5})\lambda_2^n\ev_2.
+	\end{equation*} and by taking the second component of $\xv_n$, one gets $$a_n =\frac{\varphi^n - (\varphi')^n}{\sqrt{5}}.$$
+	%	Note that $-1<\lambda_2=-0.618\ldots<0$, and therefore $\lambda_2^n$ tends to zero as $n$ goes to infinity. Thus, for large $n$, the contribution of $\xv_2$ becomes negligible. 
+	%	We then make a curious observation: The ratio of $a_{n+1}/a_n$ approaches the ratio of the components of $\xv_1$, which is the {\em golden ratio}\index{golden ratio} $\varphi:=\frac{1}{2}(1+\sqrt{5})=1.61803\ldots$ Recall that a line is divided into two segments of length $a$ and $b$ according to the golden ratio, if $\frac{a+b}{a}=\frac{a}{b}$. It follows $\frac{a}{b}=\varphi$:
+	%	\begin{equation*}
+	%	\begin{picture}(100,30)
+	%	\put(37.0,22.0){\makebox(0,0)[c]{$a$}}
+	%	\put(97.0,22.0){\makebox(0,0)[c]{$b$}}
+	%	\put(0.0,15.0){\vector(1,0){74}}
+	%	\put(74.0,15.0){\vector(1,0){46}}
+	%	\put(0.0,10.0){\vector(1,0){120}}
+	%	\put(60.0,0.0){\makebox(0,0)[c]{$a+b$}}
+	%	\end{picture}
+	%	\end{equation*}
+	
+	
+ \paragraph{Sequences satisfying a linear recurrence relation.} More generally, for a sequence $(a_n)$ satisfying a linear recurrence relation of the form 
+	$$a_{n+m} = c_{m-1}a_{n+m-1} + \ldots + c_0a_n$$
+	for some constants $c_0, \ldots, c_m\in \FR$, 	we can compute $a_n$ using the same procedure. First introduce the following  vector of $\FR^m$:
+	$$\xv_n = \vecttt{a_n}{\vdots}{a_{n+m-1}} ~~~\mbox{for } n \geq 0,$$
+	And notice that we have 
+	$$\xv_{n+1} = A\xv_n$$
+	with $$A= \left(\begin{array}{ccccc} c_{m-1} & c_{m-2} & \ldots & c_1 & c_0\\
+	1 & 0& \ldots & 0 & 0 \\ 0 & 1 & 0 &\ldots & 0\\ \vdots & & \ddots & \ddots & \vdots \\0 & \ldots & 0 & 1 & 0\end{array} \right).$$
+	
+	One then compute the characteristic polynomial  $\chi_A$. One can show that 
+	$$\chi_A(x) = x^{m} - c_{m-1}x^{m-1} - \ldots - c_1x - c_0.$$ 
+	One can then compute the eigenvalues and eigenvectors. If $A$ turns out to be diagonalisable, with a basis  $\CB$ of eigenvectors $\ev_1, \ldots, \ev_m$ and associated eigenvalues $\lambda_1, \ldots, \lambda_m$ respectively, one then express the initial vector $\xv_0$ in the basis $\CB$ by solving the associated system of linear equations. If $$\xv_0 = \alpha_1\ev_1 + \ldots + \alpha_m\ev_m,$$ then it follows that $$\xv_n = A^n\xv_0 = \alpha_1 \lambda_1^n \ev_1 + \ldots + \alpha_n \lambda_m^n \ev_m,$$ 
+	and one finally obtains $a_n$ by taking the first component of $\xv_n$.
+	
+	
+	\paragraph{Diagonalisability over $\FC$ and dynamical systems.} In this course, we have mostly been dealing with real vector spaces and diagonalisability over $\FR$. When it comes to diagonalisability however,  using complex numbers instead can be very useful: A matrix may be diagonalisable over $\FC$ (in which case the previous methods apply) even though the same matrix is not diagonalisable over $\FR$. 
+%	 Indeed, we saw that the diagonalisability of a matrix is directly linked to its eigenvalues. Factoring the characteristic polynomial over the complex numbers and diagonalising a matrix over $\FC$, even though the matrix may not be diagonalisable over $\FR$, may allow you to solve certain new problems.
+	
+	Here is a concrete example. Consider a sequence satisfying the following linear recurrence relation: 
+	
+	$$u_{n+2} = -u_{n+1} - u_{n}.$$
+	
+	By applying the previous method, we end up studying a dynamical system associated to a $2\times2$ matrix whose characteristic polynomial is $x^2 + x +1$. This polynomial does not admit any real root, so the associated matrix is not diagonalisable \textit{over $\FR$}. However, over $\FC$, the characteristic polynomial has two roots, $\lambda_1 = e^{2i\pi/3}$ and $\lambda_2 = e^{- 2i\pi/3}.$ One can show that the associated matrix is diagonalisable over $\FC$, and as a result, there exists constants $\alpha_1, \alpha_2 \in \FC$ such that for every $n 
+	\geq 0$, we have 
+	$$u_n = \alpha_1 \lambda_1^n + \alpha_2 \lambda_2^n.$$
+	We can then compute the values of $\alpha_1, \alpha_2$ using the initial conditions $u_0, u_1.$ For instance, for $u_0 = 2$ and $u_1= 1$, we find $\alpha_1 = \alpha_2 = 1$, and finally 
+	$$u_n = e^{2in\pi/3} + e^{-2in\pi/3} = 2\cos(2n\pi/3).$$
+	
+	
+	\subsection{Powers of a matrix.}\index{matrix!powers of} Diagonalising a matrix helps to compute its powers. Assume that we have diagonalised an $n\times n$ matrix $A$: $A=PDP^{-1}$, where $D$ is a diagonal matrix with entries $d_1,\ldots,d_n$. We then have
+	\begin{equation*}
+	A^k=(PDP^{-1})^k=PDP^{-1}PDP^{-1}\ldots PDP^{-1}=PD^kP^{-1}~.
+	\end{equation*}
+	Here, $D^k$ is simply the diagonal matrix with entries $d_1^k,\ldots,d_n^k$. 
+	%Note that this also works for rational $k$.
+	
+
+		We have the following algorithm to compute the powers of a diagonalisable matrix $A$: 
+		\begin{itemize}
+			\item [1)] Using the previous method, compute a diagonal matrix $D$ and an invertible matrix $P$ such that $A = PDP^{-1}$.
+			\item[2)] We then have $A^k = PD^kP^{-1}$ for every $k \in \bbZ$. 
+		\end{itemize}
+
+	
+	\begin{example} Let
+	\begin{equation*}
+	A=\left(\begin{array}{cc}
+	2 & 2 \\ 1 & 3
+	\end{array}
+	\right)~.
+	\end{equation*}
+	Let us compute $A^{20}$. \\
+	%Find a matrix $B$ such that $B^2=A$.\\
+	 We compute the characteristic polynomial $\chi_A(\lambda) = \lambda^2 - 5\lambda + 4$, and so the eigenvalues of $A$ are  $\lambda=1$ and $\lambda=4$. In particular, $A$ is a $2\times 2$ matrix with two distinct eigenvalues so it is diagonalisable. Using Gaussian elimination, we find that a basis of $E_1(A)$ is the vector $(2,-1)^T$  and a basis of $E_4(A)$ is the vector $(1,1)^T$. We thus define the matrix of change of basis 
+	$$P = \left(\begin{array}{cc}
+	2 & 1 \\ -1 & 1
+	\end{array}
+	\right)$$
+	whose inverse we compute by Gaussian elimination: 
+	$$P^{-1}= \frac{1}{3}\left(\begin{array}{cc}
+	1 & -1 \\ 1 & 2
+	\end{array}
+	\right).$$
+	We thus have
+	\begin{equation*}
+	A=
+	\left(\begin{array}{cc}
+	2 & 2 \\ 1 & 3
+	\end{array}
+	\right)=PDP^{-1}=\left(\begin{array}{cc}
+	2 & 1 \\ -1 & 1
+	\end{array}
+	\right)\left(\begin{array}{cc}
+	1 & 0 \\ 0 & 4
+	\end{array}
+	\right)\frac{1}{3}\left(\begin{array}{cc}
+	1 & -1 \\ 1 & 2
+	\end{array}
+	\right)~.
+	\end{equation*}
+	and it follows that 
+	\begin{equation*}
+	\begin{aligned}
+	A^{20}=PD^{20}P^{-1}&=\tfrac{1}{3}\left(\begin{array}{cc}
+	2 & 1 \\ -1 & 1
+	\end{array}
+	\right)\left(\begin{array}{cc}
+	1 & 0 \\ 0 & 4^{20}
+	\end{array}
+	\right)\left(\begin{array}{cc}
+	1 & -1 \\ 1 & 2
+	\end{array}
+	\right)\\&=\tfrac{1}{3}\left(\begin{array}{cc}
+	2+4^{20} & -2+2\times 4^{20} \\ -1+4^{20} & 1+2\times 4^{20}
+	\end{array}
+	\right)
+	\end{aligned}
+	\end{equation*}
+	\end{example}
+
+
+	
+%	\section{Application: Dynamics of populations.} 
+%	
+%Let us go back to the problem of understanding the dynamics of some animal population. We have: 
+%% Consider a population of animals consisting of $a_0$ adults and $j_0$ juveniles. From one year to the next, the adults will each produce $\gamma$ juveniles. Adults will survive from one year to the next with probability $\alpha$, while juveniles will survive into the next year and become adults with the probability $\beta$. Altogether, we have
+%\begin{equation*}
+%\vectt{a_{n+1}}{j_{n+1}}=A\vectt{a_{n}}{j_{n}} ~~~ \mbox{ with } A:= \left(\begin{array}{cc}\alpha & \beta\\\gamma & 0 \end{array}\right).
+%\end{equation*}
+%%
+%%\begin{equation*}
+%%\begin{array}{rl}
+%%a_{n+1}&=\alpha a_n+\beta j_n~\\
+%%j_{n+1}&=\gamma a_n
+%%\end{array}~~~\mbox{or}~~~ \vectt{a_{n+1}}{j_{n+1}}=A\vectt{a_{n}}{j_{n}}=\left(\begin{array}{cc}\alpha & \beta\\\gamma & 0 \end{array}\right)\vectt{a_{n}}{j_{n}}~.
+%%\end{equation*}
+%For simplicity and concreteness, assume that $\alpha=\frac{1}{2}$, $\beta=\frac{3}{10}$. The characteristic polynomial of $A$ is: 
+%$$\chi_A(x) = (\frac{1}{2}-x)(-x) - \frac{3}{10}\gamma = x^2 - \frac{1}{2}x - \frac{3}{10}\gamma.$$ 
+%
+%The eigenvalues of $A$ are $\lambda_1=\frac{1}{20}(5-\sqrt{5}\sqrt{5+24\gamma})$ and $\lambda_2=\frac{1}{20}(5+\sqrt{5}\sqrt{5+24\gamma})$. In particular, $A$ has two distinct eigenvalues $\lambda_1 < \lambda_2$, hence it is diagonalisable by Theorem \ref{thm:distinct_DZ}. We can thus find a basis $\ev_1, \ev_2$ of eigenvectors for $\FR^2$. If we write the initial vector in this basis as: 
+%$$ \vectt{a_0}{j_0} = \alpha_1 \ev_1 + \alpha_2 \ev_2,$$ we get $$ \vectt{a_n}{j_n} = A^n \vectt{a_0}{j_0} = \alpha_1 \lambda_1^n \ev_1 + \alpha_2 \lambda_2^n \ev_2.$$
+%We thus see that the dynamics of this population depend on the eigenvalues, and hence on the fecundity rate $\gamma$: 
+%\begin{itemize}
+%	\item[(i)] If $\lambda_1, \lambda_2 < 1$, that is, if $\gamma < \frac{5}{3}$, then $a_n, j_n \ra 0$ and the population collapses.
+%	
+%	 \item[(ii)] If $\lambda_2 >1$, that is, if $\gamma > \frac{5}{3}$, then $a_n, j_n \ra \infty$ and the population explodes.
+%	\item[(iii)] Finally, if $\lambda_2 = 1$ and $\lambda_1 <1$, that is, if $\gamma  =\frac{5}{3}$, then 
+%	$$\vectt{a_n}{j_n} \ra \alpha_2 \ev_2 = \alpha_2 \vectt{\frac{3}{5}}{1}.$$
+%In particular, the population converges to a stable population where the number $a, j$ of adults and juveniles satisfy: 
+%$$a = \frac{3}{5} j.$$
+%\end{itemize}
+%%
+%%To have a stable population, we need an eigenvector of $A$ with eigenvalue 1. As $\lambda_2>\lambda_1$ we demand that $\lambda_2=1$, and find $\gamma=\frac{5}{3}$. The corresponding eigenvector reads as $(\frac{3}{5},1)^T$. Thus, starting e.g.\ from a population of 3000 adults and 5000 juveniles, this population would be (statistically) stable for $\gamma=\frac{5}{3}$.
+%%
+%%	
+%
+%This mathematical model to understand the evolution of a population by dividing it into several age groups is known as the \textit{Leslie model}. 
+%%We will see another example in the tutorials. 
+
+%	\section{Application: Sequences satisfying a linear recurrence relation.} 
+%	\paragraph{Fibonacci numbers.} Consider a sequence satisfying the following recurrence relation: $$a_{n+1}=a_{n}+a_{n-1}, $$ and with the initial values $a_0=0$ and $a_1=1$.  The numbers $a_i$ are known as the {\em Fibonacci numbers}\index{Fibonacci numbers}: $0,1,1,2,3,5,8,13,\ldots$. Let us introduce the following vector of $\FR^2$: 
+%	$$\xv_n := \vectt{a_{n+1}}{a_n} ~~~\mbox{for } n \geq 0.$$
+%	 The recurrence relation gets encoded into the following matrix equation:
+%	\begin{equation*}
+%	\xv_{n+1}=A\xv_n
+%	\end{equation*}
+%	with 
+%		\begin{equation*}
+%	A:=\left(\begin{array}{cc}1 & 1\\1 & 0 \end{array}\right).
+%		\end{equation*}
+%	To compute $a_{n+1}$ from given $a_1$ and $a_0$, we just have to apply $A^n$ to the initial vector. The characteristic polynomial $\chi_A$ is 
+%	$$\chi_A(x)= (1-x)(-x)-1 = x^2 - x -1,$$
+%	and its eigenvalues are $\varphi:= \frac{1 + \sqrt{5}}{2}$  and $\varphi':= \frac{1 - \sqrt{5}}{2}$.  In particular, the $2\times 2$ matrix $A$ has two distinct eigenvalues, hence it is diagonalisable by Theorem \ref{thm:distinct_DZ}. We compute the corresponding eigenvectors $\ev_\varphi=(\frac{1}{2}(1+\sqrt{5}),1)^T$ and $\ev_{\varphi'}=(\frac{1}{2}(1-\sqrt{5}),1)^T$. One then writes the initial vector $\xv_0$ in this basis of eigenvectors by solving the system of linear equations $$ \xv_0 =  a \ev_\varphi + b \ev_{\varphi'},$$
+%	for some $a, b \in \FR$, using Gaussian elimination. One finds:  
+%	\begin{equation*}
+%\xv_0 = \vectt{1}{0}=\frac{1}{\sqrt{5}}\ev_\varphi-\frac{1}{\sqrt{5}}\ev_{\varphi'}~.	
+%%\xv_0 = \vectt{1}{0}=\frac{1}{10}(5+\sqrt{5})\ev_1+\frac{1}{10}(5-\sqrt{5})\ev_2~.
+%	\end{equation*}
+%	If we apply $A^n$ to our initial vector, we obtain
+%	\begin{equation*}
+%\xv_n = A^n\vectt{1}{0}=\frac{1}{\sqrt{5}}\varphi^n\ev_\varphi - \frac{1}{\sqrt{5}}(\varphi')^n\ev_{\varphi'}.	
+%%A^n\vectt{1}{1}=\frac{1}{10}(5+\sqrt{5})\varphi^n\ev_1+\frac{1}{10}(5-\sqrt{5})\lambda_2^n\ev_2.
+%	\end{equation*} and by taking the second component of $\xv_n$, one gets $$a_n =\frac{\varphi^n - (\varphi')^n}{\sqrt{5}}.$$
+%%	Note that $-1<\lambda_2=-0.618\ldots<0$, and therefore $\lambda_2^n$ tends to zero as $n$ goes to infinity. Thus, for large $n$, the contribution of $\xv_2$ becomes negligible. 
+%%	We then make a curious observation: The ratio of $a_{n+1}/a_n$ approaches the ratio of the components of $\xv_1$, which is the {\em golden ratio}\index{golden ratio} $\varphi:=\frac{1}{2}(1+\sqrt{5})=1.61803\ldots$ Recall that a line is divided into two segments of length $a$ and $b$ according to the golden ratio, if $\frac{a+b}{a}=\frac{a}{b}$. It follows $\frac{a}{b}=\varphi$:
+%%	\begin{equation*}
+%%	\begin{picture}(100,30)
+%%	\put(37.0,22.0){\makebox(0,0)[c]{$a$}}
+%%	\put(97.0,22.0){\makebox(0,0)[c]{$b$}}
+%%	\put(0.0,15.0){\vector(1,0){74}}
+%%	\put(74.0,15.0){\vector(1,0){46}}
+%%	\put(0.0,10.0){\vector(1,0){120}}
+%%	\put(60.0,0.0){\makebox(0,0)[c]{$a+b$}}
+%%	\end{picture}
+%%	\end{equation*}
+%
+%
+%\paragraph{The general case.} More generally, for a sequence satisfying a linear recurrence relation of the form 
+%$$a_{n+m} = c_{m-1}a_{n+m-1} + \ldots + c_0a_n,$$
+%we can compute $a_n$ using the same procedure. First introduce the following  vector of $\FR^m$:
+%$$\xv_n = \vecttt{x_n}{\vdots}{x_{n+m-1}} ~~~\mbox{for } n \geq 0,$$
+%And notice that we have 
+%$$\xv_{n+1} = A\xv_n$$
+%with $$A= \left(\begin{array}{ccccc} c_{m-1} & c_{m-2} & \ldots & c_1 & c_0\\
+%1 & 0& \ldots & 0 & 0 \\ 0 & 1 & 0 &\ldots & 0\\ \vdots & & \ddots & \ddots & \vdots \\0 & \ldots & 0 & 1 & 0\end{array} \right).$$
+%
+%One then compute the characteristic polynomial  $\chi_A$. One can show that 
+%$$\chi_A(x) = x^{m} - c_{m-1}x^{m-1} - \ldots - c_1x - c_0.$$ 
+%One can then compute the eigenvalues and eigenvectors. If $A$ turns out to be diagonalisable, with a basis  $\CB$ of eigenvectors $\ev_1, \ldots, \ev_m$ and associated eigenvalues $\lambda_1, \ldots, \lambda_m$ respectively, one then express the initial vector $\xv_0$ in the basis $\CB$ by solving the associated system of linear equations. If $$\xv_0 = \alpha_1\ev_1 + \ldots + \alpha_n\ev_n,$$ then it follows that $$\xv_n = A^n\xv_0 = \alpha_1 \lambda_1^n \ev_1 + \ldots + \alpha_n \lambda_m^n \ev_m,$$ 
+%and one finally obtains $a_n$ by taking the $m$-th component of $\xv_n$.
+%	
+%	
+%	\paragraph{Diagonalisability over $\FC$.} In this course, we have mostly been dealing with real vector spaces. When it comes to diagonalisability however,  using complex numbers instead can be very useful. Indeed, we saw that the diagonalisability of a matrix is directly linked to its eigenvalues. Factoring the characteristic polynomial over the complex numbers and diagonalising a matrix over $\FC$, even though the matrix may not be diagonalisable over $\FR$, may allow you to solve certain new problems.
+%	
+%	Here is a concrete example. Consider a sequence satisfying the following linear recurrence relation: 
+%	
+%	$$u_{n+2} = -u_{n+1} - u_{n}.$$
+%	
+%	By applying the previous method, we end up studying a dynamical system associated to a $2\times2$ matrix whose characteristic polynomial is $x^2 + x +1$. This polynomial does not admit any real root, so the associated matrix is not diagonalisable \textit{over $\FR$}. However, over $\FC$, the characteristic polynomial has two roots, $\lambda_1 = e^{2i\pi/3}$ and $\lambda_2 = e^{- 2i\pi/3}.$ One can show that the associated matrix is diagonalisable over $\FC$, and as a result, there exists constants $\alpha_1, \alpha_2 \in \FC$ such that for every $n 
+%	\geq 0$, we have 
+%	$$u_n = \alpha_1 \lambda_1^n + \alpha_2 \lambda_2^n.$$
+%	We can then compute the values of $\alpha_1, \alpha_2$ using the initial conditions $u_0, u_1.$ For instance, for $u_0 = 2$ and $u_1= 1$, we find $\alpha_1 = \alpha_2 = 1$, and finally 
+%	$$u_n = e^{2in\pi/3} + e^{-2in\pi/3} = 2\cos(2n\pi/3).$$
+%	
+
+

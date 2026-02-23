@@ -1,0 +1,602 @@
+%%% The macro file where all style boxes are defined. 
+%%% We should make sure we get this right before we distribute more widely.
+%%% We should also clean this up a little. It's a working mess that I threw together as I needed
+%%% Compiled by Thomas Wong, 2020
+
+
+\usepackage{amsmath,amssymb,amsthm}%,import,dashrule}
+\usepackage{graphicx}
+
+\usepackage{multicol}
+\usepackage{pifont}
+\usepackage{amsfonts}
+\usepackage{aliascnt}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\usepackage{enumitem}
+\usepackage{lmodern,textcomp}%fonts
+
+\usepackage{wasysym}
+
+
+%\usepackage{gensymb} %for degree symbol
+
+\usepackage{tikz}
+\usetikzlibrary{fit,shapes}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{matrix,decorations.pathreplacing}
+\usetikzlibrary{automata,positioning, calc}
+\usepackage{pgfplots}
+
+\usepackage[RPvoltages]{circuitikz} %drawing circuits
+\usepackage[hypcap=false]{caption} %captioning figures
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+\usepackage[titles]{tocloft}
+\usepackage[paper=letterpaper,left=25mm,right=25mm,top=3cm,bottom=25mm]{geometry}
+\usepackage{parskip}
+
+\usepackage{colortbl}
+\usepackage{color}   %May be necessary if you want to color links
+
+\newcommand{\diag}{\operatorname{diag}}
+
+\newcommand{\blue}{blue}
+\newcommand{\red}{red}
+\newcommand{\brown}{brown}
+\newcommand{\green}{green}
+\newcommand{\yellow}{yellow}
+\newcommand{\gray}{gray!30}
+\newcommand{\darkgray}{gray!60}
+\newcommand{\black}{black}
+\newcommand{\graphcolour}{red}
+\newcommand{\white}{white}
+
+
+
+\colorlet{lblue}{\blue!45!white}
+\colorlet{lred}{\red!50!white}
+\colorlet{lblue1}{\blue!10!white}
+\colorlet{lred1}{\red!10!white}
+\colorlet{lblue2}{\blue!45!white!50!\black}
+
+% \newcommand{\vv}[1]{\underline{#1}}
+ \newcommand{\vi}{\underline{i}}
+ \newcommand{\vj}{\underline{j}}
+ \newcommand{\vk}{\underline{k}}
+
+%\newcommand{\vv}[1]{{\mathbf{#1}}}
+%\newcommand{\vi}{\vv{i}}
+%\newcommand{\vj}{\vv{j}}
+%\newcommand{\vk}{\vv{k}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=lblue!50!black,  %choose some color if you want links to stand out
+		filecolor=lblue!50!black,
+		urlcolor=lblue!50!black,
+		pdfnewwindow=true
+}
+
+\usepackage{polynom}
+\usepackage[]{geometry}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{rotating}
+
+\usepackage{tcolorbox}
+\usepackage{varwidth}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\usepackage{chngcntr}%changes counter
+\counterwithin*{figure}{section}
+
+%creating QR codes
+\usepackage{marginnote}
+\usepackage{qrcode}
+
+%writing code
+\usepackage{verbatim}
+%\usepackage{minted} % for code snippets
+%\usepackage{listings}
+
+
+% \lstset{
+%   basicstyle=\ttfamily\small,
+%   keywordstyle=\color{blue},
+%   commentstyle=\color{gray},
+%   stringstyle=\color{orange},
+%   breaklines=true,
+%   frame=single,
+%   showstringspaces=false
+% }
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%\setcounter{section}{-1}
+%\setlength{\cftbeforechapskip}{2ex}
+\setlength{\cftbeforesecskip}{0.1ex}
+\setcounter{tocdepth}{2}
+\pagestyle{fancyplain}
+\numberwithin{equation}{section}
+ 
+\theoremstyle{definition}
+\newtheorem{cou}{counting}[section]
+
+\newaliascnt{df}{cou}
+\newaliascnt{thm}{cou}
+\newaliascnt{rem}{cou}
+\newaliascnt{example}{cou}
+\newaliascnt{exercise}{cou}
+
+%\newtheorem{df}[df]{Definition}
+%\newtheorem{thm}[thm]{Theorem}
+%\newtheorem{example}[example]{Example}
+%\newtheorem{exercise}[exercise]{Exercise}
+
+%\newtcolorbox[use counter=thm,number within=section]{thm}[2][]{%
+%fonttitle=\bfseries,
+%title= Theorem \thethm\; #2,#1}
+
+\newtcolorbox[use counter=exercise,number within=section]{exercise}[2][]{%
+fonttitle=\bfseries,
+colbacktitle=lblue!60!black,
+title= Exercise \theexercise\; #2,#1}
+
+\newtcolorbox[use counter=rem,number within=section]{rem}[2][]{enhanced,
+colbacktitle=\blue,
+boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=tcbcolback!30!black]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,middle color=tcbcolback!60!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+}
+,interior engine=empty,
+},
+fonttitle=\bfseries,
+title=Remark \therem\; {#2},#1}
+
+
+
+\newtcolorbox[use counter=df,number within=section]{df}[2][]{enhanced,
+colbacktitle=\blue,
+boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=tcbcolback!30!black]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,middle color=tcbcolback!60!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+}
+,interior engine=empty,
+},
+fonttitle=\bfseries,
+title=Definition \thedf\; {#2},#1}
+
+\newtcolorbox[use counter=thm,number within=section]{thm}[2][]{
+enhanced,
+%skin=enhancedlast jigsaw,
+attach boxed title to top left={xshift=-4mm,yshift=-0.5mm},
+fonttitle=\bfseries\sffamily,varwidth boxed title=0.7\linewidth,
+colbacktitle=lblue!60!black,colframe=lblue!60!black,
+%interior style={top color=lblue1,bottom color=lred1},
+boxed title style={empty,arc=0pt,outer arc=0pt,boxrule=0pt},
+underlay boxed title={
+\fill[lblue!80!black] (title.north west) -- (title.north east)
+-- +(\tcboxedtitleheight-1mm,-\tcboxedtitleheight+1mm)
+-- ([xshift=4mm,yshift=0.5mm]frame.north east) -- +(0mm,-1mm)
+-- (title.south west) -- cycle;
+\fill[lblue2] ([yshift=-0.5mm]frame.north west)
+-- +(-0.4,0) -- +(0,-0.3) -- cycle;
+\fill[lblue2] ([yshift=-0.5mm]frame.north east)
+-- +(0,-0.3) -- +(0.4,0) -- cycle; 
+},
+title= Theorem \thethm\; {#2},#1}
+
+%\thetcbcounter
+
+\newtcolorbox[use counter=example,number within=section]{example}[1][]{%
+empty,title={Example \theexample},attach boxed title to top left,
+boxed title style={empty,size=minimal,toprule=2pt,top=4pt,
+overlay={\draw[lblue!60!black,line width=2pt]
+([yshift=-1pt]frame.north west)--([yshift=-1pt]frame.north east);}},
+coltitle=lblue!60!black,fonttitle=\bfseries,
+before=\par\medskip\noindent,parbox=false,boxsep=0pt,left=0pt,right=3mm,top=4pt,
+breakable,pad at break*=0mm,vfill before first,
+overlay unbroken={\draw[lblue,line width=1pt]
+([yshift=-1pt]title.north east)--([xshift=-0.5pt,yshift=-1pt]title.north-|frame.east)
+--([xshift=-0.5pt]frame.south east)--(frame.south west); },
+overlay first={\draw[lblue,line width=1pt]
+([yshift=-1pt]title.north east)--([xshift=-0.5pt,yshift=-1pt]title.north-|frame.east)
+--([xshift=-0.5pt]frame.south east); },
+overlay middle={\draw[lblue,line width=1pt] ([xshift=-0.5pt]frame.north east)
+--([xshift=-0.5pt]frame.south east); },
+overlay last={\draw[lblue,line width=1pt] ([xshift=-0.5pt]frame.north east)
+--([xshift=-0.5pt]frame.south east)--(frame.south west);},#1%
+}
+
+\aliascntresetthe{df}
+\aliascntresetthe{rem}
+\aliascntresetthe{thm}
+\aliascntresetthe{example}
+\aliascntresetthe{exercise}
+
+\newcommand*{\dfautorefname}{Definition}
+\newcommand*{\remautorefname}{Remark}
+\newcommand*{\thmautorefname}{Theorem}
+\newcommand*{\exampleautorefname}{Example}
+\newcommand*{\exerciseautorefname}{Exercise}
+%\renewcommand*{\sectionautorefname}{Section}
+%\renewcommand*{\subsectionautorefname}{Section}
+
+\newtcolorbox{solution}{
+empty,
+breakable,left=5mm,right=5mm,
+borderline west={1mm}{0pt}{\blue!60!black},
+borderline east={1mm}{0pt}{\blue!60!black},
+title= {Solution:\:\:},
+attach title to upper,
+fonttitle=\bfseries,
+coltitle = black,
+}
+
+\newcommand\encircle[1]{%
+  \tikz[baseline=(X.base)] 
+    \node (X) [draw, shape=circle, inner sep=0] {\strut #1};}
+
+\renewcommand*\contentsname{Contents}
+
+\newcommand{\sitem}[1]{\begin{itemize}[noitemsep,nolistsep] #1 \end{itemize}}
+\newcommand{\senum}[1]{\begin{enumerate}[noitemsep,nolistsep] #1 \end{enumerate}}
+\newcommand{\tom}[1]{({\bf Tom:} \emph{#1})}
+\newcommand{\defn}[1]{\begin{center} \emph{#1} \end{center}}
+\newcommand{\pic}[2][0.7]{
+\begin{center}
+	\includegraphics[width=#1\textwidth]{images/#2}
+\end{center}
+}
+
+%setting QR links
+\newcommand{\qrlink}[2][]{\marginnote{\qrcode[height=0.9\marginparwidth,#1]{#2}}}%[-0.5cm]}
+
+
+
+%\newcommand{\degs}{\degree}
+\newcommand{\degs}{^\circ}
+
+%\AtBeginDocument{%
+% \abovedisplayshortskip=0pt
+% \belowdisplayskip=0pt
+% \belowdisplayshortskip=0pt
+%}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\newcommand{\caution}{\begin{tikzpicture}[scale=1,baseline=0cm] %\scriptsize
+	\path[rounded corners,draw=\yellow!50!\red,fill=none,thick]  (-0.25,0) -- (0.25,0) -- (0,0.433) -- cycle;
+	\path[rounded corners=0.5mm,draw=none,fill=\yellow!60,thick]  (-0.19,0.04) -- (0.19,0.04) -- (0,0.37) -- cycle;
+	\draw[draw=\yellow!20!\red,fill=none,thick]  (0,0.07) -- (0,0.1)  (0,0.12) -- (0,0.28);
+\end{tikzpicture}}
+
+\newcommand{\question}{
+\tikz[baseline=(wi.base)]{
+\node[fill=black,rotate=45,inner sep=.1ex,text height=1.8ex,text width=1.8ex] {};
+\node[font=\color{white}] (wi) {?};
+}	
+}
+
+\usepackage{xcolor}
+
+\newcommand{\hl}[1]{%
+  \colorbox{\red!50}{#1}}
+
+%%
+\usepackage{pgfplots,mathtools}
+\pgfplotsset{compat=1.7}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+%%Importing tutorial questions
+\usepackage{catchfilebetweentags}
+\newtoks\temptoken
+
+\usepackage[lastexercise,answerdelayed]{exercise}  
+\renewcommand{\QuestionNB}{(\alph{Question})\ }
+%\renewcommand{\subQuestionNB}{\roman{subQuestion})}
+\renewcommand{\ExerciseHeader}{\textbf{\theExercise.} \hspace{-4mm} \textbf{\ExerciseHeaderTitle}}
+\renewcommand{\AnswerHeader}{\textbf{\theExercise.}  \hspace{-4mm} \textbf{\ExerciseHeaderTitle}}
+\setlength{\ExerciseSkipBefore}{-0.8ex}
+\setlength{\AnswerSkipBefore}{-3ex}
+\setlength{\QuestionBefore}{-1ex}
+
+\renewcounter{Exercise}[subsection]% Reset counter.
+\renewcommand{\theExercise}{\thesubsection.\arabic{Exercise}}%
+
+\newcommand{\multicolq}[2][3]{
+\begin{multicols*}{#1}
+#2
+\EndCurrentQuestion
+\end{multicols*}
+}
+
+\newcommand{\multicolqq}[2][3]{
+\begin{multicols*}{#1}
+#2
+\EndCurrentsubQuestion
+\end{multicols*}
+}
+
+\newcommand{\tutorial}[1]{
+\subsubsection*{Tutorial Exercises for \thesubsection} 
+
+\medskip 
+
+\ExecuteMetaData[\tutorialsheetlocation]{#1}
+
+\vspace*{-1ex} \hspace*{\fill} \hyperref[A:answers]{(Answers)}
+}
+
+%%%%%%%Alex's Stuff%%%%%%%%%%%%
+
+\newcommand{\bbA}{{\mathbb A}}
+\newcommand{\bbB}{{\mathbb B}}
+\newcommand{\bbC}{{\mathbb C}}
+\newcommand{\bbD}{{\mathbb D}}
+\newcommand{\bbE}{{\mathbb E}}
+\newcommand{\bbF}{{\mathbb F}}
+\newcommand{\bbG}{{\mathbb G}}
+\newcommand{\bbH}{{\mathbb H}}
+\newcommand{\bbI}{{\mathbb I}}
+\newcommand{\bbJ}{{\mathbb J}}
+\newcommand{\bbK}{{\mathbb K}}
+\newcommand{\bbL}{{\mathbb L}}
+\newcommand{\bbM}{{\mathbb M}}
+\newcommand{\bbN}{{\mathbb N}}
+\newcommand{\bbO}{{\mathbb O}}
+\newcommand{\bbP}{{\mathbb P}}
+\newcommand{\bbQ}{{\mathbb Q}}
+\newcommand{\bbR}{{\mathbb R}}
+\newcommand{\bbS}{{\mathbb S}}
+\newcommand{\bbT}{{\mathbb T}}
+\newcommand{\bbU}{{\mathbb U}}
+\newcommand{\bbV}{{\mathbb V}}
+\newcommand{\bbW}{{\mathbb W}}
+\newcommand{\bbX}{{\mathbb X}}
+\newcommand{\bbY}{{\mathbb Y}}
+\newcommand{\bbZ}{{\mathbb Z}}
+
+\newcommand{\cA}{{\mathcal A}}
+\newcommand{\cB}{{\mathcal B}}
+\newcommand{\cC}{{\mathcal C}}
+\newcommand{\cD}{{\mathcal D}}
+\newcommand{\cE}{{\mathcal E}}
+\newcommand{\cF}{{\mathcal F}}
+\newcommand{\cG}{{\mathcal G}}
+\newcommand{\cH}{{\mathcal H}}
+\newcommand{\cI}{{\mathcal I}}
+\newcommand{\cJ}{{\mathcal J}}
+\newcommand{\cK}{{\mathcal K}}
+\newcommand{\cL}{{\mathcal L}}
+\newcommand{\cM}{{\mathcal M}}
+\newcommand{\cN}{{\mathcal N}}
+\newcommand{\cO}{{\mathcal O}}
+\newcommand{\cP}{{\mathcal P}}
+\newcommand{\cQ}{{\mathcal Q}}
+\newcommand{\cR}{{\mathcal R}}
+\newcommand{\cS}{{\mathcal S}}
+\newcommand{\cT}{{\mathcal T}}
+\newcommand{\cU}{{\mathcal U}}
+\newcommand{\cV}{{\mathcal V}}
+\newcommand{\cW}{{\mathcal W}}
+\newcommand{\cX}{{\mathcal X}}
+\newcommand{\cY}{{\mathcal Y}}
+\newcommand{\cZ}{{\mathcal Z}}
+
+\newcommand{\fra}{{\mathfrak a}}
+\newcommand{\frb}{{\mathfrak b}}
+\newcommand{\frc}{{\mathfrak c}}
+\newcommand{\frd}{{\mathfrak d}}
+\newcommand{\fre}{{\mathfrak e}}
+\newcommand{\frf}{{\mathfrak f}}
+\newcommand{\frg}{{\mathfrak g}}
+\newcommand{\frh}{{\mathfrak h}}
+\newcommand{\fri}{{\mathfrak i}}
+\newcommand{\frj}{{\mathfrak j}}
+\newcommand{\frk}{{\mathfrak k}}
+\newcommand{\frl}{{\mathfrak l}}
+%\renewcommand{\frm}{{\mathfrak m}}
+\newcommand{\frn}{{\mathfrak n}}
+\newcommand{\fro}{{\mathfrak o}}
+\newcommand{\frp}{{\mathfrak p}}
+
+\newcommand{\frr}{{\mathfrak r}}
+\newcommand{\frs}{{\mathfrak s}}
+\newcommand{\frt}{{\mathfrak t}}
+\newcommand{\fru}{{\mathfrak u}}
+\newcommand{\frv}{{\mathfrak v}}
+\newcommand{\frw}{{\mathfrak w}}
+\newcommand{\frx}{{\mathfrak x}}
+\newcommand{\fry}{{\mathfrak y}}
+\newcommand{\frz}{{\mathfrak z}}
+
+
+\newcommand{\frA}{{\mathfrak A}}
+\newcommand{\frB}{{\mathfrak B}}
+\newcommand{\frC}{{\mathfrak C}}
+\newcommand{\frD}{{\mathfrak D}}
+\newcommand{\frE}{{\mathfrak E}}
+\newcommand{\frF}{{\mathfrak F}}
+\newcommand{\frG}{{\mathfrak G}}
+\newcommand{\frH}{{\mathfrak H}}
+\newcommand{\frI}{{\mathfrak I}}
+\newcommand{\frJ}{{\mathfrak J}}
+\newcommand{\frK}{{\mathfrak K}}
+\newcommand{\frL}{{\mathfrak L}}
+\newcommand{\frM}{{\mathfrak M}}
+\newcommand{\frN}{{\mathfrak N}}
+\newcommand{\frO}{{\mathfrak O}}
+\newcommand{\frP}{{\mathfrak P}}
+\newcommand{\frQ}{{\mathfrak Q}}
+\newcommand{\frR}{{\mathfrak R}}
+\newcommand{\frS}{{\mathfrak S}}
+\newcommand{\frT}{{\mathfrak T}}
+\newcommand{\frU}{{\mathfrak U}}
+\newcommand{\frV}{{\mathfrak V}}
+\newcommand{\frW}{{\mathfrak W}}
+\newcommand{\frX}{{\mathfrak X}}
+\newcommand{\frY}{{\mathfrak Y}}
+\newcommand{\frZ}{{\mathfrak Z}}
+
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\hra}{\hookrightarrow}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Vxi}{V_{\cU, \varepsilon}(\xi)}
+\newcommand{\Veta}{V_U(\eta)}
+
+
+
+\newcommand{\xh}{\hat{x}}
+\newcommand{\mata}[1]{\left(\begin{array}{cc}#1\end{array}\right)}
+\newcommand{\asu}{\mathfrak{su}}
+\newcommand{\sSU}{\mathsf{SU}}
+\newcommand{\sPSU}{\mathsf{P SU}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CCC}{\mathscr{C}}
+\newcommand{\CCL}{\mathscr{L}}
+%\newcommand{\CD}{\mathcal{D}}
+\newcommand{\CCD}{\mathscr{D}}
+\newcommand{\CCDb}{\bar{\mathscr{D}}}
+\newcommand{\CF}{\mathcal{F}}
+\newcommand{\CCF}{\mathscr{F}}
+\newcommand{\CG}{\mathcal{G}}
+\newcommand{\CCG}{\mathscr{G}}
+\newcommand{\CH}{\mathcal{H}}
+\newcommand{\CCH}{\mathscr{H}}
+\newcommand{\CI}{\mathcal{I}}
+\newcommand{\CJ}{\mathcal{J}}
+\newcommand{\CK}{\mathcal{K}}
+\newcommand{\sU}{\mathsf{U}}
+\newcommand{\sSL}{\mathsf{SL}}
+\newcommand{\sGL}{\mathsf{GL}}
+\newcommand{\sMat}{\mathsf{Mat}}
+\newcommand{\sDiag}{\mathsf{Diag}}
+\newcommand{\sO}{\mathsf{O}}
+\newcommand{\de}{\mathrm{e}}     			% Euler's number
+\newcommand{\rk}{{\rm rk}}     			% imaginary unit
+\newcommand{\di}{\mathrm{i}}     			% imaginary unit
+\newcommand{\sSO}{\mathsf{SO}}
+\newcommand{\sS}{\mathsf{S}}
+\newcommand{\sSpin}{\mathsf{Spin}}
+\newcommand{\sPin}{\mathsf{Pin}}
+\newcommand{\Det}{\hbox{Det}}
+\newcommand{\hbo}{\hbox to 1 true cm {\hfill } }
+\newcommand{\RZ}{\mathds{Z}}     			% ring of integers
+%\renewcommand{\span}{{\rm span}}
+\newcommand{\tr}{\hbox{tr}}
+\newcommand{\Tr}{\hbox{Tr}}
+\newcommand{\slc}{$\sSL(2,\mathbb{C})$}
+\newcommand{\dalpha}{{\dot\alpha}}
+\newcommand{\dbeta}{{\dot\beta}}
+%\newcommand{\eps}{{\varepsilon}}			% antisymmetric tensors
+\renewcommand{\sup}[2]{\{\![#1,#2]\!\}}
+\newcommand{\vectt}[2]{\left(\begin{array}{c} #1 \\ #2 \end{array}\right)}
+\newcommand{\vecttt}[3]{\left(\begin{array}{c} #1 \\ #2 \\ #3\end{array}\right)}
+\newcommand{\vectttt}[4]{\left(\begin{array}{c} #1 \\ #2 \\ #3 \\ #4\end{array}\right)}
+\newcommand{\vecttdt}[3]{\left(\begin{array}{c} #1 \\ #2 \\ \vdots \\ #3\end{array}\right)}
+\newcommand{\matrixbig}[3]{\left(\begin{array}{cccc} #1_{11} & #1_{12} & \ldots & #1_{1#3} \\
+		#1_{21} & #1_{22} & \ldots & #1_{2#3} \\
+		\vdots & \vdots &  & \vdots \\
+		#1_{#2 1} & #1_{#2 2} & \ldots & #1_{#2 #3}\end{array}\right)}
+\newcommand{\matrixsmall}[3]{\left(\begin{array}{ccc} #1_{11} & \ldots & #1_{1#3} \\
+		\vdots &   & \vdots \\
+		#1_{#2 1} & \ldots & #1_{#2 #3}\end{array}\right)}
+\newcommand{\vectbig}[2]{\left(\begin{array}{c} #1_1 \\ #1_2 \\ \vdots \\ #1_#2\end{array}\right)}
+\newcommand{\ggama}{{\boldsymbol\gamma}}
+\newcommand{\un}[1]{\underline{#1}}
+\newcommand{\Eins}{\mathdsss{1}}
+%\newcommand{\dd}{\mathrm{d}}     			% total differential
+\newcommand{\bracket}[2]{\bra{#1}\,#2\rangle} % Dirac inner product
+\newcommand{\bra}[1]{\langle\,#1\,|}          % Dirac bra
+\newcommand{\ket}[1]{|\,#1\,\rangle}          % Dirac Ket
+\newcommand{\linv}{{\triangle}^{-1}}      % inv. Laplacian
+\newcommand{\ud}{\mathrm{d}}
+%\newcommand{\remark}[1]{}     				% remark
+\newcommand{\ewith}{~~~\mbox{with}~~~}
+\newcommand{\eand}{~~~\mbox{and}~~~}
+\newcommand{\eor}{~~~\mbox{or}~~~}
+\newcommand{\nextyear}[1]{}     				% remark
+\newcommand{\pathD}{\mathcal{D}}
+\newcommand{\e}{\mathrm{e}}		% exponential e
+\newcommand{\x}{\boldsymbol{x}}		% vector x
+\newcommand{\NN}{\mathds{N}}     			% set of natural numbers
+\newcommand{\unit}{\mathds{1}}   			% identity map/matrix
+\newcommand{\y}{\boldsymbol{y}}		% vector y
+\newcommand{\z}{\boldsymbol{z}}		% vector z
+\newcommand{\av}{\vec{a}}		% vector v
+\newcommand{\bv}{\vec{b}}		% vector v
+\newcommand{\cv}{\vec{c}}		% vector v
+\newcommand{\ev}{\vec{e}}		% vector v
+\newcommand{\fv}{\vec{f}}	
+\newcommand{\nv}{\vec{0}}
+\newcommand{\pv}{\vec{p}}		% vector v
+\newcommand{\rv}{\vec{r}}		% vector v
+\newcommand{\sv}{\vec{s}}		% vector v
+\newcommand{\uv}{\vec{u}}		% vector v
+\newcommand{\vv}{\vec{v}}		% vector v
+\newcommand{\wv}{\vec{w}}		% vector v
+\newcommand{\xv}{\vec{x}}		% vector v
+\newcommand{\yv}{\vec{y}}		% vector v
+\newcommand{\zv}{\vec{z}}	
+\renewcommand{\u}{\boldsymbol{u}}
+\newcommand{\p}{\boldsymbol{p}}		% vector p
+\newcommand{\q}{\boldsymbol{q}}		% vector q
+\renewcommand{\r}{\boldsymbol{r}}		% vector q
+%\newcommand{\E}{\boldsymbol{E}}
+\newcommand{\A}{\boldsymbol{A}}
+\newcommand{\J}{\boldsymbol{J}}
+%\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\FR}{\mathds{R}} 
+\newcommand{\FZ}{\mathds{Z}} 
+\newcommand{\FN}{\mathds{N}}     			% field of real numbers
+\newcommand{\FC}{\mathds{C}}     			% field of complex numbers
+\newcommand{\CN}{\mathcal{N}}   
+\newcommand{\CP}{\mathcal{P}}   	
+\newcommand{\CB}{\mathcal{B}} 
+\newcommand{\CL}{\mathcal{L}}   		% field of real numbers
+%\newcommand{\eolec}[2]{}
+%\newcommand{\eolec}[2]{\marginpar{~~~~~#1\\[-0.3cm]\rule{50pt}{0.4pt}\\\phantom{~~~~~}#2}}
+%\newcommand{\tut}[1]{\marginpar{Tutorial #1\\[-0.3cm]\rule{50pt}{0.4pt}\\[-0.45cm]\rule{50pt}{0.4pt}}}
+
+\usepackage{dsfont}
+
+%\newcommand{\hey}[1]{{\color{TealBlue}(#1)}}
+
+\newcommand{\elt}[1]{\stackrel{\footnotesize{#1}}{\rightsquigarrow}}
+\newcommand{\melt}[1]{\stackrel{\begin{smallmatrix}#1\end{smallmatrix}}{\rightsquigarrow}}

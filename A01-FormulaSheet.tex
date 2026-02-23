@@ -1,0 +1,108 @@
+\newpage
+\pagestyle{empty}
+\newgeometry{left=25mm,right=25mm,top=2cm,bottom=20mm}
+\section{Formula Sheet}
+\label{A:Formula}
+\vspace{-2ex}
+
+\begin{multicols}{2}
+\begin{center}
+\textbf{Trigonometrical Identities}
+\end{center}
+\vspace{-2ex}
+{\footnotesize
+\begin{align*}
+\sin^2(A) +\cos^2(A) &= 1\\
+\sin(A\pm B)&= \sin(A)\cos(B) \pm \cos(A)\sin(B)\\
+\cos(A\pm B)&= \cos(A)\cos(B) \mp \sin(A)\sin(B)\\
+\sin(2A) &= 2\sin(A)\cos(A)\\
+\cos(2A) &= 2\cos^2(A)-1 = 1-2\sin^2(A)\\
+2\sin(A)\cos(B)&= \sin(A+B) + \sin(A-B)\\
+2\cos(A)\sin(B)&= \sin(A+B) - \sin(A-B)\\
+2\cos(A)\cos(B)&= \cos(A+B) + \cos(A-B)\\
+2\sin(A)\sin(B)&= \cos(A+B) - \cos(A-B)
+\end{align*}
+}%
+\vfill
+
+\begin{center}
+\textbf{Hyperbolic Functions}
+\end{center}
+\vspace{-2ex}
+\begin{align*}
+\sinh(x) &= \frac{e^x - e^{-x}}{2}\\
+\cosh(x) &= \frac{e^x + e^{-x}}{2}\\
+1&=\cosh^2(x) - \sinh^2(x)\\
+\sinh(2x) &= 2\sinh(x)\cosh(x)\\
+\cosh(2x) &= 2\sinh^2(x)+1=2\cosh^2(x)-1
+\end{align*}
+
+\vfill
+
+\begin{center}
+\textbf{Standard Derivatives}
+\end{center}
+\vspace{-1ex}
+{
+\renewcommand{\arraystretch}{2.2}
+\begin{center}
+\begin{tabular}{|c|c|} 
+\hline
+$f(x)$ & $f'(x)$\\ 
+\hline \hline
+$x^n$ & $nx^{n-1}$\\
+\hline
+$\sin (ax + b)$ & $a\cos (ax + b)$\\
+\hline
+$\cos (ax + b )$& $- a\sin ( ax + b)$\\ 
+\hline
+$e^{ax}$  & $ae^{ax}$\\ 
+\hline
+$\ln(a x + b )$&   $\frac{a}{ a x + b}$ \\
+\hline
+$\sinh (ax + b)$ & $a\cosh (ax + b)$\\
+\hline
+$\cosh (ax + b)$ & $a\sinh (ax + b)$\\
+\hline
+$uv$ & $u'v+uv'$\\
+\hline
+$\displaystyle \frac{u}{v}$ & $\displaystyle \frac{u'v-uv'}{v^2}$\\
+\hline
+\end{tabular}
+\end{center}
+}
+
+\vfill\null
+\columnbreak
+
+\begin{center}
+\textbf{Standard Integrals}
+\end{center}
+\vspace{-1ex}
+{
+\renewcommand{\arraystretch}{2.2}
+\begin{tabular}{|c|c|}
+\hline
+$f(x)$ & $\displaystyle \int f(x) dx$ \\
+\hline \hline
+$x^n$ & $\displaystyle \frac{x^{n+1} }{n+1}  + C$  for $n\neq -1$  \\ \hline
+$(ax+b)^n$ & $\displaystyle \frac{(ax+b)^{n+1} }{a(n+1)}  + C$  for $n\neq -1$  \\ \hline
+$\sin (a x +b)$ &  $\displaystyle -\frac{1}{a} \cos ( a x+ b) + C$\\ \hline
+$\cos (a x +b)$ &  $\displaystyle \frac{1}{a} \sin (a x +b) + C $\\ \hline
+$e^{a x}$ & $\displaystyle \frac{1}{a} e^{ax} + C$ \\ \hline
+$\displaystyle \frac{1}{ ax + b}$ & $\displaystyle \frac{1}{ a} \ln (ax +b)  + C$ for $ax+b>0$ \\ \hline
+$\displaystyle \cosh(x)$ & $\displaystyle \sinh(x)  + C$ \\ \hline
+$\displaystyle \sinh(x)$ & $\displaystyle \cosh(x)  + C$ \\ \hline \hline
+$\displaystyle \frac{1}{x^2+a^2}$ & $\displaystyle \frac{1}{a}\arctan\left(\frac{x}{a}\right) + C$\\ \hline
+$\displaystyle \frac{1}{\sqrt{a^2-x^2}}$ & $\displaystyle \arcsin\left(\frac{x}{a}\right) + C$\\ \hline
+$\displaystyle \frac{1}{a^2-x^2}$ & $\displaystyle \frac{1}{2a}\ln\left(\frac{a+x}{a-x}\right) + C$\\ \hline
+$\displaystyle \frac{1}{x^2-a^2}$ & $\displaystyle \frac{1}{2a}\ln\left(\frac{a-x}{a+x}\right) + C$\\ \hline
+$\displaystyle \frac{1}{\sqrt{x^2+a^2}}$ & $\displaystyle \ln\left(x+\sqrt{x^2+a^2}\right) + C$\\ \hline
+$\displaystyle \frac{1}{\sqrt{x^2-a^2}}$ & $\displaystyle \ln\left(x+\sqrt{x^2-a^2}\right) + C$\\ \hline\hline
+$\displaystyle u v'$ & $\displaystyle uv - \int u' v dx$\\ \hline
+\end{tabular}
+}
+
+\end{multicols}
+
+%\restoregeometry

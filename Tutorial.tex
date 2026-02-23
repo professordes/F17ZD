@@ -1,0 +1,35 @@
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass[12pt]{article}
+\usepackage{lmodern}
+
+
+\input notations.tex		% Common notation shortcuts for all subject files.
+\input macros.tex		% Common macros for all files.
+
+\usepackage{comment}
+ 
+
+\lhead{F17XB}
+\chead{}
+\rhead{Tutorial Questions}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+
+
+\begin{document}
+\thispagestyle{fancyplain} % Make page 1 use the same header/footer as other pages
+\begin{center}
+{\Large \bf Tutorial Questions}
+\end{center}
+
+\input{TutorialContent.text}
+
+\newpage
+\begin{center}
+{\Large \bf Answers to (Most) Tutorial Questions}
+\end{center}
+\shipoutAnswer
+\end{document}
+

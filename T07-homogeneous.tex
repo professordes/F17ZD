@@ -1,0 +1,242 @@
+\section{The solution space of a homogeneous system of linear equations.}
+
+In F17ZB we looked at solving $A \xv = \bv$, now we are going to look in more detail at solving
+the {\it homogeneous} system of equations
+\[
+A \xv = \nv
+\]
+This leads on naturally to a discussion of {\it rank} for matrices (we have already seen one definition of this in F17ZB).
+
+\begin{thm}{}
+\label{thm:hom_subspace} 
+	The set of solutions  of a \textit{homogeneous} system of linear equations in $n$ unknowns is a vector subspace of $\FR^n$ whose dimension  is the number of free variables, after reducing the system to its echelon form.
+	\end{thm}
+
+
+
+\begin{proof}
+ 	Let $W$ be the set of solutions. By definition, we have $W= \{\xv \in \FR^n ~|~ A\xv = \nv\}$ for some matrix $A$. In particular, the null vector belongs to $W$. Let $\xv_1,\xv_2\in W$ and $\lambda\in \FR$. We have:
+ \begin{equation*}
+ \begin{aligned}
+ &A(\xv_1+\xv_2)=A\xv_1+A\xv_2=\nv+\nv=\nv,\mbox{ hence } \xv_1+\xv_2\in W\\
+ &A(\lambda \xv_1)=\lambda A\xv_1=\lambda\nv=\nv,\mbox{ hence } \lambda\xv_1\in W~.
+ \end{aligned}
+ \end{equation*}
+ Thus, $W$ is a vector subspace of $\FR^n$.
+ We solve the system $A\xv = \nv$ using Gaussian elimination. As usual, we can  express solutions in terms of the $k \leq n$ free variables $\alpha_1, \ldots, \alpha_k$  of the system. In particular, we write the general solution as a linear combination of the form  $\alpha_1 \vv_1 +\ldots  + \alpha_k\vv_k $ for some vectors $\vv_1, \ldots, \vv_k$ of $\FR^n$. In particular, we see that the family $\vv_1, \ldots, \vv_k$ spans the subspace of solutions. To show that this family is also free, notice that if a free variable $\alpha_i$ corresponds to the variable $x_j$, then the $j$-th component of the vector $\alpha_1 \vv_1 +\ldots  + \alpha_k\vv_k $ is exactly $\alpha_i$. In particular, if $\alpha_1 \vv_1 +\ldots  + \alpha_k\vv_k = \nv$, then all the components must be zero, and it follows that $\alpha_1 = \ldots = \alpha_k = 0$.
+%\item A basis of the space of solutions is $\vv_1, \vv_2, \ldots$.
+\end{proof}
+
+\paragraph{Remark.} Note that $\{x\in\FR^n:A\xv=\bv\}$ with $\bv\neq \nv$ is {\em not} a vector subspace.  Indeed, this subset does not contain the null vector as $A\nv = \nv \neq \bv$. This is analogous to lines in $\FR^2$ not running through the origin.
+
+
+	To find a basis of the space of solutions of a homogeneous system of linear equations, we can apply the following algorithm: 
+    \begin{itemize}
+		\item Solve the system using Gaussian elimination.
+		\item Express solutions in terms of the free variables $\alpha_1, \ldots, \alpha_k$.
+		\item Decompose the general solution as a linear combination of the form $\alpha_1 \vv_1 + \ldots + \alpha_k\vv_k.$
+		\item A basis of the space of solutions is $\vv_1, \ldots, \vv_k$.
+	\end{itemize}
+
+	
+	\begin{example}
+			Consider the following system of linear equations:
+		\begin{equation*}\label{eq:SLE2}
+		\begin{aligned}
+		x_1-x_2+2x_3+x_4&=0~,\\
+		2x_1+x_2-x_3+x_4&=0~,\\
+		4x_1-x_2+3x_3+3x_4&=0~,\\
+		x_1+2x_2-3x_3&=0~.
+		\end{aligned}
+		\end{equation*}
+		We would like to determine a basis of the subspace $W$ of solutions. We first perform Gaussian elimination to reduce the system:
+		\begin{equation*}
+		\begin{aligned}
+		\left(\begin{array}{cccc|c}
+		1 & -1 & 2 & 1 & 0\\
+		2 & 1 & -1 & 1 & 0\\
+		4 & -1 & 3 & 3 & 0\\
+		1 & 2 & -3 & 0 & 0
+		\end{array}\right)~~~
+		\melt{R_2\rightarrow R_2-2R_1\\R_3\rightarrow R_3-4R_1\\R_4\rightarrow R_4-R_1}~~~
+		\left(\begin{array}{cccc|c}
+		1 & -1 & 2 & 1 & 0\\
+		0 & 3 & -5 & -1 & 0\\
+		0 & 3 & -5 & -1 & 0\\
+		0 & 3 & -5 & -1 & 0
+		\end{array}\right)\\
+		\melt{R_3\rightarrow R_3-R_2\\R_4\rightarrow R_4-R_2}~~~
+		\left(\begin{array}{cccc|c}
+		1 & -1 & 2 & 1 & 0\\
+		0 & 3 & -5 & -1 & 0\\
+		0 & 0 & 0 & 0 & 0\\
+		0 & 0 & 0 & 0 & 0
+		\end{array}\right)
+%		~~~\rightsquigarrow~~~\begin{array}{rl}
+%		x_1-x_2+2x_3+x_4&=0~,\\
+%		3x_2-5x_3-x_4&=0~.
+%		\end{array}
+		\end{aligned}
+		\end{equation*}
+		There are two free variables, $x_3$ and $x_4$, and the general solution is thus of the form
+		\begin{equation*}
+		x_3=\alpha~,~~~x_4=\beta~,~~~x_2=\frac{1}{3}(5\alpha+\beta)~,~~~x_1=x_2-2x_3-x_4=-\frac{1}{3}\alpha-\frac{2}{3}\beta~.
+		\end{equation*}
+		Any solution can be rewritten as
+		\begin{equation*}
+		\xv=\vectttt{x_1}{x_2}{x_3}{x_4}=\frac{1}{3}\vectttt{-\alpha-2\beta}{5\alpha+\beta}{3\alpha}{3\beta}=\frac{\alpha}{3}\vectttt{-1}{5}{3}{0}+\frac{\beta}{3}\vectttt{-2}{1}{0}{3}~,
+		\end{equation*}
+		and we find that $\frac{1}{3}(-1,5,3,0)^T, \frac{1}{3}(-2,1,0,3)^T$ is a basis of the solution space of the system. 
+		\end{example}
+	
+
+	
+	\paragraph{The span of a family of vectors.}
+	
+	
+	Another important type of subspace is given by spans of families of vectors. The following generalises a result we have seen in $\FR^n$:
+	\begin{thm}{}
+		Let $V$ be a vector space and let $\uv_1,\ldots,\uv_k$ be vectors of $V$. Then $\mathrm{span}(\uv_1,\ldots,\uv_k)$ is a vector subspace of $V$.
+	\end{thm}
+	
+	\begin{proof} 
+            The span contains the null vector since $\nv = 0\uv_1 + \ldots + 0\uv_k$.
+		Let $a_1\uv_1 + \ldots + a_k\uv_k, b_1\uv_1+\ldots + b_k \uv_k$ be vectors in $span(\uv_1,\ldots,\uv_k)$, and let $\lambda \in \FR$. Then we have 
+		$$ (a_1\uv_1 + \ldots + a_k\uv_k) +  (b_1\uv_1+\ldots + b_k \uv_) = (a_1+b_1)\uv_1 + \ldots + (a_k+b_k)\uv_k \in span(\uv_1,\ldots,\uv_k),$$
+		$$ \lambda (a_1\uv_1 + \ldots + a_k\uv_k) = (\lambda a_1)\uv_1 + \ldots + (\lambda a_k)\uv_k \in span(\uv_1,\ldots,\uv_k).$$
+		Thus, $span(\uv_1,\ldots,\uv_k)$ is a subspace of $V$.
+	\end{proof}
+	
+	\begin{example}
+    \begin{itemize}
+		\item A solution of the differential equation  $y'' + \omega^2 y = 0$ is of the form $a\cos(\omega x) + b\sin(\omega x)$ with $a, b \in \FR$. Thus, the set of solutions of the differential equation $y'' + \omega^2 y = 0$ is the span of the functions $x \mapsto \cos(\omega x)$ and $x \mapsto \sin(\omega x)$. In particular, we recover the fact that it is a vector subspace of $\CF(\FR)$.
+    \end{itemize}
+	\end{example}
+	
+	\paragraph{Remark.}  A vector subspace can sometimes be spanned by many different sets of vectors: for instance, both the pairs of vectors $\big((1,0)^T,(0,1)^T\big)$ and $\big((1,0)^T,(1,1)^T\big)$ span $\FR^2$. Indeed, given a vector $(x,y)^T\in\FR^2$, we have
+	\begin{equation*}
+	\vectt{x}{y}=x\vectt{1}{0}+y\vectt{0}{1}~~\mbox{ and also }~~~\vectt{x}{y}=(x-y)\vectt{1}{0}+y\vectt{1}{1}~.
+	\end{equation*}
+	 
+	
+	\begin{df}{}
+		The \textit{rank} of a family of vectors $\vv_1, \ldots, \vv_k$ is the dimension of the subspace they span.
+		\end{df}
+	
+	For this type of subspaces, there is also a simple way to determine their dimension and find a basis. However, the proof of this result requires tools that will be introduced in the next chapter, so we postpone its proof for now. 
+%	We first notice that elementary operations on vectors (vector-switching, vector-multiplication, and vector-addition) do not affect the subspace a given family of vectors spans: 
+%	\begin{prop}\label{lem:2.5.7} We have
+%	\begin{equation*}
+%	\begin{aligned}
+%	\mbox{(i)}~~~&\span(\vv_1,\ldots,\vv_j,\ldots,\vv_k,\ldots,\vv_m)=\span(\vv_1,\ldots,\vv_k,\ldots,\vv_j,\ldots,\vv_m)~,\\
+%	\mbox{(ii)}~~~&\span(\vv_1,\ldots,\vv_j,\ldots,\vv_m)=\span(\vv_1,\ldots,\lambda \vv_j,\ldots,\vv_m)~,~~~\lambda\in\FR^*\\
+%	\mbox{(iii)}~~~&\span(\vv_1,\ldots,\vv_j,\ldots,\vv_k,\ldots,\vv_m)=\span(\vv_1,\ldots,\vv_j+\vv_k,\ldots,\vv_k,\ldots,\vv_m)~.\\
+%	\end{aligned}
+%	\end{equation*}
+%	\end{prop}
+%
+%	\begin{proof}
+%		In each case, we need to show that any vector of the set on the left-hand side is also contained in the set on the right-hand side and vice versa. (i) is trivial. (ii): $\vv=c_1\vv_1+\ldots+c_j\vv_j+\ldots+c_m\vv_m=d_1\vv_1+\ldots+d_j\lambda \vv_j+\ldots+d_m\vv_m$, where $d_j=\frac{c_j}{\lambda}$ and $d_i=c_i$ else. (iii): $\vv=c_1\vv_1+\ldots+c_j\vv_j+\ldots+c_k\vv_k+\ldots+c_m\vv_m=d_1\vv_1+\ldots+d_j(\vv_j+\vv_k)+\ldots+d_k\vv_k+\ldots+d_m\vv_m$, where $d_k=c_k-c_j$ and $d_i=c_i$ else.
+%	\end{proof}
+%	
+%The above lemma \ref{lem:2.5.7} implies the following:
+
+%\begin{thm}
+%		The span of a family $\vv_1, \ldots, \vv_k$ of vectors of $\FR^n$ is a vector subspace of $\FR^n$ whose dimension  is the number of pivot variables, after reducing the system to its echelon form.
+%	\end{thm}
+	
+	Finding the dimension and  a basis of the span of a family of vectors of $\FR^n$.
+	We can find a basis for $\mathrm{span}(\vv_1,\ldots,\vv_k)$ as follows:
+	\begin{itemize}
+		\item[(1)] Write down a matrix whose $i$th column is $\vv_i$.
+		\item[(2)] Perform elementary row operations to bring the matrix into row echelon form. 
+		\item[(3)] The rank of $(\vv_1,\ldots,\vv_k)$ is the number of pivot variables in the row echelon form. If we denote by $j_1, \ldots, j_k$ the columns of the row echelon form that contain a pivot, then a basis for $\mathrm{span}(\vv_1,\ldots,\vv_k)$ is given by $\vv_{j_1}, \ldots, \vv_{j_k}$.
+	\end{itemize}
+
+
+%\begin{warning}
+%	It is a very common source of mistakes to confuse rows and columns in point (1) of the previous method. 
+%	\end{warning}
+
+\begin{example}
+\label{ex:span2inR3}
+We wish to find a basis for the subspace of $\FR^3$ spanned by
+\[
+v_1=\vecttt{1}{0}{1},\qquad
+v_2=\vecttt{2}{1}{3},\qquad
+v_3=\vecttt{3}{1}{4}.
+\]
+We apply the previous algorithm (place the vectors as columns and row-reduce):
+{\small
+\[
+\begin{aligned}
+\left(\begin{array}{ccc}
+1 & 2 & 3\\
+0 & 1 & 1\\
+1 & 3 & 4
+\end{array}\right)
+\melt{R_3\rightarrow R_3-R_1}
+\left(\begin{array}{ccc}
+1 & 2 & 3\\
+0 & 1 & 1\\
+0 & 1 & 1
+\end{array}\right)
+\melt{R_3\rightarrow R_3-R_2}
+\left(\begin{array}{ccc}
+1 & 2 & 3\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{array}\right).
+\end{aligned}
+\]
+}
+There are two pivot columns (columns $1$ and $2$), so the rank of this family of vectors is $2$ and the vectors span a two-dimensional subspace of $\FR^3$ (a plane through the origin).
+Hence a basis for the span is given by
+\[
+\vecttt{1}{0}{1},\ \vecttt{2}{1}{3}.
+\]
+Moreover, since the third column is non-pivot, $v_3$ is a linear combination of $v_1$ and $v_2$; indeed the row-reduction shows $v_3=v_1+v_2$.
+\end{example}
+
+ Since finding a span is a useful skill, let's consider a further example \smiley
+ 
+	\begin{example}\label{ex:2.5.8} We wish to find a basis for the subspace of $\FR^4$ spanned by $ (1,2,3, 0)^T, (2,1,2,1)^T$
+    and $(1,5,7,-1)^T, (0,0,1,2)^T$.
+	 We apply the previous algorithm:
+	{\small
+		\begin{equation*}
+		\begin{aligned}
+		\left(\begin{array}{cccc}
+		1 & 2 & 1 & 0 \\
+		2 & 1 & 5 & 0 \\
+		3 & 2 & 7 & 1\\
+		0 & 1 & -1 & 2
+		\end{array}\right)\melt{R_2\rightarrow R_2-2R_1\\R_3\rightarrow R_3-3R_1}
+		\left(\begin{array}{cccc}
+		1 & 2 & 1 & 0 \\
+		0 & -3 & 3 & 0 \\
+		0 & -4 & 4 & 1\\
+		0 & 1 & -1 & 2
+		\end{array}\right)
+		\melt{R_3\rightarrow 3R_3-4R_2 \\ R_4 \rightarrow  3R_4 + R_2} \\
+		\left(\begin{array}{cccc}
+		1 & 2 & 1 & 0 \\
+		0 & -3& 3 & 0 \\
+		0 & 0 & 0 & 3\\
+		0 & 0 & 0 & 2
+		\end{array}\right) 	\elt{R_4 \rightarrow  -3R_4+2R_3 }
+		\left(\begin{array}{cccc}
+		1 & 2 & 1 & 0 \\
+		0 & -3 & 3 & 0 \\
+		0 & 0 & 0 & 3\\
+		0 & 0 & 0 & 0
+		\end{array}\right).
+		\end{aligned}
+		\end{equation*}}
+	There are three pivot variables, corresponding to columns $1, 2$, and $4$, so the rank of this family of vectors is $3$ and a basis for its span is given by $ (1,2,3, 0)^T, (2,1,2,1)^T,  (0,0,1,2)^T$.
+%	Because of the row echelon form, it is easy to see that these vectors are linearly independent and therefore they form a basis for $S$.
+	\end{example}
+
+
+
+	

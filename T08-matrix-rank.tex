@@ -1,0 +1,453 @@
+\section{Matrices}
+
+
+\subsection{Image and rank of a matrix.}
+	
+	\begin{df}{}
+    \index{row vectors}\index{row space}\index{column vectors}\index{column space}\index{row rank}\index{column rank}
+		Given an $m \times n$ matrix written in column form as
+		\begin{equation*}
+		A=\left(\begin{array}{c|c|c}
+		\cv_1 & \cdots & \cv_n
+		\end{array}\right)~,
+		\end{equation*}
+		the \textit{image} of $A$, denoted Im$(A)$, is the subspace of $\FR^m$ spanned by $\cv_1, \ldots, \cv_n$. Its dimension is called the \textit{rank} of $A$ and denoted $\rk(A)$ or rank$(A)$.
+%	
+%		Similarly, the vectors
+%		\begin{equation*}
+%		\cv_1=\left(\begin{array}{c} a_{11}\\ a_{21}\\ \ldots\\ a_{m1}\end{array}\right)~,~\ldots~,~\cv_n=\left(\begin{array}{c} a_{1n}\\ a_{2n}\\ \ldots\\ a_{mn}\end{array}\right)~,
+%		\end{equation*}
+%		are called the \textit{column vectors} of $A$, the subspace they spanned is called the \textit{column space} of $A$ and its dimension, denoted $\rk_c(A)$, is called the \textit{column rank} of $A$.
+	\end{df}
+%	
+	\begin{example} Consider the following matrix:
+	\begin{equation*}
+	A=\left(\begin{array}{ccc}
+	1 & 2 & 3\\
+	4 & 5 & 6
+	\end{array}
+	\right)
+	\hspace{0.5cm}\begin{array}{ll}
+	\mbox{row space:}~span\{(1,2,3),(4,5,6)\}~,~~~&2=\rk_r(A)\leq 2~,\\
+	\mbox{column space:}~span\{(1,4)^T,(2,5)^T,(3,6)^T\}~,~~~&2=\rk_c(A)\leq 3~.\\
+	\end{array}
+	\end{equation*}
+	
+	The column space of $A$ is  $span((1,4)^T,(2,5)^T,(3,6)^T) $ and a basis of it (obtained by Gaussian elimination) is $(1,4)^T,(2,5)^T$. 
+	
+	In this example, we see that $\rk_r(A) = \rk_c(A) = 2.$ 
+	\end{example}
+%	
+	\begin{thm}{}
+		The inhomogeneous system of linear equations $A\xv=\bv$ is consistent if and only if $\bv$ is in the column space of $A$.
+	\end{thm}
+	\begin{proof}
+		\begin{equation*}
+		\begin{aligned}
+        \{A\xv : \xv\in\FR^n\}&=\left\{\left(\begin{array}{c}
+        a_{11}x_1+\ldots+a_{1n}x_n\\
+		\vdots\\
+		a_{m1}x_1+\ldots+a_{mn}x_n
+		\end{array}\right): x_1,...,x_n\in\FR
+		\right\}\\
+		&=\left\{x_1\left(\begin{array}{c} a_{11}\\ \vdots\\ a_{m1}
+		\end{array}\right)+\ldots+x_n\left(\begin{array}{c} a_{1n}\\ \vdots\\ a_{mn}
+		\end{array}\right): x_1,...,x_n\in\FR\right\}\\
+		&=\span\left\{\left(\begin{array}{c} a_{11}\\ \vdots\\ a_{m1}
+		\end{array}\right),\ldots,\left(\begin{array}{c} a_{1n}\\ \vdots\\ a_{mn}
+		\end{array}\right)\right\}
+		\end{aligned}
+		\end{equation*}
+		The last expression is the column space of $A$ and thus consistency of the system of linear equations $A\xv=\bv$ requires that $\bv$ is in the column space of $A$.
+	\end{proof}
+%	
+%
+\begin{thm}{}
+\label{p:eltRowOpsAndRank} Elementary row operations do not change the row rank of a matrix.
+\end{thm}
+%	
+
+%	
+\bigskip
+	Determining the row rank and a basis of the row space. We can determine a basis of the row space as follows: 
+		\begin{itemize}
+			\item[(i)] Bring the matrix to row echelon form.
+			\item[(ii)] A basis for the row space consists of the family of non-zero rows of the matrix in echelon form, and the row rank is the number of non-zero row in the row echelon form.
+		\end{itemize}
+
+
+\begin{example} Consider the following matrix:
+	\begin{equation*}
+	A=\left(\begin{array}{cccc}1 & 2 & -1 & 3 \\ 2 & -1 & 2 & 1 \\ 4 & 3 & 0 & 7\\ 0 & 0 & 1 & 2\end{array}\right).
+	\end{equation*}
+	After performing Gaussian elimination, we find the following row echelon form: 
+	$$ \left(\begin{array}{cccc}1 & 2 & -1 & 3 \\ 0 & -5 & 4 & -5 \\ 0 & 0 & 1 & 2\\ 0 & 0 & 0 & 0\end{array}\right).$$
+	As the row vectors in the echelon form are linearly independent, we have that a basis of the row space of $A$ is $(1,2,-1,3),(0,-5,4,-5),(0,0,1,2)$, and in particular $\rk_r(A)=3$. 
+	\end{example}
+
+    \bigskip
+	Now consider determining the {\it column} rank and a basis of the column space. We can determine the column space of a matrix $A$ and its column rank as follows: 
+		\begin{itemize}
+			\item[(i)] Compute the transpose $A^T$.
+			\item[(ii)] Bring $A^T$ to row echelon form.
+			\item[(iii)] The column rank of $A^T$ is the number of non-zero rows of the echelon form of $A^T$, and a basis for the column space is given by the transpose of the non-zero rows of the echelon form.
+		\end{itemize}
+
+	
+	\begin{example}
+		Let us consider the same matrix as in the previous example. We bring its transpose to row echelon form:
+	\begin{equation*}
+	A=\left(\begin{array}{cccc}1 & 2 & -1 & 3 \\ 2 & -1 & 2 & 1 \\ 4 & 3 & 0 & 7\\ 0 & 0 & 1 & 2\end{array}\right)~,~~~
+	A^T=\left(\begin{array}{cccc}1 & 2 & 4 & 0 \\ 2 & -1 & 3 & 0 \\ -1 & 2 & 0 & 1\\ 3 & 1 & 7 & 2\end{array}\right)~~~\rightsquigarrow~~~ \left(\begin{array}{cccc}1 & 2 & 4 & 0 \\ 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 1\\ 0 & 0 & 0 & 0\end{array}\right)~.
+	\end{equation*}
+	Thus, $\big((1,2,4,0)^T,(0,1,1,0)^T,(0,0,0,1)^T\big)$ is a basis for the column space of $A$ and the column rank is $\rk_c(A)=3$.
+	\end{example}
+	
+	\subsection{Rank of a matrix.}
+	Again, we saw in the previous two examples that $\rk_r(A)=\rk_c(A)=3$. This is a consequence of the following general result: 
+	
+	\begin{thm}{}
+    \label{thm:rank} For an $n \times m$ matrix $A$, we have $$\rk_c(A)=\rk_r(A).$$ This quantity, simply denoted $\rk(A)$,  is called the \textit{rank} of the matrix $A$.
+	\end{thm}
+	\begin{proof}
+		Let $(\ev_1,\ldots,\ev_k)$ be a basis of the row space: $span\{\rv_1,\ldots,\rv_m\}=span\{\ev_1,\ldots,\ev_k\}$. We then have:
+		\begin{equation*}
+    	\begin{aligned}
+		&A=\vecttdt{\rv_1}{\rv_2}{\rv_m}=
+		\vecttdt{a_{11}\ev_1+\ldots+a_{1k}\ev_k}{a_{21}\ev_1+\ldots+a_{2k}\ev_k}{a_{m1}\ev_1+\ldots+a_{mk}\ev_k}\\
+		&=\left(\hspace{-0.1cm}\begin{array}{cccc}
+		a_{11}e_{11}+\ldots+a_{1k}e_{k1} & a_{11}e_{12}+\ldots+a_{1k}e_{k2} & \ldots &  a_{11}e_{1n}+\ldots+a_{1k}e_{kn}\\
+		\vdots & \vdots & & \vdots\\
+		a_{m1}e_{11}+\ldots+a_{mk}e_{k1} & a_{m1}e_{12}+\ldots+a_{mk}e_{k2} & \ldots &  a_{m1}e_{1n}+\ldots+a_{mk}e_{kn}
+		\end{array}\hspace{-0.1cm}\right)\,.
+		\end{aligned}
+		\end{equation*}
+		The column space is thus spanned by $\{(a_{11},\ldots,a_{m1})^T,\ldots,(a_{1k},\ldots,a_{mk})^T\}$. It follows that $\rk_r(A)\geq \rk_c(A)$. Interchanging rows and columns in this argument leads to $\rk_c(A)\geq \rk_r(A)$, and altogether, we have $\rk_c(A)=\rk_r(A)$.
+	\end{proof}
+
+	\begin{example}
+	\begin{equation*}
+	\begin{aligned}
+	&\left(\begin{array}{ccc} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{array}\right)~~\mbox{has rank 0}~~~
+	&\left(\begin{array}{ccc} 1 & 1 & 1 \\ 1 & -1 & 1 \\ 0 & 0 & 0\end{array}\right)~~\mbox{has rank 2}\\
+	&\left(\begin{array}{ccc} 1 & 1 & 1 \\ 2 & 2 & 2 \\ 3 & 3 & 3\end{array}\right)~~\mbox{has rank 1}~~~
+	&\left(\begin{array}{ccc} 1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{array}\right)~~\mbox{has rank 3}
+	\end{aligned}
+	\end{equation*}
+\end{example}
+
+\subsection{Rank and systems of linear equations.}
+
+Let us reinterpret some old results in term of the rank. There is nothing new in this paragraph (and you should convince yourself of it):
+
+	\begin{thm}{}
+	Let $A$ be an $n \times n$ matrix, Then: 
+	$$ A \mbox{ is invertible} \Longleftrightarrow \rk(A)=n.$$
+\end{thm}
+
+	\begin{thm}{}
+    Let $A$ be an $m\times n$ matrix. Then the system of linear equations $A\xv=\bv$ is consistent for all $\bv\in\FR^m$ if and only if $\rk(A)=m$.
+\end{thm}
+\begin{proof}
+	The statement that $A\xv=\bv$ is consistent for all $\bv\in\FR^m$ is equivalent to the fact that the image of $A$ is $\FR^m$ and thus that the (column) rank of $A$ is maximal: $\rk(A)=m$.
+	\end{proof}
+
+
+
+	\begin{thm}{} 
+    Let$A$ be an $m\times n$-matrix. We have:
+		\begin{itemize}
+	\item[(i)] $\rk(A)<n\Rightarrow A\xv=\nv$ has infinitely many solutions.
+\item[(ii)]$\rk(A)=n\Rightarrow A\xv=\nv$ has only one solution $\xv=\nv$.
+	\item[(iii)] $\rk(A)>n$ is not possible, as the row space of $A$ is a subspace of $\FR^n$.
+	\end{itemize}
+\end{thm}
+%
+%\paragraph{Image and rank of a linear map.}
+%TBC???
+
+\subsection{The Rank-Nullity Theorem for matrices.}
+
+\begin{df}{}
+Let $A$ be an $m\times n$ matrix. The \textit{kernel} (also called the \textit{nullspace}) of $A$ is the subspace of $\FR^n$ consisting of the solutions of the system of linear equations
+$$A\xv = \nv.$$
+Its dimension is called the \textit{nullity} of $A$. 
+	\end{df}
+
+	\begin{thm}{}
+    \label{c:3.3.2}
+	Let $A$ be an $m\times n$ matrix. Then we have: 
+	$$\rk(A) + \dim \ker(A) = n.$$
+\end{thm}
+\begin{proof}
+Performing Gaussian elimination, we obtain a matrix with exactly $\rk(A)$ pivots. In particular, $\rk(A)$ of the $n$ variables are pivot variables, while the other  $n-\rk(A)$ are free variables. But we know from previous results that the rank of a matrix is the number of pivot variables in any row echelon form, while the nullity of a matrix is the number of free variables in any row echelon form.
+\end{proof}
+
+We have already seen a rather different looking definition of the rank of a matrix in F17ZB.
+
+\begin{df}{Rank of a matrix}
+The rank of a matrix $A$ of size $m \times n$ is the smallest $k \leq \min(m,n)$ such that there exist vectors $\uv_\ell \in \mathbb{R}^m$ and $\vv_\ell = \mathbb{R}^n$ with
+\[
+  A = \sum_{\ell = 1}^k \uv_\ell \vv^T_\ell.
+\]
+Matrix $A$ is said to be if full rank of $k = \min(m,n)$. Since
+\[
+A^T = \sum_{\ell = 1}^k \vv_\ell \uv^T_\ell
+\]
+the rank of $A$ and $A^T$ are the same.
+\end{df}
+
+
+Let's take the same example used there and see how Gaussian Elimination gives the same value for the rank.
+
+\begin{example}
+In F17ZB we   considered the matrix
+\[
+A = 
+\begin{pmatrix}
+    2  & 1 &  0 &  2\\
+   3  & 3 &  -1 &  3\\
+   4  & 5 &  -2 &  4\\
+   5  & 7 &  -3 &  5.
+\end{pmatrix}
+\]
+and stated that this was a rank-2 matrix (not obvious at all from just looking at it!) since
+\[
+A =
+\begin{pmatrix}
+  1 \\ 1\\ 1\\ 1
+\end{pmatrix}
+\begin{pmatrix}
+  1 & -1 & 1 & 1
+\end{pmatrix} +
+\begin{pmatrix}
+  1 \\ 2\\3\\ 4
+\end{pmatrix}
+\begin{pmatrix}
+  1 & 2 & -1 & 1.
+\end{pmatrix} 
+\]
+\end{example}
+
+\begin{example}\label{ex:rankA}
+To determine the \emph{column rank} of
+\[
+A=
+\begin{pmatrix}
+    2  & 1 &  0 &  2\\
+    3  & 3 & -1 &  3\\
+    4  & 5 & -2 &  4\\
+    5  & 7 & -3 &  5
+\end{pmatrix}.
+\]
+We row-reduce (row operations do not change linear relations among the columns):
+\[
+\left(\begin{array}{cccc}
+2&1&0&2\\
+3&3&-1&3\\
+4&5&-2&4\\
+5&7&-3&5
+\end{array}\right)
+\;\xrightarrow{\substack{R_2\leftarrow 2R_2-3R_1\\[2pt]
+R_3\leftarrow R_3-2R_1\\[2pt]
+R_4\leftarrow 2R_4-5R_1}}\;
+\left(\begin{array}{cccc}
+2&1&0&2\\
+0&3&-2&0\\
+0&3&-2&0\\
+0&9&-6&0
+\end{array}\right)
+\;\xrightarrow{\substack{R_3\leftarrow R_3-R_2\\[2pt]
+R_4\leftarrow R_4-3R_2}}\;
+\left(\begin{array}{cccc}
+2&1&0&2\\
+0&3&-2&0\\
+0&0&0&0\\
+0&0&0&0
+\end{array}\right).
+\]
+There are exactly two nonzero rows in echelon form, hence
+\[
+\operatorname{rank}(A)=2.
+\]
+The pivot columns are columns $1$ and $2$, so a basis for the column space is given by the
+corresponding original columns:
+\[
+\mathcal{B}_{\mathrm{col}(A)}=
+\left\{
+\begin{pmatrix}2\\3\\4\\5\end{pmatrix},
+\begin{pmatrix}1\\3\\5\\7\end{pmatrix}
+\right\}.
+\]
+Moreover, the remaining columns are dependent:
+\[
+\mathbf{c}_4=\mathbf{c}_1,
+\qquad
+\mathbf{c}_3=\frac13\,\mathbf{c}_1-\frac23\,\mathbf{c}_2,
+\]
+so all columns lie in the span of $\mathbf{c}_1,\mathbf{c}_2$.
+\end{example}
+
+
+\begin{example}\label{ex:rank2-outer-product}
+Let
+\[
+A=
+\begin{pmatrix}
+    2  & 1 &  0 &  2\\
+    3  & 3 & -1 &  3\\
+    4  & 5 & -2 &  4\\
+    5  & 7 & -3 &  5
+\end{pmatrix}.
+\]
+From row-reduction we know that $rank(A)=2$ and that the pivot columns are the first two
+columns. Set
+\[
+\mathbf c_1=\begin{pmatrix}2\\3\\4\\5\end{pmatrix},\qquad
+\mathbf c_2=\begin{pmatrix}1\\3\\5\\7\end{pmatrix},\qquad
+C=\begin{pmatrix}\mathbf c_1 & \mathbf c_2\end{pmatrix}\in\mathbb R^{4\times 2}.
+\]
+Moreover, the remaining columns are linear combinations of $\mathbf c_1,\mathbf c_2$:
+\[
+\mathbf c_3=\frac13\,\mathbf c_1-\frac23\,\mathbf c_2,
+\qquad
+\mathbf c_4=\mathbf c_1.
+\]
+Therefore, if we record these coefficients column-by-column, we obtain the $2\times 4$
+coefficient matrix
+\[
+R=
+\begin{pmatrix}
+1&0&\tfrac13&1\\[2pt]
+0&1&-\tfrac23&0
+\end{pmatrix}.
+\]
+Then $A$ factors as
+\[
+A = C\,R
+=
+\begin{pmatrix}\mathbf c_1 & \mathbf c_2\end{pmatrix}
+\begin{pmatrix}
+1&0&\tfrac13&1\\
+0&1&-\tfrac23&0
+\end{pmatrix}.
+\]
+
+Equivalently, writing $R$ in terms of its rows
+\[
+\mathbf r_1^{\mathsf T}=\begin{pmatrix}1&0&\tfrac13&1\end{pmatrix},
+\qquad
+\mathbf r_2^{\mathsf T}=\begin{pmatrix}0&1&-\tfrac23&0\end{pmatrix},
+\]
+we obtain a decomposition of $A$ as a sum of two outer products (a sum of rank--$1$ matrices):
+\[
+A=\mathbf c_1\,\mathbf r_1^{\mathsf T}+\mathbf c_2\,\mathbf r_2^{\mathsf T}.
+\]
+Since this is a sum of two rank--$1$ matrices, it also makes it transparent that
+$rank(A)\le 2$ (and in fact $rank(A)=2$ because $\mathbf c_1,\mathbf c_2$ are independent).
+\end{example}
+
+The decomposition \[ A=\sum_{k=1}^2 \mathbf u_k\mathbf v_k^{\mathsf T} \] 
+is highly non-unique in general.
+
+However, if you fix the left vectors to be a specific basis of the column space (e.g., the first two columns), then the corresponding right vectors are unique (given that choice).
+
+\begin{exercise}{}
+\label{ex:rank-3x3-columns-two-ways}
+Consider the matrix
+\[
+A=
+\begin{pmatrix}
+1&2&3\\
+1&1&1\\
+2&4&6
+\end{pmatrix}.
+\]
+\begin{enumerate}
+\item[(a)] Use \emph{row operations} to determine a set of \emph{independent columns} of $A$ and hence compute $\mathrm{rank}(A)$.
+\item[(b)] Compute $\mathrm{rank}(A)$ by writing $A$ as a sum of outer products (equivalently, a rank factorisation $A=CR$).
+\end{enumerate}
+\end{exercise}
+
+\begin{solution}
+\textbf{(a) Row operations to find independent columns.}
+Row-reduce \(A\) to echelon form:
+\[
+\left(\begin{array}{ccc}
+1&2&3\\
+1&1&1\\
+2&4&6
+\end{array}\right)
+\xrightarrow{\substack{R_2\leftarrow R_2-R_1\\[2pt] R_3\leftarrow R_3-2R_1}}
+\left(\begin{array}{ccc}
+1&2&3\\
+0&-1&-2\\
+0&0&0
+\end{array}\right).
+\]
+The leading (pivot) entries occur in columns \(1\) and \(2\). Therefore the \emph{corresponding original columns}
+of \(A\) form a basis for the column space:
+\[
+\mathbf c_1=
+\begin{pmatrix}1\\1\\2\end{pmatrix},
+\qquad
+\mathbf c_2=
+\begin{pmatrix}2\\1\\4\end{pmatrix}.
+\]
+Hence the column rank is the number of pivot columns:
+\[
+\mathrm{rank}(A)=2.
+\]
+
+\medskip
+\textbf{(b) Outer-product / rank factorisation.}
+Let the columns of \(A\) be \(\mathbf c_1,\mathbf c_2,\mathbf c_3\). From the matrix we have
+\[
+\mathbf c_3=
+\begin{pmatrix}3\\1\\6\end{pmatrix}
+= -\,\mathbf c_1 + 2\,\mathbf c_2,
+\]
+so every column of \(A\) lies in \(\mathrm{span}\{\mathbf c_1,\mathbf c_2\}\).
+
+Define
+\[
+C=\begin{pmatrix}\mathbf c_1 & \mathbf c_2\end{pmatrix}
+=
+\begin{pmatrix}
+1&2\\
+1&1\\
+2&4
+\end{pmatrix},
+\qquad
+R=
+\begin{pmatrix}
+1&0&-1\\
+0&1&2
+\end{pmatrix}.
+\]
+Then the columns of \(CR\) are
+\[
+CR_{(:,1)}=\mathbf c_1,\qquad
+CR_{(:,2)}=\mathbf c_2,\qquad
+CR_{(:,3)}=-\mathbf c_1+2\mathbf c_2=\mathbf c_3,
+\]
+so \(A=CR\). Writing \(R\) by rows,
+\[
+\mathbf r_1^{\mathsf T}=\begin{pmatrix}1&0&-1\end{pmatrix},
+\qquad
+\mathbf r_2^{\mathsf T}=\begin{pmatrix}0&1&2\end{pmatrix},
+\]
+we obtain the outer-product decomposition
+\[
+A=\mathbf c_1\,\mathbf r_1^{\mathsf T}+\mathbf c_2\,\mathbf r_2^{\mathsf T}.
+\]
+This expresses \(A\) as a sum of two rank--\(1\) matrices, so \(\mathrm{rank}(A)\le 2\).
+Since \(\mathbf c_1\) and \(\mathbf c_2\) are not multiples of each other, they are independent, so
+\(\mathrm{rank}(A)\ge 2\). Therefore,
+\[
+\mathrm{rank}(A)=2.
+\]
+\end{solution}
+
+
+

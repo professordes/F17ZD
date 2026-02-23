@@ -1,0 +1,452 @@
+\section{Stochastic Matrices}
+
+
+	
+	In the previous chapter, we introduced new tools to study (linear) dynamical systems such as dynamics of animal population. In such a model, animals die and are born, and the total number of animals can vary (and as we have seen, the asymptotic behaviour is closely related to the eigenavlues of the associated matrix.)
+	
+	 In this chapter, we focus on a class of dynamical systems where the total number of `elements' under study stays the same, modelling instead a phenomenon of \textit{redistribution}. 
+%	 The total number of objects studied remain the same, they are only allowed to change of `state': think of the study of flu outbreak and the evolution of the population in terms of `ill' and `not ill'.
+	 As we will see in the following motivating problem, many such dynamical systems reach some equilibrium, and the goal of this chapter will be to understand why.
+	
+	\subsection{A motivating problem: Optimising a distribution of bikes}
+	
+	A company is planning to introduce to-rent bikes in Edinburgh. The plan is to have various spots scattered in four main zones: Old Town (zone 1), Haymarket (zone 2), Fountainbridge (zone 3), and Newington (zone 4). During a trial period, the company monitored the displacements of $200$ bikes to understand the behaviour of their possible customers. They noticed the following: 
+	\begin{itemize}
+		\item[(i)]  On average, $50\%$ of bikes in zone 1 are parked back in zone 1 at the beginning of the next day, $20\%$ are parked in zone 2, $20\%$ in zone 3, and $10\%$ in zone 4.
+		\item[(ii)]   On average, $20\%$ of bikes in zone 2 are parked back at zone 2 at the beginning of the next day, $40\%$ are parked in zone 1, $20\%$ in zone 3, and $20\%$ in zone 4.
+		\item[(iii)]  On average, $40\%$ of bikes in zone 3 are parked back in zone 3 at the beginning of the next day, $30\%$ are parked in zone 1, $20\%$ in zone 2, and $10\%$ in zone 4.
+		\item[(iv)]  On average, $50\%$ of bikes in zone 4 are parked back in zone 4 at the beginning of the next day, $10\%$ are parked in zone 1, $20\%$ in zone 2, and $20\%$ in zone 3.
+	\end{itemize}
+	
+	A natural question  (in order to decide the amount of parking slots needed) is to decide whether there exists a stable distribution of bikes, that is, so that the number of bikes parked at the beginning of every day remains constant over time. If we denote by $(x_1, \ldots, x_4)^T$ the vector whose components encode the distribution of bikes in zone 1, $\ldots$, 4 respectively, this amounts to solving the following  equation: 
+	
+	\begin{equation*}
+	\begin{aligned}
+	\left(\begin{array}{cccc}
+	0.5& 0.4 & 0.3 & 0.1\\ 0.2 & 0.2 &0.2 & 0.2 \\ 0.2& 0.2& 0.4 & 0.2 \\ 0.1& 0.2 & 0.1 & 0.5
+	\end{array}\right) \vectttt{x_1}{x_2}{x_3}{x_4}= \vectttt{x_1}{x_2}{x_3}{x_4}.
+	\end{aligned}
+	\end{equation*}
+	
+	This computation was done in Tutorial 1, and we found that the unique solution to this system was the vector $(70, 40, 50, 40)^T$. 
+	
+	However, the company might just have decided to start with an equal distribution of $50$ bicycles at each location. In that situation, one can study the evolution over time of the distribution of bicycles. Indeed, if we denote by $\xv_k$ the vector whose components encode the average distribution of bicycles in zones $1,$ to $4$ after $k$ days, then
+	$$\xv_k = \left(\begin{array}{cccc}
+	0.5& 0.4 & 0.3 & 0.1\\ 0.2 & 0.2 &0.2 & 0.2 \\ 0.2& 0.2& 0.4 & 0.2 \\ 0.1& 0.2 & 0.1 & 0.5
+	\end{array}\right)^k \vectttt{50}{50}{50}{50}.$$
+	
+	We find: 
+	$$\xv_1 = \vectttt{65}{40}{50}{45},~~ \xv_2=\vectttt{68}{40}{50}{42},  ~~\xv_{3}=\vectttt{69.2}{40}{50}{40.8}, ~~\xv_{4}\simeq\vectttt{69.7}{40}{50}{40.3}, \ldots $$
+	
+	In particular, we see that, over time, the distribution seems to converge (rather quickly) to the stable distribution we computed before. There are thus two natural questions to ask oneself: 
+	
+	\begin{itemize}
+		\item Does that sort of system (and what sort of system exactly are we looking at?) always have a stable distribution?
+		\item Does the distribution always evolve over time towards the same stable distribution, regardless of the initial conditions?
+	\end{itemize}
+	
+	The goal of this final chapter will be to answer in the affirmative these two questions, and to see further applications. 
+	
+	\subsection{Markov diagrams and transition matrices}
+	
+	The dynamical systems we wish to encode correspond to the evolution over time of a set of `elements' (bikes, people, animals, etc.) that can be in a certain number of `states'. At every time, each element can either stay in the same state or change to a different state with a given probability. The only condition is that this process is \textit{without memory}, that is, the probability from moving to a state $s_j$ to a state $s_i$ depends only on the states $s_i, s_j$, and not of the states the process was at at previous times. Such processes, heavily studied in probability theory and statistics, are called \textit{finite Markov chains}. 
+	
+%	
+%	\begin{definition} A \textit{finite Markov chain} is a sequence $X_0, X_1, \ldots$ of random variables with values in a finite \textit{state space} $S$, such that the following holds:
+%		\begin{itemize}
+%			\item[(i)] \textit{no memory:} For every $n \geq 0$ and every sequences $s_0, \ldots, s_n, s_{n+1} \in S$, we have 
+%			$$ P(X_{n+1}=s_{n+1} | X_i = s_i ~\forall 0 \leq i \leq n) = P(X_{n+1}=s_{n+1} | X_n = s_n),$$
+%			\item[(ii)] \textit{time-homogeneity:} For every $n, m \geq 0$ and every $s, s' \in S$, we have: 
+%			$$ P(X_{n+1}=s' | X_n = s ) = P(X_{m+1}=s' | X_m = s ).$$
+%		\end{itemize}
+%		\end{definition}
+	
+	\begin{example} We give here some examples  to illustrate the type of processes we are trying to model:
+	\begin{itemize}
+			\item[(i)] The study of bikes mentioned in the introduction can be modelled in this way: the set of elements correspond to the $200$ bikes considered, the states correspond to the four possible zones, and the averaged probabilities measured in the introduction give the probability of a bike to move from one state to another after one day.
+		\item[(ii)] We flip a fair coin and record the occurrences of heads and tails.  Here, the set of elements considered consists of the coin itself, and the two possible states are `heads' and 'tails'. Since the coin is fair, the probability from moving from one state to the other is always $\frac{1}{2}$.
+	\end{itemize}
+\end{example}
+
+\begin{example}
+		Here is an example of a process that cannot be modelled in this way. We play a game by flipping a fair coin as follows: We start with $10$ pounds. Every time we get heads we win $1$ pound, and every time we get tails we lose $1$ pound. However, being reasonable, we decide to stop playing if we lose three times in a row. One way we could try to model this game is by taking the set of elements to consist of a single player, and the three states can be: `win', `lose', and `stop playing', and we go from one state to the other depending on the outcome of the coin flips. This process however does not fit the previous description.  Indeed, knowing that we just lost $1$ pound (i.e. we are currently on the `lose' state), we cannot tell the probability to move to the other states without knowledge of the prior events: if we had already lost twice before, then we will stop playing and move to state `stop playing' with probability $1$. Otherwise, we will keep playing and move to state `win' or `lose' with probability $\frac{1}{2}$.
+\end{example}
+	
+	Now that we have some intuition about the type of processes we are trying to model, we will present an algebraic framework to study them. The key thing is to encode the various probabilities of moving from one state to another in a workable way. This is done as follows, using a  \textit{Markov diagram}. 
+	
+	\begin{df}{}
+     \textit{Markov diagram} is a finite labelled oriented graph:
+		\begin{itemize}
+%			\item vertices are called \textit{states}.
+			\item for each pair of vertices $v_i$, $v_j$, there is at most one oriented edge from $v_j$ to $v_i$, and the label of that edge is an element $a_{ij} \in (0, 1]$.
+			\item for each vertex $v_j$, we have:
+			$$\sum_{i=1}^n a_{ij} = 1.$$
+		\end{itemize} 
+		\end{df}
+	
+		Intuitively, a Markov diagram encodes (in a diagrammatic way) the types of processes we are interested: the vertices correspond to the states of our process, and  an oriented edge with label $a_{ij}$ from the vertex $v_j$ to the vertex $v_i$ corresponds to a probability $a_{ij}$ of moving from state $v_j$ to state $v_i$. We only indicate non-zero probabilities in the diagram, hence the requirement that $a_{ij} \in (0, 1]$. Moreover, the second condition simply means that the diagram encodes all the possible transitions from one state to the other: if we are at a state $v_j$ at a given time, with probability $1$ ($ = \sum_{i=1}^n a_{ij}$) we will move to one of the other states indicated in the diagram by following an oriented edge starting at $v_j$.
+%		 we put an oriented edge with label $\alpha$ from the vertex corresponding to $s_i$ to the vertex corresponding to $s_j$  if we have a probability $\alpha >0$ to go from state $s_i$ at time $n$ to state $s_j$ at time $n+1$. Note in particular that do not add edges that correspond to probability zero.
+	
+%	\begin{example}
+%	Predictions for the weather forecast in Edinburgh follows the following pattern on average: 
+%\begin{itemize}
+%		\item If it rains on a given day, the probability that there will be rain the next day is $60\%$.
+%	\item If it does not rain on a given day, the probability that there won't be rain the following day is $55\%$.
+%\end{itemize}
+% This weather forecast can be modelled via a finite Markov chain with two states: dry and wet. The Markov diagram for this process is the following:
+%	\begin{center}
+%\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+%\node[state] (s_1)   {dry}; 
+%\node[state] (s_2) [right=of s_1] {wet}; 
+%%\node[state] (s_3) [below right=of q_0] {$s_3$}; 
+%%\node[state](s_4) [below right=of q_1] {$s_4$};
+%\path[->] 
+%(s_1) edge [bend left=30]  node {0.45} (s_2)
+% edge  [loop left] node {0.55} ()
+% (s_2) edge  [bend left=30] node {0.4} (s_1)
+% edge  [loop right] node {0.6} ();
+%%(q_1) edge  node  {1} (q_3)
+%%edge [loop above] node {0} ()
+%%(q_2) edge  node [swap] {0} (q_3) 
+%%edge [loop below] node {1} ();
+%\end{tikzpicture}
+%	\end{center}
+%\end{example}
+
+	\begin{example}
+	Let us consider again the example of the coin flip, and the coin is assumed to be fair: heads and tails happen with probability $\frac{1}{2}$.
+%	\begin{itemize}
+%		\item If it rains on a given day, the probability that there will be rain the next day is $60\%$.
+%		\item If it does not rain on a given day, the probability that there won't be rain the following day is $55\%$.
+%	\end{itemize}
+%	This weather forecast can be modelled via a finite Markov chain with two states: dry and wet.
+	 The Markov diagram for this process is the following:
+	\begin{center}
+		\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+		\node[state] (s_1)   {head}; 
+		\node[state] (s_2) [right=of s_1] {tail}; 
+		%\node[state] (s_3) [below right=of q_0] {$s_3$}; 
+		%\node[state](s_4) [below right=of q_1] {$s_4$};
+		\path[->] 
+		(s_1) edge [bend left=30]  node {0.5~~} (s_2)
+		edge  [loop left] node {0.5} ()
+		(s_2) edge  [bend left=30] node {0.5~~} (s_1)
+		edge  [loop right] node {0.5} ();
+		%(q_1) edge  node  {1} (q_3)
+		%edge [loop above] node {0} ()
+		%(q_2) edge  node [swap] {0} (q_3) 
+		%edge [loop below] node {1} ();
+		\end{tikzpicture}
+	\end{center}
+
+If instead we considered an unfair coin giving a head with a probability of $60\%$, then the Markov diagram would be: 
+	\begin{center}
+	\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+	\node[state] (s_1)   {head}; 
+	\node[state] (s_2) [right=of s_1] {tail}; 
+	%\node[state] (s_3) [below right=of q_0] {$s_3$}; 
+	%\node[state](s_4) [below right=of q_1] {$s_4$};
+	\path[->] 
+	(s_1) edge [bend left=30]  node {0.4} (s_2)
+	edge  [loop left] node {0.6} ()
+	(s_2) edge  [bend left=30] node {0.6} (s_1)
+	edge  [loop right] node {0.4} ();
+	%(q_1) edge  node  {1} (q_3)
+	%edge [loop above] node {0} ()
+	%(q_2) edge  node [swap] {0} (q_3) 
+	%edge [loop below] node {1} ();
+	\end{tikzpicture}
+\end{center}
+\end{example}
+	
+	
+	Another way to encode a this data is by means of a matrix, called a \textit{transition matrix}, which is particularly useful to understand the evolution over time of the process.
+	
+	\begin{df}{}
+    The \textit{transition matrix} associated to a Markov diagram with $n$ states is the $n \times n$ matrix defined by:
+	$$a_{i j} = \mbox{probablity of going from state $s_j$ at time $n$ to state $s_i$ at time $n+1$.}$$
+	\end{df}
+	
+	
+	
+	\begin{example}
+		\begin{itemize}
+	\item[(i)]	The transition matrix associated to the fair flip coin above is: 
+	$$A = \left(\begin{array}{cc} 0.5 &  0.5\\ 0.5 &  0.5 \end{array}\right),$$
+	while the transition matrix associated to the unfair flip coin above is: 
+	$$A = \left(\begin{array}{cc} 0.6 &  0.6\\ 0.4 &  0.4 \end{array}\right),$$
+	\item[(ii)] The introductory example involving bikes can be modelled using a Markov diagram with four states $s_1, \ldots, s_4$ corresponding  to the four zones $1, \ldots, 4$ respectively. The associated transition matrix is: 
+$$A =	\left(\begin{array}{cccc}
+		0.5& 0.4 & 0.3 & 0.1\\ 0.2 & 0.2 &0.2 & 0.2 \\ 0.2& 0.2& 0.4 & 0.2 \\ 0.1& 0.2 & 0.1 & 0.5
+	\end{array}\right).$$
+	\end{itemize}
+		\end{example}
+	
+	Note that a  transition matrix is a particular example of a stochastic matrix, as defined below: 
+	
+	\begin{df}{}
+    An $n \times n$ matrix is called a \textit{stochastic matrix} if the following holds:
+	\begin{itemize}
+		\item[(S1)] $a_{ij} \geq 0$ for every $ 1 \leq i, j \leq n$,
+		\item[(S2)] for every column $C_j$ of $A$, the sum of its entries is $1$.
+	\end{itemize}
+	\end{df}
+	%To every \textit{finite Markov chain} consists of the following data: 
+	%\begin{itemize}
+	%	\item[(i)] a finite set $s_1, \ldots, s_n$ of \textit{states},
+	%	\item[(ii)] a \textit{transition matrix} $A$.
+	%\end{itemize}
+	
+	The transition matrix can be used to model the evolution over time of the distribution of a given number of elements taking at each time one of the possible states. Suppose that we start originally with $x_1$ elements in the state $s_1$, $x_2$ elements in the state $s_2$, etc. We encode this by a vector $\xv_0 = (x_1, \ldots, x_n)^T$, whose coordinates record the initial distribution of objects under study. At each iteration of the process, each object moves from one state to another with following the probabilities encoded in the Markov diagram (or equivalently, in the transition matrix). At a given time, we have the following:
+	
+	\begin{thm}{}
+    Let $\xv_0 = (x_1, \ldots, x_n)^T$ be the vector whose coordinates record the initial distribution of elements in states $s_1, \ldots, s_n$. Let us denote by $\xv_k$ the vector whose components record the expected distribution after $k$ iterations of the process of elements in states $s_1, \ldots, s_n$ respectively. We have for every $k \geq 0$:
+	$$ \xv_{k+1} = A\xv_k \mbox{ for every } k \geq 0.$$
+	In particular, we get by induction: 
+	$$\xv_k = A^k\xv_0.$$
+	\end{thm}
+	
+	\begin{df}{}
+		A vector $\xv$ such that $A\xv=\xv$ is called a \textit{stationary distribution}. In other words, it is an eigenvector of $A$ for the eigenvalue $1$.  
+	\end{df}
+	
+A stationary distribution	represents the distribution over the possible states when the system is at equilibrium, i.e. does not change over time. 
+	
+	\begin{example} In the Markov chain modelling the distribution of bikes mentioned in the introduction, the vector $(70, 40, 50, 40)^T$ is a stationary distribution.
+		\end{example}
+	
+	
+	\subsection{The Perron-Frobenius Theorem for stochastic matrices}
+	
+	\begin{df}{}
+    Let $A$  be an $n \times n$ matrix. 
+		\begin{itemize}
+			\item 	We say that $A$ is \textit{non-negative} if $a_{i j} \geq 0$ for every $i, j$, and \textit{positive} if $a_{i, j}>0$ for every $i, j$. 
+			\item 	We say that a non-negative matrix $A$ is  \textit{regular} if $A^k $ is positive for some integer $k \geq 1$.
+		\end{itemize}
+%		We say that a matrix $A$ is \textit{non-negative} if $a_{i j} \geq 0$ for every $i, j$. We say that $A$  is \textit{positive} if $a_{i, j}>0$ for every $i, j$. 
+%
+%		A non-negative matrix $A$ is called \textit{regular} if $A^k $ is positive for some integer $k \geq 1$.
+	\end{df}
+	
+		The transition matrix associated to a Markov diagram is non-negative, but not necessarily positive as there may be a probability $0$ of going from some state $s_i$ to some other state $s_j$.
+	
+
+		The integer $k$ in the definition above depends on the matrix. In particular, for every $k$ it is possible to construct a regular matrix $A$ such that $A^k$ is positive but $A, A^2, \ldots, A^{k-1}$ are not positive.
+\begin{thm}{}
+		The transition matrix associated to a Markov diagram is regular if and only if
+%		 it possible to go from any state to any other state with non-zero probability. Equivalently, a finite Markov chain is regular if and only if 
+		 there exists an integer $n \geq 1$ such that one can go from any vertex of its Markov diagram to any other by a sequence of exactly $n$ oriented edges.
+	\end{thm}
+
+\begin{proof}
+	The $(i, j)$ term of $A^k$ is given by:
+	$$(A^k)_{i, j} = \sum_{1 \leq i_1, \ldots, i_{k-1} \leq n} a_{i_{}, i_{1}}a_{i_{1}, i_{2}}\cdots a_{i_{k-2}, i_{k-1}}a_{i_{k-1}, j}.$$
+	Since all the coefficients $a_{i, j}$ are non-negative, $A^k$ is positive if and only if for every $i, j$, there exists $1 \leq i_1, \ldots, i_{k-1} \leq n$ such that $a_{i_{}, i_{1}}a_{i_{1}, i_{2}}\cdots a_{i_{k-2}, i_{k-1}}a_{i_{k-1}, j}$ are all non-zero. Since a directed edge in the Markov diagram corresponds to a positive probability to move from one state to the other, this is equivalent to saying that for every $i, j$, there exists a sequence of $n$ directed edges from the state $i$ to the state $j$.
+\end{proof}
+	
+	\begin{example}
+		The following matrix is a regular stochastic matrix:
+		$$A:= \left(\begin{array}{cc} 1/2 & 1/2  \\ 1/2 & 1/2  \end{array}\right).$$
+		Indeed, it is clearly stochastic. Moreover, since $A = A^1$ is positive, it is also regular.
+		\end{example}
+	
+	\begin{example} The following matrix is a regular stochastic matrix: 
+		
+	$$A:= \left(\begin{array}{cccc} 1/3 & 1/3 & 0& 1/3 \\ 1/3 & 1/3 & 1/3 & 0 \\0 & 1/3 & 1/3 & 1/3 \\1/3 & 0& 1/3 & 1/3 \end{array}\right).$$
+	Indeed, the fact that $A$ is stochastic is clear, and we have: 
+	$$A^2 = \left(\begin{array}{cccc}  1/3 & 2/9 & 2/9& 2/9 \\ 2/9 &  1/3 & 2/9& 2/9 \\2/9 & 2/9 &  1/3& 2/9\\2/9 & 2/9 & 2/9&  1/3 \end{array}\right),$$
+	which is positive. 
+	The corresponding Markov diagram is the following (where for simplicity we omit the probabilities, and we represent arrows from $s_i$ to $s_j$ and from $s_j$ to $s_i$ simply by a double arrow):
+	
+	\begin{center}
+	\begin{tikzpicture}[shorten >=1pt,node distance=2cm,on grid,auto] 
+	\node[state] (s_1)   {$s_1$}; 
+	\node[state] (s_2) [above right=of s_1] {$s_2$}; 
+	\node[state] (s_3) [below right=of s_2] {$s_3$}; 
+	\node[state](s_4) [below right =of s_1] {$s_4$};
+	\path[->] 
+	(s_1) edge [bend left=0]  node {} (s_2)
+	edge [bend left=0]  node {} (s_4)
+	edge  [loop left] node {} ()
+	(s_2) edge [bend left=0]  node {} (s_1)
+	edge [bend left=0]  node {} (s_3)
+	edge  [loop above] node {} ()
+	(s_3) edge [bend left=0]  node {} (s_2)
+	edge [bend left=0]  node {} (s_4)
+	edge  [loop right] node {} ()
+	(s_4) edge [bend left=0]  node {} (s_1)
+	edge [bend left=0]  node {} (s_3)
+	edge  [loop below] node {} ();
+	%(q_1) edge  node  {1} (q_3)
+	%edge [loop above] node {0} ()
+	%(q_2) edge  node [swap] {0} (q_3) 
+	%edge [loop below] node {1} ();
+	\end{tikzpicture}
+\end{center}
+	
+	and we see that it is indeed possible to find a directed path of length $2$ between any pair of states. 
+	\end{example}
+
+	The key theorem of this chapter is the following:
+	
+	\begin{thm}{}
+    Perron-Frobenius Theorem for stochastic matrices 
+		Let $A$ be a regular stochastic matrix. Then the following holds: 
+		\begin{itemize}
+			\item[(i)] There exists stationary distributions for $A$. In other words, $1$ is an eigenvalue of $A$. 
+			
+			Moreover, there exists a stationary distribution all of whose components are strictly positive. 
+				\item[(ii)] For every vector $\xv = (x_1, \ldots, x_n)^T$ such that $\sum_i x_i \neq 0 $, we have that the sequence of vectors $A^k\xv$ converges to a stationary distribution of $A$.
+%			Such an eigenvector is called a \textit{Perron eigenvector}.
+			\item[(iii)] $\dim E_1(A) = 1$.
+			\item[(iv)] For every other eigenvalue $\lambda$ of $A$, we have $|\lambda|<1$.
+		\end{itemize}
+	\end{thm}
+	
+
+The proof of the Perron-Frobenius is rather long and technical (you can find the proof on the internet, or come and ask me after class/tutorials.). I will just present the proofs of two of the fours results, that illustrate nicely some of the concepts we have encountered in the course so far.
+
+	
+
+	For any square matrix, we have 
+	$$\det(A^T) = \det(A).$$
+
+	A square matrix and its transpose have the same eigenvalues.
+
+
+\begin{proof}
+	 Indeed, since $\det(A) = \det(A^T)$ for any square matrix, it follows that $$\chi_{A^T}(\lambda) = \det(A^T - \lambda I_n) = \det((A - \lambda I_n)^T) = \det(A- \lambda I_n) = \chi_A(\lambda).$$
+	 	In particular, 
+	 $$\lambda \mbox{ is an eigenvalue of } A \Longleftrightarrow \chi_A(\lambda)=0 \Longleftrightarrow \chi_{A^T}(\lambda) =0 \Longleftrightarrow \lambda \mbox{ is an eigenvalue of } A^T.$$
+\end{proof}
+	
+	\begin{proof}
+		(i) Notice that, since $A$ is stochastic, the entries in each column of $A$ add up to $1$. This can be reformulated as follows: 
+		$$A^T \vecttt{1}{\vdots}{1} = \vecttt{1}{\vdots}{1}.$$
+		In particular, we see that $1$ is an eigenvalue of $A^T$. But $A$ and $A^T$ have the same eigenvalues by the above theorem. 
+%		Indeed, since $\det(B) = \det(B^T)$ for any square matrix by Proposition \ref{prop:det_transpose}, it follows that $$\chi_{A^T}(\lambda) = \det(A^T - \lambda I_n) = \det((A - \lambda I_n)^T) = \det(A- \lambda I_n) = \chi_A(\lambda).$$
+%		In particular, 
+%		$$\lambda \mbox{ is an eigenvalue of } A \Longleftrightarrow \chi_A(\lambda)=0 \Longleftrightarrow \chi_{A^T}(\lambda) =0 \Longleftrightarrow \lambda \mbox{ is an eigenvalue of } A^T.$$
+		Since $1$ is an eigenvalue of $A^T$, it is also an eigenvalue of $A$.
+		
+		(ii) Let us prove this statement in the case where $A$ is diagonalisable. We choose a basis $\ev_1, \ldots, \ev_n$ of eigenvectors for the eigenvalues $1 = \lambda_1, \lambda_2, \ldots, \lambda_n$ respectively. Let $\xv \in \FR^n$ and let us write $\xv = \alpha_1\ev_1 + \ldots + \alpha_n\ev_n$,  for some $\alpha_1, \ldots, \alpha_n \in \FR$. We then have for $k \geq 1$: 
+		\begin{equation*}
+		\begin{aligned}
+		A^k\xv &= \alpha_1A^k\ev_1 + \alpha_2A^k\ev_2 + \ldots + \alpha_nA^k \ev_n \\ & =  \alpha_1\ev_1 + \alpha_2\lambda_2^k\ev_2 + \ldots + \alpha_n\lambda_n^k \ev_n.
+		\end{aligned}
+		\end{equation*}
+		Since $|\lambda_2|, \ldots, |\lambda_n| < 1$ by (iv), it follows that $A^k \xv$ converges to $\alpha_1\ev_1$. To conclude that the limit is an eigenvector (for the eigenvalue $\lambda_1=1$), it remains to show that $\alpha_1\ev_1 \neq \nv$. (an eigenvector cannot be the null vector.) But since $A$ is stochastic, the sum of the components of $A^k \xv$ remains the same at every stage. Since we started from a vector $\xv$ such that $\sum_i x_i \neq 0$, it follows that the sum of the components of $\alpha_1 \ev_1$ is non-zero, and in particular $\alpha_1\ev_1 \neq \nv$.
+		\end{proof}
+	%	The unique Perron eigenvector $\xv$ with $\sum_i x_i =1$ 
+	
+%	\paragraph{Speed of convergence.} In the case of a diagon
+	
+	\subsection{Application: stationary distributions in dynamical systems.}
+	
+		
+	Let us go back to the problem stated in the introduction. The problem of modelling the changes in the distribution of bicycles can be modelled using a Markov diagram, whose transition matrix $A$ was given in the introduction. This associated transition matrix is regular, as it is positive. Let us denote by $\xv_0 = (50, 50, 50, 50)^T$ the vector corresponding to the initial distribution of bikes. After $k$ days, the expected distribution of bikes is given by $A^k\xv_0$. By (iv), this sequence of vectors converges towards a stationary distribution $\xv$. This stationary distribution is a vector whose components add up to $200$, since each vector $A^k\xv_0$ satisfies the same property (intuitively, the bikes are just redistributed, there is no gain nor loss of bike in the process). By (ii), since the eigenspace $E_1(A)$ is a line (i.e. has dimension $1$), there is a unique vector of $E_1(A)$ whose components add up to $200$, and this is exactly our stationary distribution $\xv$. Note that this characterisation of $\xv$ does not depend on the original distribution $\xv_0$. This explains in hindsight why the stationary distribution is unique, and does not depend on the original vector $\xv_0$. 
+%	Consequences $(i)$ and $(iii)$ finally explain why there was exactly one stationary distribution of bicycles: such a distribution corresponds to the unique eigenvector of the transition matrix for the eigenvalue $1$ (we know that the associated eigenspace has dimension $1$) whose components add up to $200$, the total number of bikes.
+%	
+%	Moreover, consequence $(iv)$ justifies why starting from any distribution of bicycles, the distribution will evolve over time and converges to the unique stationary distribution just mentioned. 
+	
+	One natural question would be to understand the speed of convergence. When the transition $A$ matrix is diagonalisable, then there exists a basis $\ev_1, \ldots, \ev_n$ of $\FR^n$ for the associated eigenvalues $1 = \lambda_1 > \lambda_2 \geq \ldots \geq \lambda_n > -1$. In particular, if we write our initial vector $\xv$ as a linear combination of the $\ev_i$, as $\xv = \alpha_1\ev_1 + \ldots + \alpha_n\ev_n$,  we have for $k \geq 1$: 
+	$$A^k\xv = \alpha_1\ev_1 + \alpha_2\lambda_2^k\ev_2 + \ldots + \alpha_n\lambda_n^k \ev_n.$$
+	In particular, we see that $A^k\xv \ra_\infty \alpha_1\ev_1$ and  that   $||A^k\xv - \alpha_1\ev_1|| $ converges to zero exponentially, and as fast as $\mu^k$ (up to a multiplicative constant), where   
+	 $$\mu = \underset{2 \leq i \leq n}{\mbox{max}}|\lambda_i|.$$
+	 Rephrased using Landau's notations, we have: 
+	 $$||A^k\xv - \ev_1|| = O(\mu^k)$$
+	 If $A$ is not diagonalisable, a slightly weaker inequality holds, namely: 
+	 $$||A^k\xv - \ev_1|| = o(\mu^k)$$
+	 for every  
+	 $ \underset{2 \leq i \leq n}{\mbox{max}}|\lambda_i| < \mu < 1.$ We will not prove this stronger statement in this course.
+	
+%	\paragraph{Linear economic models}
+%	
+%	As seen in the introduction of the first chapter, 
+	
+	\subsection{Application: The PageRank algorithm}
+	
+	
+
+	
+	One can imagine the internet as a (very large) oriented graph. Vertices correspond to pages and oriented edges correspond to links from a page to another. 
+	
+	To this oriented graph, we can associate a finite Markov chain whose states correspond to the pages, by assuming that a person on a given webpage will click with equal probability on one of the links of the page. To construct the associated transition matrix, we denote by $n_{ij}$ the number of links from page $j$ to page $i$, and by $d_j$ the total number of links on page $j$, then the probability $a_{ij}$ that someone on page $j$ clicks on a link leading to page $i$ is:
+$$a_{ij} = \frac{n_{ij}}{d_j}.$$	
+	Let us consider a small example of a very small network consisting of four webpages $p_1, \ldots, p_4$. The table representing the links between pages is given below, where the coefficient in row $i$ and column $j$ represents the number of links from page $j$ to page $i$:
+	
+	\begin{center}
+				\begin{tabular}{l|llll}
+			& $p_1$  & $p_2$  & $p_3$ & $p_4$ \\ \hline $p_1$ &
+			0& 0& 2 & 2\\ $p_2$ & 2 & 0 &2 & 1 \\ $p_3$ & 1& 1& 0 & 2 \\ $p_4$ & 1& 1 & 1 & 0
+		\end{tabular}
+	\end{center}
+
+	
+	The transition matrix associated to this Markov chain is:
+	
+	$$A=  \left(\begin{array}{cccc}
+	0& 0& 2/5 & 2/5\\ 1/2 & 0 &2/5 & 1/5 \\ 1/4& 1/2& 0 & 2/5 \\ 1/4& 1/2 & 1/5 & 0
+	\end{array}\right).$$
+	
+	
+
+	
+	However, this model  fails to take into account that quite often people will go to a webpage not because it was linked from a previous page, but because they started thinking of something completely different, independently of the content of the current page. This can be modelled by another Markov process where at each time, the probability of going from any page to any other page is exactly $1/n$, where $n$ is the number of pages (in our example, $n=4$). This finite Markov chain has a transition matrix a $n \times n$ matrix of the form
+	
+	$$U = \left( \begin{array}{ccc}1/n & \cdots & 1/n\\ \vdots & \ddots & \vdots \\ 1/n & \cdots & 1/n \end{array}\right).$$
+	
+	What Google does to take both processes into consideration is to consider that what is going on is a combination of the previous cases. There exists a constant $\alpha$, called \textit{damping factor}, such that with probability $\alpha$, a person will choose the next page by clicking on one of the links, and with probability $(1-\alpha)$ that person will choose the next page completely at random. A standard value for $\alpha$ is $\alpha=0.85$. This corresponds to a Markov process whose transition matrix is given by the following barycenter of $A$ and $U$: 
+	$$G:= \alpha A + (1-\alpha) U.$$ 
+	Note that this transition matrix is now strictly positive, and in particular regular. We can thus apply the Perron-Frobenius Theorem, which tells us that there exists a stationary distribution with positive components and with sum $1$, called the \textit{ranking vector}. By the convergence property, this corresponds to the expected distribution of people on pages when this process has been repeated infinitely many times. Pages with a comparatively high distribution correspond to `popular' pages, and are thus ranked highly by Google. This ranking vector is (a simplified version of) what Google uses to rank pages. 
+	
+	\begin{df}{}
+		A \textit{ranking vector} used in the Google PageRank algorithm is a stationary distribution of the `Google matrix' $G = \alpha A + (1-\alpha) U$ with positive components. (Such a vector is unique up to multiplication by a positive constant, by the Perron-Frobenius Theorem)
+		
+		 The ranking of the webpages is obtained by ranking the components of that vector.
+		\end{df}
+	
+	Let us go back to our simple example. Taking the damping factor to be $0.85$, the new transition matrix for the process is
+	\begin{equation*}
+	\begin{aligned}
+	G ~~~&= ~~~0.85 \left(\begin{array}{cccc}
+	0& 0& 2/5 & 2/5\\ 1/2 & 0 &2/5 & 1/5 \\ 1/4& 1/2& 0 & 2/5 \\ 1/4& 1/2 & 1/5 & 0
+	\end{array}\right) + 0.15 \left(\begin{array}{cccc}
+	1/4& 1/4 & 1/4 & 1/4\\ 1/4& 1/4 & 1/4 & 1/4 \\ 1/4& 1/4 & 1/4 & 1/4 \\ 1/4& 1/4 & 1/4 & 1/4
+	\end{array}\right)\\
+	 &= ~~~  \left(\begin{array}{cccc}
+	 0.0375& 0.0375& 0.3775 & 0.3775\\ 0.4625 & 0.0375 &0.3775 & 0.2075 \\ 0.25& 0.4625& 0.0375 & 0.3775 \\ 0.25& 0.4625 & 0.2075 & 0.0375
+	 \end{array}\right).
+	\end{aligned}
+	\end{equation*}
+	
+	Finding the stationary distribution corresponds to solving the system $G\xv = \xv$, which we do as usual using Gaussian elimination, with a computer as the computations are too cumbersome. The  unique stationary distribution $\rv$ whose components are positive and add up to  $1$ is  (with approximations to the second digit)
+	$$\rv ~\simeq ~\vectttt{0.21}{0.26}{0.28}{0.24}.$$
+	So the ranking of these pages, from most popular to least popular, is: page $3$, page $2$, page $ 4$, page $ 1$.
+	
+	\paragraph{Speed of convergence (extra-curricular).} We know from the Perron-Frobenius Theorem that a way to obtain a ranking vector is to look at the asymptotic behaviour of $G^k \xv$ for an arbitrary vector $\xv$ with $\sum x_i =1$. We wish to find an upper bound on the norm $ ||G^k\xv -  \rv ||$. However,instead of looking at this norm, we will be looking at a slightly different one that is easier to use in this situation: 
+	
+	$$ ||\xv||_1  = \sum_i |x_i|.$$
+	Note that we still have the triangle identity $||\xv + \yv||_1 \leq ||\xv||_1 + ||\yv||_1$. Moreover, for every  vector $\xv = (x_1, \ldots, x_n)^T$, we have:
+	$$||A\xv||_1 = \sum_i | \sum_j a_{i j}x_j | \leq \sum_i \sum_j a_{i j}|x_j|  \leq  \sum_j |x_j| (\sum_i a_{i j})  \leq \sum_i |x_i| = ||\xv||_1.$$
+	
+	\begin{thm}
+		For every $k \geq 1$ and every positive vector $\xv$ whose components add up to $1$, we have:
+		$$||G^k\xv -  \rv ||_1  \leq  2\alpha^k.$$
+		\end{thm}
+	
+	\begin{proof} We have: 
+	
+	$$G\xv = \alpha A\xv + (1-\alpha)U\xv = \alpha A\xv + (1 - \alpha) \vecttt{1/n}{\vdots}{1/n}.$$
+	
+	In particular, for non-negative vectors $\xv, \yv$, we get 
+	
+	$$G\xv - G\yv = \alpha A(\xv - \yv),$$
+	and $$||G\xv - G\yv||_1 = \alpha ||A(\xv - \yv)||_1 \leq \alpha ||\xv - \yv ||_1.$$
+	By induction, we get 
+	$$||G^k\xv - G^k\yv||_1  \leq \alpha^k||\xv - \yv ||_1$$
+	and thus, for every positive vector $\xv$ whose components add up to $1$, we get:
+	$$||G^k\xv -  \rv ||_1  = ||G^k\xv -  G^k\rv ||_1 \leq \alpha^k||\xv - \rv ||_1\leq \alpha^k(||\xv||_1 + ||\rv||_1)\leq  2\alpha^k.$$	\end{proof}
+	Note in particular that this speed of convergence is independent on the size of the matrix. For instance, for $\alpha = 0.85$, then the power method gives an approximation of the ranking vector with error less than $10^{-6}$ after $ 90$ iterations. 
+%	\paragraph{Approximating non-regular matrices by regular ones.} h
