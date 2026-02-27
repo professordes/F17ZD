@@ -36,6 +36,9 @@ htfcss: wasyb font-weight: bold;
 htfcss: lmmib font_weight:bold;
 htfcss: lmmib font_weight:bold;
 htfcss: lmmib font_weight:bold;
+htfcss: lmbsy font-weight:bold;
+htfcss: lmbsy font-weight:bold;
+htfcss: lmbsy font-weight:bold;
 File: F17ZD_main.html
 File: F17ZD_main.css
 File: F17ZD_main.tmp
@@ -46,6 +49,9 @@ File: F17ZD_main5.html
 File: F17ZD_main6.html
 File: F17ZD_main7.html
 File: F17ZD_main8.html
+File: F17ZD_main.tmp
+File: F17ZD_main.tmp
+File: F17ZD_main.tmp
 Font_Class(12,"12"): <!--span  class="htf-calligraphy"--><!--/span-->
 Css: p{margin-top:0;margin-bottom:0}
 Css: p.indent{text-indent:0;}
@@ -65,8 +71,7 @@ Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; 
 Css: center { margin-top:1em; margin-bottom:1em; }
 Css: td center { margin-top:0em; margin-bottom:0em; }
 Css: .Canvas { position:relative; }
-Css: img.math{vertical-align:middle;}
-Css: div.par-math-display, div.math-display{text-align:center;}
+Css: math { text-indent: 0em; }
 Css: li p.indent { text-indent: 0em }
 Css: li p:first-child{ margin-top:0em; }
 Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -129,22 +134,21 @@ Css: div.figure img {text-align:center;}
 Css: .marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
 Css: .marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
 Css: .reversemarginpar{float:left;}
-Css: table.equation {width:100%;}
-Css: .equation td{text-align:center; }
-Css: td.equation { margin-top:1em; margin-bottom:1em; } 
-Css: td.equation-label { width:5%; text-align:center; }
-Css: td.eqnarray4 { width:5%; white-space: normal; }
-Css: td.eqnarray2 { width:5%; }
-Css: table.eqnarray-star, table.eqnarray {width:100%;}
-Css: div.eqnarray{text-align:center;}
-Css: div.array {text-align:center;}
-Css: div.pmatrix {text-align:center;}
-Css: table.pmatrix {width:100%;}
-Css: span.pmatrix img{vertical-align:middle;}
-Css: div.pmatrix {text-align:center;}
-Css: table.pmatrix {width:100%;}
-Css: span.bar-css {text-decoration:overline;}
-Css: img.cdots{vertical-align:middle;}
+Css: .equation td{text-align:center; vertical-align:middle; }
+Css: td.eq-no{ width:5%; }
+Css: table.equation { width:100%; } 
+Css: div.math-display, div.par-math-display{text-align:center;}
+Css: mtr.hline mtd{ border-bottom:black solid 1px; padding-top:2px; padding-bottom:0em; }
+Css: mtr.hline mtd mo{ display:none }
+Css: math .texttt { font-family: monospace; }
+Css: math .textit { font-style: italic; }
+Css: math .textsl { font-style: oblique; }
+Css: math .textsf { font-family: sans-serif; }
+Css: math .textbf { font-weight: bold; }
+Css: mo.MathClass-op + mi{margin-left:0.3em}
+Css: mi + mo.MathClass-op{margin-left:0.3em}
+Css:  math mstyle[mathvariant="bold"] { font-weight: bold; font-style: normal; } 
+Css:  math mstyle[mathvariant="normal"] { font-weight: normal; font-style: normal; } 
 Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
 Css: table.tabular td p{margin-top:0em;}
 Css: table.tabular {margin-left: auto; margin-right: auto;}
@@ -164,7 +168,6 @@ Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
 Css: .hline td, .cline td{ padding: 0; }
 Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
 Css: .hline {border-top: 1px solid black;}
-Css: div.array {text-align:center;}
 Css: tr.hline td hr{display:none}
 Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
@@ -193,1229 +196,454 @@ Css: figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; te
 Css: figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 Css: p + figcaption, img + figcaption{margin-top: 1em;}
 Css: .abstract{margin:1em;}
-Css: .equation td{text-align:center; }
-Css: .equation-star td{text-align:center; }
-Css: table.equation-star { width:100%; }
-Css: table.equation { width:100%; }
-Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
-Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
-Css: td.align-label { width:5%; text-align:center; }
-Css: td.align-odd { text-align:right; padding-right:0.3em;}
-Css: td.align-even { text-align:left; padding-right:0.6em;}
-Css: table.multline, table.multline-star {width:100%;}
-Css: td.gather {text-align:center; }
-Css: table.gather {width:100%;}
-Css: div.gather-star {text-align:center;}
+Css: .equation-star td{text-align:center; vertical-align:middle; }
+Css: table.equation-star { width:100%; } 
+Css: mtd.align-odd{margin-left:2em; text-align:right;}
+Css: mtd.align-even{margin-right:2em; text-align:left;}
+Css: .boxed{border: 1px solid black; padding-left:2px; padding-right:2px;}
 Css: .rotatebox{display: inline-block;}
 Css: dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;}
 Css: .tcolorbox{margin-top:0.5em;margin-bottom: 0.5em;}
 Css: .tcolorbox .lowerbox{margin-top:0pt;}
 Css: div.verbatiminput {font-family: monospace,monospace; white-space: nowrap; }
 --- needs --- F17ZD_main.idv[2] ==> F17ZD_main0x.svg ---
---- needs --- F17ZD_main.idv[4] ==> F17ZD_main1x.svg ---
---- needs --- F17ZD_main.idv[5] ==> F17ZD_main2x.svg ---
---- needs --- F17ZD_main.idv[6] ==> F17ZD_main3x.svg ---
---- needs --- F17ZD_main.idv[8] ==> F17ZD_main4x.svg ---
---- needs --- F17ZD_main.idv[9] ==> F17ZD_main5x.svg ---
 Css: #tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[11] ==> F17ZD_main6x.svg ---
---- needs --- F17ZD_main.idv[12] ==> F17ZD_main7x.svg ---
---- needs --- F17ZD_main.idv[13] ==> F17ZD_main8x.svg ---
---- needs --- F17ZD_main.idv[14] ==> F17ZD_main9x.svg ---
---- needs --- F17ZD_main.idv[15] ==> F17ZD_main10x.svg ---
---- needs --- F17ZD_main.idv[16] ==> F17ZD_main11x.svg ---
-Css: #TBL-1-1{border-right:1px solid black;}
-Css: #TBL-1-2{border-right:1px solid black;}
-Css: #TBL-1-3{border-right:1px solid black;}
-Css: #TBL-1-4{border-right:1px solid black;}
-Css: #TBL-1-5{border-right:1px solid black;}
-Css: #TBL-1-6{border-right:1px solid black;}
---- needs --- F17ZD_main.idv[18] ==> F17ZD_main12x.svg ---
---- needs --- F17ZD_main.idv[19] ==> F17ZD_main13x.svg ---
+--- needs --- F17ZD_main.idv[4] ==> F17ZD_main1x.svg ---
+--- needs --- F17ZD_main.idv[5] ==> F17ZD_main2x.svg ---
 Css: #tcolobox-2 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-2 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-3 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-3 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-4 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-4 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[21] ==> F17ZD_main14x.svg ---
---- needs --- F17ZD_main.idv[23] ==> F17ZD_main15x.svg ---
---- needs --- F17ZD_main.idv[24] ==> F17ZD_main16x.svg ---
---- needs --- F17ZD_main.idv[25] ==> F17ZD_main17x.svg ---
---- needs --- F17ZD_main.idv[26] ==> F17ZD_main18x.svg ---
 Css: #tcolobox-5 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-5 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[27] ==> F17ZD_main19x.svg ---
---- needs --- F17ZD_main.idv[28] ==> F17ZD_main20x.svg ---
---- needs --- F17ZD_main.idv[29] ==> F17ZD_main21x.svg ---
---- needs --- F17ZD_main.idv[30] ==> F17ZD_main22x.svg ---
---- needs --- F17ZD_main.idv[31] ==> F17ZD_main23x.svg ---
---- needs --- F17ZD_main.idv[32] ==> F17ZD_main24x.svg ---
-Css: #tcolobox-6 .tcolorbox-title{color: #545499; background-color: #404040;}
+--- needs --- F17ZD_main.idv[7] ==> F17ZD_main3x.svg ---
+Css: #tcolobox-6 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-6 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[34] ==> F17ZD_main25x.svg ---
---- needs --- F17ZD_main.idv[36] ==> F17ZD_main26x.svg ---
---- needs --- F17ZD_main.idv[37] ==> F17ZD_main27x.svg ---
---- needs --- F17ZD_main.idv[38] ==> F17ZD_main28x.svg ---
---- needs --- F17ZD_main.idv[39] ==> F17ZD_main29x.svg ---
---- needs --- F17ZD_main.idv[40] ==> F17ZD_main30x.svg ---
---- needs --- F17ZD_main.idv[41] ==> F17ZD_main31x.svg ---
---- needs --- F17ZD_main.idv[42] ==> F17ZD_main32x.svg ---
---- needs --- F17ZD_main.idv[43] ==> F17ZD_main33x.svg ---
---- needs --- F17ZD_main.idv[44] ==> F17ZD_main34x.svg ---
---- needs --- F17ZD_main.idv[46] ==> F17ZD_main35x.svg ---
---- needs --- F17ZD_main.idv[47] ==> F17ZD_main36x.svg ---
---- needs --- F17ZD_main.idv[48] ==> F17ZD_main37x.svg ---
-Css: #tcolobox-7 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-7 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-7 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[50] ==> F17ZD_main38x.svg ---
---- needs --- F17ZD_main.idv[52] ==> F17ZD_main39x.svg ---
---- needs --- F17ZD_main.idv[53] ==> F17ZD_main40x.svg ---
---- needs --- F17ZD_main.idv[54] ==> F17ZD_main41x.svg ---
---- needs --- F17ZD_main.idv[55] ==> F17ZD_main42x.svg ---
---- needs --- F17ZD_main.idv[56] ==> F17ZD_main43x.svg ---
---- needs --- F17ZD_main.idv[57] ==> F17ZD_main44x.svg ---
 Css: #tcolobox-8 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-8 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[59] ==> F17ZD_main45x.svg ---
---- needs --- F17ZD_main.idv[61] ==> F17ZD_main46x.svg ---
---- needs --- F17ZD_main.idv[62] ==> F17ZD_main47x.svg ---
---- needs --- F17ZD_main.idv[63] ==> F17ZD_main48x.svg ---
---- needs --- F17ZD_main.idv[64] ==> F17ZD_main49x.svg ---
---- needs --- F17ZD_main.idv[65] ==> F17ZD_main50x.svg ---
---- needs --- F17ZD_main.idv[66] ==> F17ZD_main51x.svg ---
 Css: #tcolobox-9 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-9 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[68] ==> F17ZD_main52x.svg ---
 Css: #tcolobox-10 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-10 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[69] ==> F17ZD_main53x.svg ---
---- needs --- F17ZD_main.idv[71] ==> F17ZD_main54x.svg ---
 Css: #tcolobox-11 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-11 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[72] ==> F17ZD_main55x.svg ---
---- needs --- F17ZD_main.idv[73] ==> F17ZD_main56x.svg ---
---- needs --- F17ZD_main.idv[74] ==> F17ZD_main57x.svg ---
---- needs --- F17ZD_main.idv[75] ==> F17ZD_main58x.svg ---
---- needs --- F17ZD_main.idv[76] ==> F17ZD_main59x.svg ---
---- needs --- F17ZD_main.idv[77] ==> F17ZD_main60x.svg ---
---- needs --- F17ZD_main.idv[78] ==> F17ZD_main61x.svg ---
---- needs --- F17ZD_main.idv[79] ==> F17ZD_main62x.svg ---
---- needs --- F17ZD_main.idv[80] ==> F17ZD_main63x.svg ---
---- needs --- F17ZD_main.idv[82] ==> F17ZD_main64x.svg ---
 Css: #tcolobox-12 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-12 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[84] ==> F17ZD_main65x.svg ---
 Css: #tcolobox-13 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-13 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[86] ==> F17ZD_main66x.svg ---
---- needs --- F17ZD_main.idv[87] ==> F17ZD_main67x.svg ---
---- needs --- F17ZD_main.idv[88] ==> F17ZD_main68x.svg ---
---- needs --- F17ZD_main.idv[89] ==> F17ZD_main69x.svg ---
 Css: #tcolobox-14 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-14 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[91] ==> F17ZD_main70x.svg ---
 Css: #tcolobox-15 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-15 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-16 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-16 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[93] ==> F17ZD_main71x.svg ---
---- needs --- F17ZD_main.idv[94] ==> F17ZD_main72x.svg ---
---- needs --- F17ZD_main.idv[95] ==> F17ZD_main73x.svg ---
---- needs --- F17ZD_main.idv[96] ==> F17ZD_main74x.svg ---
 Css: #tcolobox-17 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-17 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[98] ==> F17ZD_main75x.svg ---
---- needs --- F17ZD_main.idv[99] ==> F17ZD_main76x.svg ---
---- needs --- F17ZD_main.idv[100] ==> F17ZD_main77x.svg ---
---- needs --- F17ZD_main.idv[102] ==> F17ZD_main78x.svg ---
---- needs --- F17ZD_main.idv[103] ==> F17ZD_main79x.svg ---
---- needs --- F17ZD_main.idv[104] ==> F17ZD_main80x.svg ---
---- needs --- F17ZD_main.idv[106] ==> F17ZD_main81x.svg ---
---- needs --- F17ZD_main.idv[108] ==> F17ZD_main82x.svg ---
-Css: #tcolobox-18 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-18 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-18 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[110] ==> F17ZD_main83x.svg ---
-Css: #tcolobox-19 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+--- needs --- F17ZD_main.idv[9] ==> F17ZD_main4x.svg ---
+--- needs --- F17ZD_main.idv[10] ==> F17ZD_main5x.svg ---
+--- needs --- F17ZD_main.idv[12] ==> F17ZD_main6x.svg ---
+--- needs --- F17ZD_main.idv[14] ==> F17ZD_main7x.svg ---
+Css: #tcolobox-19 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-19 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[112] ==> F17ZD_main84x.svg ---
+--- needs --- F17ZD_main.idv[16] ==> F17ZD_main8x.svg ---
 Css: #tcolobox-20 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-20 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[114] ==> F17ZD_main85x.svg ---
---- needs --- F17ZD_main.idv[116] ==> F17ZD_main86x.svg ---
---- needs --- F17ZD_main.idv[117] ==> F17ZD_main87x.svg ---
+--- needs --- F17ZD_main.idv[18] ==> F17ZD_main9x.svg ---
 Css: #tcolobox-21 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-21 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[119] ==> F17ZD_main88x.svg ---
---- needs --- F17ZD_main.idv[120] ==> F17ZD_main89x.svg ---
---- needs --- F17ZD_main.idv[121] ==> F17ZD_main90x.svg ---
---- needs --- F17ZD_main.idv[122] ==> F17ZD_main91x.svg ---
---- needs --- F17ZD_main.idv[123] ==> F17ZD_main92x.svg ---
+--- needs --- F17ZD_main.idv[20] ==> F17ZD_main10x.svg ---
 Css: #tcolobox-22 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-22 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[124] ==> F17ZD_main93x.svg ---
---- needs --- F17ZD_main.idv[126] ==> F17ZD_main94x.svg ---
---- needs --- F17ZD_main.idv[127] ==> F17ZD_main95x.svg ---
---- needs --- F17ZD_main.idv[128] ==> F17ZD_main96x.svg ---
+--- needs --- F17ZD_main.idv[22] ==> F17ZD_main11x.svg ---
+--- needs --- F17ZD_main.idv[24] ==> F17ZD_main12x.svg ---
 Css: #tcolobox-23 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-23 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[130] ==> F17ZD_main97x.svg ---
-Css: #tcolobox-24 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-24 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-24 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[131] ==> F17ZD_main98x.svg ---
---- needs --- F17ZD_main.idv[132] ==> F17ZD_main99x.svg ---
---- needs --- F17ZD_main.idv[133] ==> F17ZD_main100x.svg ---
---- needs --- F17ZD_main.idv[134] ==> F17ZD_main101x.svg ---
---- needs --- F17ZD_main.idv[135] ==> F17ZD_main102x.svg ---
---- needs --- F17ZD_main.idv[136] ==> F17ZD_main103x.svg ---
 Css: #tcolobox-25 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-25 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[138] ==> F17ZD_main104x.svg ---
---- needs --- F17ZD_main.idv[139] ==> F17ZD_main105x.svg ---
 Css: #tcolobox-26 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-26 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[141] ==> F17ZD_main106x.svg ---
---- needs --- F17ZD_main.idv[142] ==> F17ZD_main107x.svg ---
---- needs --- F17ZD_main.idv[143] ==> F17ZD_main108x.svg ---
---- needs --- F17ZD_main.idv[144] ==> F17ZD_main109x.svg ---
-Css: #tcolobox-27 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-27 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-27 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[146] ==> F17ZD_main110x.svg ---
---- needs --- F17ZD_main.idv[147] ==> F17ZD_main111x.svg ---
-Css: #tcolobox-28 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-28 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-28 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-29 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-29 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[149] ==> F17ZD_main112x.svg ---
---- needs --- F17ZD_main.idv[151] ==> F17ZD_main113x.svg ---
 Css: #tcolobox-30 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-30 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[152] ==> F17ZD_main114x.svg ---
---- needs --- F17ZD_main.idv[153] ==> F17ZD_main115x.svg ---
---- needs --- F17ZD_main.idv[155] ==> F17ZD_main116x.svg ---
---- needs --- F17ZD_main.idv[156] ==> F17ZD_main117x.svg ---
---- needs --- F17ZD_main.idv[158] ==> F17ZD_main118x.svg ---
---- needs --- F17ZD_main.idv[159] ==> F17ZD_main119x.svg ---
---- needs --- F17ZD_main.idv[160] ==> F17ZD_main120x.svg ---
---- needs --- F17ZD_main.idv[161] ==> F17ZD_main121x.svg ---
---- needs --- F17ZD_main.idv[162] ==> F17ZD_main122x.svg ---
---- needs --- F17ZD_main.idv[163] ==> F17ZD_main123x.svg ---
---- needs --- F17ZD_main.idv[164] ==> F17ZD_main124x.svg ---
---- needs --- F17ZD_main.idv[165] ==> F17ZD_main125x.svg ---
---- needs --- F17ZD_main.idv[167] ==> F17ZD_main126x.svg ---
---- needs --- F17ZD_main.idv[168] ==> F17ZD_main127x.svg ---
---- needs --- F17ZD_main.idv[169] ==> F17ZD_main128x.svg ---
---- needs --- F17ZD_main.idv[170] ==> F17ZD_main129x.svg ---
---- needs --- F17ZD_main.idv[171] ==> F17ZD_main130x.svg ---
---- needs --- F17ZD_main.idv[172] ==> F17ZD_main131x.svg ---
---- needs --- F17ZD_main.idv[173] ==> F17ZD_main132x.svg ---
---- needs --- F17ZD_main.idv[174] ==> F17ZD_main133x.svg ---
---- needs --- F17ZD_main.idv[176] ==> F17ZD_main134x.svg ---
---- needs --- F17ZD_main.idv[177] ==> F17ZD_main135x.svg ---
---- needs --- F17ZD_main.idv[178] ==> F17ZD_main136x.svg ---
---- needs --- F17ZD_main.idv[179] ==> F17ZD_main137x.svg ---
---- needs --- F17ZD_main.idv[180] ==> F17ZD_main138x.svg ---
---- needs --- F17ZD_main.idv[181] ==> F17ZD_main139x.svg ---
---- needs --- F17ZD_main.idv[182] ==> F17ZD_main140x.svg ---
---- needs --- F17ZD_main.idv[183] ==> F17ZD_main141x.svg ---
---- needs --- F17ZD_main.idv[184] ==> F17ZD_main142x.svg ---
---- needs --- F17ZD_main.idv[185] ==> F17ZD_main143x.svg ---
---- needs --- F17ZD_main.idv[187] ==> F17ZD_main144x.svg ---
---- needs --- F17ZD_main.idv[188] ==> F17ZD_main145x.svg ---
---- needs --- F17ZD_main.idv[190] ==> F17ZD_main146x.svg ---
-Css: #tcolobox-31 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-31 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-31 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[191] ==> F17ZD_main147x.svg ---
-Css: #tcolobox-32 .tcolorbox-title{color: #000000; background-color: #404040;}
+--- needs --- F17ZD_main.idv[26] ==> F17ZD_main13x.svg ---
+--- needs --- F17ZD_main.idv[28] ==> F17ZD_main14x.svg ---
+Css: #tcolobox-32 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-32 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[193] ==> F17ZD_main148x.svg ---
---- needs --- F17ZD_main.idv[194] ==> F17ZD_main149x.svg ---
---- needs --- F17ZD_main.idv[195] ==> F17ZD_main150x.svg ---
---- needs --- F17ZD_main.idv[197] ==> F17ZD_main151x.svg ---
---- needs --- F17ZD_main.idv[198] ==> F17ZD_main152x.svg ---
---- needs --- F17ZD_main.idv[199] ==> F17ZD_main153x.svg ---
-Css: #tcolobox-33 .tcolorbox-title{color: #545499; background-color: #404040;}
+--- needs --- F17ZD_main.idv[30] ==> F17ZD_main15x.svg ---
+--- needs --- F17ZD_main.idv[32] ==> F17ZD_main16x.svg ---
+--- needs --- F17ZD_main.idv[33] ==> F17ZD_main17x.svg ---
+--- needs --- F17ZD_main.idv[35] ==> F17ZD_main18x.svg ---
+--- needs --- F17ZD_main.idv[36] ==> F17ZD_main19x.svg ---
+--- needs --- F17ZD_main.idv[38] ==> F17ZD_main20x.svg ---
+--- needs --- F17ZD_main.idv[40] ==> F17ZD_main21x.svg ---
+Css: #tcolobox-33 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-33 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[201] ==> F17ZD_main154x.svg ---
---- needs --- F17ZD_main.idv[202] ==> F17ZD_main155x.svg ---
---- needs --- F17ZD_main.idv[203] ==> F17ZD_main156x.svg ---
---- needs --- F17ZD_main.idv[205] ==> F17ZD_main157x.svg ---
---- needs --- F17ZD_main.idv[206] ==> F17ZD_main158x.svg ---
+--- needs --- F17ZD_main.idv[42] ==> F17ZD_main22x.svg ---
+--- needs --- F17ZD_main.idv[44] ==> F17ZD_main23x.svg ---
 Css: #tcolobox-34 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-34 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[207] ==> F17ZD_main159x.svg ---
---- needs --- F17ZD_main.idv[208] ==> F17ZD_main160x.svg ---
---- needs --- F17ZD_main.idv[209] ==> F17ZD_main161x.svg ---
---- needs --- F17ZD_main.idv[210] ==> F17ZD_main162x.svg ---
---- needs --- F17ZD_main.idv[211] ==> F17ZD_main163x.svg ---
---- needs --- F17ZD_main.idv[212] ==> F17ZD_main164x.svg ---
---- needs --- F17ZD_main.idv[213] ==> F17ZD_main165x.svg ---
+--- needs --- F17ZD_main.idv[46] ==> F17ZD_main24x.svg ---
 Css: #tcolobox-35 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-35 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[215] ==> F17ZD_main166x.svg ---
---- needs --- F17ZD_main.idv[216] ==> F17ZD_main167x.svg ---
---- needs --- F17ZD_main.idv[217] ==> F17ZD_main168x.svg ---
+--- needs --- F17ZD_main.idv[48] ==> F17ZD_main25x.svg ---
+--- needs --- F17ZD_main.idv[49] ==> F17ZD_main26x.svg ---
 Css: #tcolobox-36 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-36 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[219] ==> F17ZD_main169x.svg ---
---- needs --- F17ZD_main.idv[221] ==> F17ZD_main170x.svg ---
---- needs --- F17ZD_main.idv[222] ==> F17ZD_main171x.svg ---
---- needs --- F17ZD_main.idv[223] ==> F17ZD_main172x.svg ---
---- needs --- F17ZD_main.idv[224] ==> F17ZD_main173x.svg ---
---- needs --- F17ZD_main.idv[226] ==> F17ZD_main174x.svg ---
+--- needs --- F17ZD_main.idv[51] ==> F17ZD_main27x.svg ---
 Css: #tcolobox-37 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-37 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[228] ==> F17ZD_main175x.svg ---
---- needs --- F17ZD_main.idv[230] ==> F17ZD_main176x.svg ---
---- needs --- F17ZD_main.idv[231] ==> F17ZD_main177x.svg ---
---- needs --- F17ZD_main.idv[232] ==> F17ZD_main178x.svg ---
-Css: #tcolobox-38 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-38 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-38 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[234] ==> F17ZD_main179x.svg ---
---- needs --- F17ZD_main.idv[236] ==> F17ZD_main180x.svg ---
---- needs --- F17ZD_main.idv[237] ==> F17ZD_main181x.svg ---
 Css: #tcolobox-39 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-39 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[238] ==> F17ZD_main182x.svg ---
---- needs --- F17ZD_main.idv[239] ==> F17ZD_main183x.svg ---
---- needs --- F17ZD_main.idv[240] ==> F17ZD_main184x.svg ---
---- needs --- F17ZD_main.idv[242] ==> F17ZD_main185x.svg ---
---- needs --- F17ZD_main.idv[243] ==> F17ZD_main186x.svg ---
---- needs --- F17ZD_main.idv[244] ==> F17ZD_main187x.svg ---
---- needs --- F17ZD_main.idv[246] ==> F17ZD_main188x.svg ---
---- needs --- F17ZD_main.idv[247] ==> F17ZD_main189x.svg ---
---- needs --- F17ZD_main.idv[249] ==> F17ZD_main190x.svg ---
---- needs --- F17ZD_main.idv[250] ==> F17ZD_main191x.svg ---
---- needs --- F17ZD_main.idv[251] ==> F17ZD_main192x.svg ---
---- needs --- F17ZD_main.idv[252] ==> F17ZD_main193x.svg ---
---- needs --- F17ZD_main.idv[253] ==> F17ZD_main194x.svg ---
---- needs --- F17ZD_main.idv[255] ==> F17ZD_main195x.svg ---
+--- needs --- F17ZD_main.idv[53] ==> F17ZD_main28x.svg ---
 Css: #tcolobox-40 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-40 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[257] ==> F17ZD_main196x.svg ---
---- needs --- F17ZD_main.idv[258] ==> F17ZD_main197x.svg ---
---- needs --- F17ZD_main.idv[259] ==> F17ZD_main198x.svg ---
---- needs --- F17ZD_main.idv[260] ==> F17ZD_main199x.svg ---
---- needs --- F17ZD_main.idv[261] ==> F17ZD_main200x.svg ---
---- needs --- F17ZD_main.idv[262] ==> F17ZD_main201x.svg ---
---- needs --- F17ZD_main.idv[264] ==> F17ZD_main202x.svg ---
-Css: #tcolobox-41 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-41 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-41 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[266] ==> F17ZD_main203x.svg ---
---- needs --- F17ZD_main.idv[267] ==> F17ZD_main204x.svg ---
---- needs --- F17ZD_main.idv[268] ==> F17ZD_main205x.svg ---
---- needs --- F17ZD_main.idv[269] ==> F17ZD_main206x.svg ---
---- needs --- F17ZD_main.idv[270] ==> F17ZD_main207x.svg ---
---- needs --- F17ZD_main.idv[272] ==> F17ZD_main208x.svg ---
---- needs --- F17ZD_main.idv[274] ==> F17ZD_main209x.svg ---
---- needs --- F17ZD_main.idv[276] ==> F17ZD_main210x.svg ---
 Css: #tcolobox-42 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-42 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[278] ==> F17ZD_main211x.svg ---
---- needs --- F17ZD_main.idv[279] ==> F17ZD_main212x.svg ---
---- needs --- F17ZD_main.idv[280] ==> F17ZD_main213x.svg ---
---- needs --- F17ZD_main.idv[281] ==> F17ZD_main214x.svg ---
---- needs --- F17ZD_main.idv[282] ==> F17ZD_main215x.svg ---
---- needs --- F17ZD_main.idv[283] ==> F17ZD_main216x.svg ---
---- needs --- F17ZD_main.idv[285] ==> F17ZD_main217x.svg ---
---- needs --- F17ZD_main.idv[286] ==> F17ZD_main218x.svg ---
---- needs --- F17ZD_main.idv[287] ==> F17ZD_main219x.svg ---
---- needs --- F17ZD_main.idv[288] ==> F17ZD_main220x.svg ---
---- needs --- F17ZD_main.idv[289] ==> F17ZD_main221x.svg ---
---- needs --- F17ZD_main.idv[290] ==> F17ZD_main222x.svg ---
---- needs --- F17ZD_main.idv[291] ==> F17ZD_main223x.svg ---
---- needs --- F17ZD_main.idv[292] ==> F17ZD_main224x.svg ---
---- needs --- F17ZD_main.idv[293] ==> F17ZD_main225x.svg ---
---- needs --- F17ZD_main.idv[294] ==> F17ZD_main226x.svg ---
---- needs --- F17ZD_main.idv[295] ==> F17ZD_main227x.svg ---
---- needs --- F17ZD_main.idv[296] ==> F17ZD_main228x.svg ---
---- needs --- F17ZD_main.idv[297] ==> F17ZD_main229x.svg ---
-Css: #tcolobox-43 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-43 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[299] ==> F17ZD_main230x.svg ---
---- needs --- F17ZD_main.idv[300] ==> F17ZD_main231x.svg ---
-Css: #tcolobox-44 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-43 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-43 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-44 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-44 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[302] ==> F17ZD_main232x.svg ---
---- needs --- F17ZD_main.idv[303] ==> F17ZD_main233x.svg ---
---- needs --- F17ZD_main.idv[304] ==> F17ZD_main234x.svg ---
 Css: #tcolobox-45 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-45 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[306] ==> F17ZD_main235x.svg ---
---- needs --- F17ZD_main.idv[307] ==> F17ZD_main236x.svg ---
---- needs --- F17ZD_main.idv[308] ==> F17ZD_main237x.svg ---
---- needs --- F17ZD_main.idv[309] ==> F17ZD_main238x.svg ---
-Css: #tcolobox-46 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-46 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-47 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-46 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-46 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-47 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-47 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[311] ==> F17ZD_main239x.svg ---
---- needs --- F17ZD_main.idv[312] ==> F17ZD_main240x.svg ---
---- needs --- F17ZD_main.idv[313] ==> F17ZD_main241x.svg ---
---- needs --- F17ZD_main.idv[314] ==> F17ZD_main242x.svg ---
---- needs --- F17ZD_main.idv[315] ==> F17ZD_main243x.svg ---
 Css: #tcolobox-48 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-48 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-49 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-49 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[317] ==> F17ZD_main244x.svg ---
 Css: #tcolobox-50 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-50 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[319] ==> F17ZD_main245x.svg ---
---- needs --- F17ZD_main.idv[320] ==> F17ZD_main246x.svg ---
---- needs --- F17ZD_main.idv[321] ==> F17ZD_main247x.svg ---
---- needs --- F17ZD_main.idv[322] ==> F17ZD_main248x.svg ---
---- needs --- F17ZD_main.idv[323] ==> F17ZD_main249x.svg ---
 Css: #tcolobox-51 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-51 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[325] ==> F17ZD_main250x.svg ---
---- needs --- F17ZD_main.idv[327] ==> F17ZD_main251x.svg ---
-Css: #tcolobox-52 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-52 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[329] ==> F17ZD_main252x.svg ---
---- needs --- F17ZD_main.idv[330] ==> F17ZD_main253x.svg ---
---- needs --- F17ZD_main.idv[331] ==> F17ZD_main254x.svg ---
---- needs --- F17ZD_main.idv[332] ==> F17ZD_main255x.svg ---
---- needs --- F17ZD_main.idv[333] ==> F17ZD_main256x.svg ---
---- needs --- F17ZD_main.idv[334] ==> F17ZD_main257x.svg ---
-Css: #tcolobox-53 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-52 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-52 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-53 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-53 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[336] ==> F17ZD_main258x.svg ---
---- needs --- F17ZD_main.idv[337] ==> F17ZD_main259x.svg ---
---- needs --- F17ZD_main.idv[338] ==> F17ZD_main260x.svg ---
-Css: #tcolobox-54 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-54 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-54 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[339] ==> F17ZD_main261x.svg ---
---- needs --- F17ZD_main.idv[340] ==> F17ZD_main262x.svg ---
---- needs --- F17ZD_main.idv[341] ==> F17ZD_main263x.svg ---
---- needs --- F17ZD_main.idv[342] ==> F17ZD_main264x.svg ---
---- needs --- F17ZD_main.idv[343] ==> F17ZD_main265x.svg ---
---- needs --- F17ZD_main.idv[344] ==> F17ZD_main266x.svg ---
---- needs --- F17ZD_main.idv[345] ==> F17ZD_main267x.svg ---
---- needs --- F17ZD_main.idv[346] ==> F17ZD_main268x.svg ---
---- needs --- F17ZD_main.idv[347] ==> F17ZD_main269x.svg ---
---- needs --- F17ZD_main.idv[349] ==> F17ZD_main270x.svg ---
---- needs --- F17ZD_main.idv[350] ==> F17ZD_main271x.svg ---
---- needs --- F17ZD_main.idv[351] ==> F17ZD_main272x.svg ---
 Css: #tcolobox-55 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-55 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[353] ==> F17ZD_main273x.svg ---
---- needs --- F17ZD_main.idv[354] ==> F17ZD_main274x.svg ---
---- needs --- F17ZD_main.idv[355] ==> F17ZD_main275x.svg ---
---- needs --- F17ZD_main.idv[356] ==> F17ZD_main276x.svg ---
 Css: #tcolobox-56 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-56 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[358] ==> F17ZD_main277x.svg ---
---- needs --- F17ZD_main.idv[359] ==> F17ZD_main278x.svg ---
---- needs --- F17ZD_main.idv[361] ==> F17ZD_main279x.svg ---
-Css: #tcolobox-57 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-57 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-57 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[363] ==> F17ZD_main280x.svg ---
---- needs --- F17ZD_main.idv[365] ==> F17ZD_main281x.svg ---
---- needs --- F17ZD_main.idv[366] ==> F17ZD_main282x.svg ---
---- needs --- F17ZD_main.idv[367] ==> F17ZD_main283x.svg ---
---- needs --- F17ZD_main.idv[368] ==> F17ZD_main284x.svg ---
---- needs --- F17ZD_main.idv[369] ==> F17ZD_main285x.svg ---
---- needs --- F17ZD_main.idv[370] ==> F17ZD_main286x.svg ---
-Css: #tcolobox-58 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-58 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[372] ==> F17ZD_main287x.svg ---
-Css: #tcolobox-59 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-58 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-58 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-59 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-59 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[373] ==> F17ZD_main288x.svg ---
---- needs --- F17ZD_main.idv[374] ==> F17ZD_main289x.svg ---
---- needs --- F17ZD_main.idv[375] ==> F17ZD_main290x.svg ---
---- needs --- F17ZD_main.idv[377] ==> F17ZD_main291x.svg ---
---- needs --- F17ZD_main.idv[379] ==> F17ZD_main292x.svg ---
---- needs --- F17ZD_main.idv[380] ==> F17ZD_main293x.svg ---
---- needs --- F17ZD_main.idv[382] ==> F17ZD_main294x.svg ---
---- needs --- F17ZD_main.idv[383] ==> F17ZD_main295x.svg ---
-Css: #tcolobox-60 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-60 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[385] ==> F17ZD_main296x.svg ---
---- needs --- F17ZD_main.idv[386] ==> F17ZD_main297x.svg ---
---- needs --- F17ZD_main.idv[387] ==> F17ZD_main298x.svg ---
---- needs --- F17ZD_main.idv[388] ==> F17ZD_main299x.svg ---
+Css: #tcolobox-60 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-60 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[55] ==> F17ZD_main29x.svg ---
 Css: #tcolobox-61 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-61 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-62 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-62 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[390] ==> F17ZD_main300x.svg ---
---- needs --- F17ZD_main.idv[391] ==> F17ZD_main301x.svg ---
---- needs --- F17ZD_main.idv[392] ==> F17ZD_main302x.svg ---
---- needs --- F17ZD_main.idv[393] ==> F17ZD_main303x.svg ---
-Css: #tcolobox-63 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-63 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-64 .tcolorbox-title{color: #000000; background-color: #404040;}
+--- needs --- F17ZD_main.idv[57] ==> F17ZD_main30x.svg ---
+Css: #tcolobox-63 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-63 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-64 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-64 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[395] ==> F17ZD_main304x.svg ---
---- needs --- F17ZD_main.idv[396] ==> F17ZD_main305x.svg ---
-Css: #tcolobox-65 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-65 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[398] ==> F17ZD_main306x.svg ---
---- needs --- F17ZD_main.idv[399] ==> F17ZD_main307x.svg ---
---- needs --- F17ZD_main.idv[400] ==> F17ZD_main308x.svg ---
---- needs --- F17ZD_main.idv[401] ==> F17ZD_main309x.svg ---
---- needs --- F17ZD_main.idv[403] ==> F17ZD_main310x.svg ---
---- needs --- F17ZD_main.idv[404] ==> F17ZD_main311x.svg ---
---- needs --- F17ZD_main.idv[405] ==> F17ZD_main312x.svg ---
---- needs --- F17ZD_main.idv[406] ==> F17ZD_main313x.svg ---
---- needs --- F17ZD_main.idv[407] ==> F17ZD_main314x.svg ---
---- needs --- F17ZD_main.idv[408] ==> F17ZD_main315x.svg ---
---- needs --- F17ZD_main.idv[409] ==> F17ZD_main316x.svg ---
---- needs --- F17ZD_main.idv[410] ==> F17ZD_main317x.svg ---
---- needs --- F17ZD_main.idv[412] ==> F17ZD_main318x.svg ---
---- needs --- F17ZD_main.idv[413] ==> F17ZD_main319x.svg ---
---- needs --- F17ZD_main.idv[414] ==> F17ZD_main320x.svg ---
---- needs --- F17ZD_main.idv[415] ==> F17ZD_main321x.svg ---
---- needs --- F17ZD_main.idv[416] ==> F17ZD_main322x.svg ---
---- needs --- F17ZD_main.idv[417] ==> F17ZD_main323x.svg ---
---- needs --- F17ZD_main.idv[418] ==> F17ZD_main324x.svg ---
---- needs --- F17ZD_main.idv[419] ==> F17ZD_main325x.svg ---
---- needs --- F17ZD_main.idv[420] ==> F17ZD_main326x.svg ---
---- needs --- F17ZD_main.idv[421] ==> F17ZD_main327x.svg ---
---- needs --- F17ZD_main.idv[422] ==> F17ZD_main328x.svg ---
---- needs --- F17ZD_main.idv[423] ==> F17ZD_main329x.svg ---
---- needs --- F17ZD_main.idv[424] ==> F17ZD_main330x.svg ---
---- needs --- F17ZD_main.idv[425] ==> F17ZD_main331x.svg ---
+Css: #tcolobox-65 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-65 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-66 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-66 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[427] ==> F17ZD_main332x.svg ---
---- needs --- F17ZD_main.idv[428] ==> F17ZD_main333x.svg ---
---- needs --- F17ZD_main.idv[430] ==> F17ZD_main334x.svg ---
---- needs --- F17ZD_main.idv[432] ==> F17ZD_main335x.svg ---
---- needs --- F17ZD_main.idv[433] ==> F17ZD_main336x.svg ---
---- needs --- F17ZD_main.idv[434] ==> F17ZD_main337x.svg ---
---- needs --- F17ZD_main.idv[435] ==> F17ZD_main338x.svg ---
---- needs --- F17ZD_main.idv[436] ==> F17ZD_main339x.svg ---
---- needs --- F17ZD_main.idv[437] ==> F17ZD_main340x.svg ---
---- needs --- F17ZD_main.idv[438] ==> F17ZD_main341x.svg ---
---- needs --- F17ZD_main.idv[439] ==> F17ZD_main342x.svg ---
---- needs --- F17ZD_main.idv[440] ==> F17ZD_main343x.svg ---
---- needs --- F17ZD_main.idv[441] ==> F17ZD_main344x.svg ---
---- needs --- F17ZD_main.idv[442] ==> F17ZD_main345x.svg ---
---- needs --- F17ZD_main.idv[443] ==> F17ZD_main346x.svg ---
---- needs --- F17ZD_main.idv[444] ==> F17ZD_main347x.svg ---
-Css: #tcolobox-67 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-67 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-67 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-68 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-68 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-69 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-69 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-70 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-70 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: .columns-2 p:first-child { margin-top: 0em; }
 Css: .columns-2{-moz-column-count:2; -webkit-column-count:2; column-count:2; -moz-column-gap: 10.0pt; -webkit-column-gap: 10.0pt; column-gap: 10.0pt; -moz-column-rule-width: 0.0pt; -webkit-column-rule-width: 0.0pt; column-rule-rule-width: 0.0pt; -moz-column-rule-color: #555;; -webkit-column-rule-color: #555;; column-rule-color: #555;; -moz-column-rule-style: outset; -webkit-column-rule-style: outset; column-rule-style: outset; -moz-column-fill: balance; -webkit-column-fill: balance; column-fill: balance; }
---- needs --- F17ZD_main.idv[446] ==> F17ZD_main348x.svg ---
---- needs --- F17ZD_main.idv[448] ==> F17ZD_main350x.svg ---
---- needs --- F17ZD_main.idv[450] ==> F17ZD_main351x.svg ---
---- needs --- F17ZD_main.idv[452] ==> F17ZD_main353x.svg ---
---- needs --- F17ZD_main.idv[454] ==> F17ZD_main354x.svg ---
---- needs --- F17ZD_main.idv[456] ==> F17ZD_main355x.svg ---
---- needs --- F17ZD_main.idv[458] ==> F17ZD_main356x.svg ---
---- needs --- F17ZD_main.idv[459] ==> F17ZD_main357x.svg ---
-Css: #tcolobox-68 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-68 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[461] ==> F17ZD_main358x.svg ---
---- needs --- F17ZD_main.idv[462] ==> F17ZD_main359x.svg ---
---- needs --- F17ZD_main.idv[463] ==> F17ZD_main360x.svg ---
---- needs --- F17ZD_main.idv[464] ==> F17ZD_main361x.svg ---
---- needs --- F17ZD_main.idv[465] ==> F17ZD_main362x.svg ---
---- needs --- F17ZD_main.idv[466] ==> F17ZD_main363x.svg ---
---- needs --- F17ZD_main.idv[468] ==> F17ZD_main364x.svg ---
---- needs --- F17ZD_main.idv[469] ==> F17ZD_main365x.svg ---
---- needs --- F17ZD_main.idv[470] ==> F17ZD_main366x.svg ---
---- needs --- F17ZD_main.idv[471] ==> F17ZD_main367x.svg ---
---- needs --- F17ZD_main.idv[472] ==> F17ZD_main368x.svg ---
---- needs --- F17ZD_main.idv[473] ==> F17ZD_main369x.svg ---
---- needs --- F17ZD_main.idv[475] ==> F17ZD_main370x.svg ---
---- needs --- F17ZD_main.idv[476] ==> F17ZD_main371x.svg ---
---- needs --- F17ZD_main.idv[477] ==> F17ZD_main372x.svg ---
---- needs --- F17ZD_main.idv[478] ==> F17ZD_main373x.svg ---
---- needs --- F17ZD_main.idv[480] ==> F17ZD_main374x.svg ---
---- needs --- F17ZD_main.idv[481] ==> F17ZD_main375x.svg ---
---- needs --- F17ZD_main.idv[483] ==> F17ZD_main376x.svg ---
---- needs --- F17ZD_main.idv[484] ==> F17ZD_main377x.svg ---
---- needs --- F17ZD_main.idv[485] ==> F17ZD_main378x.svg ---
---- needs --- F17ZD_main.idv[486] ==> F17ZD_main379x.svg ---
---- needs --- F17ZD_main.idv[487] ==> F17ZD_main380x.svg ---
---- needs --- F17ZD_main.idv[488] ==> F17ZD_main381x.svg ---
---- needs --- F17ZD_main.idv[489] ==> F17ZD_main382x.svg ---
---- needs --- F17ZD_main.idv[490] ==> F17ZD_main383x.svg ---
---- needs --- F17ZD_main.idv[492] ==> F17ZD_main384x.svg ---
---- needs --- F17ZD_main.idv[493] ==> F17ZD_main385x.svg ---
---- needs --- F17ZD_main.idv[495] ==> F17ZD_main386x.svg ---
---- needs --- F17ZD_main.idv[496] ==> F17ZD_main387x.svg ---
---- needs --- F17ZD_main.idv[497] ==> F17ZD_main388x.svg ---
-Css: #tcolobox-69 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-69 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[499] ==> F17ZD_main389x.svg ---
---- needs --- F17ZD_main.idv[500] ==> F17ZD_main390x.svg ---
-Css: #tcolobox-70 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-70 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[502] ==> F17ZD_main391x.svg ---
---- needs --- F17ZD_main.idv[504] ==> F17ZD_main392x.svg ---
---- needs --- F17ZD_main.idv[506] ==> F17ZD_main393x.svg ---
---- needs --- F17ZD_main.idv[507] ==> F17ZD_main394x.svg ---
---- needs --- F17ZD_main.idv[508] ==> F17ZD_main395x.svg ---
---- needs --- F17ZD_main.idv[509] ==> F17ZD_main396x.svg ---
---- needs --- F17ZD_main.idv[510] ==> F17ZD_main397x.svg ---
---- needs --- F17ZD_main.idv[511] ==> F17ZD_main398x.svg ---
---- needs --- F17ZD_main.idv[513] ==> F17ZD_main399x.svg ---
---- needs --- F17ZD_main.idv[514] ==> F17ZD_main400x.svg ---
---- needs --- F17ZD_main.idv[515] ==> F17ZD_main401x.svg ---
---- needs --- F17ZD_main.idv[516] ==> F17ZD_main402x.svg ---
---- needs --- F17ZD_main.idv[517] ==> F17ZD_main403x.svg ---
---- needs --- F17ZD_main.idv[518] ==> F17ZD_main404x.svg ---
---- needs --- F17ZD_main.idv[519] ==> F17ZD_main405x.svg ---
---- needs --- F17ZD_main.idv[520] ==> F17ZD_main406x.svg ---
---- needs --- F17ZD_main.idv[521] ==> F17ZD_main407x.svg ---
---- needs --- F17ZD_main.idv[522] ==> F17ZD_main408x.svg ---
---- needs --- F17ZD_main.idv[523] ==> F17ZD_main409x.svg ---
---- needs --- F17ZD_main.idv[525] ==> F17ZD_main410x.svg ---
---- needs --- F17ZD_main.idv[527] ==> F17ZD_main411x.svg ---
---- needs --- F17ZD_main.idv[528] ==> F17ZD_main412x.svg ---
---- needs --- F17ZD_main.idv[529] ==> F17ZD_main413x.svg ---
---- needs --- F17ZD_main.idv[530] ==> F17ZD_main414x.svg ---
---- needs --- F17ZD_main.idv[532] ==> F17ZD_main415x.svg ---
---- needs --- F17ZD_main.idv[533] ==> F17ZD_main416x.svg ---
---- needs --- F17ZD_main.idv[534] ==> F17ZD_main417x.svg ---
---- needs --- F17ZD_main.idv[535] ==> F17ZD_main418x.svg ---
---- needs --- F17ZD_main.idv[536] ==> F17ZD_main419x.svg ---
---- needs --- F17ZD_main.idv[537] ==> F17ZD_main420x.svg ---
---- needs --- F17ZD_main.idv[538] ==> F17ZD_main421x.svg ---
---- needs --- F17ZD_main.idv[539] ==> F17ZD_main422x.svg ---
---- needs --- F17ZD_main.idv[540] ==> F17ZD_main423x.svg ---
---- needs --- F17ZD_main.idv[541] ==> F17ZD_main424x.svg ---
---- needs --- F17ZD_main.idv[542] ==> F17ZD_main425x.svg ---
---- needs --- F17ZD_main.idv[543] ==> F17ZD_main426x.svg ---
---- needs --- F17ZD_main.idv[544] ==> F17ZD_main427x.svg ---
---- needs --- F17ZD_main.idv[545] ==> F17ZD_main428x.svg ---
---- needs --- F17ZD_main.idv[546] ==> F17ZD_main429x.svg ---
---- needs --- F17ZD_main.idv[548] ==> F17ZD_main430x.svg ---
---- needs --- F17ZD_main.idv[549] ==> F17ZD_main431x.svg ---
---- needs --- F17ZD_main.idv[550] ==> F17ZD_main432x.svg ---
---- needs --- F17ZD_main.idv[551] ==> F17ZD_main433x.svg ---
---- needs --- F17ZD_main.idv[553] ==> F17ZD_main434x.svg ---
+--- needs --- F17ZD_main.idv[59] ==> F17ZD_main31x.svg ---
+--- needs --- F17ZD_main.idv[61] ==> F17ZD_main32x.svg ---
+--- needs --- F17ZD_main.idv[63] ==> F17ZD_main33x.svg ---
+--- needs --- F17ZD_main.idv[65] ==> F17ZD_main34x.svg ---
 Css: #tcolobox-71 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-71 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[555] ==> F17ZD_main435x.svg ---
---- needs --- F17ZD_main.idv[557] ==> F17ZD_main436x.svg ---
---- needs --- F17ZD_main.idv[558] ==> F17ZD_main437x.svg ---
---- needs --- F17ZD_main.idv[559] ==> F17ZD_main438x.svg ---
---- needs --- F17ZD_main.idv[560] ==> F17ZD_main439x.svg ---
---- needs --- F17ZD_main.idv[561] ==> F17ZD_main440x.svg ---
---- needs --- F17ZD_main.idv[563] ==> F17ZD_main441x.svg ---
---- needs --- F17ZD_main.idv[564] ==> F17ZD_main442x.svg ---
---- needs --- F17ZD_main.idv[565] ==> F17ZD_main443x.svg ---
---- needs --- F17ZD_main.idv[566] ==> F17ZD_main444x.svg ---
 Css: #tcolobox-72 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-72 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[567] ==> F17ZD_main445x.svg ---
---- needs --- F17ZD_main.idv[568] ==> F17ZD_main446x.svg ---
---- needs --- F17ZD_main.idv[569] ==> F17ZD_main447x.svg ---
---- needs --- F17ZD_main.idv[570] ==> F17ZD_main448x.svg ---
---- needs --- F17ZD_main.idv[571] ==> F17ZD_main449x.svg ---
+--- needs --- F17ZD_main.idv[67] ==> F17ZD_main35x.svg ---
 Css: #tcolobox-73 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-73 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[573] ==> F17ZD_main450x.svg ---
---- needs --- F17ZD_main.idv[574] ==> F17ZD_main451x.svg ---
---- needs --- F17ZD_main.idv[575] ==> F17ZD_main452x.svg ---
---- needs --- F17ZD_main.idv[576] ==> F17ZD_main453x.svg ---
---- needs --- F17ZD_main.idv[577] ==> F17ZD_main454x.svg ---
---- needs --- F17ZD_main.idv[578] ==> F17ZD_main455x.svg ---
---- needs --- F17ZD_main.idv[579] ==> F17ZD_main456x.svg ---
---- needs --- F17ZD_main.idv[580] ==> F17ZD_main457x.svg ---
-File: julia_c_minus1.png
-Css: #tcolobox-74 .tcolorbox-title{color: #545499; background-color: #404040;}
+--- needs --- F17ZD_main.idv[69] ==> F17ZD_main36x.svg ---
+--- needs --- F17ZD_main.idv[71] ==> F17ZD_main37x.svg ---
+--- needs --- F17ZD_main.idv[73] ==> F17ZD_main38x.svg ---
+--- needs --- F17ZD_main.idv[75] ==> F17ZD_main39x.svg ---
+--- needs --- F17ZD_main.idv[76] ==> F17ZD_main40x.svg ---
+Css: #tcolobox-74 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-74 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[582] ==> F17ZD_main458x.svg ---
---- needs --- F17ZD_main.idv[583] ==> F17ZD_main459x.svg ---
---- needs --- F17ZD_main.idv[584] ==> F17ZD_main460x.svg ---
---- needs --- F17ZD_main.idv[585] ==> F17ZD_main461x.svg ---
---- needs --- F17ZD_main.idv[586] ==> F17ZD_main462x.svg ---
---- needs --- F17ZD_main.idv[587] ==> F17ZD_main463x.svg ---
---- needs --- F17ZD_main.idv[588] ==> F17ZD_main464x.svg ---
---- needs --- F17ZD_main.idv[589] ==> F17ZD_main465x.svg ---
---- needs --- F17ZD_main.idv[590] ==> F17ZD_main466x.svg ---
-File: mandelbrot.png
---- needs --- F17ZD_main.idv[592] ==> F17ZD_main467x.svg ---
-File: Broom_Bridge.jpg
-Css: #tcolobox-75 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-75 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-75 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[594] ==> F17ZD_main468x.svg ---
---- needs --- F17ZD_main.idv[595] ==> F17ZD_main469x.svg ---
-Css: #TBL-2-1{border-right:1px solid black;}
---- needs --- F17ZD_main.idv[597] ==> F17ZD_main470x.svg ---
---- needs --- F17ZD_main.idv[598] ==> F17ZD_main471x.svg ---
-Css: #tcolobox-76 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-76 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-76 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[600] ==> F17ZD_main472x.svg ---
---- needs --- F17ZD_main.idv[601] ==> F17ZD_main473x.svg ---
-Css: #tcolobox-77 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-77 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-77 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[603] ==> F17ZD_main474x.svg ---
-Css: #tcolobox-78 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+File: julia_c_minus1.png
+Css: #tcolobox-78 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-78 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[604] ==> F17ZD_main475x.svg ---
---- needs --- F17ZD_main.idv[606] ==> F17ZD_main476x.svg ---
---- needs --- F17ZD_main.idv[607] ==> F17ZD_main477x.svg ---
-Css: #tcolobox-79 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-79 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[609] ==> F17ZD_main478x.svg ---
---- needs --- F17ZD_main.idv[611] ==> F17ZD_main479x.svg ---
---- needs --- F17ZD_main.idv[613] ==> F17ZD_main480x.svg ---
+File: mandelbrot.png
+File: Broom_Bridge.jpg
+Css: #tcolobox-79 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-79 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[78] ==> F17ZD_main41x.svg ---
 Css: #tcolobox-80 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-80 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[615] ==> F17ZD_main481x.svg ---
 Css: #tcolobox-81 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-81 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[616] ==> F17ZD_main482x.svg ---
---- needs --- F17ZD_main.idv[618] ==> F17ZD_main483x.svg ---
---- needs --- F17ZD_main.idv[620] ==> F17ZD_main484x.svg ---
---- needs --- F17ZD_main.idv[622] ==> F17ZD_main485x.svg ---
---- needs --- F17ZD_main.idv[623] ==> F17ZD_main486x.svg ---
---- needs --- F17ZD_main.idv[624] ==> F17ZD_main487x.svg ---
---- needs --- F17ZD_main.idv[625] ==> F17ZD_main488x.svg ---
---- needs --- F17ZD_main.idv[626] ==> F17ZD_main489x.svg ---
---- needs --- F17ZD_main.idv[627] ==> F17ZD_main490x.svg ---
 Css: #tcolobox-82 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-82 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-83 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-83 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-83 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-84 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-84 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[629] ==> F17ZD_main491x.svg ---
---- needs --- F17ZD_main.idv[631] ==> F17ZD_main492x.svg ---
-Css: #tcolobox-85 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-84 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-84 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-85 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-85 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-86 .tcolorbox-title{color: #000000; background-color: #404040;}
+--- needs --- F17ZD_main.idv[80] ==> F17ZD_main42x.svg ---
+Css: #tcolobox-86 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-86 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[633] ==> F17ZD_main493x.svg ---
---- needs --- F17ZD_main.idv[635] ==> F17ZD_main494x.svg ---
 Css: #tcolobox-87 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-87 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[637] ==> F17ZD_main495x.svg ---
---- needs --- F17ZD_main.idv[638] ==> F17ZD_main496x.svg ---
---- needs --- F17ZD_main.idv[640] ==> F17ZD_main497x.svg ---
---- needs --- F17ZD_main.idv[641] ==> F17ZD_main498x.svg ---
 Css: #tcolobox-88 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-88 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[643] ==> F17ZD_main499x.svg ---
---- needs --- F17ZD_main.idv[645] ==> F17ZD_main500x.svg ---
-Css: #tcolobox-89 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-89 .tcolorbox-title{color: #000000; background-color: #404040;}
 Css: #tcolobox-89 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[646] ==> F17ZD_main501x.svg ---
 Css: #tcolobox-90 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-90 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[648] ==> F17ZD_main502x.svg ---
---- needs --- F17ZD_main.idv[649] ==> F17ZD_main503x.svg ---
---- needs --- F17ZD_main.idv[650] ==> F17ZD_main504x.svg ---
---- needs --- F17ZD_main.idv[651] ==> F17ZD_main505x.svg ---
---- needs --- F17ZD_main.idv[652] ==> F17ZD_main506x.svg ---
 Css: #tcolobox-91 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-91 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[653] ==> F17ZD_main507x.svg ---
---- needs --- F17ZD_main.idv[655] ==> F17ZD_main508x.svg ---
---- needs --- F17ZD_main.idv[656] ==> F17ZD_main509x.svg ---
---- needs --- F17ZD_main.idv[657] ==> F17ZD_main510x.svg ---
---- needs --- F17ZD_main.idv[659] ==> F17ZD_main511x.svg ---
+--- needs --- F17ZD_main.idv[82] ==> F17ZD_main43x.svg ---
 Css: #tcolobox-92 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-92 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[661] ==> F17ZD_main512x.svg ---
---- needs --- F17ZD_main.idv[663] ==> F17ZD_main513x.svg ---
---- needs --- F17ZD_main.idv[664] ==> F17ZD_main514x.svg ---
---- needs --- F17ZD_main.idv[665] ==> F17ZD_main515x.svg ---
---- needs --- F17ZD_main.idv[666] ==> F17ZD_main516x.svg ---
---- needs --- F17ZD_main.idv[667] ==> F17ZD_main517x.svg ---
+--- needs --- F17ZD_main.idv[84] ==> F17ZD_main44x.svg ---
+--- needs --- F17ZD_main.idv[86] ==> F17ZD_main45x.svg ---
 Css: #tcolobox-93 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-93 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[669] ==> F17ZD_main518x.svg ---
-Css: #tcolobox-94 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-94 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[671] ==> F17ZD_main519x.svg ---
-Css: #tcolobox-95 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-94 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-94 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-95 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-95 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[672] ==> F17ZD_main520x.svg ---
---- needs --- F17ZD_main.idv[673] ==> F17ZD_main521x.svg ---
-Css: #tcolobox-96 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-96 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-96 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[675] ==> F17ZD_main522x.svg ---
---- needs --- F17ZD_main.idv[676] ==> F17ZD_main523x.svg ---
---- needs --- F17ZD_main.idv[677] ==> F17ZD_main524x.svg ---
 Css: #tcolobox-97 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-97 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[679] ==> F17ZD_main525x.svg ---
---- needs --- F17ZD_main.idv[680] ==> F17ZD_main526x.svg ---
---- needs --- F17ZD_main.idv[681] ==> F17ZD_main527x.svg ---
---- needs --- F17ZD_main.idv[683] ==> F17ZD_main528x.svg ---
---- needs --- F17ZD_main.idv[684] ==> F17ZD_main529x.svg ---
---- needs --- F17ZD_main.idv[685] ==> F17ZD_main530x.svg ---
---- needs --- F17ZD_main.idv[687] ==> F17ZD_main531x.svg ---
---- needs --- F17ZD_main.idv[688] ==> F17ZD_main532x.svg ---
---- needs --- F17ZD_main.idv[689] ==> F17ZD_main533x.svg ---
---- needs --- F17ZD_main.idv[690] ==> F17ZD_main534x.svg ---
 Css: #tcolobox-98 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-98 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[692] ==> F17ZD_main535x.svg ---
---- needs --- F17ZD_main.idv[694] ==> F17ZD_main536x.svg ---
---- needs --- F17ZD_main.idv[695] ==> F17ZD_main537x.svg ---
---- needs --- F17ZD_main.idv[696] ==> F17ZD_main538x.svg ---
-Css: #tcolobox-99 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-99 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[698] ==> F17ZD_main539x.svg ---
---- needs --- F17ZD_main.idv[699] ==> F17ZD_main540x.svg ---
---- needs --- F17ZD_main.idv[700] ==> F17ZD_main541x.svg ---
---- needs --- F17ZD_main.idv[701] ==> F17ZD_main542x.svg ---
---- needs --- F17ZD_main.idv[703] ==> F17ZD_main543x.svg ---
---- needs --- F17ZD_main.idv[704] ==> F17ZD_main544x.svg ---
---- needs --- F17ZD_main.idv[705] ==> F17ZD_main545x.svg ---
---- needs --- F17ZD_main.idv[706] ==> F17ZD_main546x.svg ---
---- needs --- F17ZD_main.idv[707] ==> F17ZD_main547x.svg ---
---- needs --- F17ZD_main.idv[708] ==> F17ZD_main548x.svg ---
-Css: #tcolobox-100 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-100 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-99 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-99 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-100 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-100 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-101 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-101 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-102 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-102 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[710] ==> F17ZD_main549x.svg ---
---- needs --- F17ZD_main.idv[712] ==> F17ZD_main550x.svg ---
-Css: #tcolobox-103 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-103 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-104 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-104 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[714] ==> F17ZD_main551x.svg ---
---- needs --- F17ZD_main.idv[716] ==> F17ZD_main552x.svg ---
---- needs --- F17ZD_main.idv[717] ==> F17ZD_main553x.svg ---
-Css: #tcolobox-105 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-105 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[719] ==> F17ZD_main554x.svg ---
---- needs --- F17ZD_main.idv[720] ==> F17ZD_main555x.svg ---
-Css: #tcolobox-106 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-106 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[722] ==> F17ZD_main556x.svg ---
---- needs --- F17ZD_main.idv[724] ==> F17ZD_main557x.svg ---
---- needs --- F17ZD_main.idv[725] ==> F17ZD_main558x.svg ---
---- needs --- F17ZD_main.idv[726] ==> F17ZD_main559x.svg ---
---- needs --- F17ZD_main.idv[728] ==> F17ZD_main560x.svg ---
-Css: #tcolobox-107 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-107 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[730] ==> F17ZD_main561x.svg ---
---- needs --- F17ZD_main.idv[731] ==> F17ZD_main562x.svg ---
---- needs --- F17ZD_main.idv[732] ==> F17ZD_main563x.svg ---
---- needs --- F17ZD_main.idv[734] ==> F17ZD_main564x.svg ---
---- needs --- F17ZD_main.idv[735] ==> F17ZD_main565x.svg ---
---- needs --- F17ZD_main.idv[737] ==> F17ZD_main566x.svg ---
+Css: #tcolobox-102 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-102 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-103 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-103 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-104 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-104 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-105 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-105 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-106 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-106 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-107 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-107 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-108 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-108 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-109 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-109 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-110 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-110 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[739] ==> F17ZD_main567x.svg ---
-Css: #tcolobox-111 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-111 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[741] ==> F17ZD_main568x.svg ---
---- needs --- F17ZD_main.idv[742] ==> F17ZD_main569x.svg ---
---- needs --- F17ZD_main.idv[744] ==> F17ZD_main570x.svg ---
---- needs --- F17ZD_main.idv[745] ==> F17ZD_main571x.svg ---
---- needs --- F17ZD_main.idv[747] ==> F17ZD_main572x.svg ---
---- needs --- F17ZD_main.idv[748] ==> F17ZD_main573x.svg ---
---- needs --- F17ZD_main.idv[749] ==> F17ZD_main574x.svg ---
---- needs --- F17ZD_main.idv[751] ==> F17ZD_main575x.svg ---
---- needs --- F17ZD_main.idv[752] ==> F17ZD_main576x.svg ---
---- needs --- F17ZD_main.idv[754] ==> F17ZD_main577x.svg ---
---- needs --- F17ZD_main.idv[756] ==> F17ZD_main578x.svg ---
---- needs --- F17ZD_main.idv[757] ==> F17ZD_main579x.svg ---
---- needs --- F17ZD_main.idv[758] ==> F17ZD_main580x.svg ---
---- needs --- F17ZD_main.idv[759] ==> F17ZD_main581x.svg ---
---- needs --- F17ZD_main.idv[761] ==> F17ZD_main582x.svg ---
---- needs --- F17ZD_main.idv[762] ==> F17ZD_main583x.svg ---
-Css: #tcolobox-112 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-112 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[764] ==> F17ZD_main584x.svg ---
---- needs --- F17ZD_main.idv[765] ==> F17ZD_main585x.svg ---
---- needs --- F17ZD_main.idv[767] ==> F17ZD_main586x.svg ---
-Css: #tcolobox-113 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-113 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[769] ==> F17ZD_main587x.svg ---
---- needs --- F17ZD_main.idv[771] ==> F17ZD_main588x.svg ---
-Css: #tcolobox-114 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-114 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[773] ==> F17ZD_main589x.svg ---
+Css: #tcolobox-110 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-110 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-111 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-111 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-112 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-112 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-113 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-113 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-114 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-114 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+--- needs --- F17ZD_main.idv[88] ==> F17ZD_main46x.svg ---
+--- needs --- F17ZD_main.idv[89] ==> F17ZD_main47x.svg ---
 Css: #tcolobox-115 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-115 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[775] ==> F17ZD_main590x.svg ---
---- needs --- F17ZD_main.idv[777] ==> F17ZD_main591x.svg ---
---- needs --- F17ZD_main.idv[778] ==> F17ZD_main592x.svg ---
 Css: #tcolobox-116 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-116 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-117 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-117 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-117 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-118 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-118 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-119 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-119 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-120 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-120 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[780] ==> F17ZD_main593x.svg ---
---- needs --- F17ZD_main.idv[782] ==> F17ZD_main594x.svg ---
---- needs --- F17ZD_main.idv[784] ==> F17ZD_main595x.svg ---
---- needs --- F17ZD_main.idv[785] ==> F17ZD_main596x.svg ---
-Css: #tcolobox-121 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-121 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-122 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-122 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[787] ==> F17ZD_main597x.svg ---
+Css: #tcolobox-118 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-118 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-119 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-119 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-120 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-120 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-121 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-121 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-122 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-122 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-123 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-123 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[789] ==> F17ZD_main598x.svg ---
-Css: #tcolobox-124 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-124 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[791] ==> F17ZD_main599x.svg ---
---- needs --- F17ZD_main.idv[792] ==> F17ZD_main600x.svg ---
-Css: #tcolobox-125 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-125 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[794] ==> F17ZD_main601x.svg ---
---- needs --- F17ZD_main.idv[795] ==> F17ZD_main602x.svg ---
---- needs --- F17ZD_main.idv[797] ==> F17ZD_main603x.svg ---
---- needs --- F17ZD_main.idv[798] ==> F17ZD_main604x.svg ---
-Css: #tcolobox-126 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-126 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[800] ==> F17ZD_main605x.svg ---
---- needs --- F17ZD_main.idv[801] ==> F17ZD_main606x.svg ---
---- needs --- F17ZD_main.idv[803] ==> F17ZD_main607x.svg ---
+Css: #tcolobox-124 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-124 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-125 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-125 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-126 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-126 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-127 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-127 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[805] ==> F17ZD_main608x.svg ---
---- needs --- F17ZD_main.idv[807] ==> F17ZD_main609x.svg ---
---- needs --- F17ZD_main.idv[809] ==> F17ZD_main610x.svg ---
---- needs --- F17ZD_main.idv[810] ==> F17ZD_main611x.svg ---
---- needs --- F17ZD_main.idv[812] ==> F17ZD_main612x.svg ---
---- needs --- F17ZD_main.idv[813] ==> F17ZD_main613x.svg ---
---- needs --- F17ZD_main.idv[814] ==> F17ZD_main614x.svg ---
-Css: #tcolobox-128 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-128 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[816] ==> F17ZD_main615x.svg ---
---- needs --- F17ZD_main.idv[817] ==> F17ZD_main616x.svg ---
-Css: #tcolobox-129 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-129 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[818] ==> F17ZD_main617x.svg ---
---- needs --- F17ZD_main.idv[819] ==> F17ZD_main618x.svg ---
---- needs --- F17ZD_main.idv[821] ==> F17ZD_main619x.svg ---
---- needs --- F17ZD_main.idv[822] ==> F17ZD_main620x.svg ---
---- needs --- F17ZD_main.idv[823] ==> F17ZD_main621x.svg ---
---- needs --- F17ZD_main.idv[824] ==> F17ZD_main622x.svg ---
---- needs --- F17ZD_main.idv[826] ==> F17ZD_main623x.svg ---
-Css: #tcolobox-130 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-130 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[828] ==> F17ZD_main624x.svg ---
---- needs --- F17ZD_main.idv[829] ==> F17ZD_main625x.svg ---
---- needs --- F17ZD_main.idv[830] ==> F17ZD_main626x.svg ---
-Css: #tcolobox-131 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-131 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[832] ==> F17ZD_main627x.svg ---
-Css: #tcolobox-132 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-128 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-128 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-129 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-129 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-130 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-130 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-131 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-131 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-132 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-132 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[834] ==> F17ZD_main628x.svg ---
---- needs --- F17ZD_main.idv[836] ==> F17ZD_main629x.svg ---
-Css: #tcolobox-133 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-133 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[838] ==> F17ZD_main630x.svg ---
-Css: #tcolobox-134 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-134 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[840] ==> F17ZD_main631x.svg ---
---- needs --- F17ZD_main.idv[841] ==> F17ZD_main632x.svg ---
-Css: #tcolobox-135 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-135 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[843] ==> F17ZD_main633x.svg ---
---- needs --- F17ZD_main.idv[844] ==> F17ZD_main634x.svg ---
---- needs --- F17ZD_main.idv[845] ==> F17ZD_main635x.svg ---
+Css: #tcolobox-133 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-133 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-134 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-134 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-135 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-135 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-136 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-136 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[847] ==> F17ZD_main636x.svg ---
---- needs --- F17ZD_main.idv[849] ==> F17ZD_main637x.svg ---
 Css: #tcolobox-137 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-137 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[851] ==> F17ZD_main638x.svg ---
 Css: #tcolobox-138 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-138 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[853] ==> F17ZD_main639x.svg ---
-Css: #tcolobox-139 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-139 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-139 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-139 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-140 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-140 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-141 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-141 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[855] ==> F17ZD_main640x.svg ---
+Css: #tcolobox-141 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-141 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-142 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-142 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[857] ==> F17ZD_main641x.svg ---
 Css: #tcolobox-143 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-143 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[859] ==> F17ZD_main642x.svg ---
---- needs --- F17ZD_main.idv[860] ==> F17ZD_main643x.svg ---
---- needs --- F17ZD_main.idv[862] ==> F17ZD_main644x.svg ---
---- needs --- F17ZD_main.idv[863] ==> F17ZD_main645x.svg ---
---- needs --- F17ZD_main.idv[865] ==> F17ZD_main646x.svg ---
---- needs --- F17ZD_main.idv[866] ==> F17ZD_main647x.svg ---
---- needs --- F17ZD_main.idv[867] ==> F17ZD_main648x.svg ---
---- needs --- F17ZD_main.idv[869] ==> F17ZD_main649x.svg ---
---- needs --- F17ZD_main.idv[870] ==> F17ZD_main650x.svg ---
---- needs --- F17ZD_main.idv[872] ==> F17ZD_main651x.svg ---
---- needs --- F17ZD_main.idv[874] ==> F17ZD_main652x.svg ---
---- needs --- F17ZD_main.idv[875] ==> F17ZD_main653x.svg ---
---- needs --- F17ZD_main.idv[876] ==> F17ZD_main654x.svg ---
---- needs --- F17ZD_main.idv[878] ==> F17ZD_main655x.svg ---
---- needs --- F17ZD_main.idv[879] ==> F17ZD_main656x.svg ---
---- needs --- F17ZD_main.idv[880] ==> F17ZD_main657x.svg ---
---- needs --- F17ZD_main.idv[882] ==> F17ZD_main658x.svg ---
-Css: #tcolobox-144 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-144 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[883] ==> F17ZD_main659x.svg ---
---- needs --- F17ZD_main.idv[885] ==> F17ZD_main660x.svg ---
---- needs --- F17ZD_main.idv[886] ==> F17ZD_main661x.svg ---
---- needs --- F17ZD_main.idv[887] ==> F17ZD_main662x.svg ---
---- needs --- F17ZD_main.idv[888] ==> F17ZD_main663x.svg ---
---- needs --- F17ZD_main.idv[889] ==> F17ZD_main664x.svg ---
---- needs --- F17ZD_main.idv[890] ==> F17ZD_main665x.svg ---
---- needs --- F17ZD_main.idv[892] ==> F17ZD_main666x.svg ---
---- needs --- F17ZD_main.idv[893] ==> F17ZD_main667x.svg ---
---- needs --- F17ZD_main.idv[894] ==> F17ZD_main668x.svg ---
---- needs --- F17ZD_main.idv[895] ==> F17ZD_main669x.svg ---
---- needs --- F17ZD_main.idv[896] ==> F17ZD_main670x.svg ---
---- needs --- F17ZD_main.idv[897] ==> F17ZD_main671x.svg ---
---- needs --- F17ZD_main.idv[898] ==> F17ZD_main672x.svg ---
---- needs --- F17ZD_main.idv[899] ==> F17ZD_main673x.svg ---
---- needs --- F17ZD_main.idv[901] ==> F17ZD_main674x.svg ---
---- needs --- F17ZD_main.idv[902] ==> F17ZD_main675x.svg ---
---- needs --- F17ZD_main.idv[903] ==> F17ZD_main676x.svg ---
---- needs --- F17ZD_main.idv[904] ==> F17ZD_main677x.svg ---
---- needs --- F17ZD_main.idv[905] ==> F17ZD_main678x.svg ---
---- needs --- F17ZD_main.idv[906] ==> F17ZD_main679x.svg ---
---- needs --- F17ZD_main.idv[907] ==> F17ZD_main680x.svg ---
---- needs --- F17ZD_main.idv[908] ==> F17ZD_main681x.svg ---
---- needs --- F17ZD_main.idv[909] ==> F17ZD_main682x.svg ---
---- needs --- F17ZD_main.idv[910] ==> F17ZD_main683x.svg ---
---- needs --- F17ZD_main.idv[911] ==> F17ZD_main684x.svg ---
---- needs --- F17ZD_main.idv[912] ==> F17ZD_main685x.svg ---
---- needs --- F17ZD_main.idv[914] ==> F17ZD_main686x.svg ---
---- needs --- F17ZD_main.idv[916] ==> F17ZD_main687x.svg ---
---- needs --- F17ZD_main.idv[917] ==> F17ZD_main688x.svg ---
---- needs --- F17ZD_main.idv[919] ==> F17ZD_main689x.svg ---
+Css: #tcolobox-144 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-144 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-145 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-145 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[921] ==> F17ZD_main690x.svg ---
---- needs --- F17ZD_main.idv[922] ==> F17ZD_main691x.svg ---
 Css: #tcolobox-146 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-146 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[924] ==> F17ZD_main692x.svg ---
 Css: #tcolobox-147 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-147 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[926] ==> F17ZD_main693x.svg ---
---- needs --- F17ZD_main.idv[928] ==> F17ZD_main694x.svg ---
---- needs --- F17ZD_main.idv[930] ==> F17ZD_main695x.svg ---
---- needs --- F17ZD_main.idv[931] ==> F17ZD_main696x.svg ---
 Css: #tcolobox-148 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-148 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[933] ==> F17ZD_main697x.svg ---
-Css: #tcolobox-149 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-149 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-150 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-150 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-149 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-149 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-150 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-150 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-151 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-151 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-152 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-152 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[935] ==> F17ZD_main698x.svg ---
+Css: #tcolobox-152 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-152 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-153 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-153 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
-Css: #tcolobox-154 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-154 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-154 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-154 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-155 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-155 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[937] ==> F17ZD_main699x.svg ---
-Css: #tcolobox-156 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-156 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[939] ==> F17ZD_main700x.svg ---
+Css: #tcolobox-156 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-156 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-157 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-157 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[941] ==> F17ZD_main701x.svg ---
---- needs --- F17ZD_main.idv[942] ==> F17ZD_main702x.svg ---
---- needs --- F17ZD_main.idv[944] ==> F17ZD_main703x.svg ---
---- needs --- F17ZD_main.idv[945] ==> F17ZD_main704x.svg ---
---- needs --- F17ZD_main.idv[947] ==> F17ZD_main705x.svg ---
---- needs --- F17ZD_main.idv[949] ==> F17ZD_main706x.svg ---
-Css: #tcolobox-158 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-158 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[950] ==> F17ZD_main707x.svg ---
---- needs --- F17ZD_main.idv[952] ==> F17ZD_main708x.svg ---
-Css: #tcolobox-159 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-159 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[953] ==> F17ZD_main709x.svg ---
-Css: #tcolobox-160 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-160 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[955] ==> F17ZD_main710x.svg ---
---- needs --- F17ZD_main.idv[956] ==> F17ZD_main711x.svg ---
---- needs --- F17ZD_main.idv[958] ==> F17ZD_main712x.svg ---
-Css: #tcolobox-161 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-161 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[960] ==> F17ZD_main713x.svg ---
---- needs --- F17ZD_main.idv[961] ==> F17ZD_main714x.svg ---
---- needs --- F17ZD_main.idv[962] ==> F17ZD_main715x.svg ---
---- needs --- F17ZD_main.idv[964] ==> F17ZD_main716x.svg ---
---- needs --- F17ZD_main.idv[966] ==> F17ZD_main717x.svg ---
---- needs --- F17ZD_main.idv[968] ==> F17ZD_main718x.svg ---
-Css: #tcolobox-162 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-162 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[970] ==> F17ZD_main719x.svg ---
-Css: #tcolobox-163 .tcolorbox-title{color: #545499; background-color: #404040;}
-Css: #tcolobox-163 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[972] ==> F17ZD_main720x.svg ---
---- needs --- F17ZD_main.idv[974] ==> F17ZD_main721x.svg ---
---- needs --- F17ZD_main.idv[976] ==> F17ZD_main722x.svg ---
---- needs --- F17ZD_main.idv[977] ==> F17ZD_main723x.svg ---
---- needs --- F17ZD_main.idv[978] ==> F17ZD_main724x.svg ---
---- needs --- F17ZD_main.idv[979] ==> F17ZD_main725x.svg ---
---- needs --- F17ZD_main.idv[980] ==> F17ZD_main726x.svg ---
---- needs --- F17ZD_main.idv[981] ==> F17ZD_main727x.svg ---
---- needs --- F17ZD_main.idv[982] ==> F17ZD_main728x.svg ---
---- needs --- F17ZD_main.idv[983] ==> F17ZD_main729x.svg ---
---- needs --- F17ZD_main.idv[984] ==> F17ZD_main730x.svg ---
---- needs --- F17ZD_main.idv[986] ==> F17ZD_main731x.svg ---
---- needs --- F17ZD_main.idv[987] ==> F17ZD_main732x.svg ---
-Css: #tcolobox-164 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-158 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-158 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-159 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-159 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-160 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-160 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-161 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-161 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-162 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-162 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-163 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-163 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-164 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-164 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[989] ==> F17ZD_main733x.svg ---
---- needs --- F17ZD_main.idv[990] ==> F17ZD_main734x.svg ---
-Css: #tcolobox-165 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-165 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[992] ==> F17ZD_main735x.svg ---
---- needs --- F17ZD_main.idv[993] ==> F17ZD_main736x.svg ---
---- needs --- F17ZD_main.idv[995] ==> F17ZD_main737x.svg ---
---- needs --- F17ZD_main.idv[996] ==> F17ZD_main738x.svg ---
---- needs --- F17ZD_main.idv[998] ==> F17ZD_main739x.svg ---
---- needs --- F17ZD_main.idv[999] ==> F17ZD_main740x.svg ---
---- needs --- F17ZD_main.idv[1000] ==> F17ZD_main741x.svg ---
---- needs --- F17ZD_main.idv[1001] ==> F17ZD_main742x.svg ---
---- needs --- F17ZD_main.idv[1002] ==> F17ZD_main743x.svg ---
---- needs --- F17ZD_main.idv[1003] ==> F17ZD_main744x.svg ---
---- needs --- F17ZD_main.idv[1004] ==> F17ZD_main745x.svg ---
---- needs --- F17ZD_main.idv[1005] ==> F17ZD_main746x.svg ---
---- needs --- F17ZD_main.idv[1006] ==> F17ZD_main747x.svg ---
---- needs --- F17ZD_main.idv[1007] ==> F17ZD_main748x.svg ---
---- needs --- F17ZD_main.idv[1008] ==> F17ZD_main749x.svg ---
---- needs --- F17ZD_main.idv[1010] ==> F17ZD_main750x.svg ---
---- needs --- F17ZD_main.idv[1011] ==> F17ZD_main751x.svg ---
---- needs --- F17ZD_main.idv[1012] ==> F17ZD_main752x.svg ---
---- needs --- F17ZD_main.idv[1013] ==> F17ZD_main753x.svg ---
---- needs --- F17ZD_main.idv[1014] ==> F17ZD_main754x.svg ---
---- needs --- F17ZD_main.idv[1016] ==> F17ZD_main755x.svg ---
---- needs --- F17ZD_main.idv[1017] ==> F17ZD_main756x.svg ---
---- needs --- F17ZD_main.idv[1019] ==> F17ZD_main757x.svg ---
---- needs --- F17ZD_main.idv[1020] ==> F17ZD_main758x.svg ---
---- needs --- F17ZD_main.idv[1021] ==> F17ZD_main759x.svg ---
---- needs --- F17ZD_main.idv[1023] ==> F17ZD_main760x.svg ---
---- needs --- F17ZD_main.idv[1024] ==> F17ZD_main761x.svg ---
---- needs --- F17ZD_main.idv[1025] ==> F17ZD_main762x.svg ---
---- needs --- F17ZD_main.idv[1026] ==> F17ZD_main763x.svg ---
---- needs --- F17ZD_main.idv[1027] ==> F17ZD_main764x.svg ---
---- needs --- F17ZD_main.idv[1028] ==> F17ZD_main765x.svg ---
---- needs --- F17ZD_main.idv[1029] ==> F17ZD_main766x.svg ---
---- needs --- F17ZD_main.idv[1030] ==> F17ZD_main767x.svg ---
---- needs --- F17ZD_main.idv[1031] ==> F17ZD_main768x.svg ---
---- needs --- F17ZD_main.idv[1033] ==> F17ZD_main769x.svg ---
---- needs --- F17ZD_main.idv[1034] ==> F17ZD_main770x.svg ---
---- needs --- F17ZD_main.idv[1036] ==> F17ZD_main771x.svg ---
---- needs --- F17ZD_main.idv[1037] ==> F17ZD_main772x.svg ---
---- needs --- F17ZD_main.idv[1038] ==> F17ZD_main773x.svg ---
---- needs --- F17ZD_main.idv[1040] ==> F17ZD_main774x.svg ---
---- needs --- F17ZD_main.idv[1041] ==> F17ZD_main775x.svg ---
---- needs --- F17ZD_main.idv[1042] ==> F17ZD_main776x.svg ---
---- needs --- F17ZD_main.idv[1044] ==> F17ZD_main777x.svg ---
---- needs --- F17ZD_main.idv[1045] ==> F17ZD_main778x.svg ---
---- needs --- F17ZD_main.idv[1047] ==> F17ZD_main779x.svg ---
---- needs --- F17ZD_main.idv[1048] ==> F17ZD_main780x.svg ---
---- needs --- F17ZD_main.idv[1050] ==> F17ZD_main781x.svg ---
---- needs --- F17ZD_main.idv[1052] ==> F17ZD_main782x.svg ---
---- needs --- F17ZD_main.idv[1054] ==> F17ZD_main783x.svg ---
---- needs --- F17ZD_main.idv[1055] ==> F17ZD_main784x.svg ---
---- needs --- F17ZD_main.idv[1056] ==> F17ZD_main785x.svg ---
---- needs --- F17ZD_main.idv[1058] ==> F17ZD_main786x.svg ---
---- needs --- F17ZD_main.idv[1060] ==> F17ZD_main787x.svg ---
---- needs --- F17ZD_main.idv[1062] ==> F17ZD_main788x.svg ---
---- needs --- F17ZD_main.idv[1063] ==> F17ZD_main789x.svg ---
+Css: #tcolobox-165 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-165 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-166 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-166 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[1065] ==> F17ZD_main790x.svg ---
---- needs --- F17ZD_main.idv[1067] ==> F17ZD_main791x.svg ---
-Css: #tcolobox-167 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-167 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[1069] ==> F17ZD_main792x.svg ---
+Css: #tcolobox-167 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-167 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 Css: #tcolobox-168 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-168 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[1071] ==> F17ZD_main793x.svg ---
---- needs --- F17ZD_main.idv[1072] ==> F17ZD_main794x.svg ---
---- needs --- F17ZD_main.idv[1073] ==> F17ZD_main795x.svg ---
 Css: #tcolobox-169 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-169 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[1075] ==> F17ZD_main796x.svg ---
---- needs --- F17ZD_main.idv[1077] ==> F17ZD_main797x.svg ---
---- needs --- F17ZD_main.idv[1079] ==> F17ZD_main798x.svg ---
---- needs --- F17ZD_main.idv[1080] ==> F17ZD_main799x.svg ---
-Css: #tcolobox-170 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
-Css: #tcolobox-170 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-171 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-171 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[1082] ==> F17ZD_main800x.svg ---
---- needs --- F17ZD_main.idv[1083] ==> F17ZD_main801x.svg ---
+Css: #tcolobox-170 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-170 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-171 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-171 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-172 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-172 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-173 .tcolorbox-title{color: #545499; background-color: #404040;}
 Css: #tcolobox-173 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[91] ==> F17ZD_main48x.svg ---
+--- needs --- F17ZD_main.idv[92] ==> F17ZD_main49x.svg ---
 Css: #tcolobox-174 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-174 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
-Css: #tcolobox-175 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-175 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[1085] ==> F17ZD_main802x.svg ---
---- needs --- F17ZD_main.idv[1086] ==> F17ZD_main803x.svg ---
---- needs --- F17ZD_main.idv[1088] ==> F17ZD_main804x.svg ---
---- needs --- F17ZD_main.idv[1090] ==> F17ZD_main805x.svg ---
---- needs --- F17ZD_main.idv[1091] ==> F17ZD_main806x.svg ---
---- needs --- F17ZD_main.idv[1093] ==> F17ZD_main807x.svg ---
+Css: #tcolobox-175 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-175 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
 Css: #tcolobox-176 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
 Css: #tcolobox-176 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[1095] ==> F17ZD_main808x.svg ---
---- needs --- F17ZD_main.idv[1097] ==> F17ZD_main809x.svg ---
---- needs --- F17ZD_main.idv[1098] ==> F17ZD_main810x.svg ---
---- needs --- F17ZD_main.idv[1100] ==> F17ZD_main811x.svg ---
---- needs --- F17ZD_main.idv[1101] ==> F17ZD_main812x.svg ---
---- needs --- F17ZD_main.idv[1103] ==> F17ZD_main813x.svg ---
---- needs --- F17ZD_main.idv[1105] ==> F17ZD_main814x.svg ---
---- needs --- F17ZD_main.idv[1106] ==> F17ZD_main815x.svg ---
---- needs --- F17ZD_main.idv[1107] ==> F17ZD_main816x.svg ---
---- needs --- F17ZD_main.idv[1108] ==> F17ZD_main817x.svg ---
---- needs --- F17ZD_main.idv[1110] ==> F17ZD_main818x.svg ---
-Css: #TBL-3-1{border-right:1px solid black;}
---- needs --- F17ZD_main.idv[1112] ==> F17ZD_main819x.svg ---
---- needs --- F17ZD_main.idv[1113] ==> F17ZD_main820x.svg ---
---- needs --- F17ZD_main.idv[1115] ==> F17ZD_main821x.svg ---
 Css: #tcolobox-177 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
 Css: #tcolobox-177 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
---- needs --- F17ZD_main.idv[1116] ==> F17ZD_main822x.svg ---
---- needs --- F17ZD_main.idv[1118] ==> F17ZD_main823x.svg ---
---- needs --- F17ZD_main.idv[1120] ==> F17ZD_main824x.svg ---
---- needs --- F17ZD_main.idv[1121] ==> F17ZD_main825x.svg ---
-Css: #tcolobox-178 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
-Css: #tcolobox-178 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
---- needs --- F17ZD_main.idv[1122] ==> F17ZD_main826x.svg ---
---- needs --- F17ZD_main.idv[1124] ==> F17ZD_main827x.svg ---
---- needs --- F17ZD_main.idv[1125] ==> F17ZD_main828x.svg ---
---- needs --- F17ZD_main.idv[1126] ==> F17ZD_main829x.svg ---
---- needs --- F17ZD_main.idv[1128] ==> F17ZD_main830x.svg ---
---- needs --- F17ZD_main.idv[1129] ==> F17ZD_main831x.svg ---
+Css: #tcolobox-178 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-178 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-179 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-179 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-180 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-180 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-181 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-181 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[94] ==> F17ZD_main50x.svg ---
+Css: #tcolobox-182 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-182 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-183 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-183 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-184 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-184 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
 --- characters ---
 Font("line","10","10","100")
 Font("rm-lmss","12","12","100")
-Font("rm-lmss","17","17","100")
-Font("rm-lmssbx","10","10","172")
-Font("rm-lmssbx","10","10","120")
+Font("rm-lmbx","12","12","100")
+Font("lmbsy","10","10","120")
+Font("lmbsy","10","10","80")
+Font("lmbsy","7","7","85")
+Font("lmex","10","10","100")
+Font("msam","10","10","120")
+Font("msam","10","10","80")
+Font("msam","7","7","85")
+Font("msbm","10","10","120")
+Font("msbm","10","10","80")
+Font("msbm","7","7","85")
 Font("rm-lmr","12","12","100")
 Font("rm-lmr","8","8","100")
 Font("rm-lmr","6","6","100")
@@ -1425,10 +653,10 @@ Font("lmmi","6","6","100")
 Font("lmsy","10","10","120")
 Font("lmsy8","","8","100")
 Font("lmsy6","","6","100")
-Font("lmex","10","10","100")
-Font("msam","10","10","120")
-Font("msbm","10","10","120")
 Font("wasy","10","10","120")
+Font("rm-lmss","17","17","100")
+Font("rm-lmssbx","10","10","172")
+Font("rm-lmssbx","10","10","120")
 Font("rm-lmssbx","10","10","144")
 Font("rm-lmr","10","10","100")
 Font("rm-lmr","7","7","100")
@@ -1446,7 +674,6 @@ Font("lmmi","5","5","100")
 Font("lmsy5","","5","100")
 Font("rm-lmss","8","8","100")
 Font("rm-lmsso","10","10","100")
-Font("rm-lmbx","12","12","100")
 Font("rm-lmr","10","10","109")
 Font("lmmi","10","10","109")
 Font("lmsy","10","10","109")
