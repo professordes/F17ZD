@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2026.2.2)  27 FEB 2026 10:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2026.2.2)  27 FEB 2026 10:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 {\AddToHook{class/before}{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documents
 tyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\e
 ndcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\
-documentstyle[tex4ht]}}}\makeatother\HCode xhtml,mathml,charset=utf-8,html5.a.b
-.c.\input "\detokenize{F17ZD_main.tex}"
+documentstyle[tex4ht]}}}\makeatother\HCode xhtml,mathjax,svg,charset=utf-8,html
+5.a.b.c.\input "\detokenize{F17ZD_main.tex}"
 (./F17ZD_main.tex (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2021-09-14-14:11
 Package: tex4ht 
@@ -1320,10 +1320,10 @@ DOCTYPE'
 --------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )
@@ -1370,7 +1370,7 @@ option `frames-fn'
 --------------------------------------
 --- Note --- for file extension name xht, use the command line option `xht'
 --------------------------------------
-TeX4ht package options: xhtml,mathml,charset=utf-8,html5,html
+TeX4ht package options: xhtml,mathjax,svg,charset=utf-8,html5,html
 --------------------------------------
 --- Note --- To print a timestamp, use the command line option timestamp
 --------------------------------------
@@ -1390,10 +1390,14 @@ on `imgdir:.../'
 --------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
+--------------------------------------
+--- Note --- for external SVG files try the command line options `svg-obj' and 
+'svg-'
+--------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 --------------------------------------
@@ -1418,10 +1422,10 @@ version 2022-01-23-07:51
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/latex.4ht
@@ -1440,10 +1444,10 @@ ine option `refcaption'
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1487,32 +1491,30 @@ style="width:\HColWidth"}}
 --------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-! Argument of \:tempc has an extra }.
-<inserted text> 
-                \par 
-l.1356 \:tempb{sup}
-                   
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
 
-Runaway argument?
-! Paragraph ended before \:tempc was complete.
-<to be read again> 
-                   \par 
-l.1356 \:tempb{sup}
-                   
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+(/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathjax-latex-4ht.4ht
+version 2021-12-02-14:01
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/fontmath.4ht
@@ -1521,73 +1523,10 @@ version 2018-11-06-15:55
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-\tmp:bx=\box154
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-1405.
-(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
-File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [1
-
-\ifx\qr@savematrix\@undefined\def\qr@savematrix{\begingroup\let\do\@makeother\d
-ospecials\catcode`\{=1\catcode`\}=2\relax \qr@savematrix@int}\def\qr@savematrix
-@int#1#2#3#4{\endgroup}\fi
-]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-411.
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-411.
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-1411.
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-1411.
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1411.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1411.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1411.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 141
-1.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 141
-1.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 14
-11.
-(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 1411.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 1411.
-
-[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [1
-9] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [
-35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] 
-[51] [52] [53]) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/array.4ht
@@ -1596,10 +1535,13 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/color.4ht
@@ -1608,10 +1550,10 @@ version 2022-02-01-14:27
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/colortbl.4ht
@@ -1622,10 +1564,10 @@ version 2020-10-17-13:53
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/article.4ht
@@ -1646,10 +1588,10 @@ index=2)
 --------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsmath.4ht
@@ -1659,10 +1601,10 @@ version 2019-12-29-14:17
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amstext.4ht
@@ -1671,10 +1613,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
@@ -1683,10 +1625,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsopn.4ht
@@ -1695,10 +1637,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amssymb.4ht
@@ -1707,25 +1649,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-[54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69]
-[70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85]
-[86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [10
-1] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114
-] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127]
-[128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [
-141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [1
-54] [155] [156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [16
-7] [168] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180
-] [181] [182] [183] [184] [185] [186] [187] [188] [189] [190] [191] [192] [193]
-[194] [195] [196] [197] [198] [199] [200] [201] [202] [203] [204] [205] [206] [
-207] [208] [209] [210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [2
-20] [221] [222] [223] [224] [225] [226] [227] [228] [229] [230] [231] [232] [23
-3] [234] [235] [236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246
-] [247] [248] [249] [250] [251] [252] [253] [254] [255] [256] [257]) (/usr/shar
-e/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
@@ -1734,10 +1661,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsthm.4ht
@@ -1746,10 +1673,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphicx.4ht
@@ -1758,10 +1685,10 @@ version 2022-01-12-13:53
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics.4ht
@@ -1779,10 +1706,10 @@ en bounding box is unavailable try `Gin-dim+'; neither is recommended
 --------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dvips.4ht
@@ -1791,10 +1718,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/multicol.4ht
@@ -1803,10 +1730,10 @@ version 2021-06-20-09:36
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pifont.4ht
@@ -1815,10 +1742,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/enumitem.4ht
@@ -1827,10 +1754,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pgf.4ht
@@ -1839,10 +1766,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor.4ht
@@ -1853,10 +1780,10 @@ version 2022-02-01-14:27
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svgnam.4ht
@@ -1866,10 +1793,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/caption.4ht
@@ -1878,10 +1805,10 @@ version 2021-10-19-14:11
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tocloft.4ht
@@ -1890,10 +1817,10 @@ version 2014-07-13-16:08
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/geometry.4ht
@@ -1902,10 +1829,10 @@ version 2016-07-01-08:55
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/hyperref.4ht
@@ -1916,10 +1843,10 @@ LaTeX Info: Redefining \autoref on input line 88.
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
@@ -1928,10 +1855,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/url.4ht
@@ -1944,10 +1871,10 @@ version 2022-02-03-14:35
 --------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/ifthen.4ht
@@ -1956,10 +1883,10 @@ version 2022-01-02-14:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/nameref.4ht
@@ -1968,10 +1895,10 @@ version 2021-02-03-14:57
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/rotating.4ht
@@ -1980,10 +1907,10 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tcolorbox.4ht
@@ -1993,10 +1920,10 @@ version 2022-01-28-15:00
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/verbatim.4ht
@@ -2005,10 +1932,10 @@ version 2021-07-04-09:13
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathtools.4ht
@@ -2017,10 +1944,10 @@ version 2021-06-20-09:36
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dsfont.4ht
@@ -2029,40 +1956,38 @@ version 2009-05-21-09:32
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2022-02-03-14:35
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-06-19-14:11
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathml.4ht
-version 2021-11-30-15:01
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html-mml.4ht
-version 2021-04-17-18:22
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2021-04-16-13:27
+) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+26.
+(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
-\l__pdf_internal_box=\box155
+\l__pdf_internal_box=\box154
 \g__pdf_backend_object_int=\count384
-\l__pdf_backend_content_box=\box156
-\l__pdf_backend_model_box=\box157
+\l__pdf_backend_content_box=\box155
+\l__pdf_backend_model_box=\box156
 \g__pdf_backend_annotation_int=\count385
 \g__pdf_backend_link_int=\count386
 \g__pdf_backend_link_sf_int=\count387
 ) (./F17ZD_main.aux (./T04-complex-iterates.aux) (./T04b-quaternions.aux) (./T0
-5-vectors2.aux
-
-LaTeX Warning: Label `rem' multiply defined.
-
-
-LaTeX Warning: Label `rem' multiply defined.
-
-) (./T06-vector-spaces.aux
+5-vectors2.aux) (./T06-vector-spaces.aux
 
 LaTeX Warning: Label `ex:2.2.2' multiply defined.
 
@@ -2088,10 +2013,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-LaTeX Warning: First page is already shipped out, ignoring
-               \AtBeginDvi on input line 26.
-
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.7).
 
@@ -2099,10 +2020,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
-
-LaTeX Warning: First page is already shipped out, ignoring
-               \AtBeginDvi on input line 26.
-
 *geometry* verbose mode - [ preamble ] result:
 * driver: dvips
 * paper: letterpaper
@@ -2143,6 +2060,47 @@ LaTeX Info: Redefining \nameref on input line 26.
 --- file F17ZD_main.css ---
 (./cover-content.tex
 l. 10 Writing F17ZD_main.idv[1] (F17ZD_main0x.svg)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+1.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+1.
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+11.
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+11.
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
+.
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2153,7 +2111,9 @@ LaTeX Font Info:    Trying to load font information for TS1+lmss on input line
 53.
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [0]
+)) [0
+
+]
 Package marginnote Info: Using workaround for absolute page number on input lin
 e 30.
 [1]
@@ -2161,114 +2121,103 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 32.
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./F17ZD_main.4ct
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
-4.
-(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [2] [3]) [4] [5]
+) (./F17ZD_main.4ct [2]) [3] [4] [5]
 \openout2 = `T04-complex-iterates.aux'.
 
 (./T04-complex-iterates.tex [6
 
-] [7]
+]
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 40.
 l. 45 Writing F17ZD_main.idv[2] (F17ZD_main1x.svg)
-[8]
 l. 47 Writing F17ZD_main.idv[3] (F17ZD_main2x.svg)
-[9] [10] [11] [12] [13] [14] [15]
+[7] [8] [9]
 --- file F17ZD_main2.html ---
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 137.
-[16]
 l. 148 Writing F17ZD_main.idv[4] (F17ZD_main3x.svg)
-[17
+[10
 
-] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [3
-3]
+] [11] [12] [13] [14] [15] [16]
 l. 319 Writing F17ZD_main.idv[5] (F17ZD_main4x.svg)
 l. 355 Writing F17ZD_main.idv[6] (F17ZD_main5x.svg)
 l. 355 Writing F17ZD_main.idv[7] (F17ZD_main6x.svg)
-[34] [35]
+[17] [18]
 l. 362 Writing F17ZD_main.idv[8] (F17ZD_main7x.svg)
 l. 381 Writing F17ZD_main.idv[9] (F17ZD_main8x.svg)
-[36]
+[19] [20]
 l. 404 Writing F17ZD_main.idv[10] (F17ZD_main9x.svg)
-[37] [38]
+[21]
 l. 426 Writing F17ZD_main.idv[11] (F17ZD_main10x.svg)
-[39]
+[22]
 l. 449 Writing F17ZD_main.idv[12] (F17ZD_main11x.svg)
-[40] [41]
+[23] [24] [25]
 --- file F17ZD_main3.html ---
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 467.
 
 l. 469 Writing F17ZD_main.idv[13] (F17ZD_main12x.svg)
-[42
+[26
 
-] [43] [44]
+] [27]
 l. 535 Writing F17ZD_main.idv[14] (F17ZD_main13x.svg)
-[45]
 l. 547 Writing F17ZD_main.idv[15] (F17ZD_main14x.svg)
 --- file F17ZD_main4.html ---
-[46
-
-]
+[28]
 l. 559 Writing F17ZD_main.idv[16] (F17ZD_main15x.svg)
 l. 580 Writing F17ZD_main.idv[17] (F17ZD_main16x.svg)
 l. 588 Writing F17ZD_main.idv[18] (F17ZD_main17x.svg)
 l. 600 Writing F17ZD_main.idv[19] (F17ZD_main18x.svg)
 l. 609 Writing F17ZD_main.idv[20] (F17ZD_main19x.svg)
-[47] [48] [49] [50] [51]
+[29
+
+] [30] [31] [32] [33]
 l. 657 Writing F17ZD_main.idv[21] (F17ZD_main20x.svg)
-[52] [53]
 l. 679 Writing F17ZD_main.idv[22] (F17ZD_main21x.svg)
 l. 689 Writing F17ZD_main.idv[23] (F17ZD_main22x.svg)
-[54]
+[34]
 l. 710 Writing F17ZD_main.idv[24] (F17ZD_main23x.svg)
-[55] [56]
 l. 724 Writing F17ZD_main.idv[25] (F17ZD_main24x.svg)
+[35] [36]
 l. 751 Writing F17ZD_main.idv[26] (F17ZD_main25x.svg)
 l. 770 Writing F17ZD_main.idv[27] (F17ZD_main26x.svg)
-[57] [58] [59]
+[37] [38] [39]
 l. 817 Writing F17ZD_main.idv[28] (F17ZD_main27x.svg)
-[60] [61] [62]
+[40]
 l. 861 Writing F17ZD_main.idv[29] (F17ZD_main28x.svg)
-[63] [64] [65] [66] [67] [68] [69] [70]
+[41] [42] [43]
 --- file F17ZD_main5.html ---
-[71
+[44
 
-] [72] [73] [74] [75] [76] [77] [78]
+] [45] [46]
 --- file F17ZD_main6.html ---
-[79
+[47
 
-] [80]
+]
 --- file F17ZD_main7.html ---
-[81
+[48
 
-] [82]
+]
 l. 1144 Writing F17ZD_main.idv[30] (F17ZD_main29x.svg)
-[83] [84]
 l. 1165 Writing F17ZD_main.idv[31] (F17ZD_main30x.svg)
 --- file F17ZD_main8.html ---
-[85
+[49] [50
 
-] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95]
+] [51] [52] [53] [54]
 l. 1295 Writing F17ZD_main.idv[32] (F17ZD_main31x.svg)
 l. 1315 Writing F17ZD_main.idv[33] (F17ZD_main32x.svg)
 l. 1335 Writing F17ZD_main.idv[34] (F17ZD_main33x.svg)
 l. 1355 Writing F17ZD_main.idv[35] (F17ZD_main34x.svg)
-[96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106]
+[55] [56] [57] [58] [59]
 l. 1487 Writing F17ZD_main.idv[36] (F17ZD_main35x.svg)
-[107] [108] [109]
+[60]
 l. 1585 Writing F17ZD_main.idv[37] (F17ZD_main36x.svg)
 l. 1690 Writing F17ZD_main.idv[38] (F17ZD_main37x.svg)
 l. 1726 Writing F17ZD_main.idv[39] (F17ZD_main38x.svg)
-[110] [111] [112] [113]
+[61] [62]
 l. 1834 Writing F17ZD_main.idv[40] (F17ZD_main39x.svg)
 l. 1865 Writing F17ZD_main.idv[41] (F17ZD_main40x.svg)
-[114] [115] [116] [117] [118] [119] [120]
+[63] [64]
 l.1960 --- TeX4ht warning --- File `"julia_c_minus1.xbb"' not found ---
 l.1960 --- TeX4ht warning --- Cannot determine size of graphic in "julia_c_minu
 s1.xbb" (no BoundingBox) ---
@@ -2277,9 +2226,9 @@ l.1973 --- TeX4ht warning --- File `"mandelbrot.xbb"' not found ---
 l.1973 --- TeX4ht warning --- Cannot determine size of graphic in "mandelbrot.x
 bb" (no BoundingBox) ---
 l. 1973 --- needs --- mandelbrot.png ---
-[121]) [122] [123
+) [65] [66] [67
 
-] [124
+] [68
 
 ]
 \openout2 = `T04b-quaternions.aux'.
@@ -2289,183 +2238,318 @@ l.11 --- TeX4ht warning --- File `"Broom_Bridge.xbb"' not found ---
 l.11 --- TeX4ht warning --- Cannot determine size of graphic in "Broom_Bridge.x
 bb" (no BoundingBox) ---
 l. 11 --- needs --- Broom_Bridge.jpg ---
-[125
+[69
 
-] [126]
+]
 l. 42 Writing F17ZD_main.idv[42] (F17ZD_main41x.svg)
-[127] [128] [129] [130] [131]
+[70]
 l. 119 Writing F17ZD_main.idv[43] (F17ZD_main42x.svg)
-[132] [133] [134] [135] [136] [137] [138] [139]) [140] [141
+[71] [72]) [73] [74
 
-] [142
+] [75
 
 ]
 \openout2 = `T05-vectors2.aux'.
 
 (./T05-vectors2.tex
-l. 7 Writing F17ZD_main.idv[44] (F17ZD_main43x.svg)
-l. 33 Writing F17ZD_main.idv[45] (F17ZD_main44x.svg)
-[143
+l. 165 Writing F17ZD_main.idv[44] (F17ZD_main43x.svg)
+[76
 
-] [144]
-l. 56 Writing F17ZD_main.idv[46] (F17ZD_main45x.svg)
-[145] [146] [147] [148] [149] [150] [151]
+] [77]
+l. 208 Writing F17ZD_main.idv[45] (F17ZD_main44x.svg)
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
+08.
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+l. 213 Writing F17ZD_main.idv[46] (F17ZD_main45x.svg)
+[78] [79]
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 271.
-[152] [153] [154] [155] [156] [157] [158] [159]
+l. 277 Writing F17ZD_main.idv[47] (F17ZD_main46x.svg)
+l. 287 Writing F17ZD_main.idv[48] (F17ZD_main47x.svg)
+l. 292 Writing F17ZD_main.idv[49] (F17ZD_main48x.svg)
+[80]
+l. 301 Writing F17ZD_main.idv[50] (F17ZD_main49x.svg)
+l. 305 Writing F17ZD_main.idv[51] (F17ZD_main50x.svg)
+[81] [82]
+l. 326 Writing F17ZD_main.idv[52] (F17ZD_main51x.svg)
+[83]
+l. 334 Writing F17ZD_main.idv[53] (F17ZD_main52x.svg)
+l. 369 Writing F17ZD_main.idv[54] (F17ZD_main53x.svg)
+[84]
+l. 384 Writing F17ZD_main.idv[55] (F17ZD_main54x.svg)
+[85] [86] [87] [88] [89]
+l. 630 Writing F17ZD_main.idv[56] (F17ZD_main55x.svg)
+l. 633 Writing F17ZD_main.idv[57] (F17ZD_main56x.svg)
+[90] [91] [92]
+l. 843 Writing F17ZD_main.idv[58] (F17ZD_main57x.svg)
+l. 859 Writing F17ZD_main.idv[59] (F17ZD_main58x.svg)
+l. 863 Writing F17ZD_main.idv[60] (F17ZD_main59x.svg)
+[93]
+l. 870 Writing F17ZD_main.idv[61] (F17ZD_main60x.svg)
+[94]
+l. 885 Writing F17ZD_main.idv[62] (F17ZD_main61x.svg)
+) [95] [96] [97
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 40
-3.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 40
-9.
-
-[160] [161]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 45
-9.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 46
-5.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 47
-1.
-
-[162] [163] [164] [165] [166] [167] [168] [169] [170]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 71
-0.
-
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 72
-6.
-
-[171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181]
-l. 870 Writing F17ZD_main.idv[47] (F17ZD_main46x.svg)
-l. 885 Writing F17ZD_main.idv[48] (F17ZD_main47x.svg)
-[182] [183] [184] [185]) [186] [187
-
-] [188
+] [98
 
 ]
 \openout2 = `T06-vector-spaces.aux'.
 
-(./T06-vector-spaces.tex [189
+(./T06-vector-spaces.tex [99
 
-] [190] [191] [192] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202]
-[203]
+] [100]
+l. 45 Writing F17ZD_main.idv[63] (F17ZD_main62x.svg)
+l. 46 Writing F17ZD_main.idv[64] (F17ZD_main63x.svg)
+[101]
+l. 47 Writing F17ZD_main.idv[65] (F17ZD_main64x.svg)
+[102]
+l. 78 Writing F17ZD_main.idv[66] (F17ZD_main65x.svg)
+[103] [104]
+l. 105 Writing F17ZD_main.idv[67] (F17ZD_main66x.svg)
+l. 201 Writing F17ZD_main.idv[68] (F17ZD_main67x.svg)
+[105] [106] [107] [108]
+
+LaTeX Warning: Reference `eq:SLE1' on page 109 undefined on input line 355.
+
+
+LaTeX Warning: Reference `eq:SLE1' on page 109 undefined on input line 368.
+
 l.372 --- TeX4ht warning --- \Link{x1-35001r4.4}? ---
-[204] [205] [206] [207] [208] [209] [210]
+[109]
+l. 403 Writing F17ZD_main.idv[69] (F17ZD_main68x.svg)
+[110]
+l. 447 Writing F17ZD_main.idv[70] (F17ZD_main69x.svg)
+[111] [112]
+l. 478 Writing F17ZD_main.idv[71] (F17ZD_main70x.svg)
 l.486 --- TeX4ht warning --- \Link{x1-37001r4.5}? ---
-[211] [212] [213] [214] [215] [216]) [217] [218
+[113] [114] [115]
+l. 508 Writing F17ZD_main.idv[72] (F17ZD_main71x.svg)
+l. 616 Writing F17ZD_main.idv[73] (F17ZD_main72x.svg)
+l. 617 Writing F17ZD_main.idv[74] (F17ZD_main73x.svg)
+[116]) [117] [118
 
-] [219
+] [119
 
 ]
 \openout2 = `T07-homogeneous.aux'.
 
-(./T07-homogeneous.tex [220
+(./T07-homogeneous.tex [120
 
-] [221] [222] [223] [224] [225] [226] [227] [228]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 171.
-[229]
+] [121]
+l. 105 Writing F17ZD_main.idv[75] (F17ZD_main74x.svg)
+l. 106 Writing F17ZD_main.idv[76] (F17ZD_main75x.svg)
+[122] [123]) [124] [125
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 22
-7.
-
-[230] [231]) [232] [233
-
-] [234
+] [126
 
 ]
 \openout2 = `T08-matrix-rank.aux'.
 
-(./T08-matrix-rank.tex [235
+(./T08-matrix-rank.tex [127
 
-] [236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247] [248]
-[249] [250] [251] [252] [253] [254] [255] [256] [257] [258] [259] [260] [261]) 
-[262] [263
+]
+l. 84 Writing F17ZD_main.idv[77] (F17ZD_main76x.svg)
+[128]
+l. 110 Writing F17ZD_main.idv[78] (F17ZD_main77x.svg)
+[129]
+l. 145 Writing F17ZD_main.idv[79] (F17ZD_main78x.svg)
+[130]
+l. 173 Writing F17ZD_main.idv[80] (F17ZD_main79x.svg)
+[131]
+l. 180 Writing F17ZD_main.idv[81] (F17ZD_main80x.svg)
+[132] [133]) [134] [135
 
-] [264
+] [136
 
 ]
 \openout2 = `T09-matrix-eigenvalue.aux'.
 
-(./T09-matrix-eigenvalue.tex [265
+(./T09-matrix-eigenvalue.tex
+l. 27 Writing F17ZD_main.idv[82] (F17ZD_main81x.svg)
+[137
 
-] [266] [267] [268] [269] [270] [271] [272] [273] [274] [275] [276] [277]
+]
+l. 43 Writing F17ZD_main.idv[83] (F17ZD_main82x.svg)
+[138]
+l. 73 Writing F17ZD_main.idv[84] (F17ZD_main83x.svg)
+[139]
+l. 82 Writing F17ZD_main.idv[85] (F17ZD_main84x.svg)
+l. 86 Writing F17ZD_main.idv[86] (F17ZD_main85x.svg)
+l. 87 Writing F17ZD_main.idv[87] (F17ZD_main86x.svg)
+[140] [141]
+l. 97 Writing F17ZD_main.idv[88] (F17ZD_main87x.svg)
+[142] [143]
+l. 144 Writing F17ZD_main.idv[89] (F17ZD_main88x.svg)
+[144]
 l.157 --- TeX4ht warning --- \Link{x1-55002r7.3}? ---
-[278] [279] [280]
-
-Package amsthm Warning: The \qedhere command may not work correctly here on inp
-ut line 209.
-
-[281] [282] [283]
+l. 165 Writing F17ZD_main.idv[90] (F17ZD_main89x.svg)
+[145] [146]
+l. 199 Writing F17ZD_main.idv[91] (F17ZD_main90x.svg)
+[147]
+l. 241 Writing F17ZD_main.idv[92] (F17ZD_main91x.svg)
 l.248 --- TeX4ht warning --- \Link{x1-59001r7.5}? ---
-[284] [285] [286] [287]
+[148]
+l. 274 Writing F17ZD_main.idv[93] (F17ZD_main92x.svg)
+l. 275 Writing F17ZD_main.idv[94] (F17ZD_main93x.svg)
+[149]
+l. 282 Writing F17ZD_main.idv[95] (F17ZD_main94x.svg)
+[150] [151]
+l. 324 Writing F17ZD_main.idv[96] (F17ZD_main95x.svg)
+l. 328 Writing F17ZD_main.idv[97] (F17ZD_main96x.svg)
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 33
 0.
 
+l. 344 Writing F17ZD_main.idv[98] (F17ZD_main97x.svg)
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 34
 4.
 
-[288] [289] [290] [291] [292] [293]
+[152] [153] [154]
+l. 359 Writing F17ZD_main.idv[99] (F17ZD_main98x.svg)
+l. 365 Writing F17ZD_main.idv[100] (F17ZD_main99x.svg)
+[155] [156]
+l. 457 Writing F17ZD_main.idv[101] (F17ZD_main100x.svg)
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 45
 9.
 
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 464.
-
+l. 475 Writing F17ZD_main.idv[102] (F17ZD_main101x.svg)
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 47
 5.
 
-[294] [295] [296] [297] [298] [299] [300] [301]
+l. 487 Writing F17ZD_main.idv[103] (F17ZD_main102x.svg)
+l. 489 Writing F17ZD_main.idv[104] (F17ZD_main103x.svg)
+[157] [158]
+l. 539 Writing F17ZD_main.idv[105] (F17ZD_main104x.svg)
+l. 541 Writing F17ZD_main.idv[106] (F17ZD_main105x.svg)
+[159]
+l. 546 Writing F17ZD_main.idv[107] (F17ZD_main106x.svg)
+l. 548 Writing F17ZD_main.idv[108] (F17ZD_main107x.svg)
+[160] [161]
+l. 555 Writing F17ZD_main.idv[109] (F17ZD_main108x.svg)
+l. 556 Writing F17ZD_main.idv[110] (F17ZD_main109x.svg)
+l. 575 Writing F17ZD_main.idv[111] (F17ZD_main110x.svg)
+[162]
 l.577 --- TeX4ht warning --- \Link{x1-55003r7.3}? ---
-[302] [303] [304] [305]
+l. 578 Writing F17ZD_main.idv[112] (F17ZD_main111x.svg)
+l. 578 Writing F17ZD_main.idv[113] (F17ZD_main112x.svg)
+[163]
+l. 585 Writing F17ZD_main.idv[114] (F17ZD_main113x.svg)
+l. 587 Writing F17ZD_main.idv[115] (F17ZD_main114x.svg)
+[164]
+l. 600 Writing F17ZD_main.idv[116] (F17ZD_main115x.svg)
+l. 601 Writing F17ZD_main.idv[117] (F17ZD_main116x.svg)
+l. 611 Writing F17ZD_main.idv[118] (F17ZD_main117x.svg)
 l.612 --- TeX4ht warning --- \Link{x1-55003r7.3}? ---
-[306] [307] [308] [309] [310] [311] [312] [313] [314] [315]) [316] [317
+[165]
+l. 612 Writing F17ZD_main.idv[119] (F17ZD_main118x.svg)
+l. 622 Writing F17ZD_main.idv[120] (F17ZD_main119x.svg)
+l. 638 Writing F17ZD_main.idv[121] (F17ZD_main120x.svg)
+[166]
+l. 640 Writing F17ZD_main.idv[122] (F17ZD_main121x.svg)
+l. 642 Writing F17ZD_main.idv[123] (F17ZD_main122x.svg)
+l. 643 Writing F17ZD_main.idv[124] (F17ZD_main123x.svg)
+[167]
+l. 647 Writing F17ZD_main.idv[125] (F17ZD_main124x.svg)
+l. 648 Writing F17ZD_main.idv[126] (F17ZD_main125x.svg)
+l. 648 Writing F17ZD_main.idv[127] (F17ZD_main126x.svg)
+[168]
+l. 657 Writing F17ZD_main.idv[128] (F17ZD_main127x.svg)
+l. 661 Writing F17ZD_main.idv[129] (F17ZD_main128x.svg)
+[169]
+l. 663 Writing F17ZD_main.idv[130] (F17ZD_main129x.svg)
+l. 691 Writing F17ZD_main.idv[131] (F17ZD_main130x.svg)
+l. 696 Writing F17ZD_main.idv[132] (F17ZD_main131x.svg)
+[170]) [171] [172
 
-] [318
+] [173
 
 ]
 \openout2 = `T10-matrix-stochastic.aux'.
 
-(./T10-matrix-stochastic.tex [319
+(./T10-matrix-stochastic.tex [174
 
-] [320] [321] [322] [323] [324] [325]
-l. 125 Writing F17ZD_main.idv[49] (F17ZD_main48x.svg)
-l. 144 Writing F17ZD_main.idv[50] (F17ZD_main49x.svg)
-[326] [327] [328] [329] [330] [331] [332]
-l. 263 Writing F17ZD_main.idv[51] (F17ZD_main50x.svg)
-[333] [334] [335] [336] [337] [338] [339] [340] [341] [342] [343] [344] [345] [
-346] [347] [348] [349]) [350] [351
+]
+l. 34 Writing F17ZD_main.idv[133] (F17ZD_main132x.svg)
+l. 39 Writing F17ZD_main.idv[134] (F17ZD_main133x.svg)
+[175] [176]
+l. 83 Writing F17ZD_main.idv[135] (F17ZD_main134x.svg)
+[177]
+l. 125 Writing F17ZD_main.idv[136] (F17ZD_main135x.svg)
+l. 144 Writing F17ZD_main.idv[137] (F17ZD_main136x.svg)
+[178] [179]
+l. 167 Writing F17ZD_main.idv[138] (F17ZD_main137x.svg)
+l. 175 Writing F17ZD_main.idv[139] (F17ZD_main138x.svg)
+l. 177 Writing F17ZD_main.idv[140] (F17ZD_main139x.svg)
+l. 179 Writing F17ZD_main.idv[141] (F17ZD_main140x.svg)
+[180] [181]
+l. 204 Writing F17ZD_main.idv[142] (F17ZD_main141x.svg)
+l. 206 Writing F17ZD_main.idv[143] (F17ZD_main142x.svg)
+[182] [183]
+l. 244 Writing F17ZD_main.idv[144] (F17ZD_main143x.svg)
+[184]
+l. 250 Writing F17ZD_main.idv[145] (F17ZD_main144x.svg)
+l. 256 Writing F17ZD_main.idv[146] (F17ZD_main145x.svg)
+l. 258 Writing F17ZD_main.idv[147] (F17ZD_main146x.svg)
+l. 263 Writing F17ZD_main.idv[148] (F17ZD_main147x.svg)
+[185] [186] [187] [188]
+l. 313 Writing F17ZD_main.idv[149] (F17ZD_main148x.svg)
+l. 319 Writing F17ZD_main.idv[150] (F17ZD_main149x.svg)
+l. 321 Writing F17ZD_main.idv[151] (F17ZD_main150x.svg)
+[189]
+l. 326 Writing F17ZD_main.idv[152] (F17ZD_main151x.svg)
+[190]
+l. 354 Writing F17ZD_main.idv[153] (F17ZD_main152x.svg)
+[191]
+l. 356 Writing F17ZD_main.idv[154] (F17ZD_main153x.svg)
+l. 358 Writing F17ZD_main.idv[155] (F17ZD_main154x.svg)
+l. 360 Writing F17ZD_main.idv[156] (F17ZD_main155x.svg)
+[192]
+l. 376 Writing F17ZD_main.idv[157] (F17ZD_main156x.svg)
+[193]
+l. 389 Writing F17ZD_main.idv[158] (F17ZD_main157x.svg)
+l. 398 Writing F17ZD_main.idv[159] (F17ZD_main158x.svg)
+[194]
+l. 401 Writing F17ZD_main.idv[160] (F17ZD_main159x.svg)
+l. 425 Writing F17ZD_main.idv[161] (F17ZD_main160x.svg)
+[195]
+l. 430 Writing F17ZD_main.idv[162] (F17ZD_main161x.svg)
+l. 432 Writing F17ZD_main.idv[163] (F17ZD_main162x.svg)
+l. 436 Writing F17ZD_main.idv[164] (F17ZD_main163x.svg)
+[196]
+l. 441 Writing F17ZD_main.idv[165] (F17ZD_main164x.svg)
+[197]
+l. 445 Writing F17ZD_main.idv[166] (F17ZD_main165x.svg)
+l. 446 Writing F17ZD_main.idv[167] (F17ZD_main166x.svg)
+l. 448 Writing F17ZD_main.idv[168] (F17ZD_main167x.svg)
+l. 450 Writing F17ZD_main.idv[169] (F17ZD_main168x.svg)
+[198]) [199] [200
 
-] [352
+] [201
 
-] [353
+] [202
 
 ] (./F17ZD_main.aux (./T04-complex-iterates.aux) (./T04b-quaternions.aux) (./T0
 5-vectors2.aux) (./T06-vector-spaces.aux) (./T07-homogeneous.aux) (./T08-matrix
 -rank.aux) (./T09-matrix-eigenvalue.aux) (./T10-matrix-stochastic.aux))
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 66458 strings out of 478288
- 1578324 string characters out of 5849316
- 2415986 words of memory out of 5000000
- 83191 multiletter control sequences out of 15000+600000
- 558730 words of font info for 116 fonts, out of 8000000 for 9000
+ 65666 strings out of 478288
+ 1570308 string characters out of 5849316
+ 2380498 words of memory out of 5000000
+ 82408 multiletter control sequences out of 15000+600000
+ 529053 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,26n,129p,1834b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,14n,129p,1792b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on F17ZD_main.dvi (611 pages, 2871532 bytes).
+Output written on F17ZD_main.dvi (203 pages, 1088068 bytes).
