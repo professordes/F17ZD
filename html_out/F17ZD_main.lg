@@ -1,0 +1,680 @@
+htfcss: lmmib font_weight:bold;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: rm-lmbo  font-style: oblique;
+htfcss: rm-lmbx  font-weight: bold;
+htfcss: rm-lmbxi  font-style:italic; font-weight: bold;
+htfcss: rm-lmbxo  font-style: oblique; font-weight: bold;
+htfcss: rm-lmri  font-style:italic;
+htfcss: rm-lmro  font-style: oblique;
+htfcss: rm-lmss  font-family: sans-serif;
+htfcss: rm-lmssbo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: rm-lmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: rm-lmssdc  font-family: sans-serif;
+htfcss: rm-lmssdo  font-family: sans-serif; font-style: oblique;
+htfcss: rm-lmsso  font-family: sans-serif; font-style: oblique;
+htfcss: rm-lmssq  font-family: sans-serif;
+htfcss: rm-lmssqbo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: rm-lmssqbx  font-family: sans-serif; font-weight: bold;
+htfcss: rm-lmssqo  font-family: sans-serif; font-style: oblique;
+htfcss: rm-lmcsc font-variant: small-caps;
+htfcss: lmmib font_weight:bold;
+htfcss: rm-lmtcso  font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtk  font-family: monospace,monospace;
+htfcss: rm-lmtko  font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtl  font-weight: light; font-family: monospace,monospace;
+htfcss: rm-lmtlc  font-weight: light; font-family: monospace,monospace;
+htfcss: rm-lmtlco  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtlo  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtt  font-family: monospace,monospace;
+htfcss: rm-lmtk  font-family: monospace,monospace;
+htfcss: rm-lmtti  font-family: monospace,monospace; font-style:italic;
+htfcss: rm-lmtto  font-style: oblique; font-family: monospace,monospace;
+htfcss: lmmib font_weight:bold;
+htfcss: lmmib font_weight:bold;
+htfcss: wasyb font-weight: bold;
+htfcss: lmmib font_weight:bold;
+htfcss: lmmib font_weight:bold;
+htfcss: lmmib font_weight:bold;
+htfcss: lmbsy font-weight:bold;
+htfcss: lmbsy font-weight:bold;
+htfcss: lmbsy font-weight:bold;
+File: F17ZD_main.html
+File: F17ZD_main.css
+File: F17ZD_main.tmp
+File: F17ZD_main2.html
+File: F17ZD_main3.html
+File: F17ZD_main4.html
+File: F17ZD_main5.html
+File: F17ZD_main6.html
+File: F17ZD_main7.html
+File: F17ZD_main8.html
+File: F17ZD_main.tmp
+File: F17ZD_main.tmp
+File: F17ZD_main.tmp
+Font_Class(12,"12"): <!--span  class="htf-calligraphy"--><!--/span-->
+Css: p{margin-top:0;margin-bottom:0}
+Css: p.indent{text-indent:0;}
+Css: p + p{margin-top:1em;}
+Css: p + div, p + pre {margin-top:1em;}
+Css: div + p, pre + p {margin-top:1em;}
+Css: a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: table.tabular{border-collapse: collapse; border-spacing: 0;}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: math { text-indent: 0em; }
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p:first-child{ margin-bottom:0; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: div.newtheorem .head{font-weight: bold;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
+Css: .hline td, .cline td{ padding: 0; }
+Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
+Css: .hline {border-top: 1px solid black;}
+Css: .tabbing-right {text-align:right;}
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: .reversemarginpar{float:left;}
+Css: .equation td{text-align:center; vertical-align:middle; }
+Css: td.eq-no{ width:5%; }
+Css: table.equation { width:100%; } 
+Css: div.math-display, div.par-math-display{text-align:center;}
+Css: mtr.hline mtd{ border-bottom:black solid 1px; padding-top:2px; padding-bottom:0em; }
+Css: mtr.hline mtd mo{ display:none }
+Css: math .texttt { font-family: monospace; }
+Css: math .textit { font-style: italic; }
+Css: math .textsl { font-style: oblique; }
+Css: math .textsf { font-family: sans-serif; }
+Css: math .textbf { font-weight: bold; }
+Css: mo.MathClass-op + mi{margin-left:0.3em}
+Css: mi + mo.MathClass-op{margin-left:0.3em}
+Css:  math mstyle[mathvariant="bold"] { font-weight: bold; font-style: normal; } 
+Css:  math mstyle[mathvariant="normal"] { font-weight: normal; font-style: normal; } 
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
+Css: .hline td, .cline td{ padding: 0; }
+Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
+Css: .hline {border-top: 1px solid black;}
+Css: tr.hline td hr{display:none}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 12
+Css: div.abstract p {margin-left:5%; margin-right:5%;}
+Css: div.abstract {width:100%;}
+Css: .abstracttitle{text-align:center;margin-bottom:1em;}
+Css: figure.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: figure.figure {text-align:center;}
+Css: figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
+Css: figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: p + figcaption, img + figcaption{margin-top: 1em;}
+Css: .abstract{margin:1em;}
+Css: .equation-star td{text-align:center; vertical-align:middle; }
+Css: table.equation-star { width:100%; } 
+Css: mtd.align-odd{margin-left:2em; text-align:right;}
+Css: mtd.align-even{margin-right:2em; text-align:left;}
+Css: .boxed{border: 1px solid black; padding-left:2px; padding-right:2px;}
+Css: .rotatebox{display: inline-block;}
+Css: dt.enumerate-enumitem{float:left; clear:left; margin-left:1em; margin-right:1em;}
+Css: .tcolorbox{margin-top:0.5em;margin-bottom: 0.5em;}
+Css: .tcolorbox .lowerbox{margin-top:0pt;}
+Css: div.verbatiminput {font-family: monospace,monospace; white-space: nowrap; }
+--- needs --- F17ZD_main.idv[2] ==> F17ZD_main0x.svg ---
+Css: #tcolobox-1 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-1 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[4] ==> F17ZD_main1x.svg ---
+--- needs --- F17ZD_main.idv[5] ==> F17ZD_main2x.svg ---
+Css: #tcolobox-2 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-2 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-3 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-3 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-4 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-4 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-5 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-5 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[7] ==> F17ZD_main3x.svg ---
+Css: #tcolobox-6 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-6 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-7 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-7 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-8 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-8 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-9 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-9 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-10 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-10 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-11 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-11 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-12 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-12 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-13 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-13 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-14 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-14 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-15 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-15 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-16 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-16 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-17 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-17 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-18 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-18 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[9] ==> F17ZD_main4x.svg ---
+--- needs --- F17ZD_main.idv[10] ==> F17ZD_main5x.svg ---
+--- needs --- F17ZD_main.idv[12] ==> F17ZD_main6x.svg ---
+--- needs --- F17ZD_main.idv[14] ==> F17ZD_main7x.svg ---
+Css: #tcolobox-19 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-19 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[16] ==> F17ZD_main8x.svg ---
+Css: #tcolobox-20 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-20 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[18] ==> F17ZD_main9x.svg ---
+Css: #tcolobox-21 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-21 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[20] ==> F17ZD_main10x.svg ---
+Css: #tcolobox-22 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-22 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[22] ==> F17ZD_main11x.svg ---
+--- needs --- F17ZD_main.idv[24] ==> F17ZD_main12x.svg ---
+Css: #tcolobox-23 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-23 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-24 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-24 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-25 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-25 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-26 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-26 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-27 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-27 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-28 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-28 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-29 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-29 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-30 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-30 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-31 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-31 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[26] ==> F17ZD_main13x.svg ---
+--- needs --- F17ZD_main.idv[28] ==> F17ZD_main14x.svg ---
+Css: #tcolobox-32 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-32 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[30] ==> F17ZD_main15x.svg ---
+--- needs --- F17ZD_main.idv[32] ==> F17ZD_main16x.svg ---
+--- needs --- F17ZD_main.idv[33] ==> F17ZD_main17x.svg ---
+--- needs --- F17ZD_main.idv[35] ==> F17ZD_main18x.svg ---
+--- needs --- F17ZD_main.idv[36] ==> F17ZD_main19x.svg ---
+--- needs --- F17ZD_main.idv[38] ==> F17ZD_main20x.svg ---
+--- needs --- F17ZD_main.idv[40] ==> F17ZD_main21x.svg ---
+Css: #tcolobox-33 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-33 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[42] ==> F17ZD_main22x.svg ---
+--- needs --- F17ZD_main.idv[44] ==> F17ZD_main23x.svg ---
+Css: #tcolobox-34 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-34 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[46] ==> F17ZD_main24x.svg ---
+Css: #tcolobox-35 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-35 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+--- needs --- F17ZD_main.idv[48] ==> F17ZD_main25x.svg ---
+--- needs --- F17ZD_main.idv[49] ==> F17ZD_main26x.svg ---
+Css: #tcolobox-36 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-36 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[51] ==> F17ZD_main27x.svg ---
+Css: #tcolobox-37 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-37 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-38 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-38 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-39 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-39 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[53] ==> F17ZD_main28x.svg ---
+Css: #tcolobox-40 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-40 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-41 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-41 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-42 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-42 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-43 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-43 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-44 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-44 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-45 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-45 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-46 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-46 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-47 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-47 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-48 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-48 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-49 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-49 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-50 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-50 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-51 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-51 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-52 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-52 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-53 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-53 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-54 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-54 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-55 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-55 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-56 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-56 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-57 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-57 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-58 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-58 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-59 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-59 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-60 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-60 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[55] ==> F17ZD_main29x.svg ---
+Css: #tcolobox-61 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-61 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-62 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-62 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[57] ==> F17ZD_main30x.svg ---
+Css: #tcolobox-63 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-63 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-64 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-64 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-65 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-65 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-66 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-66 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-67 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-67 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-68 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-68 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-69 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-69 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-70 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-70 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: .columns-2 p:first-child { margin-top: 0em; }
+Css: .columns-2{-moz-column-count:2; -webkit-column-count:2; column-count:2; -moz-column-gap: 10.0pt; -webkit-column-gap: 10.0pt; column-gap: 10.0pt; -moz-column-rule-width: 0.0pt; -webkit-column-rule-width: 0.0pt; column-rule-rule-width: 0.0pt; -moz-column-rule-color: #555;; -webkit-column-rule-color: #555;; column-rule-color: #555;; -moz-column-rule-style: outset; -webkit-column-rule-style: outset; column-rule-style: outset; -moz-column-fill: balance; -webkit-column-fill: balance; column-fill: balance; }
+--- needs --- F17ZD_main.idv[59] ==> F17ZD_main31x.svg ---
+--- needs --- F17ZD_main.idv[61] ==> F17ZD_main32x.svg ---
+--- needs --- F17ZD_main.idv[63] ==> F17ZD_main33x.svg ---
+--- needs --- F17ZD_main.idv[65] ==> F17ZD_main34x.svg ---
+Css: #tcolobox-71 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-71 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-72 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-72 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[67] ==> F17ZD_main35x.svg ---
+Css: #tcolobox-73 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-73 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[69] ==> F17ZD_main36x.svg ---
+--- needs --- F17ZD_main.idv[71] ==> F17ZD_main37x.svg ---
+--- needs --- F17ZD_main.idv[73] ==> F17ZD_main38x.svg ---
+--- needs --- F17ZD_main.idv[75] ==> F17ZD_main39x.svg ---
+--- needs --- F17ZD_main.idv[76] ==> F17ZD_main40x.svg ---
+Css: #tcolobox-74 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-74 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-75 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-75 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-76 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-76 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-77 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-77 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+File: julia_c_minus1.png
+Css: #tcolobox-78 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-78 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+File: mandelbrot.png
+File: Broom_Bridge.jpg
+Css: #tcolobox-79 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-79 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[78] ==> F17ZD_main41x.svg ---
+Css: #tcolobox-80 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-80 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-81 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-81 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-82 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-82 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-83 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-83 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-84 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-84 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-85 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-85 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[80] ==> F17ZD_main42x.svg ---
+Css: #tcolobox-86 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-86 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-87 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-87 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-88 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-88 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-89 .tcolorbox-title{color: #000000; background-color: #404040;}
+Css: #tcolobox-89 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-90 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-90 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-91 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-91 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[82] ==> F17ZD_main43x.svg ---
+Css: #tcolobox-92 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-92 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[84] ==> F17ZD_main44x.svg ---
+--- needs --- F17ZD_main.idv[86] ==> F17ZD_main45x.svg ---
+Css: #tcolobox-93 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-93 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-94 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-94 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-95 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-95 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-96 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-96 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-97 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-97 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-98 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-98 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-99 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-99 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-100 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-100 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-101 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-101 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-102 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-102 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-103 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-103 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-104 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-104 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-105 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-105 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-106 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-106 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-107 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-107 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-108 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-108 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-109 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-109 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-110 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-110 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-111 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-111 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-112 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-112 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-113 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-113 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-114 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-114 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+--- needs --- F17ZD_main.idv[88] ==> F17ZD_main46x.svg ---
+--- needs --- F17ZD_main.idv[89] ==> F17ZD_main47x.svg ---
+Css: #tcolobox-115 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-115 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-116 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-116 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-117 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-117 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-118 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-118 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-119 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-119 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-120 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-120 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-121 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-121 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-122 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-122 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-123 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-123 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-124 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-124 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-125 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-125 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-126 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-126 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-127 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-127 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-128 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-128 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-129 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-129 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-130 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-130 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-131 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-131 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-132 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-132 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-133 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-133 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-134 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-134 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-135 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-135 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-136 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-136 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-137 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-137 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-138 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-138 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-139 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-139 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-140 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-140 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-141 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-141 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-142 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-142 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-143 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-143 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-144 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-144 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-145 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-145 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-146 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-146 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-147 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-147 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-148 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-148 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-149 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-149 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-150 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-150 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-151 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-151 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-152 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-152 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-153 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-153 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-154 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-154 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-155 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-155 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-156 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-156 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-157 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-157 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-158 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-158 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-159 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-159 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-160 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-160 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-161 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-161 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-162 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-162 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-163 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-163 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-164 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-164 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-165 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-165 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-166 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-166 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-167 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-167 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-168 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-168 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-169 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-169 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-170 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-170 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-171 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-171 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-172 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-172 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-173 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-173 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[91] ==> F17ZD_main48x.svg ---
+--- needs --- F17ZD_main.idv[92] ==> F17ZD_main49x.svg ---
+Css: #tcolobox-174 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-174 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-175 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-175 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-176 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-176 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-177 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-177 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-178 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-178 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-179 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-179 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-180 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-180 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-181 .tcolorbox-title{color: #545499; background-color: #404040;}
+Css: #tcolobox-181 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+--- needs --- F17ZD_main.idv[94] ==> F17ZD_main50x.svg ---
+Css: #tcolobox-182 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-182 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+Css: #tcolobox-183 .tcolorbox-title{color: #FFFFFF; background-color: #404040;}
+Css: #tcolobox-183 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #404040;}
+Css: #tcolobox-184 .tcolorbox-title{color: #FFFFFF; background-color: #545499;}
+Css: #tcolobox-184 .tcolorbox-content{color: #000000; background-color: #F2F2F2; border: 1px solid #545499;}
+--- characters ---
+Font("line","10","10","100")
+Font("rm-lmss","12","12","100")
+Font("rm-lmbx","12","12","100")
+Font("lmbsy","10","10","120")
+Font("lmbsy","10","10","80")
+Font("lmbsy","7","7","85")
+Font("lmex","10","10","100")
+Font("msam","10","10","120")
+Font("msam","10","10","80")
+Font("msam","7","7","85")
+Font("msbm","10","10","120")
+Font("msbm","10","10","80")
+Font("msbm","7","7","85")
+Font("rm-lmr","12","12","100")
+Font("rm-lmr","8","8","100")
+Font("rm-lmr","6","6","100")
+Font("lmmi","12","12","100")
+Font("lmmi","8","8","100")
+Font("lmmi","6","6","100")
+Font("lmsy","10","10","120")
+Font("lmsy8","","8","100")
+Font("lmsy6","","6","100")
+Font("wasy","10","10","120")
+Font("rm-lmss","17","17","100")
+Font("rm-lmssbx","10","10","172")
+Font("rm-lmssbx","10","10","120")
+Font("rm-lmssbx","10","10","144")
+Font("rm-lmr","10","10","100")
+Font("rm-lmr","7","7","100")
+Font("lmmi","10","10","100")
+Font("lmmi","7","7","100")
+Font("lmsy","10","10","100")
+Font("rm-lmss","10","10","109")
+Font("rm-lmtt","12","12","100")
+Font("dsrom","12","12","100")
+Font("dsrom","8","8","100")
+Font("rm-lmsso","12","12","100")
+Font("rm-lmss","10","10","100")
+Font("rm-lmr","5","5","100")
+Font("lmmi","5","5","100")
+Font("lmsy5","","5","100")
+Font("rm-lmss","8","8","100")
+Font("rm-lmsso","10","10","100")
+Font("rm-lmr","10","10","109")
+Font("lmmi","10","10","109")
+Font("lmsy","10","10","109")
+Font("msam","10","10","109")

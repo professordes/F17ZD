@@ -1,0 +1,81 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{2}\relax 
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{Complex Numbers}}{6}\relax 
+\doTocEntry\tocsubsection{1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1}{QQ2-1-3}{Definitions and Arithmetic}}{8}\relax 
+\doTocEntry\tocsubsection{1.2}{\csname a:TocLink\endcsname{1}{x1-40001.2}{QQ2-1-4}{Solving Quadratic Equations}}{28}\relax 
+\doTocEntry\tocsubsection{1.3}{\csname a:TocLink\endcsname{1}{x1-50001.3}{QQ2-1-5}{The Argand Diagram}}{34}\relax 
+\doTocEntry\tocsubsection{1.4}{\csname a:TocLink\endcsname{1}{x1-60001.4}{QQ2-1-6}{Polar Form}}{42}\relax 
+\doTocEntry\tocsubsection{1.5}{\csname a:TocLink\endcsname{1}{x1-70001.5}{QQ2-1-7}{Exponential Form}}{69}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-80001.5}{QQ2-1-8}{Complex exponentials and trigonometric functions}}{79}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-90001.5}{QQ2-1-9}{Calculus with complex exponentials}}{81}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-100001.5}{QQ2-1-10}{Logarithms of complex numbers}}{83}\relax 
+\doTocEntry\tocsubsection{1.6}{\csname a:TocLink\endcsname{1}{x1-110001.6}{QQ2-1-11}{De Moivre's Theorem}}{86}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-11011}{}{\numberline {1.1}{\ignorespaces Square roots of $z= 9 e^{i\frac {\pi }{3}}$\relax }}}{96}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-11013}{}{\numberline {1.2}{\ignorespaces Third roots of $z= \frac {8(-1+i)}{\sqrt {2}}$\relax }}}{96}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-11015}{}{\numberline {1.3}{\ignorespaces $4$-th roots of $z= -1+2i$\relax }}}{98}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-11017}{}{\numberline {1.4}{\ignorespaces $5$-th roots of $z= -1+2i$\relax }}}{98}\relax 
+\doTocEntry\tocsubsection{1.7}{\csname a:TocLink\endcsname{1}{x1-120001.7}{QQ2-1-16}{Complex Arguments in Trigonometric/Hyperbolic Functions}}{102}\relax 
+\doTocEntry\tocsubsection{1.8}{\csname a:TocLink\endcsname{1}{x1-130001.8}{QQ2-1-17}{Complex Mappings}}{107}\relax 
+\doTocEntry\tocsubsection{1.9}{\csname a:TocLink\endcsname{1}{x1-140001.9}{QQ2-1-18}{Iterating complex maps}}{119}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-150002}{QQ2-1-19}{An aside: Quaternions}}{125}\relax 
+\doTocEntry\tocsubsection{2.1}{\csname a:TocLink\endcsname{1}{x1-160002.1}{QQ2-1-20}{Definitions and Arithmetic}}{126}\relax 
+\doTocEntry\tocsubsection{2.2}{\csname a:TocLink\endcsname{1}{x1-170002.2}{QQ2-1-21}{Conjugate, Norm and Inverse}}{130}\relax 
+\doTocEntry\tocsubsection{2.3}{\csname a:TocLink\endcsname{1}{x1-180002.3}{QQ2-1-22}{Unit Quaternions and 3D Rotations}}{133}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-23}{Vectors, Spans and Bases in $\mathds  {R}^2$, $\mathds  {R}^3$ and $\mathds  {R}^n$.}}{143}\relax 
+\doTocEntry\tocsubsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-24}{Vectors in $\mathds  {R}^2$}}{143}\relax 
+\doTocEntry\tocsubsection{3.2}{\csname a:TocLink\endcsname{1}{x1-210003.2}{QQ2-1-25}{Vectors in $\mathds  {R}^3$}}{146}\relax 
+\doTocEntry\tocsubsection{3.3}{\csname a:TocLink\endcsname{1}{x1-220003.3}{QQ2-1-26}{Vectors in $\mathds  {R}^n$}}{147}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-230003.3}{QQ2-1-27}{The standard basis of $\mathds  {R}^n$.}}{152}\relax 
+\doTocEntry\tocsubsection{3.4}{\csname a:TocLink\endcsname{1}{x1-240003.4}{QQ2-1-28}{Systems of linear equations in vector form.}}{157}\relax 
+\doTocEntry\tocsubsection{3.5}{\csname a:TocLink\endcsname{1}{x1-250003.5}{QQ2-1-29}{Spans of vectors and spanning families in $\mathds  {R}^n$}}{159}\relax 
+\doTocEntry\tocsubsection{3.6}{\csname a:TocLink\endcsname{1}{x1-260003.6}{QQ2-1-30}{Spanning families.}}{167}\relax 
+\doTocEntry\tocsubsection{3.7}{\csname a:TocLink\endcsname{1}{x1-270003.7}{QQ2-1-31}{Linearly independent families in $\mathds  {R}^n$}}{169}\relax 
+\doTocEntry\tocsubsection{3.8}{\csname a:TocLink\endcsname{1}{x1-280003.8}{QQ2-1-32}{Bases of $\mathds  {R}^n$.}}{178}\relax 
+\doTocEntry\tocsubsection{3.9}{\csname a:TocLink\endcsname{1}{x1-290003.9}{QQ2-1-33}{Characterisation of bases of $\mathds  {R}^n$}}{179}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-300004}{QQ2-1-34}{Vector Spaces in General}}{189}\relax 
+\doTocEntry\tocsubsection{4.1}{\csname a:TocLink\endcsname{1}{x1-310004.1}{QQ2-1-35}{Examples and definition}}{189}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-320004.1}{QQ2-1-36}{Complex vector spaces.}}{192}\relax 
+\doTocEntry\tocsubsection{4.2}{\csname a:TocLink\endcsname{1}{x1-330004.2}{QQ2-1-37}{Linear combinations in abstract vector spaces}}{193}\relax 
+\doTocEntry\tocsubsection{4.3}{\csname a:TocLink\endcsname{1}{x1-340004.3}{QQ2-1-38}{Basis and dimension}}{200}\relax 
+\doTocEntry\tocsubsection{4.4}{\csname a:TocLink\endcsname{1}{x1-350004.4}{QQ2-1-39}{Dimension of a vector space.}}{201}\relax 
+\doTocEntry\tocsubsection{4.5}{\csname a:TocLink\endcsname{1}{x1-360004.5}{QQ2-1-40}{Vector subspaces}}{206}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-370004.5}{QQ2-1-41}{Remark.}}{209}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-380004.5}{QQ2-1-42}{Subspaces of $\mathds  {R}^2$.}}{213}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-390004.5}{QQ2-1-43}{Solutions of systems of linear differential equations as subspaces.}}{214}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-400004.5}{QQ2-1-44}{Dimension of subspaces.}}{215}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{1}{x1-410005}{QQ2-1-45}{The solution space of a homogeneous system of linear equations.}}{220}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-420005}{QQ2-1-46}{Remark.}}{221}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-430005}{QQ2-1-47}{The span of a family of vectors.}}{226}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-440005}{QQ2-1-48}{Remark.}}{228}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{1}{x1-450006}{QQ2-1-49}{Matrices}}{235}\relax 
+\doTocEntry\tocsubsection{6.1}{\csname a:TocLink\endcsname{1}{x1-460006.1}{QQ2-1-50}{Image and rank of a matrix.}}{235}\relax 
+\doTocEntry\tocsubsection{6.2}{\csname a:TocLink\endcsname{1}{x1-470006.2}{QQ2-1-51}{Rank of a matrix.}}{241}\relax 
+\doTocEntry\tocsubsection{6.3}{\csname a:TocLink\endcsname{1}{x1-480006.3}{QQ2-1-52}{Rank and systems of linear equations.}}{243}\relax 
+\doTocEntry\tocsubsection{6.4}{\csname a:TocLink\endcsname{1}{x1-490006.4}{QQ2-1-53}{The Rank-Nullity Theorem for matrices.}}{245}\relax 
+\doTocEntry\tocsection{7}{\csname a:TocLink\endcsname{1}{x1-500007}{QQ2-1-54}{Eigenvalues and diagonalisability}}{265}\relax 
+\doTocEntry\tocsubsection{7.1}{\csname a:TocLink\endcsname{1}{x1-510007.1}{QQ2-1-55}{A motivating problem: predicting the dynamics of a population}}{265}\relax 
+\doTocEntry\tocsubsection{7.2}{\csname a:TocLink\endcsname{1}{x1-520007.2}{QQ2-1-56}{Eigenvectors and Eigenvalues}}{267}\relax 
+\doTocEntry\tocsubsection{7.3}{\csname a:TocLink\endcsname{1}{x1-530007.3}{QQ2-1-57}{Diagonalisability.}}{272}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-540007.3}{QQ2-1-58}{Remark.}}{275}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-550007.3}{QQ2-1-59}{Distinct eigenvalues and linear independence.}}{276}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-560007.3}{QQ2-1-60}{Remark.}}{277}\relax 
+\doTocEntry\tocsubsection{7.4}{\csname a:TocLink\endcsname{1}{x1-570007.4}{QQ2-1-61}{Eigenspaces and diagonalisability.}}{277}\relax 
+\doTocEntry\tocsubsection{7.5}{\csname a:TocLink\endcsname{1}{x1-580007.5}{QQ2-1-62}{Characteristic polynomial}}{279}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-590007.5}{QQ2-1-63}{Remark.}}{280}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-600007.5}{QQ2-1-64}{The characteristic polynomial seen as a polynomial over $\mathds  {C}$.}}{282}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-610007.5}{QQ2-1-65}{Remark.}}{283}\relax 
+\doTocEntry\tocsubsection{7.6}{\csname a:TocLink\endcsname{1}{x1-620007.6}{QQ2-1-66}{Trace, determinants, and consistency check.}}{285}\relax 
+\doTocEntry\tocsubsection{7.7}{\csname a:TocLink\endcsname{1}{x1-630007.7}{QQ2-1-67}{Diagonalisability of a matrix}}{287}\relax 
+\doTocEntry\tocsubsection{7.8}{\csname a:TocLink\endcsname{1}{x1-640007.8}{QQ2-1-68}{Application: Dynamical systems}}{299}\relax 
+\doTocEntry\tocsubsection{7.9}{\csname a:TocLink\endcsname{1}{x1-650007.9}{QQ2-1-69}{Application: Dynamics of populations.}}{302}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-660007.9}{QQ2-1-70}{Application: The Fibonacci sequence.}}{304}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-670007.9}{QQ2-1-71}{Sequences satisfying a linear recurrence relation.}}{308}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-680007.9}{QQ2-1-72}{Diagonalisability over $\mathds  {C}$ and dynamical systems.}}{310}\relax 
+\doTocEntry\tocsubsection{7.10}{\csname a:TocLink\endcsname{1}{x1-690007.10}{QQ2-1-73}{Powers of a matrix.}}{312}\relax 
+\doTocEntry\tocsection{8}{\csname a:TocLink\endcsname{1}{x1-700008}{QQ2-1-74}{Stochastic Matrices}}{319}\relax 
+\doTocEntry\tocsubsection{8.1}{\csname a:TocLink\endcsname{1}{x1-710008.1}{QQ2-1-75}{A motivating problem: Optimising a distribution of bikes}}{319}\relax 
+\doTocEntry\tocsubsection{8.2}{\csname a:TocLink\endcsname{1}{x1-720008.2}{QQ2-1-76}{Markov diagrams and transition matrices}}{322}\relax 
+\doTocEntry\tocsubsection{8.3}{\csname a:TocLink\endcsname{1}{x1-730008.3}{QQ2-1-77}{The Perron-Frobenius Theorem for stochastic matrices}}{331}\relax 
+\doTocEntry\tocsubsection{8.4}{\csname a:TocLink\endcsname{1}{x1-740008.4}{QQ2-1-78}{Application: stationary distributions in dynamical systems.}}{340}\relax 
+\doTocEntry\tocsubsection{8.5}{\csname a:TocLink\endcsname{1}{x1-750008.5}{QQ2-1-79}{Application: The PageRank algorithm}}{342}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-760008.5}{QQ2-1-80}{Speed of convergence (extra-curricular).}}{347}\relax 

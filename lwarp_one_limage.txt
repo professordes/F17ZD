@@ -1,0 +1,6 @@
+pdfseparate -f %1 -l %1 %4_html.pdf F17ZD_main-images/lateximagetemp-%%d.pdf
+pdfcrop --hires F17ZD_main-images/lateximagetemp-%1.pdf F17ZD_main-images/%3.pdf
+pdftocairo -svg -noshrink F17ZD_main-images/%3.pdf F17ZD_main-images/%3.svg
+del F17ZD_main-images/%3.pdf
+del F17ZD_main-images/lateximagetemp-%1.pdf
+exit

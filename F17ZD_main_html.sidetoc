@@ -1,0 +1,73 @@
+\contentsline {section}{\numberline {1}{\ignorespaces Complex Numbers\relax }}{10}{}
+\contentsline {subsection}{\numberline {1.1}{\ignorespaces Definitions and Arithmetic\relax }}{11}{}
+\contentsline {subsection}{\numberline {1.2}{\ignorespaces Solving Quadratic Equations\relax }}{21}{}
+\contentsline {subsection}{\numberline {1.3}{\ignorespaces The Argand Diagram\relax }}{22}{}
+\contentsline {subsection}{\numberline {1.4}{\ignorespaces Polar Form\relax }}{47}{}
+\contentsline {subsection}{\numberline {1.5}{\ignorespaces Exponential Form\relax }}{101}{}
+\contentsline {subsection}{\numberline {1.6}{\ignorespaces De Moivre's Theorem\relax }}{119}{}
+\contentsline {subsection}{\numberline {1.7}{\ignorespaces Complex Arguments in Trigonometric/Hyperbolic Functions\relax }}{137}{}
+\contentsline {subsection}{\numberline {1.8}{\ignorespaces Complex Mappings\relax }}{138}{}
+\contentsline {subsection}{\numberline {1.9}{\ignorespaces Iterating complex maps\relax }}{161}{}
+\contentsline {section}{\numberline {2}{\ignorespaces An aside: Quaternions\relax }}{164}{}
+\contentsline {subsection}{\numberline {2.1}{\ignorespaces Definitions and Arithmetic\relax }}{166}{}
+\contentsline {subsection}{\numberline {2.2}{\ignorespaces Conjugate, Norm and Inverse\relax }}{171}{}
+\contentsline {subsection}{\numberline {2.3}{\ignorespaces Unit Quaternions and 3D Rotations\relax }}{174}{}
+\contentsline {section}{\numberline {3}{\ignorespaces Vectors, Spans and Bases in $\mathds {R}^2$, $\mathds {R}^3$ and $\mathds {R}^n$.\relax }}{175}{}
+\contentsline {subsection}{\numberline {3.1}{\ignorespaces Vectors in $\mathds {R}^2$\relax }}{176}{}
+\contentsline {subsection}{\numberline {3.2}{\ignorespaces Vectors in $\mathds {R}^3$\relax }}{178}{}
+\contentsline {subsection}{\numberline {3.3}{\ignorespaces Vectors in $\mathds {R}^n$\relax }}{179}{}
+\contentsline {paragraph}{The standard basis of $\mathds {R}^n$.}{180}{}
+\contentsline {subsection}{\numberline {3.4}{\ignorespaces Systems of linear equations in vector form.\relax }}{181}{}
+\contentsline {subsection}{\numberline {3.5}{\ignorespaces Spans of vectors and spanning families in $\mathds {R}^n$\relax }}{183}{}
+\contentsline {subsection}{\numberline {3.6}{\ignorespaces Spanning families.\relax }}{185}{}
+\contentsline {subsection}{\numberline {3.7}{\ignorespaces Linearly independent families in $\mathds {R}^n$\relax }}{187}{}
+\contentsline {subsection}{\numberline {3.8}{\ignorespaces Bases of $\mathds {R}^n$.\relax }}{188}{}
+\contentsline {subsection}{\numberline {3.9}{\ignorespaces Characterisation of bases of $\mathds {R}^n$\relax }}{189}{}
+\contentsline {section}{\numberline {4}{\ignorespaces Vector Spaces in General\relax }}{190}{}
+\contentsline {subsection}{\numberline {4.1}{\ignorespaces Examples and definition\relax }}{191}{}
+\contentsline {paragraph}{Complex vector spaces.}{192}{}
+\contentsline {subsection}{\numberline {4.2}{\ignorespaces Linear combinations in abstract vector spaces\relax }}{193}{}
+\contentsline {subsection}{\numberline {4.3}{\ignorespaces Basis and dimension\relax }}{194}{}
+\contentsline {subsection}{\numberline {4.4}{\ignorespaces Dimension of a vector space.\relax }}{196}{}
+\contentsline {subsection}{\numberline {4.5}{\ignorespaces Vector subspaces\relax }}{199}{}
+\contentsline {paragraph}{Remark.}{200}{}
+\contentsline {paragraph}{Subspaces of $\mathds {R}^2$.}{201}{}
+\contentsline {paragraph}{Solutions of systems of linear differential equations as subspaces.}{202}{}
+\contentsline {paragraph}{Dimension of subspaces.}{204}{}
+\contentsline {section}{\numberline {5}{\ignorespaces The solution space of a homogeneous system of linear equations.\relax }}{205}{}
+\contentsline {paragraph}{Remark.}{207}{}
+\contentsline {paragraph}{The span of a family of vectors.}{208}{}
+\contentsline {paragraph}{Remark.}{210}{}
+\contentsline {section}{\numberline {6}{\ignorespaces Matrices\relax }}{211}{}
+\contentsline {subsection}{\numberline {6.1}{\ignorespaces Image and rank of a matrix.\relax }}{212}{}
+\contentsline {subsection}{\numberline {6.2}{\ignorespaces Rank of a matrix.\relax }}{214}{}
+\contentsline {subsection}{\numberline {6.3}{\ignorespaces Rank and systems of linear equations.\relax }}{216}{}
+\contentsline {subsection}{\numberline {6.4}{\ignorespaces The Rank-Nullity Theorem for matrices.\relax }}{218}{}
+\contentsline {section}{\numberline {7}{\ignorespaces Eigenvalues and diagonalisability\relax }}{220}{}
+\contentsline {subsection}{\numberline {7.1}{\ignorespaces A motivating problem: predicting the dynamics of a population\relax }}{221}{}
+\contentsline {subsection}{\numberline {7.2}{\ignorespaces Eigenvectors and Eigenvalues\relax }}{222}{}
+\contentsline {subsection}{\numberline {7.3}{\ignorespaces Diagonalisability.\relax }}{223}{}
+\contentsline {paragraph}{Remark.}{224}{}
+\contentsline {paragraph}{Distinct eigenvalues and linear independence.}{225}{}
+\contentsline {paragraph}{Remark.}{227}{}
+\contentsline {subsection}{\numberline {7.4}{\ignorespaces Eigenspaces and diagonalisability.\relax }}{228}{}
+\contentsline {subsection}{\numberline {7.5}{\ignorespaces Characteristic polynomial\relax }}{230}{}
+\contentsline {paragraph}{Remark.}{231}{}
+\contentsline {paragraph}{The characteristic polynomial seen as a polynomial over $\mathds {C}$.}{233}{}
+\contentsline {paragraph}{Remark.}{234}{}
+\contentsline {subsection}{\numberline {7.6}{\ignorespaces Trace, determinants, and consistency check.\relax }}{236}{}
+\contentsline {subsection}{\numberline {7.7}{\ignorespaces Diagonalisability of a matrix\relax }}{237}{}
+\contentsline {subsection}{\numberline {7.8}{\ignorespaces Application: Dynamical systems\relax }}{238}{}
+\contentsline {subsection}{\numberline {7.9}{\ignorespaces Application: Dynamics of populations.\relax }}{239}{}
+\contentsline {paragraph}{Application: The Fibonacci sequence.}{240}{}
+\contentsline {paragraph}{Sequences satisfying a linear recurrence relation.}{241}{}
+\contentsline {paragraph}{Diagonalisability over $\mathds {C}$ and dynamical systems.}{242}{}
+\contentsline {subsection}{\numberline {7.10}{\ignorespaces Powers of a matrix.\relax }}{243}{}
+\contentsline {section}{\numberline {8}{\ignorespaces Stochastic Matrices\relax }}{244}{}
+\contentsline {subsection}{\numberline {8.1}{\ignorespaces A motivating problem: Optimising a distribution of bikes\relax }}{245}{}
+\contentsline {subsection}{\numberline {8.2}{\ignorespaces Markov diagrams and transition matrices\relax }}{246}{}
+\contentsline {subsection}{\numberline {8.3}{\ignorespaces The Perron-Frobenius Theorem for stochastic matrices\relax }}{248}{}
+\contentsline {subsection}{\numberline {8.4}{\ignorespaces Application: stationary distributions in dynamical systems.\relax }}{253}{}
+\contentsline {subsection}{\numberline {8.5}{\ignorespaces Application: The PageRank algorithm\relax }}{254}{}
+\contentsline {paragraph}{Speed of convergence (extra-curricular).}{257}{}
+
