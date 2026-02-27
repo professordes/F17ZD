@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2026.2.2)  27 FEB 2026 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2026.2.2)  27 FEB 2026 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 {\AddToHook{class/before}{\RequirePackage[#1,html]{tex4ht}}\let\HCode\documents
 tyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\e
 ndcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\
-documentstyle[tex4ht]}}}\makeatother\HCode xhtml,mathjax,svg,charset=utf-8,html
-5.a.b.c.\input "\detokenize{F17ZD_main.tex}"
+documentstyle[tex4ht]}}}\makeatother\HCode xhtml,mathjax,charset=utf-8,html5.a.
+b.c.\input "\detokenize{F17ZD_main.tex}"
 (./F17ZD_main.tex (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2021-09-14-14:11
 Package: tex4ht 
@@ -1322,8 +1322,6 @@ DOCTYPE'
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )
@@ -1370,7 +1368,7 @@ option `frames-fn'
 --------------------------------------
 --- Note --- for file extension name xht, use the command line option `xht'
 --------------------------------------
-TeX4ht package options: xhtml,mathjax,svg,charset=utf-8,html5,html
+TeX4ht package options: xhtml,mathjax,charset=utf-8,html5,html
 --------------------------------------
 --- Note --- To print a timestamp, use the command line option timestamp
 --------------------------------------
@@ -1392,12 +1390,6 @@ on `imgdir:.../'
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
---------------------------------------
---- Note --- for external SVG files try the command line options `svg-obj' and 
-'svg-'
---------------------------------------
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 --------------------------------------
@@ -1424,8 +1416,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/latex.4ht
@@ -1446,8 +1436,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1513,9 +1501,7 @@ he command line option `pic-m+' (not safe!!)
 --------------------------------------
 (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathjax-latex-4ht.4ht
 version 2021-12-02-14:01
-)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
+)) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/fontmath.4ht
 version 2018-11-06-15:55
@@ -1525,8 +1511,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/array.4ht
@@ -1540,8 +1524,6 @@ version 2021-04-16-13:27
 --------------------------------------
 --- Note --- for pictorial array, use the command line option `pic-array'
 --------------------------------------
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/color.4ht
@@ -1552,8 +1534,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/colortbl.4ht
@@ -1566,8 +1546,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/article.4ht
@@ -1590,8 +1568,6 @@ index=2)
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsmath.4ht
@@ -1603,8 +1579,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amstext.4ht
@@ -1615,8 +1589,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
@@ -1627,8 +1599,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsopn.4ht
@@ -1639,8 +1609,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amssymb.4ht
@@ -1651,8 +1619,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
@@ -1663,8 +1629,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/amsthm.4ht
@@ -1675,8 +1639,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphicx.4ht
@@ -1687,8 +1649,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/graphics.4ht
@@ -1708,8 +1668,6 @@ en bounding box is unavailable try `Gin-dim+'; neither is recommended
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dvips.4ht
@@ -1720,8 +1678,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/multicol.4ht
@@ -1732,8 +1688,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pifont.4ht
@@ -1744,8 +1698,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/enumitem.4ht
@@ -1756,8 +1708,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pgf.4ht
@@ -1768,8 +1718,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/xcolor.4ht
@@ -1782,8 +1730,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svgnam.4ht
@@ -1795,8 +1741,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/caption.4ht
@@ -1807,8 +1751,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tocloft.4ht
@@ -1819,8 +1761,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/geometry.4ht
@@ -1831,8 +1771,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/hyperref.4ht
@@ -1845,8 +1783,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
@@ -1857,8 +1793,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/url.4ht
@@ -1873,8 +1807,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/ifthen.4ht
@@ -1885,8 +1817,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/nameref.4ht
@@ -1897,8 +1827,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/rotating.4ht
@@ -1909,8 +1837,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/tcolorbox.4ht
@@ -1922,8 +1848,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/verbatim.4ht
@@ -1934,8 +1858,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/mathtools.4ht
@@ -1946,8 +1868,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/dsfont.4ht
@@ -1958,8 +1878,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 )) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4.4ht
@@ -1968,8 +1886,6 @@ version 2022-02-03-14:35
 version 2021-06-19-14:11
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2021-04-16-13:27
-) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
 ) (/usr/share/texlive/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2022-01-23-07:51
 ))
@@ -2544,12 +2460,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 65666 strings out of 478288
- 1570308 string characters out of 5849316
- 2380498 words of memory out of 5000000
- 82408 multiletter control sequences out of 15000+600000
+ 65584 strings out of 478288
+ 1565252 string characters out of 5849316
+ 2379488 words of memory out of 5000000
+ 82407 multiletter control sequences out of 15000+600000
  529053 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,129p,1792b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,14n,129p,1788b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on F17ZD_main.dvi (203 pages, 1088068 bytes).
